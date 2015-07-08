@@ -75,7 +75,9 @@ if __name__ == '__main__':
             #headingWritten=False
     if databaseType=='trainingSet':
         familyName=re.sub('.*families', '', args.file)
-        familyName=re.sub('training', '', familyName)[1:-1]
+        familyName=re.sub('training', '', familyName)
+        familyName=re.sub(re.escape('/'), '', familyName)
+        familyName=re.sub('\\\\', '', familyName)
         database.load(path,
              thermoLibraries=None,
              transportLibraries=None,
