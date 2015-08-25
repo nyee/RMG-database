@@ -13,44 +13,46 @@ from rmgpy import settings
 from rmgpy.kinetics import Arrhenius, Chebyshev, ThirdBody,Troe, KineticsData
 import matplotlib.pyplot as plt
 
+#List of types of databases within RMG and the desired attributes to be listed in a csv
+databaseTypes={}
+databaseTypes['kineticsRules']=[]
+databaseTypes['kineticsLibrary']=['label', 'index', '_A', '_n', '_Ea', '_T0', 'degeneracy']
+databaseTypes['trainingSet']=['label', 'index', 'template', '_A', '_n', '_Ea', '_T0', 'degeneracy', 'rank']
+
+#What to write in the header of a csv for each variable
+attributeToHeader={}
+attributeToHeader['label']='Label'
+attributeToHeader['index']='Index'
+attributeToHeader['_A']='A'
+attributeToHeader['_n']='n'
+attributeToHeader['_Ea']='Ea'
+attributeToHeader['_T0']='T0'
+attributeToHeader['degeneracy']='degeneracy'
+attributeToHeader['template']='template'
+attributeToHeader['rank']='rank'
+
 def getDatabaseType(directory):
     """
     This function takes a directory name and returns a string giving the type of database entry.
     """
     if os.path.isdir(directory):
         if os.path.exists(os.path.join(directory, 'rules.py')):
-            return 'rules'
+            return 'kineticsRules'
         #This includes depositories and libraries
         if re.search(re.escape('kinetics\libraries'), directory):
             return 'kineticsLibrary'
         if re.search('families.*training', directory):
             return 'trainingSet'
-        
-        
-if __name__ == '__main__':
-    # load database
-    parser = argparse.ArgumentParser()
-    parser.add_argument('file', metavar='FILE', type=str, nargs='?',
-        help='the directory for the library or rules to export', default='all')
-    parser.add_argument('output', metavar='OUTPUT', type=str, nargs='?', help='the csv where we give the ouput')
-    parser.add_argument("-c", "--compare", action="store_true", help='use to make comparison with other data in the database')
-    
-    args = parser.parse_args()
-    
-    path = settings['database.directory']
+
+#Loads only the necessary parts of the RMG database for the desired part
+def loadPartialDatabase(databaseType, directory):
     database = RMGDatabase()
-    
-    if args.file!='all':
-        databaseType=getDatabaseType(args.file)
-    #do entire database
-    else: pass
-        
+    name=''
     if databaseType=='kineticsLibrary':
-        
         database.load(path,
              thermoLibraries=None,
              transportLibraries=None,
-             reactionLibraries=[args.file],
+             reactionLibraries=[directory],
              seedMechanisms=None,
              kineticsFamilies='none',
              kineticsDepositories=[],
@@ -58,54 +60,104 @@ if __name__ == '__main__':
              depository=True,
              solvation=True,
              )
-        with open(args.output, 'wb') as csvfile:
-            csvwriter=csv.writer(csvfile)
-            entries=database.kinetics.libraries.values()[0].entries
-            
-            headingWritten=False
-            for index in entries:
-                kinetics=entries[index].data
-                if type(kinetics) is Arrhenius:
-                    if not headingWritten:
-                        headingWritten=True
-                        csvwriter.writerow(['Label', 'index', 'A (mol-sec-m^3)', 'n', 'Ea (kJ/mol)', 'T0 (K)', 'degeneracy'])           
-                    csvwriter.writerow([entries[index].label, 
-                                        index, 
-                                        kinetics._A.value_si,
-                                        kinetics._n.value_si, 
-                                        kinetics._Ea.value_si,
-                                        kinetics._T0.value_si,
-                                        entries[index].item.degeneracy])
+        entries=database.kinetics.libraries.values()[0].entries
     
-            #Need another for loop here
-            #headingWritten=False
-    if databaseType=='trainingSet':
-        familyName=re.sub('.*families', '', args.file)
-        familyName=re.sub('training', '', familyName)
-        familyName=re.sub(re.escape('/'), '', familyName)
-        familyName=re.sub('\\\\', '', familyName)
+    elif databaseType=='trainingSet':
+        name=re.sub('.*families', '', args.file)
+        name=re.sub('training', '', name)
+        name=re.sub(re.escape('/'), '', name)
+        name=re.sub('\\\\', '', name)
         database.load(path,
              thermoLibraries=None,
              transportLibraries=None,
              reactionLibraries=[],
              seedMechanisms=None,
-             kineticsFamilies=[familyName],
+             kineticsFamilies=[name],
              kineticsDepositories=[],
              statmechLibraries=None,
              depository=True,
              solvation=True,
              )
+        entries=database.kinetics.families[name].depositories[0].entries
+
+    return database, entries, name
+
+#creates a line to be written in the csv
+def getAttributes(entry, databaseType):
+    line=[]
+    commonAttributes=['index',
+                      'label',
+                      'item',
+                      'parent',
+                      'children',
+                      'data',
+                      'reference',
+                      'referenceType',
+                      'shortDesc',
+                      'longDesc',
+                      'rank']
+    dataAttributes=['_A', 
+                    '_n', 
+                    '_Ea', 
+                    '_T0',]
+    itemAttributes=['degeneracy',]
+    for attribute in databaseTypes[databaseType]:
+        if attribute in commonAttributes: line.append(getattr(entry, attribute))
+        elif attribute in dataAttributes: line.append(getattr(entry.data, attribute))
+        elif attribute in itemAttributes: line.append(getattr(entry.item, attribute))
+        elif attribute=='template': 
+            database.kinetics.families[name].getReactionTemplate(entry.item)
+            templateStr=''
+            for group in template:
+                if templateStr!='': templateStr+=';'
+                templateStr+=group.label
+            line.append(templateStr)
+        else: raise AttributeError("Cannot find attribute")
+    return line
+if __name__ == '__main__':
+    # parse arguments
+    parser = argparse.ArgumentParser()
+    parser.add_argument('file', metavar='FILE', type=str, nargs='?',
+        help='the directory for the library or rules to export', default='all')
+    parser.add_argument('output', metavar='OUTPUT', type=str, nargs='?', help='the csv where we give the ouput')
+    parser.add_argument("-c", "--compare", action="store_true", help='use to make comparison with other data in the database')
+    args = parser.parse_args()
+    
+    path = settings['database.directory']
+    
+    if args.file!='all':
+        databaseType=getDatabaseType(args.file)
+        database, entries, name=loadPartialDatabase(databaseType, args.file)
+    #generateCsv for entire database
+    else: pass
         
+    if databaseType=='kineticsLibrary':
+        
+        with open(args.output, 'wb') as csvfile:
+            csvwriter=csv.writer(csvfile)
+            entries=database.kinetics.libraries.values()[0].entries
+            
+            headingWritten=False
+            heading=[attributeToHeader[attribute] for attribute in databaseTypes[databaseType]]
+            for index in entries:
+                if type(entries[index].data) is Arrhenius:
+                    if not headingWritten:
+                        headingWritten=True
+                        csvwriter.writerow(heading)           
+                    csvwriter.writerow(getAttributes(entries[index], databaseType))
+    
+            #Need another for loop here
+            #headingWritten=False
+    if databaseType=='trainingSet':
         templateDict={}
         duplicatesDict={}
         with open(args.output, 'wb') as csvfile:
             csvwriter=csv.writer(csvfile)
-            entries=database.kinetics.families[familyName].depositories[0].entries
             
             headingWritten=False
             for index in entries:
                 kinetics=entries[index].data
-                template=database.kinetics.families[familyName].getReactionTemplate(entries[index].item)
+                template=database.kinetics.families[name].getReactionTemplate(entries[index].item)
                 templateStr=''
                 for group in template:
                     if templateStr!='': templateStr+=';'
@@ -122,19 +174,12 @@ if __name__ == '__main__':
                 
                 
                 if type(kinetics) is Arrhenius:
-                    if not headingWritten:
+                    if not headingWritten: 
                         headingWritten=True
-                        csvwriter.writerow(['Label', 'index', 'template', 'A (mol-sec-m^3)', 'n', 'Ea (J/mol)', 'T0 (K)', 'degeneracy', 'rank'])
+                        heading= [attributeToHeader[attribute] for attribute in databaseTypes[databaseType]]
+                        csvwriter.writerow(heading)
                     try:
-                        csvwriter.writerow([entries[index].label, 
-                                            index, 
-                                            templateStr,
-                                            kinetics._A.value_si,
-                                            kinetics._n.value_si, 
-                                            kinetics._Ea.value_si,
-                                            kinetics._T0.value_si,
-                                            entries[index].item.degeneracy,
-                                            entries[index].rank])
+                        csvwriter.writerow(getAttributes(entries[index], databaseType))
                     except ValueError: 
                         print entries[index].label + ' is missing some attribute'
                 
@@ -153,7 +198,6 @@ if __name__ == '__main__':
                 plt.ylabel("Rate coefficient")
                 plt.legend()
                 plt.show()
-                    
-                
+                               
                           
     
