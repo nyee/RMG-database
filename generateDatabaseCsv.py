@@ -10,7 +10,7 @@ import csv
 import argparse
 from rmgpy.data.rmg import RMGDatabase
 from rmgpy import settings
-from rmgpy.kinetics import Arrhenius, Chebyshev, ThirdBody,Troe, KineticsData
+from rmgpy.kinetics import Arrhenius, Chebyshev, ThirdBody, Troe, KineticsData
 import matplotlib.pyplot as plt
 
 #List of types of databases within RMG and the desired attributes to be listed in a csv
@@ -18,6 +18,8 @@ databaseTypes={}
 databaseTypes['kineticsRules']=[]
 databaseTypes['kineticsLibrary']=['label', 'index', '_A', '_n', '_Ea', '_T0', 'degeneracy']
 databaseTypes['trainingSet']=['label', 'index', 'template', '_A', '_n', '_Ea', '_T0', 'degeneracy', 'rank']
+
+
 
 #What to write in the header of a csv for each variable
 attributeToHeader={}
@@ -106,7 +108,7 @@ def getAttributes(entry, databaseType):
         elif attribute in dataAttributes: line.append(getattr(entry.data, attribute))
         elif attribute in itemAttributes: line.append(getattr(entry.item, attribute))
         elif attribute=='template': 
-            database.kinetics.families[name].getReactionTemplate(entry.item)
+            template=database.kinetics.families[name].getReactionTemplate(entry.item)
             templateStr=''
             for group in template:
                 if templateStr!='': templateStr+=';'
@@ -127,77 +129,64 @@ if __name__ == '__main__':
     
     if args.file!='all':
         databaseType=getDatabaseType(args.file)
-        database, entries, name=loadPartialDatabase(databaseType, args.file)
+        database, entries, name = loadPartialDatabase(databaseType, args.file)
+        csvList=[]
+        
+        headingWritten=False
+        for index in entries:
+            kinetics=entries[index].data
+            if type(kinetics) is Arrhenius:
+                if not headingWritten: 
+                    headingWritten=True
+                    heading= [attributeToHeader[attribute] for attribute in databaseTypes[databaseType]]
+                    csvList.append(heading)
+                try:
+                    csvList.append(getAttributes(entries[index], databaseType))
+                except ValueError: 
+                    print entries[index].label + ' is missing some attribute'
+                    
+                    
+        with open(args.output, 'wb') as csvfile:
+            csvwriter=csv.writer(csvfile)
+            for line in csvList:
+                csvwriter.writerow(line)
     #generateCsv for entire database
     else: pass
-        
-    if databaseType=='kineticsLibrary':
-        
-        with open(args.output, 'wb') as csvfile:
-            csvwriter=csv.writer(csvfile)
-            entries=database.kinetics.libraries.values()[0].entries
+                  
+
             
-            headingWritten=False
-            heading=[attributeToHeader[attribute] for attribute in databaseTypes[databaseType]]
-            for index in entries:
-                if type(entries[index].data) is Arrhenius:
-                    if not headingWritten:
-                        headingWritten=True
-                        csvwriter.writerow(heading)           
-                    csvwriter.writerow(getAttributes(entries[index], databaseType))
-    
-            #Need another for loop here
-            #headingWritten=False
-    if databaseType=='trainingSet':
+                
+    if args.compare:
         templateDict={}
         duplicatesDict={}
-        with open(args.output, 'wb') as csvfile:
-            csvwriter=csv.writer(csvfile)
-            
-            headingWritten=False
-            for index in entries:
-                kinetics=entries[index].data
-                template=database.kinetics.families[name].getReactionTemplate(entries[index].item)
-                templateStr=''
-                for group in template:
-                    if templateStr!='': templateStr+=';'
-                    templateStr+=group.label
-                
-                
+        
+        for line in csvList:
+            if type(line[1]) is int:
+                label=line[0]
+                index=line[1]
+                templateStr=line[2]    
                 for key, value in templateDict.iteritems():
                     if templateStr==value[0]:
-                        print entries[index].label, 'has matching template to', key, ' and may have other matches'
+                        print label, 'has matching template to', key, ' and may have other matches'
                         if not templateStr in duplicatesDict: duplicatesDict[templateStr]=[key]
-                        duplicatesDict[templateStr].append(entries[index].label)
+                        duplicatesDict[templateStr].append(label)
                         break
-                templateDict[entries[index].label]=(templateStr,index)
-                
-                
-                if type(kinetics) is Arrhenius:
-                    if not headingWritten: 
-                        headingWritten=True
-                        heading= [attributeToHeader[attribute] for attribute in databaseTypes[databaseType]]
-                        csvwriter.writerow(heading)
-                    try:
-                        csvwriter.writerow(getAttributes(entries[index], databaseType))
-                    except ValueError: 
-                        print entries[index].label + ' is missing some attribute'
-                
-        if args.compare:
-            TList=range(300,2100,100)
-            inverseTList=[1000.0/T for T in TList]
-            for key, duplicates in duplicatesDict.iteritems():
-                plt.figure()
-                for reactionStr in duplicates:
-                    index=templateDict[reactionStr][1]
-                    kinetics=entries[index].data
-                    kList=[kinetics.getRateCoefficient(T)/entries[index].item.degeneracy for T in TList]
-                    plt.semilogy(inverseTList,kList,label=reactionStr)
-                plt.title('Training reactions with template '+ key)
-                plt.xlabel("1000 / Temperature (1000/K)")
-                plt.ylabel("Rate coefficient")
-                plt.legend()
-                plt.show()
+                templateDict[label]=(templateStr,index)
+        
+        TList=range(300,2100,100)
+        inverseTList=[1000.0/T for T in TList]
+        for key, duplicates in duplicatesDict.iteritems():
+            plt.figure()
+            for reactionStr in duplicates:
+                index=templateDict[reactionStr][1]
+                kinetics=entries[index].data
+                kList=[kinetics.getRateCoefficient(T)/entries[index].item.degeneracy for T in TList]
+                plt.semilogy(inverseTList,kList,label=reactionStr)
+            plt.title('Training reactions with template '+ key)
+            plt.xlabel("1000 / Temperature (1000/K)")
+            plt.ylabel("Rate coefficient")
+            plt.legend()
+            plt.show()
                                
                           
     
