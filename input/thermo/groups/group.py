@@ -13033,49 +13033,6 @@ u"""
 )
 
 entry(
-    index = 355,
-    label = "Cs-(Cds-Od)(Cds-Od)HH",
-    group = 
-"""
-1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
-2   CO u0 {1,S}
-3   CO u0 {1,S}
-4   H  u0 {1,S}
-5   H  u0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([5.03,7.44,9.16,10.49,12.17,13.57,13.57],'cal/(mol*K)','+|-',[0.1,0.1,0.1,0.1,0.1,0.1,0.1]),
-        H298 = (-7.6,'kcal/mol','+|-',0.16),
-        S298 = (5.82,'cal/(mol*K)','+|-',0.1),
-    ),
-    shortDesc = u"""Cs-COCOHH BENSON Hf, Mopac =3D S,Cp nov99 !!!WARNING! Cp1500 value taken as Cp1000""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 356,
-    label = "Cs-(Cds-Od)(Cds-Cd)HH",
-    group = 
-"""
-1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
-2   CO u0 {1,S}
-3   Cd u0 {1,S}
-4   H  u0 {1,S}
-5   H  u0 {1,S}
-""",
-    thermo = u'Cs-(Cds-Od)(Cds-Cds)HH',
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
     index = 357,
     label = "Cs-(Cds-Od)(Cds-Cds)HH",
     group = 
@@ -15506,25 +15463,6 @@ entry(
 7   C   u0 {6,D}
 """,
     thermo = u'Cs-(Cds-Od)(Cds-Od)(Cds-Cds)H',
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 440,
-    label = "Cs-(Cds-Od)(Cds-Cd)(Cds-Cd)H",
-    group = 
-"""
-1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
-2   CO u0 {1,S}
-3   Cd u0 {1,S}
-4   Cd u0 {1,S}
-5   H  u0 {1,S}
-""",
-    thermo = u'Cs-(Cds-Od)(Cds-Cds)(Cds-Cds)H',
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -22562,25 +22500,6 @@ entry(
 7   C   u0 {6,D}
 """,
     thermo = u'Cs-(Cds-Od)(Cds-Od)(Cds-Od)(Cds-Cds)',
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 657,
-    label = "Cs-(Cds-Od)(Cds-Od)(Cds-Cd)(Cds-Cd)",
-    group = 
-"""
-1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
-2   CO u0 {1,S}
-3   CO u0 {1,S}
-4   Cd u0 {1,S}
-5   Cd u0 {1,S}
-""",
-    thermo = u'Cs-(Cds-Od)(Cds-Od)(Cds-Cds)(Cds-Cds)',
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -41031,45 +40950,6 @@ u"""
 )
 
 entry(
-    index = 1123,
-    label = "Os-(Cds-Od)(Cds-Od)",
-    group = 
-"""
-1 * Os u0 {2,S} {3,S}
-2   CO u0 {1,S}
-3   CO u0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([3.45,4.74,5.28,5.74,5.89,6.1,6.1],'cal/(mol*K)','+|-',[0.1,0.1,0.1,0.1,0.1,0.1,0.1]),
-        H298 = (-46,'kcal/mol','+|-',0.19),
-        S298 = (2.5,'cal/(mol*K)','+|-',0.1),
-    ),
-    shortDesc = u"""O-COCO Hf BENSON S,Cp Mopac=3D""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1124,
-    label = "Os-(Cds-Od)(Cds-Cd)",
-    group = 
-"""
-1 * Os u0 {2,S} {3,S}
-2   CO u0 {1,S}
-3   Cd u0 {1,S}
-""",
-    thermo = u'Os-(Cds-Cd)(Cds-Cd)',
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
     index = 1125,
     label = "Os-(Cds-Cd)(Cds-Cd)",
     group = 
@@ -43862,28 +43742,6 @@ u"""
 )
 
 entry(
-    index = 1937,
-    label = 'Os-(CO)H',
-    group = 
-"""
-1 * Os u0 {2,S} {3,S}
-2   CO u0 {1,S}
-3   H  u0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([19.07,19.8,20.85,22.07,24.57,26.96,31.66],'J/(mol*K)'),
-        H298 = (-165.22,'kJ/mol'),
-        S298 = (125.32,'J/(mol*K)'),
-    ),
-    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
     index = 1938,
     label = 'CO-CC',
     group = 
@@ -45634,6 +45492,7 @@ L1: R
                 L5: Cs-CdsHHH
                     L6: Cs-(Cds-Od)HHH
                     L6: Cs-(Cds-Cd)HHH
+                        L7: Cs-(CCO)HHH
                         L7: Cs-(CdN3d)HHH
                         L7: Cs-(Cds-Cds)HHH
                         L7: Cs-(Cds-Cdd)HHH
@@ -45667,14 +45526,13 @@ L1: R
                     L6: Cs-C=SCsHH
                 L5: Cs-CdsCdsHH
                     L6: Cs-Cd(CO)HH
-                    L6: Cs-(CO)(CO)HH
-                    L6: Cs-(Cds-Od)(Cds-Od)HH
-                    L6: Cs-(Cds-Od)(Cds-Cd)HH
                         L7: Cs-(Cds-Od)(Cds-Cds)HH
                         L7: Cs-(Cds-Od)(Cds-Cdd)HH
                             L8: Cs-(Cds-Od)(Cds-Cdd-Od)HH
                             L8: Cs-(Cds-Od)(Cds-Cdd-Cd)HH
+                    L6: Cs-(CO)(CO)HH
                     L6: Cs-(Cds-Cd)(Cds-Cd)HH
+                        L7: Cs-Cd(CCO)HH
                         L7: Cs-(Cds-Cds)(Cds-Cds)HH
                         L7: Cs-(Cds-Cdd)(Cds-Cds)HH
                             L8: Cs-(Cds-Cdd-Od)(Cds-Cds)HH
@@ -45719,8 +45577,10 @@ L1: R
             L4: Cs-CCCH
                 L5: Cs-C(CCO)(CCO)H
                 L5: Cs-CCd(CCO)H
+                    L6: Cs-CdCd(CCO)H
                 L5: Cs-CC(CCO)H
                 L5: Cs-CC(CO)H
+                    L6: Cs-CCd(CO)H
                 L5: Cs-CsCsCsH
                 L5: Cs-CdsCsCsH
                     L6: Cs-(Cds-Od)CsCsH
@@ -45781,13 +45641,6 @@ L1: R
                 L5: Cs-CbCbCsH
                 L5: Cs-CdsCdsCdsH
                     L6: Cs-CdCd(CO)H
-                    L6: Cs-(Cds-Od)(Cds-Od)(Cds-Od)H
-                    L6: Cs-(Cds-Od)(Cds-Od)(Cds-Cd)H
-                        L7: Cs-(Cds-Od)(Cds-Od)(Cds-Cds)H
-                        L7: Cs-(Cds-Od)(Cds-Od)(Cds-Cdd)H
-                            L8: Cs-(Cds-Od)(Cds-Od)(Cds-Cdd-Od)H
-                            L8: Cs-(Cds-Od)(Cds-Od)(Cds-Cdd-Cd)H
-                    L6: Cs-(Cds-Od)(Cds-Cd)(Cds-Cd)H
                         L7: Cs-(Cds-Od)(Cds-Cds)(Cds-Cds)H
                         L7: Cs-(Cds-Od)(Cds-Cdd)(Cds-Cds)H
                             L8: Cs-(Cds-Od)(Cds-Cdd-Od)(Cds-Cds)H
@@ -45796,6 +45649,12 @@ L1: R
                             L8: Cs-(Cds-Od)(Cds-Cdd-Od)(Cds-Cdd-Od)H
                             L8: Cs-(Cds-Od)(Cds-Cdd-Od)(Cds-Cdd-Cd)H
                             L8: Cs-(Cds-Od)(Cds-Cdd-Cd)(Cds-Cdd-Cd)H
+                    L6: Cs-(Cds-Od)(Cds-Od)(Cds-Od)H
+                    L6: Cs-(Cds-Od)(Cds-Od)(Cds-Cd)H
+                        L7: Cs-(Cds-Od)(Cds-Od)(Cds-Cds)H
+                        L7: Cs-(Cds-Od)(Cds-Od)(Cds-Cdd)H
+                            L8: Cs-(Cds-Od)(Cds-Od)(Cds-Cdd-Od)H
+                            L8: Cs-(Cds-Od)(Cds-Od)(Cds-Cdd-Cd)H
                     L6: Cs-(Cds-Cd)(Cds-Cd)(Cds-Cd)H
                         L7: Cs-(Cds-Cds)(Cds-Cds)(Cds-Cds)H
                         L7: Cs-(Cds-Cds)(Cds-Cds)(Cds-Cdd)H
@@ -45917,6 +45776,8 @@ L1: R
                 L5: Cs-CCC(CCO)
                 L5: Cs-CC(CO)(CO)
                 L5: Cs-CCC(CO)
+                    L6: Cs-CCCd(CO)
+                        L7: Cs-CCd(CO)(CO)
                 L5: Cs-CsCsCsCs
                 L5: Cs-CdsCsCsCs
                     L6: Cs-(Cds-Od)CsCsCs
@@ -46112,13 +45973,6 @@ L1: R
                 L5: Cs-CbCbCbCs
                 L5: Cs-CdsCdsCdsCds
                     L6: Cs-CdCd(CO)(CO)
-                    L6: Cs-(Cds-Od)(Cds-Od)(Cds-Od)(Cds-Od)
-                    L6: Cs-(Cds-Od)(Cds-Od)(Cds-Od)(Cds-Cd)
-                        L7: Cs-(Cds-Od)(Cds-Od)(Cds-Od)(Cds-Cds)
-                        L7: Cs-(Cds-Od)(Cds-Od)(Cds-Od)(Cds-Cdd)
-                            L8: Cs-(Cds-Od)(Cds-Od)(Cds-Od)(Cds-Cdd-Od)
-                            L8: Cs-(Cds-Od)(Cds-Od)(Cds-Od)(Cds-Cdd-Cd)
-                    L6: Cs-(Cds-Od)(Cds-Od)(Cds-Cd)(Cds-Cd)
                         L7: Cs-(Cds-Od)(Cds-Od)(Cds-Cds)(Cds-Cds)
                         L7: Cs-(Cds-Od)(Cds-Od)(Cds-Cdd)(Cds-Cds)
                             L8: Cs-(Cds-Od)(Cds-Od)(Cds-Cdd-Od)(Cds-Cds)
@@ -46127,6 +45981,12 @@ L1: R
                             L8: Cs-(Cds-Od)(Cds-Od)(Cds-Cdd-Od)(Cds-Cdd-Od)
                             L8: Cs-(Cds-Od)(Cds-Od)(Cds-Cdd-Od)(Cds-Cdd-Cd)
                             L8: Cs-(Cds-Od)(Cds-Od)(Cds-Cdd-Cd)(Cds-Cdd-Cd)
+                    L6: Cs-(Cds-Od)(Cds-Od)(Cds-Od)(Cds-Od)
+                    L6: Cs-(Cds-Od)(Cds-Od)(Cds-Od)(Cds-Cd)
+                        L7: Cs-(Cds-Od)(Cds-Od)(Cds-Od)(Cds-Cds)
+                        L7: Cs-(Cds-Od)(Cds-Od)(Cds-Od)(Cds-Cdd)
+                            L8: Cs-(Cds-Od)(Cds-Od)(Cds-Od)(Cds-Cdd-Od)
+                            L8: Cs-(Cds-Od)(Cds-Od)(Cds-Od)(Cds-Cdd-Cd)
                     L6: Cs-(Cds-Od)(Cds-Cd)(Cds-Cd)(Cds-Cd)
                         L7: Cs-(Cds-Od)(Cds-Cds)(Cds-Cds)(Cds-Cds)
                         L7: Cs-(Cds-Od)(Cds-Cds)(Cds-Cds)(Cds-Cdd)
@@ -46969,7 +46829,6 @@ L1: R
                 L5: Os-CtH
                 L5: Os-CdsH
                     L6: Os-CdH
-                    L6: Os-(CO)H
                     L6: Os-(Cds-Od)H
                     L6: Os-(Cds-Cd)H
                 L5: Os-CsH
@@ -46994,8 +46853,6 @@ L1: R
                 L5: Os-CdsCds
                     L6: Os-(CO)Cd
                     L6: Os-(CO)(CO)
-                    L6: Os-(Cds-Od)(Cds-Od)
-                    L6: Os-(Cds-Od)(Cds-Cd)
                     L6: Os-(Cds-Cd)(Cds-Cd)
                 L5: Os-CdsCs
                     L6: Os-Cs(Cds-Od)
