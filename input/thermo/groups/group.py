@@ -44081,6 +44081,914 @@ u"""
 """,
 )
 
+entry(
+    index = 1947,
+    label = 'Cs-CCC(CCO)',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   C  u0 {1,S}
+3   C  u0 {1,S}
+4   C  u0 {1,S}
+5   Cd u0 {1,S} {6,D}
+6   CO  u0 {5,D} {7,D}
+7   Od  u0 {6,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([20.63,27.65,31.98,34.41,36.16,36.25,35.2],'J/(mol*K)'),
+        H298 = (-4.55,'kJ/mol'),
+        S298 = (-144.08,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1948,
+    label = 'Cs-CC(CCO)H',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   C  u0 {1,S}
+3   C  u0 {1,S}
+4   Cd u0 {1,S} {6,D}
+5   H  u0 {1,S}
+6   CO  u0 {4,D} {7,D}
+7   Od  u0 {6,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([21.23,27.55,32.36,35.85,40.17,43.16,46.94],'J/(mol*K)'),
+        H298 = (-11.05,'kJ/mol'),
+        S298 = (-47.59,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1949,
+    label = 'Cs-C(CCO)(CCO)H',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   C  u0 {1,S}
+3   Cd u0 {1,S} {6,D}
+4   Cd u0 {1,S} {8,D}
+5   H  u0 {1,S}
+6   CO  u0 {3,D} {7,D}
+7   Od  u0 {6,D}
+8   CO  u0 {4,D} {9,D}
+9   Od  u0 {8,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([21.19,28,33.91,38.75,46.07,51.36,59.45],'J/(mol*K)'),
+        H298 = (-21.07,'kJ/mol'),
+        S298 = (40.95,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1950,
+    label = 'Cs-(CCO)HHH',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cd u0 {1,S} {6,D}
+3   H  u0 {1,S}
+4   H  u0 {1,S}
+5   H  u0 {1,S}
+6   CO  u0 {2,D} {7,D}
+7   Od  u0 {6,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([25.31,32.07,38.44,44.06,53.36,60.63,72.47],'J/(mol*K)'),
+        H298 = (-42.9,'kJ/mol'),
+        S298 = (127.12,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1951,
+    label = 'CCO-CC',
+    group = 
+"""
+1 * Cd u0 {2,S} {3,S} {4,D}
+2   C  u0 {1,S}
+3   C  u0 {1,S}
+4   CO  u0 {1,D} {5,D}
+5   Od  u0 {4,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([42.55,46.42,50,53.24,58.3,51.71,66.01],'J/(mol*K)'),
+        H298 = (0.54,'kJ/mol'),
+        S298 = (84.72,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1952,
+    label = 'CCO-CH',
+    group = 
+"""
+1 * Cd u0 {2,S} {3,S} {4,D}
+2   C  u0 {1,S}
+3   H  u0 {1,S}
+4   CO  u0 {1,D} {5,D}
+5   Od  u0 {4,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([53.83,50.1,55.5,60.05,57.09,72.13,79.55],'J/(mol*K)'),
+        H298 = (-17.65,'kJ/mol'),
+        S298 = (169.15,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1953,
+    label = 'Cs-CCCdO',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   C  u0 {1,S}
+3   C  u0 {1,S}
+4   Cd u0 {1,S}
+5   O  u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([29.24,37.61,40.84,41.46,40.06,38.2,35.08],'J/(mol*K)'),
+        H298 = (-14.57,'kJ/mol'),
+        S298 = (-153.23,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1954,
+    label = 'Cs-CCCd(CO)',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   C  u0 {1,S}
+3   C  u0 {1,S}
+4   Cd u0 {1,S}
+5   CO u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([26.01,30.13,32.44,33.51,33.75,33.26,32.55],'J/(mol*K)'),
+        H298 = (9.78,'kJ/mol'),
+        S298 = (-146.74,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1955,
+    label = 'Cs-CCdOO',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   C  u0 {1,S}
+3   Cd u0 {1,S}
+4   O  u0 {1,S}
+5   O  u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([27.95,42.92,51.33,54.81,53.92,49.73,41.11],'J/(mol*K)'),
+        H298 = (-62.75,'kJ/mol'),
+        S298 = (-170.44,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1956,
+    label = 'Cs-CCd(CO)(CO)',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   C  u0 {1,S}
+3   Cd u0 {1,S}
+4   CO u0 {1,S}
+5   CO u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([35.99,39.53,39.94,39.09,36.71,34.8,32.51],'J/(mol*K)'),
+        H298 = (19.86,'kJ/mol'),
+        S298 = (-150.69,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1957,
+    label = 'Cs-CCd(CO)O',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   C  u0 {1,S}
+3   Cd u0 {1,S}
+4   CO u0 {1,S}
+5   O  u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([33.75,42.15,45.09,44.95,41.74,38.55,34.46],'J/(mol*K)'),
+        H298 = (-3.88,'kJ/mol'),
+        S298 = (-158.3,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1958,
+    label = 'Cs-CCdOH',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   C  u0 {1,S}
+3   Cd u0 {1,S}
+4   O  u0 {1,S}
+5   H  u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([29.84,38.86,43.83,46.37,48.34,49.06,49.94],'J/(mol*K)'),
+        H298 = (-23.99,'kJ/mol'),
+        S298 = (-61.06,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1959,
+    label = 'Cs-CCd(CO)H',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   C  u0 {1,S}
+3   Cd u0 {1,S}
+4   CO u0 {1,S}
+5   H  u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([29.32,32.99,35.49,37.28,39.75,41.6,44.96],'J/(mol*K)'),
+        H298 = (-2.17,'kJ/mol'),
+        S298 = (-50.47,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1960,
+    label = 'Cs-CdCdOO',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cd u0 {1,S}
+3   Cd u0 {1,S}
+4   O  u0 {1,S}
+5   O  u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([30.08,45.85,54.7,58.39,57.78,53.65,44.31],'J/(mol*K)'),
+        H298 = (-55.74,'kJ/mol'),
+        S298 = (-179.76,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1961,
+    label = 'Cs-CdCd(CO)(CO)',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cd u0 {1,S}
+3   Cd u0 {1,S}
+4   CO u0 {1,S}
+5   CO u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([42.49,50.96,52.27,50.54,45.33,41.1,35.7],'J/(mol*K)'),
+        H298 = (25.2,'kJ/mol'),
+        S298 = (-168.67,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1962,
+    label = 'Cs-CdCd(CO)O',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cd u0 {1,S}
+3   Cd u0 {1,S}
+4   CO u0 {1,S}
+5   O  u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([36.85,46.04,49,48.85,45.61,42.23,37.25],'J/(mol*K)'),
+        H298 = (2.99,'kJ/mol'),
+        S298 = (-160.69,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1963,
+    label = 'Cs-CdCdOH',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cd u0 {1,S}
+3   Cd u0 {1,S}
+4   O  u0 {1,S}
+5   H  u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([29.82,38.47,43.27,45.7,57.5,48.09,48.78],'J/(mol*K)'),
+        H298 = (-17.4,'kJ/mol'),
+        S298 = (-64.14,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1964,
+    label = 'Cs-CdCd(CO)H',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cd u0 {1,S}
+3   Cd u0 {1,S}
+4   CO u0 {1,S}
+5   H  u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([29.26,64.41,37.4,39.22,41.43,43.06,46.12],'J/(mol*K)'),
+        H298 = (2.86,'kJ/mol'),
+        S298 = (-53.2,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1965,
+    label = 'Cs-CdOHH',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cd u0 {1,S}
+3   O  u0 {1,S}
+4   H  u0 {1,S}
+5   H  u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([28.42,35.65,40.62,44.31,49.79,53.92,60.6],'J/(mol*K)'),
+        H298 = (-26.64,'kJ/mol'),
+        S298 = (35.59,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1966,
+    label = 'Cs-Cd(CO)HH',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cd u0 {1,S}
+3   CO u0 {1,S}
+4   H  u0 {1,S}
+5   H  u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([24.94,31.41,36.47,40.49,46.72,51.49,59.29],'J/(mol*K)'),
+        H298 = (-16.85,'kJ/mol'),
+        S298 = (40.18,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1967,
+    label = 'Cd-CO',
+    group = 
+"""
+1 * Cd u0 {2,S} {3,S}
+2   C  u0 {1,S}
+3   O  u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([12.79,15.86,19.69,22.91,26.55,27.85,28.45],'J/(mol*K)'),
+        H298 = (32.95,'kJ/mol'),
+        S298 = (-50.89,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1968,
+    label = 'Cd-C(CO)',
+    group = 
+"""
+1 * Cd u0 {2,S} {3,S}
+2   C  u0 {1,S}
+3   CO u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([15.33,16.82,18.64,20.42,23.2,25,27.1],'J/(mol*K)'),
+        H298 = (38.97,'kJ/mol'),
+        S298 = (-51.26,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1969,
+    label = 'Cd-OO',
+    group = 
+"""
+1 * Cd u0 {2,S} {3,S}
+2   O  u0 {1,S}
+3   O  u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([11.34,11.93,14.86,17.95,22.31,24.6,26.92],'J/(mol*K)'),
+        H298 = (28.28,'kJ/mol'),
+        S298 = (-42.69,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1970,
+    label = 'Cd-OH',
+    group = 
+"""
+1 * Cd u0 {2,S} {3,S}
+2   O  u0 {1,S}
+3   H  u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([18.08,21.17,24.43,27.41,32.22,35.73,40.97],'J/(mol*K)'),
+        H298 = (36.37,'kJ/mol'),
+        S298 = (33.51,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1971,
+    label = 'Cd-(CO)H',
+    group = 
+"""
+1 * Cd u0 {2,S} {3,S}
+2   CO u0 {1,S}
+3   H  u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([18.08,21.17,24.43,27.41,32.22,35.73,40.97],'J/(mol*K)'),
+        H298 = (36.37,'kJ/mol'),
+        S298 = (33.51,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1972,
+    label = 'Cd-(CCO)H',
+    group = 
+"""
+1 * Cd u0 {2,S} {3,S}
+2   Cd u0 {1,S} {4,D}
+3   H  u0 {1,S}
+4   CO  u0 {2,D} {5,D}
+5   Od  u0 {4,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([18.08,21.17,24.43,27.41,32.22,35.73,40.97],'J/(mol*K)'),
+        H298 = (36.37,'kJ/mol'),
+        S298 = (33.51,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1973,
+    label = 'Os-CCd',
+    group = 
+"""
+1 * Os u0 {2,S} {3,S}
+2   C  u0 {1,S}
+3   Cd u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([19.07,23.32,25.26,25.92,25.5,24.52,22.72],'J/(mol*K)'),
+        H298 = (-123.88,'kJ/mol'),
+        S298 = (45.05,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1974,
+    label = 'Os-(CO)Cd',
+    group = 
+"""
+1 * Os u0 {2,S} {3,S}
+2   CO u0 {1,S}
+3   Cd u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([20.02,19.61,18.5,17.71,17.02,16.49,15.31],'J/(mol*K)'),
+        H298 = (-100.6,'kJ/mol'),
+        S298 = (38.43,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1975,
+    label = 'Os-CdH',
+    group = 
+"""
+1 * Os u0 {2,S} {3,S}
+2   Cd u0 {1,S}
+3   H  u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([24.6,30.3,32.52,33.15,33.29,33.55,34.97],'J/(mol*K)'),
+        H298 = (-188.07,'kJ/mol'),
+        S298 = (106.3,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1976,
+    label = 'CO-CCd',
+    group = 
+"""
+1 * CO u0 {2,S} {3,S}
+2   C  u0 {1,S}
+3   Cd u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([25.26,30.66,34.68,37.49,41.62,43.93,46.49],'J/(mol*K)'),
+        H298 = (-130.44,'kJ/mol'),
+        S298 = (47.38,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1977,
+    label = 'CO-OCd',
+    group = 
+"""
+1 * CO u0 {2,S} {3,S}
+2   O  u0 {1,S}
+3   Cd u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([28.33,37.84,44.54,49.34,55.45,58.73,60.61],'J/(mol*K)'),
+        H298 = (-218.6,'kJ/mol'),
+        S298 = (33.44,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1978,
+    label = 'CO-CdH',
+    group = 
+"""
+1 * CO u0 {2,S} {3,S}
+2   Cd u0 {1,S}
+3   H  u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([27.31,34,39.42,43.77,50.16,54.55,60.77],'J/(mol*K)'),
+        H298 = (-128.34,'kJ/mol'),
+        S298 = (129.26,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1979,
+    label = 'Cs-CCCd(CCO)',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   C  u0 {1,S}
+3   C  u0 {1,S}
+4   Cd u0 {1,S}
+5   Cd u0 {1,S} {6,D}
+6   CO  u0 {5,D} {7,D}
+7   Od  u0 {6,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([25.48,31.89,35.19,36.68,37.19,36.66,34.96],'J/(mol*K)'),
+        H298 = (2.86,'kJ/mol'),
+        S298 = (-144.6,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1980,
+    label = 'Cs-CCd(CCO)H',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   C  u0 {1,S}
+3   Cd u0 {1,S}
+4   Cd u0 {1,S} {6,D}
+5   H  u0 {1,S}
+6   CO  u0 {4,D} {7,D}
+7   Od  u0 {6,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([24.45,31.59,36.01,38.8,42.13,44.21,47.25],'J/(mol*K)'),
+        H298 = (-10.44,'kJ/mol'),
+        S298 = (-54.03,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1981,
+    label = 'Cs-CdCd(CCO)H',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cd u0 {1,S}
+3   Cd u0 {1,S}
+4   Cd u0 {1,S} {6,D}
+5   H  u0 {1,S}
+6   CO  u0 {4,D} {7,D}
+7   Od  u0 {6,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([27.62,35.4,39.24,41.25,43.4,44.87,47.43],'J/(mol*K)'),
+        H298 = (-6.83,'kJ/mol'),
+        S298 = (-55.37,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1982,
+    label = 'Cs-Cd(CCO)HH',
+    group = 
+"""
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cd u0 {1,S}
+3   Cd u0 {1,S} {6,D}
+4   H  u0 {1,S}
+5   H  u0 {1,S}
+6   CO  u0 {3,D} {7,D}
+7   Od  u0 {6,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([25.85,31.99,37.06,41.14,47.42,52.15,59.73],'J/(mol*K)'),
+        H298 = (-22.24,'kJ/mol'),
+        S298 = (37.92,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1983,
+    label = 'Cd-C(CCO)',
+    group = 
+"""
+1 * Cd u0 {2,S} {3,S}
+2   C  u0 {1,S}
+3   Cd u0 {1,S} {4,D}
+4   CO  u0 {3,D} {5,D}
+5   Od  u0 {4,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([22.63,24.05,24.63,25.07,25.64,25.84,25.7],'J/(mol*K)'),
+        H298 = (41.57,'kJ/mol'),
+        S298 = (-48.01,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
+entry(
+    index = 1984,
+    label = 'CCO-CdH',
+    group = 
+"""
+1 * Cd u0 {2,S} {3,S} {4,D}
+2   Cd u0 {1,S}
+3   H  u0 {1,S}
+4   CO  u0 {1,D} {5,D}
+5   Od  u0 {4,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([43.67,52.95,59.65,64.67,71.81,76.72,83.92],'J/(mol*K)'),
+        H298 = (-35.99,'kJ/mol'),
+        S298 = (152.19,'J/(mol*K)'),
+    ),
+    shortDesc = u"\Derived from CBS-QB3 calculation with 1DHR treatment from thesis of Pachalis Paraskevas from Ghent University",
+    longDesc = 
+u"""
+
+""",
+)
+
 tree(
 """
 L1: R
@@ -44160,11 +45068,21 @@ L1: R
                     L6: Cdd-(Cdd-Cd)Cds
                 L5: Cdd-CdsCds
         L3: Cds
+            L4: Cd-C(CCO)
+            L4: Cd-(CO)H
+            L4: Cd-CO
+            L4: Cd-C(CO)
+            L4: Cd-OH
+            L4: Cd-OO
+            L4: Cd-(CCO)H
             L4: CO-(CO)(CO)
             L4: CO-O(CO)
             L4: CO-CC
+                L5: CO-CCd
             L4: CO-CH
+                L5: CO-CdH
             L4: CO-CO
+                L5: CO-OCd
             L4: CO-OO
             L4: CO-OH
             L4: CO-C(CO)
@@ -44345,6 +45263,8 @@ L1: R
                     L6: Cds-(Cdd-Sd)SsSs
                     L6: Cds-(Cdd-Cd)SsSs
             L4: Cds-CdCH
+                L5: CCO-CH
+                L5: CCO-CdH
                 L5: Cds-CdsCsH
                 L5: Cds-CdsCdsH
                     L6: Cds-Cds(Cds-Od)H
@@ -44456,6 +45376,7 @@ L1: R
                     L6: Cds-(Cdd-Sd)CbSs
                     L6: Cds-(Cdd-Cd)CbSs
             L4: Cds-CdCC
+                L5: CCO-CC
                 L5: Cds-CdsCsCs
                 L5: Cds-CdsCdsCs
                     L6: Cds-Cds(Cds-Od)Cs
@@ -44661,9 +45582,17 @@ L1: R
         L3: Cs
             L4: Cs-CC(CO)O
             L4: Cs-CCOH
+                L5: Cs-CCdOH
+                L5: Cs-CdCdOH
             L4: Cs-CCOO
+                L5: Cs-CCdOO
+                L5: Cs-CdCdOO
             L4: Cs-COHH
+                L5: Cs-CdOHH
             L4: Cs-CCCO
+                L5: Cs-CCd(CO)O
+                L5: Cs-CCCdO
+                L5: Cs-CdCd(CO)O
             L4: Cs-(CO)HH
             L4: Cs-(CO)OHH
             L4: Cs-OOHH
@@ -44737,6 +45666,7 @@ L1: R
                         L7: Cs-(CdN3d)CsHH
                     L6: Cs-C=SCsHH
                 L5: Cs-CdsCdsHH
+                    L6: Cs-Cd(CO)HH
                     L6: Cs-(CO)(CO)HH
                     L6: Cs-(Cds-Od)(Cds-Od)HH
                     L6: Cs-(Cds-Od)(Cds-Cd)HH
@@ -44787,6 +45717,9 @@ L1: R
                 L5: Cs-CbCtHH
                 L5: Cs-CbCbHH
             L4: Cs-CCCH
+                L5: Cs-C(CCO)(CCO)H
+                L5: Cs-CCd(CCO)H
+                L5: Cs-CC(CCO)H
                 L5: Cs-CC(CO)H
                 L5: Cs-CsCsCsH
                 L5: Cs-CdsCsCsH
@@ -44847,6 +45780,7 @@ L1: R
                 L5: Cs-CbCtCsH
                 L5: Cs-CbCbCsH
                 L5: Cs-CdsCdsCdsH
+                    L6: Cs-CdCd(CO)H
                     L6: Cs-(Cds-Od)(Cds-Od)(Cds-Od)H
                     L6: Cs-(Cds-Od)(Cds-Od)(Cds-Cd)H
                         L7: Cs-(Cds-Od)(Cds-Od)(Cds-Cds)H
@@ -44979,6 +45913,8 @@ L1: R
                 L5: Cs-CbCbCtH
                 L5: Cs-CbCbCbH
             L4: Cs-CCCC
+                L5: Cs-CCCd(CCO)
+                L5: Cs-CCC(CCO)
                 L5: Cs-CC(CO)(CO)
                 L5: Cs-CCC(CO)
                 L5: Cs-CsCsCsCs
@@ -45175,6 +46111,7 @@ L1: R
                 L5: Cs-CbCbCtCs
                 L5: Cs-CbCbCbCs
                 L5: Cs-CdsCdsCdsCds
+                    L6: Cs-CdCd(CO)(CO)
                     L6: Cs-(Cds-Od)(Cds-Od)(Cds-Od)(Cds-Od)
                     L6: Cs-(Cds-Od)(Cds-Od)(Cds-Od)(Cds-Cd)
                         L7: Cs-(Cds-Od)(Cds-Od)(Cds-Od)(Cds-Cds)
@@ -46005,6 +46942,7 @@ L1: R
         L3: Os
             L4: Os-CH
             L4: Os-CC
+                L5: Os-CCd
             L4: Os-N
                 L5: Os-CN
                     L6: Os-CsN3s
@@ -46030,6 +46968,7 @@ L1: R
             L4: Os-CH
                 L5: Os-CtH
                 L5: Os-CdsH
+                    L6: Os-CdH
                     L6: Os-(CO)H
                     L6: Os-(Cds-Od)H
                     L6: Os-(Cds-Cd)H
@@ -46053,6 +46992,7 @@ L1: R
                     L6: Os-Cs(CtN3t)
                 L5: Os-CtCb
                 L5: Os-CdsCds
+                    L6: Os-(CO)Cd
                     L6: Os-(CO)(CO)
                     L6: Os-(Cds-Od)(Cds-Od)
                     L6: Os-(Cds-Od)(Cds-Cd)
