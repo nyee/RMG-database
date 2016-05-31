@@ -69,8 +69,8 @@ def findPlaceInTree(database, newNode):
     """
     #Check for matching node:
     identical=checkIdenticalNode(database, newNode)
-    if identical:
-        print "There is already an identical node for", newNode.label, "which is", identical
+    # if identical:
+    #     print "There is already an identical node for", newNode.label, "which is", identical
 
     #check for overlapping parents
     directParents=getAncestorsForNewNode(database, newNode, True)
@@ -91,6 +91,49 @@ def findPlaceInTree(database, newNode):
 
     return (parent, identical, directChildren)
 
+def addThermoGroup(database, newNode, treeInfo):
+    """
+    Returns a new database object with newNode added correctly into the database
+
+    treeInfo is the tuple returned from findPlaceInTree
+    """
+    (parent, identical, directChildren)=treeInfo
+
+    if identical:
+        #need algorithm to check therm of existing node, then ask user which one to use
+        pass
+    else:
+        #add entry
+        database.entries[newNode.label]=newNode
+        #check this where does it go, end?
+        parent.children.append(newNode)
+        newNode.children=directChildren
+
+        #remove children from parent
+        for child in directChildren:
+            parent.children.remove(child)
+
+        #check data of children
+
+
+def checkOverlappingChildren(database):
+    #checks that overlapping are in order from most specific to least specific in terms of parent relationships:
+    number=0
+    for name, entry in database.entries.iteritems():
+        numberOfChildren=len(entry.children)
+        for index, upperChild in enumerate(entry.children):
+            if index==numberOfChildren-1:
+                break
+            for lowerChild in entry.children[index+1:]:
+                if database.matchNodeToChild(upperChild, lowerChild):
+                    number+=1
+                    # print upperChild.label, lowerChild.label, number
+                    if not upperChild.parent==lowerChild.parent:
+                        print upperChild.label, lowerChild.label, number
+
+
+
+
 
 if __name__ == "__main__":
     path="/Users/Nate/Dropbox (MIT)/Research/RMG/thermo/oxy_species2.py"
@@ -106,13 +149,15 @@ if __name__ == "__main__":
 
     specificThermoDatabase = database.thermo.groups[groupName]
 
-    test1=specificThermoDatabase.entries["C"].data
-    # print test1
-    # testGroup=newGroups.entries['Cs-CsCsCsOs']
-    # print getAncestorsForNewNode(specificThermoDatabase, testGroup)
-    # print getDescendentsForNewNode(specificThermoDatabase, testGroup)
-    # print checkIdenticalNode(specificThermoDatabase, testGroup)
+    checkOverlappingChildren(specificThermoDatabase)
 
-    for name, entry in newGroups.entries.iteritems():
-        print name
-        print findPlaceInTree(specificThermoDatabase, entry)
+    # test1=specificThermoDatabase.entries["C"].data
+    # # print test1
+    # # testGroup=newGroups.entries['Cs-CsCsCsOs']
+    # # print getAncestorsForNewNode(specificThermoDatabase, testGroup)
+    # # print getDescendentsForNewNode(specificThermoDatabase, testGroup)
+    # # print checkIdenticalNode(specificThermoDatabase, testGroup)
+    #
+    # for name, entry in newGroups.entries.iteritems():
+    #     print name
+    #     print findPlaceInTree(specificThermoDatabase, entry)
