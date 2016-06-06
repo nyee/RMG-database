@@ -76,11 +76,11 @@ def findPlaceInTree(database, newNode):
     directParents=getAncestorsForNewNode(database, newNode, True)
 
     if len(directParents)>1:
-        print "There is more than one direct parent for", newNode.label, "which are", str(directParents)
+        # print "There is more than one direct parent for", newNode.label, "which are", str(directParents)
         return (None, identical, [])
     else:
         parent=directParents[0]
-        print "There is one parent for", newNode.label, "which is", parent.label
+        # print "There is one parent for", newNode.label, "which is", parent.label
 
     #Check direct children have "parent" as parent
     directChildren=getDescendentsForNewNode(database, newNode, True)
@@ -91,19 +91,44 @@ def findPlaceInTree(database, newNode):
 
     return (parent, identical, directChildren)
 
-def addThermoGroup(database, newNode, treeInfo):
+def addThermoGroup(database, newNode):
     """
     Returns a new database object with newNode added correctly into the database
 
     treeInfo is the tuple returned from findPlaceInTree
     """
-    (parent, identical, directChildren)=treeInfo
+    #make a deep copy to scan through: Because of the isomorphism checks, we scramble the adjLists
+    #so we scan through the copy, but actually edit the original
+    print newNode.label
+    databaseCopy=copy.deepcopy(database)
+    treeInfo=findPlaceInTree(databaseCopy, newNode)
 
-    if identical:
-        #need algorithm to check therm of existing node, then ask user which one to use
+    #define variables for the relatives in the original database
+    (parentCopy, identicalCopy, directChildrenCopy)=treeInfo
+    parent=database.entries[parentCopy.label]
+    if identicalCopy:
+        identical=database.entries[identicalCopy.label]
+    directChildren=[database.entries[child.label] for child in directChildrenCopy]
+
+    if not identicalCopy is None:
+        #if identical has pointer for Thermo, copy data and all metaData
+        if isinstance(identical.data, basestring):
+            print identical, "'s data was replaced"
+            identical.data=newNode.data
+            identical.reference = newNode.reference
+            identical._longDesc = newNode._longDesc
+            identical._shortDesc = newNode._shortDesc
+            identical._longDesc = newNode.longDesc
+            identical._shortDesc = newNode.shortDesc
+            identical.rank = newNode.rank
+            identical.referenceType = newNode.referenceType
+        else:
+            print identical, "and", newNode, "are identical and both have ThermoObjects."
+            #write code for user to decide which one to use
         pass
     else:
-        #add entry
+        #This is the case where the new node is completely new
+        print "Adding", newNode
         database.entries[newNode.label]=newNode
         #check this where does it go, end?
         parent.children.append(newNode)
@@ -114,22 +139,14 @@ def addThermoGroup(database, newNode, treeInfo):
             parent.children.remove(child)
 
         #check data of children
+        for child in directChildren:
+            if isinstance(child.data, basestring):
+                targetName=child.data.strip()
+                target=database.entries[targetName]
+                if database.getTreeDepth(target) < database.getTreeDepth(newNode):
+                    print "Changed thermo data for", child
+                    child.data=unicode(newNode.label)
 
-
-def checkOverlappingChildren(database):
-    #checks that overlapping are in order from most specific to least specific in terms of parent relationships:
-    number=0
-    for name, entry in database.entries.iteritems():
-        numberOfChildren=len(entry.children)
-        for index, upperChild in enumerate(entry.children):
-            if index==numberOfChildren-1:
-                break
-            for lowerChild in entry.children[index+1:]:
-                if database.matchNodeToChild(upperChild, lowerChild):
-                    number+=1
-                    # print upperChild.label, lowerChild.label, number
-                    if not upperChild.parent==lowerChild.parent:
-                        print upperChild.label, lowerChild.label, number
 
 
 
@@ -149,7 +166,9 @@ if __name__ == "__main__":
 
     specificThermoDatabase = database.thermo.groups[groupName]
 
-    checkOverlappingChildren(specificThermoDatabase)
+    for entryName, entry in newGroups.entries.iteritems():
+        addThermoGroup(specificThermoDatabase, entry)
+
 
     # test1=specificThermoDatabase.entries["C"].data
     # # print test1
