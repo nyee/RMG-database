@@ -13,7 +13,8 @@ from rmgpy import settings
 import re
 import copy
 import os.path
-from rmgpy.thermo import *
+from rmgpy.data.base import LogicOr
+from rmgpy.molecule import Group
 
 def getAncestorsForNewNode(database, newNode, direct=False):
     """
@@ -149,7 +150,7 @@ def findPlaceInTree(database, newNode):
     for child in directChildren:
         if not child.parent==parent:
             print "Child node", child.label, "(parent:", child.parent.label, ") is a child of the new node", \
-                newNode.label, "but not a child of its parent", parent.label
+                newNode.label, "but not the direct child of its parent", parent.label
             sideBySidePrint(re.split(r'\n', child.item.toAdjacencyList()),
                             re.split(r'\n', parent.item.toAdjacencyList()),
                             child.label, parent.label)
@@ -172,7 +173,7 @@ def replaceData(oldNode, newNode):
     oldNode.rank = newNode.rank
     oldNode.referenceType = newNode.referenceType
 
-def addThermoGroup(database, newNode):
+def addThermoGroup(database, newNode, rePoint=False):
     """
     Returns a new database object with newNode added correctly into the database
 
@@ -230,20 +231,78 @@ def addThermoGroup(database, newNode):
             parent.children.remove(child)
             child.parent=newNode
 
-        #check data of children
-        for child in directChildren:
-            if isinstance(child.data, basestring):
-                targetName=child.data.strip()
-                target=database.entries[targetName]
-                if database.getTreeDepth(target) < database.getTreeDepth(newNode):
-                    print "Changed thermo data for", child
-                    child.data=unicode(newNode.label)
+        if rePoint:
+            #check data of children
+            for child in directChildren:
+                if isinstance(child.data, basestring):
+                    targetName=child.data.strip()
+                    target=database.entries[targetName]
+                    if database.getTreeDepth(target) < database.getTreeDepth(newNode):
+                        print "Changed thermo data for", child
+                        child.data=unicode(newNode.label)
 
+def fixParents(database):
+    """
+    This function removes groups that fail childParentCheck and siblingCheck and then
+    adds them back into to the correct place
+    """
+    entriesRemoved={}
+    for nodeName, childNode in database.entries.iteritems():
+    #top nodes and product nodes don't have parents by definition, so they get an automatic pass:
+        if childNode in database.top: continue
+        parentNode = childNode.parent
+        # Check whether the node has proper parents unless it is the top reactant or product node
+        # The parent should be more general than the child
+        if not database.matchNodeToChild(parentNode, childNode):
+            entriesRemoved[nodeName]=childNode
+            database.removeGroup(childNode)
+            continue
 
+        #check that parentNodes which are LogicOr do not have an ancestor that is a Group
+        #If it does, then the childNode must also be a child of the ancestor
+        if isinstance(parentNode, LogicOr):
+            ancestorNode = childNode
+            while ancestorNode not in database.top and isinstance(ancestorNode, LogicOr):
+                ancestorNode = ancestorNode.parent
+            if isinstance(ancestorNode, Group):
+                if not database.matchNodeToChild(parentNode, childNode):
+                    entriesRemoved[nodeName]=childNode
+                    database.removeGroup(childNode)
+
+        #Now check siblings
+        for nodeName, node in database.entries.iteritems():
+            for index, child1 in enumerate(node.children):
+                for child2 in node.children[index+1:]:
+                    #Don't check a node against itself
+                    if child1 is child2: continue
+                    if database.matchNodeToChild(child1, child2):
+                        #get nodename (not same as label for rules)
+                        for key, value in database.entries.iteritems():
+                            if value==child2:
+                                entriesRemoved[key]=child2
+                                database.removeGroup(child2)
+                                break
+                    if database.matchNodeToChild(child2, child1):
+                        #get nodename (not same as label for rules)
+                        for key, value in database.entries.iteritems():
+                            if value==child1:
+                                entriesRemoved[key]=child1
+                                database.removeGroup(child1)
+                                break
+
+    if not entriesRemoved: return False
+    #Remove groups should have no parents or children to function properly
+    print entriesRemoved.keys()
+    for nodeName, node in entriesRemoved.iteritems():
+        node.parent=None
+        node.children=[]
+    #Add groups
+    for nodeName, node in entriesRemoved.iteritems():
+        addThermoGroup(database, node)
+    return True
 
 if __name__ == "__main__":
-    # path="/Users/Nate/Dropbox (MIT)/Research/RMG/thermo/oxy_species2.py"
-    path="/Users/Nate/code/RMG-database/input/CSThermoGroups/groups/group.py"
+    path="/Users/Nate/Dropbox (MIT)/Research/RMG/thermo/oxy_species2.py"
     newGroups = ThermoGroups()
     newGroups.local_context['ThermoData']=ThermoData
     newGroups.load(path)
@@ -251,23 +310,33 @@ if __name__ == "__main__":
     groupName='group'
 
     database = RMGDatabase()
-    database.load(settings['database.directory'], thermoLibraries = [], kineticsFamilies='none', kineticsDepositories='none', reactionLibraries=[])
+    database.load(settings['database.directory'], thermoLibraries = [], kineticsFamilies='all', kineticsDepositories=[], reactionLibraries=[])
 
-    specificThermoDatabase = database.thermo.groups[groupName]
-    savePath= os.path.join(settings['database.directory'], "thermo/groups/"+specificThermoDatabase.label+".py")
+    # specificGroupDatabase = database.thermo.groups[groupName]
+    # savePath= os.path.join(settings['database.directory'], "thermo/groups/"+specificGroupDatabase.label+".py")
+    #
+    
+    family= database.kinetics.families['H_Abstraction']
+    specificGroupDatabase=family.groups
+    savePath= os.path.join(settings['database.directory'], "kinetics/families/"+family.label)
+    modified=fixParents(specificGroupDatabase)
+    if modified:
+        family.save(savePath)
 
-    for entryName, entry in newGroups.entries.iteritems():
-        addThermoGroup(specificThermoDatabase, entry)
-        specificThermoDatabase.save(savePath)
 
 
-    # test1=specificThermoDatabase.entries["C"].data
+    # for entryName, entry in newGroups.entries.iteritems():
+    #     addThermoGroup(specificGroupDatabase, entry)
+    #     specificGroupDatabase.save(savePath)
+
+
+    # test1=specificGroupDatabase.entries["C"].data
     # # print test1
     # # testGroup=newGroups.entries['Cs-CsCsCsOs']
-    # # print getAncestorsForNewNode(specificThermoDatabase, testGroup)
-    # # print getDescendentsForNewNode(specificThermoDatabase, testGroup)
-    # # print checkIdenticalNode(specificThermoDatabase, testGroup)
+    # # print getAncestorsForNewNode(specificGroupDatabase, testGroup)
+    # # print getDescendentsForNewNode(specificGroupDatabase, testGroup)
+    # # print checkIdenticalNode(specificGroupDatabase, testGroup)
     #
     # for name, entry in newGroups.entries.iteritems():
     #     print name
-    #     print findPlaceInTree(specificThermoDatabase, entry)
+    #     print findPlaceInTree(specificGroupDatabase, entry)
