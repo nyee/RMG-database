@@ -269,26 +269,26 @@ def fixParents(database):
                     entriesRemoved[nodeName]=childNode
                     database.removeGroup(childNode)
 
-        #Now check siblings
-        for nodeName, node in database.entries.iteritems():
-            for index, child1 in enumerate(node.children):
-                for child2 in node.children[index+1:]:
-                    #Don't check a node against itself
-                    if child1 is child2: continue
-                    if database.matchNodeToChild(child1, child2):
-                        #get nodename (not same as label for rules)
-                        for key, value in database.entries.iteritems():
-                            if value==child2:
-                                entriesRemoved[key]=child2
-                                database.removeGroup(child2)
-                                break
-                    if database.matchNodeToChild(child2, child1):
-                        #get nodename (not same as label for rules)
-                        for key, value in database.entries.iteritems():
-                            if value==child1:
-                                entriesRemoved[key]=child1
-                                database.removeGroup(child1)
-                                break
+    #Now check siblings
+    for nodeName, node in database.entries.iteritems():
+        for index, child1 in enumerate(node.children):
+            for child2 in node.children[index+1:]:
+                #Don't check a node against itself
+                if child1 is child2: continue
+                if database.matchNodeToChild(child1, child2):
+                    #get nodename (not same as label for rules)
+                    for key, value in database.entries.iteritems():
+                        if value==child2:
+                            entriesRemoved[key]=child2
+                            database.removeGroup(child2)
+                            break
+                if database.matchNodeToChild(child2, child1):
+                    #get nodename (not same as label for rules)
+                    for key, value in database.entries.iteritems():
+                        if value==child1:
+                            entriesRemoved[key]=child1
+                            database.removeGroup(child1)
+                            break
 
     if not entriesRemoved: return False
     #Remove groups should have no parents or children to function properly
@@ -300,6 +300,24 @@ def fixParents(database):
     for nodeName, node in entriesRemoved.iteritems():
         addThermoGroup(database, node)
     return True
+
+def fixIdentical(database):
+    """
+    Removes identical nodes from a database
+    """
+    entriesCopy = copy.copy(database.entries)
+    for nodeName, nodeGroup in database.entries.iteritems():
+        del entriesCopy[nodeName]
+        for nodeNameOther, nodeGroupOther in entriesCopy.iteritems():
+            # try:
+            if database.matchNodeToNode(nodeGroup,nodeGroupOther):
+                print nodeName, "will be removed because it is the same as", nodeNameOther
+                database.removeGroup(nodeGroup)
+                break
+            # except:
+            #     print "something went wrong"
+            #     print nodeName
+            #     print nodeNameOther
 
 if __name__ == "__main__":
     path="/Users/Nate/Dropbox (MIT)/Research/RMG/thermo/oxy_species2.py"
@@ -316,12 +334,13 @@ if __name__ == "__main__":
     # savePath= os.path.join(settings['database.directory'], "thermo/groups/"+specificGroupDatabase.label+".py")
     #
     
-    family= database.kinetics.families['H_Abstraction']
+    family= database.kinetics.families['Substitution_O']
     specificGroupDatabase=family.groups
     savePath= os.path.join(settings['database.directory'], "kinetics/families/"+family.label)
-    modified=fixParents(specificGroupDatabase)
-    if modified:
-        family.save(savePath)
+    # modified=fixParents(specificGroupDatabase)
+    # if modified:
+    #     family.save(savePath)
+    fixIdentical(specificGroupDatabase)
 
 
 
