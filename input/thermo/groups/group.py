@@ -449,13 +449,11 @@ u"""
 
 entry(
     index = 1821,
-    label = "Cb-CbCbN3s",
+    label = "Cb-N3s",
     group = 
 """
-1 * Cd  u0 {2,S} {3,D} {4,S}
-2   Cb  u0 {1,S}
-3   Cb  u0 {1,D}
-4   N3s u0 {1,S}
+1 * Cb  u0 {2,S}
+2   N3s u0 {1,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -44019,10 +44017,11 @@ L1: R
             L4: Cbf-CbCbCbf
             L4: Cbf-CbCbfCbf
             L4: Cbf-CbfCbfCbf
-        L3: Cb
+        L3: Cb       
             L4: Cb-H
             L4: Cb-Os
             L4: Cb-Ss
+            L4: Cb-N3s 
             L4: Cb-C
                 L5: Cb-Cs
                 L5: Cb-Cds
@@ -44036,7 +44035,6 @@ L1: R
                 L5: Cb-Ct
                     L6: Cb-(CtN3t)
                 L5: Cb-Cb
-                    L6: Cb-CbCbN3s
                 L5: Cb-C=S
         L3: Ct
             L4: Ct-CtN3s
