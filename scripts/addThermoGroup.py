@@ -34,7 +34,29 @@ def getAncestorsForNewNode(database, newNode, direct=False):
         for index, depth in enumerate(depthAncestorList):
             if depth==maxDepth:
                 directParents.append(ancestorList[index])
+
+        #test ancestorList only has one "branch"
+        for parent in directParents:
+            newAncestor = parent
+            if newAncestor in ancestorList:
+                ancestorList.remove(newAncestor)
+            while newAncestor.parent:
+                newAncestor = newAncestor.parent
+                if newAncestor in ancestorList:
+                    ancestorList.remove(newAncestor)
+
+        #If things left over, then we have more than one potential parent
+        if ancestorList:
+            depthAncestorList=[database.getTreeDepth(x) for x in ancestorList]
+            maxDepth=max(depthAncestorList)
+            newDirectParents=[]
+            for index, depth in enumerate(depthAncestorList):
+                if depth==maxDepth:
+                    newDirectParents.append(ancestorList[index])
+            raise Exception("More than one parent: {0} and {1}".format(directParents, newDirectParents))
         ancestorList=directParents
+
+
 
     return ancestorList
 
@@ -220,11 +242,18 @@ def addThermoGroup(database, newNode, rePoint=False):
     else:
         #This is the case where the new node is completely new
         print "Adding", newNode
+        sideBySidePrint()
         database.entries[newNode.label]=newNode
         #check this where does it go, end?
+        sideBySidePrint(re.split(r'\n', newNode.item.toAdjacencyList()),
+                re.split(r'\n', parent.item.toAdjacencyList()),
+                newNode.label, parent.label)
+        print "With children {0}".format([x.label for x in directChildren])
+        print "With siblings {0}".format([x.label for x in parent.children])
         newNode.parent=parent
         parent.children.append(newNode)
         newNode.children=directChildren
+        choice=raw_input()
 
         #remove children from parent
         for child in directChildren:
