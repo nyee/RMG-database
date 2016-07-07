@@ -36,37 +36,33 @@ def getAncestorsForNewNode(database, newNode, direct=False):
             ancestorList.append(entry)
 
     if direct:
+        directParents = []
         #Makes a list of each ancestors depth in the tree
-        depthAncestorList=[database.getTreeDepth(x) for x in ancestorList]
-        maxDepth=max(depthAncestorList)
-        directParents=[]
-        for index, depth in enumerate(depthAncestorList):
-            if depth==maxDepth:
-                directParents.append(ancestorList[index])
-
-        #test ancestorList only has one "branch"
-        for parent in directParents:
-            newAncestor = parent
-            if newAncestor in ancestorList:
-                ancestorList.remove(newAncestor)
-            while newAncestor.parent:
-                newAncestor = newAncestor.parent
-                if newAncestor in ancestorList:
-                    ancestorList.remove(newAncestor)
-
-        #If things left over, then we have more than one potential parent
-        if ancestorList:
+        while ancestorList:
             depthAncestorList=[database.getTreeDepth(x) for x in ancestorList]
             maxDepth=max(depthAncestorList)
-            newDirectParents=[]
             for index, depth in enumerate(depthAncestorList):
                 if depth==maxDepth:
-                    newDirectParents.append(ancestorList[index])
-            raise Exception("More than one parent: {0} and {1}".format(directParents, newDirectParents))
-        ancestorList=directParents
+                    directParents.append(ancestorList[index])
 
+            #test ancestorList only has one "branch"
+            for parent in directParents:
+                newAncestor = parent
+                if newAncestor in ancestorList:
+                    ancestorList.remove(newAncestor)
+                while newAncestor.parent:
+                    newAncestor = newAncestor.parent
+                    if newAncestor in ancestorList:
+                        ancestorList.remove(newAncestor)
 
+        #If things left over, then we have more than one potential parent
 
+        if len(directParents) > 1:
+            print "More than one parent possible for", newNode.label, "Picking first found in pre-order "
+            #write code for user to decide which one to use
+            match = database.preOrderSearch(directParents, database.top[0])
+            ancestorList=[match]
+        else: ancestorList= directParents
     return ancestorList
 
 def getDescendentsForNewNode(database, newNode, parent, direct=False):
@@ -176,15 +172,7 @@ def findPlaceInTree(database, newNode):
 
     #check for overlapping parents
     directParents=getAncestorsForNewNode(database, newNode, True)
-
-    if len(directParents)>1:
-        sideBySidePrint(re.split(r'\n', directParents[0].item.toAdjacencyList()),
-                        re.split(r'\n', directParents[1].item.toAdjacencyList()),
-                        directParents[0].label, directParents[1].label)
-        raise Exception("There is more than one direct parent for", newNode.label, "which are", str(directParents))
-    else:
-        parent=directParents[0]
-        # print "There is one parent for", newNode.label, "which is", parent.label
+    parent = directParents[0]
 
     #Check direct children have "parent" as parent
     directChildren=getDescendentsForNewNode(database, newNode, parent, True)
@@ -265,6 +253,9 @@ def addThermoGroup(database, newNode, rePoint=False):
             print "type 0 to keep old entry, 1 to replace with new entry"
             #write code for user to decide which one to use
             choice=raw_input()
+            while (not choice == '1') and (not choice == '0'):
+                print "type 0 to keep old entry, 1 to replace with new entry"
+                choice = raw_input()
             if choice=='0':
                 print identical, "data was left"
             elif choice=='1':
@@ -379,12 +370,14 @@ def fixIdentical(database):
             #     print nodeNameOther
 
 if __name__ == "__main__":
-    path="/Users/Nate/Dropbox (MIT)/Research/RMG/thermo/oxygenates/oxy_species2.py"
+    # path="/Users/Nate/Dropbox (MIT)/Research/RMG/thermo/oxygenates/oxy_species2.py"
+    path="/Users/Nate/Dropbox (MIT)/Research/RMG/thermo/oxygenates/HBI_2.py"
     newGroups = ThermoGroups()
     newGroups.local_context['ThermoData']=ThermoData
     newGroups.load(path)
     outputPath="/Users/Nate/Dropbox (MIT)/Research/RMG/thermo/parents.txt"
     groupName='group'
+    groupName = 'radical'
 
     database = RMGDatabase()
     database.load(settings['database.directory'], thermoLibraries = [], kineticsFamilies='all', kineticsDepositories=[], reactionLibraries=[])
@@ -403,21 +396,3 @@ if __name__ == "__main__":
     # if modified:
     #     family.save(savePath)
     # fixIdentical(specificGroupDatabase)
-
-
-
-    # for entryName, entry in newGroups.entries.iteritems():
-    #     addThermoGroup(specificGroupDatabase, entry)
-    #     specificGroupDatabase.save(savePath)
-
-
-    # test1=specificGroupDatabase.entries["C"].data
-    # # print test1
-    # # testGroup=newGroups.entries['Cs-CsCsCsOs']
-    # # print getAncestorsForNewNode(specificGroupDatabase, testGroup)
-    # # print getDescendentsForNewNode(specificGroupDatabase, testGroup)
-    # # print checkIdenticalNode(specificGroupDatabase, testGroup)
-    #
-    # for name, entry in newGroups.entries.iteritems():
-    #     print name
-    #     print findPlaceInTree(specificGroupDatabase, entry)
