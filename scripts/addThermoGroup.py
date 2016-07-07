@@ -62,7 +62,7 @@ def getAncestorsForNewNode(database, newNode, direct=False):
             for index, depth in enumerate(depthAncestorList):
                 if depth==maxDepth:
                     newDirectParents.append(ancestorList[index])
-            raise Exception("More than one parent: {0} and {1}".format(directParents, newDirectParents))
+            raise Exception("More than one branch: {0} and {1}".format(directParents, newDirectParents))
         ancestorList=directParents
 
 
@@ -178,10 +178,31 @@ def findPlaceInTree(database, newNode):
     directParents=getAncestorsForNewNode(database, newNode, True)
 
     if len(directParents)>1:
-        sideBySidePrint(re.split(r'\n', directParents[0].item.toAdjacencyList()),
-                        re.split(r'\n', directParents[1].item.toAdjacencyList()),
-                        directParents[0].label, directParents[1].label)
-        raise Exception("There is more than one direct parent for", newNode.label, "which are", str(directParents))
+
+        #current shitty workaround if only two and they have the same parent
+        if len(directParents) ==2:
+            parent1 = directParents[0]
+            parent2 = directParents[1]
+
+            if parent1.parent == parent2.parent:
+                for potentialParent in parent1.parent.children:
+                    if potentialParent is parent1:
+                        parent = parent1
+                        print "There were two potential parents {0} and {1}, but we chose {0} based on order".format(parent1.label, parent2.label)
+                        break
+                    elif potentialParent is parent2:
+                        parent = parent2
+                        print "There were two potential parents {0} and {1}, but we chose {0} based on order".format(parent2.label, parent1.label)
+                        break
+
+            else:
+                raise Exception("There is more than one direct parent for", newNode.label, "which are", str(directParents))
+
+        else:
+            sideBySidePrint(re.split(r'\n', directParents[0].item.toAdjacencyList()),
+                            re.split(r'\n', directParents[1].item.toAdjacencyList()),
+                            directParents[0].label, directParents[1].label)
+            raise Exception("There is more than one direct parent for", newNode.label, "which are", str(directParents))
     else:
         parent=directParents[0]
         # print "There is one parent for", newNode.label, "which is", parent.label
@@ -379,12 +400,14 @@ def fixIdentical(database):
             #     print nodeNameOther
 
 if __name__ == "__main__":
-    path="/Users/Nate/Dropbox (MIT)/Research/RMG/thermo/oxygenates/oxy_species2.py"
+    # path="/Users/Nate/Dropbox (MIT)/Research/RMG/thermo/oxygenates/oxy_species2.py"
+    path="/Users/Nate/Dropbox (MIT)/Research/RMG/thermo/oxygenates/HBI_2.py"
     newGroups = ThermoGroups()
     newGroups.local_context['ThermoData']=ThermoData
     newGroups.load(path)
     outputPath="/Users/Nate/Dropbox (MIT)/Research/RMG/thermo/parents.txt"
     groupName='group'
+    groupName = 'radical'
 
     database = RMGDatabase()
     database.load(settings['database.directory'], thermoLibraries = [], kineticsFamilies='all', kineticsDepositories=[], reactionLibraries=[])
