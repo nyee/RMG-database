@@ -15,6 +15,15 @@ import copy
 import os.path
 from rmgpy.data.base import LogicOr
 from rmgpy.molecule import Group
+from numpy import round
+
+dataToCheck=["H298.value_si",
+             "H298.uncertainty_si",
+             "S298.value_si",
+             "S298.uncertainty_si",
+             "Tdata.value_si",
+             "Cpdata.value_si",
+             "Cpdata.uncertainty_si"]
 
 def getAncestorsForNewNode(database, newNode, direct=False):
     """
@@ -60,12 +69,14 @@ def getAncestorsForNewNode(database, newNode, direct=False):
 
     return ancestorList
 
-def getDescendentsForNewNode(database, newNode, direct=False):
+def getDescendentsForNewNode(database, newNode, parent, direct=False):
     """
     Returns a list of all nodes currently in database that are childen for newNode
+
+    parent is the parent of the newNode
     """
     descendantsList=[]
-    for name, entry in database.entries.iteritems():
+    for entry in parent.children:
         if database.matchNodeToChild(newNode, entry):
             descendantsList.append(entry)
 
@@ -87,6 +98,28 @@ def identicalGroup(database, newNode):
             return entry
     else: return None
 
+def getDataForComparison(oldNode, newNode):
+    """
+    returns oldData, newData, two tuples with values from the two nodes
+    """
+
+    oldData = {}
+    newData = {}
+
+    data1=[]
+    data2=[]
+    for property in dataToCheck:
+        oldData[property] = []
+        newData[property] = []
+        if isinstance(reduce(getattr, property.split("."), oldNode.data), float):
+            oldData[property].append(reduce(getattr, property.split("."), oldNode.data))
+            newData[property].append(reduce(getattr, property.split("."), newNode.data))
+        else:
+            oldData[property].extend(reduce(getattr, property.split("."), oldNode.data))
+            newData[property].extend(reduce(getattr, property.split("."), newNode.data))
+
+    return (oldData, newData)
+
 def identicalData(oldNode, newNode):
     """
     Returns true if two nodes have exactly the same numbers for ThermoData
@@ -96,26 +129,12 @@ def identicalData(oldNode, newNode):
         return True
 
     if isinstance(oldNode.data, ThermoData) and isinstance(newNode.data, ThermoData):
-        dataToCheck=["H298.value_si",
-                     "H298.uncertainty_si",
-                     "S298.value_si",
-                     "S298.uncertainty_si",
-                     "Tdata.value_si",
-                     "Cpdata.value_si",
-                     "Cpdata.uncertainty_si"]
-        data1=[]
-        data2=[]
-        for data in dataToCheck:
-            if isinstance(getattr(oldNode.data, data)) is float:
-                data1.append(getattr(oldNode.data, data))
-                data2.append(getattr(newNode.data, data))
-            else:
-                data1.extend(getattr(oldNode.data, data))
-                data2.extend(getattr(newNode.data, data))
+        (oldData, newData) = getDataForComparison(oldNode, newNode)
 
-        for check1, check2 in zip(data1, data2):
-            if not check1==check2:
-                return False
+        for property in oldData.keys():
+            for index in range(len(oldData[property])):
+                if not oldData[property][index]==newData[property][index]:
+                    return False
         else: return True
         
     else: return False
@@ -136,16 +155,16 @@ def sideBySidePrint(list1, list2, heading1=None, heading2=None):
             newlist1.append('')
 
     if heading1:
-        print '{:<40}'.format(heading1), '{:<40}'.format(heading2)
+        print '{:<80}'.format(heading1), '{:<80}'.format(heading2)
     for line1, line2, in zip(newlist1, newlist2):
-        if len(str(line1))>37 or len(str(line2))>37:
+        if len(str(line1))>77 or len(str(line2))>77:
             str1=str(line1)
             str2=str(line2)
-            chunks1, chunks2, chunk_size = len(str1), len(str2), 37
+            chunks1, chunks2, chunk_size = len(str1), len(str2), 77
             newList1=[str1[i:i+chunk_size] for i in range(0, chunks1, chunk_size)]
             newList2=[str2[i:i+chunk_size] for i in range(0, chunks2, chunk_size)]
             sideBySidePrint(newList1, newList2)
-        else: print '{:<40}'.format(line1), '{:<40}'.format(line2)
+        else: print '{:<80}'.format(line1), '{:<80}'.format(line2)
 
 def findPlaceInTree(database, newNode):
     """
@@ -168,7 +187,7 @@ def findPlaceInTree(database, newNode):
         # print "There is one parent for", newNode.label, "which is", parent.label
 
     #Check direct children have "parent" as parent
-    directChildren=getDescendentsForNewNode(database, newNode, True)
+    directChildren=getDescendentsForNewNode(database, newNode, parent, True)
     for child in directChildren:
         if not child.parent==parent:
             print "Child node", child.label, "(parent:", child.parent.label, ") is a child of the new node", \
@@ -200,16 +219,23 @@ def addThermoGroup(database, newNode, rePoint=False):
     Returns a new database object with newNode added correctly into the database
 
     treeInfo is the tuple returned from findPlaceInTree
+
+    rePoint is whether we want the children of the newNode to point toward the newly added group (only if they
+    were originally basestrings already)
     """
 
-    dataInfo=["data", "shortDesc", "reference", "rank"]
+    dataInfo=["shortDesc", "reference", "rank"]
 
+    print newNode.label
+
+    if newNode.item.standardizeGroup():
+        print newNode.label, "has been modified by standardizeGroup:"
+        print re.split(r'\n', newNode.item.toAdjacencyList())
     #make a deep copy to scan through: Because of the isomorphism checks, we scramble the adjLists
     #so we scan through the copy, but actually edit the original
-    print newNode.label
     # databaseCopy=copy.deepcopy(database)
-    databaseCopy=database
-    treeInfo=findPlaceInTree(databaseCopy, newNode)
+    # databaseCopy=database
+    treeInfo=findPlaceInTree(database, newNode)
 
     #define variables for the relatives in the original database
     (parentCopy, identicalCopy, directChildrenCopy)=treeInfo
@@ -218,19 +244,24 @@ def addThermoGroup(database, newNode, rePoint=False):
         identical=database.entries[identicalCopy.label]
     directChildren=[database.entries[child.label] for child in directChildrenCopy]
 
-    if not identicalCopy is None:
+    if identicalCopy:
         #if identical has pointer for Thermo, copy data and all metaData
         if isinstance(identical.data, basestring):
             replaceData(identical, newNode)
-        elif identical.label == newNode.label and identicalData(identical, newNode):
+            print identical.label, "had pointer data replaced by data from", newNode.label
+        elif identicalData(identical, newNode):
             print newNode.label, "already added!"
         else:
-
             print identical, "and", newNode, "are identical and both have ThermoObjects."
+            (oldData, newData) = getDataForComparison(identical, newNode)
+
+            sideBySidePrint([property + ': ' + str(round(oldData[property], 2)) for property in dataToCheck],
+                [property + ': ' + str(round(newData[property],2)) for property in dataToCheck],
+                heading1=identical.label + "'s data",
+                heading2=newNode.label + "'s data")
+
             sideBySidePrint([attr+": "+ str(getattr(identical, attr)) for attr in dataInfo],
-                            [attr+": "+ str(getattr(newNode, attr)) for attr in dataInfo],
-                            heading1=identical.label + "'s data",
-                            heading2=newNode.label + "'s data")
+                            [attr+": "+ str(getattr(newNode, attr)) for attr in dataInfo])
             print "type 0 to keep old entry, 1 to replace with new entry"
             #write code for user to decide which one to use
             choice=raw_input()
@@ -241,8 +272,7 @@ def addThermoGroup(database, newNode, rePoint=False):
                 replaceData(identical, newNode)
     else:
         #This is the case where the new node is completely new
-        print "Adding", newNode
-        sideBySidePrint()
+        print "Adding", newNode.label, "with parent", parent.label
         database.entries[newNode.label]=newNode
         #check this where does it go, end?
         sideBySidePrint(re.split(r'\n', newNode.item.toAdjacencyList()),
@@ -349,7 +379,7 @@ def fixIdentical(database):
             #     print nodeNameOther
 
 if __name__ == "__main__":
-    path="/Users/Nate/Dropbox (MIT)/Research/RMG/thermo/oxy_species2.py"
+    path="/Users/Nate/Dropbox (MIT)/Research/RMG/thermo/oxygenates/oxy_species2.py"
     newGroups = ThermoGroups()
     newGroups.local_context['ThermoData']=ThermoData
     newGroups.load(path)
@@ -359,17 +389,20 @@ if __name__ == "__main__":
     database = RMGDatabase()
     database.load(settings['database.directory'], thermoLibraries = [], kineticsFamilies='all', kineticsDepositories=[], reactionLibraries=[])
 
-    # specificGroupDatabase = database.thermo.groups[groupName]
-    # savePath= os.path.join(settings['database.directory'], "thermo/groups/"+specificGroupDatabase.label+".py")
-    #
+    specificGroupDatabase = database.thermo.groups[groupName]
+    savePath= os.path.join(settings['database.directory'], "thermo/groups/"+specificGroupDatabase.label+".py")
+    for entryName, newNode in newGroups.entries.iteritems():
+        addThermoGroup(specificGroupDatabase,newNode, True)
+        specificGroupDatabase.save(savePath)
+
     
-    family= database.kinetics.families['Substitution_O']
-    specificGroupDatabase=family.groups
-    savePath= os.path.join(settings['database.directory'], "kinetics/families/"+family.label)
+    # family= database.kinetics.families['Substitution_O']
+    # specificGroupDatabase=family.groups
+    # savePath= os.path.join(settings['database.directory'], "kinetics/families/"+family.label)
     # modified=fixParents(specificGroupDatabase)
     # if modified:
     #     family.save(savePath)
-    fixIdentical(specificGroupDatabase)
+    # fixIdentical(specificGroupDatabase)
 
 
 
