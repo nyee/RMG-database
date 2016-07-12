@@ -31,11 +31,11 @@ entry(
     label = "s1_3_3",
     group = 
 """
-1   R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-2 * R!H u0 {1,[S,D,T,B]} {3,[S,D,T,B]}
-3   R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
-4   R!H u0 {1,[S,D,T,B]} {5,[S,D,T,B]}
-5   R!H u0 {1,[S,D,T,B]} {4,[S,D,T,B]}
+1   C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+2 * C u0 {1,[S,D,T,B]} {3,[S,D,T,B]}
+3   C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+4   C u0 {1,[S,D,T,B]} {5,[S,D,T,B]}
+5   C u0 {1,[S,D,T,B]} {4,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -50,22 +50,22 @@ entry(
     label = "s1_3_3_ane",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2 * R!H u0 {1,S} {3,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {5,S}
-5   R!H u0 {1,S} {4,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 * Cs u0 {1,S} {3,S}
+3   Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {5,S}
+5   Cs u0 {1,S} {4,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-22.0868,-24.4911,-25.6002,-25.9787,-24.2912,-21.2391,-15.3261],'J/(mol*K)'),
+        Cpdata = ([-22.0869,-24.4911,-25.6002,-25.9787,-24.2912,-21.2391,-15.3261],'J/(mol*K)'),
         H298 = (251.424,'kJ/mol'),
         S298 = (270.513,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_3_3_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_3_3_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -74,11 +74,11 @@ entry(
     label = "s1_3_3_ene",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2 * R!H u0 {1,S} {3,D}
-3   R!H u0 {1,S} {2,D}
-4   R!H u0 {1,S} {5,S}
-5   R!H u0 {1,S} {4,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 * Cd u0 {1,S} {3,D}
+3   Cd u0 {1,S} {2,D}
+4   Cs u0 {1,S} {5,S}
+5   Cs u0 {1,S} {4,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -89,7 +89,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_3_3_ene from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_3_3_ene from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -98,12 +98,12 @@ entry(
     label = "s1_3_4",
     group = 
 """
-1 * R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-2   R!H u0 {1,[S,D,T,B]} {3,[S,D,T,B]}
-3   R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
-4   R!H u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
-5   R!H u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
-6   R!H u0 {4,[S,D,T,B]} {5,[S,D,T,B]}
+1 * C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+2   C u0 {1,[S,D,T,B]} {3,[S,D,T,B]}
+3   C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+4   C u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
+5   C u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
+6   C u0 {4,[S,D,T,B]} {5,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -118,12 +118,12 @@ entry(
     label = "s1_3_4_ane",
     group = 
 """
-1 * R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {3,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {6,S}
-5   R!H u0 {1,S} {6,S}
-6   R!H u0 {4,S} {5,S}
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs u0 {1,S} {3,S}
+3   Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {6,S}
+5   Cs u0 {1,S} {6,S}
+6   Cs u0 {4,S} {5,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -134,7 +134,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_3_4_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_3_4_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -143,12 +143,12 @@ entry(
     label = "s1_3_4_ene",
     group = 
 """
-1 * R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {3,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {6,D}
-5   R!H u0 {1,S} {6,S}
-6   R!H u0 {4,D} {5,S}
+1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs u0 {1,S} {3,S}
+3   Cs u0 {1,S} {2,S}
+4   Cd u0 {1,S} {6,D}
+5   Cs u0 {1,S} {6,S}
+6   Cd u0 {4,D} {5,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -159,7 +159,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_3_4_ene from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_3_4_ene from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -168,13 +168,13 @@ entry(
     label = "s1_3_5",
     group = 
 """
-1   R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-2   R!H u0 {1,[S,D,T,B]} {3,[S,D,T,B]}
-3   R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
-4   R!H u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
-5   R!H u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
-6 * R!H u0 {4,[S,D,T,B]} {7,[S,D,T,B]}
-7   R!H u0 {5,[S,D,T,B]} {6,[S,D,T,B]}
+1   C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+2   C u0 {1,[S,D,T,B]} {3,[S,D,T,B]}
+3   C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+4   C u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
+5   C u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
+6 * C u0 {4,[S,D,T,B]} {7,[S,D,T,B]}
+7   C u0 {5,[S,D,T,B]} {6,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -189,13 +189,13 @@ entry(
     label = "s1_3_5_ane",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {3,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {6,S}
-5   R!H u0 {1,S} {7,S}
-6 * R!H u0 {4,S} {7,S}
-7   R!H u0 {5,S} {6,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs u0 {1,S} {3,S}
+3   Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {6,S}
+5   Cs u0 {1,S} {7,S}
+6 * Cs u0 {4,S} {7,S}
+7   Cs u0 {5,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -206,7 +206,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_3_5_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_3_5_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -227,13 +227,13 @@ entry(
     label = "s1_3_5_ene_1",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {3,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {7,S}
-5   R!H u0 {1,S} {6,D}
-6 * R!H u0 {5,D} {7,S}
-7   R!H u0 {4,S} {6,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs u0 {1,S} {3,S}
+3   Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {7,S}
+5   Cd u0 {1,S} {6,D}
+6 * Cd u0 {5,D} {7,S}
+7   Cs u0 {4,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -244,7 +244,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_3_5_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_3_5_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -253,13 +253,13 @@ entry(
     label = "s1_3_5_ene_2",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {3,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {7,S}
-5   R!H u0 {1,S} {6,S}
-6 * R!H u0 {5,S} {7,D}
-7   R!H u0 {4,S} {6,D}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs u0 {1,S} {3,S}
+3   Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {7,S}
+5   Cs u0 {1,S} {6,S}
+6 * Cd u0 {5,S} {7,D}
+7   Cd u0 {4,S} {6,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -270,7 +270,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_3_5_ene_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_3_5_ene_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -291,13 +291,13 @@ entry(
     label = "s1_3_5_diene_1_3",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {3,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {7,D}
-5   R!H u0 {1,S} {6,D}
-6 * R!H u0 {5,D} {7,S}
-7   R!H u0 {4,D} {6,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs u0 {1,S} {3,S}
+3   Cs u0 {1,S} {2,S}
+4   Cd u0 {1,S} {7,D}
+5   Cd u0 {1,S} {6,D}
+6 * Cd u0 {5,D} {7,S}
+7   Cd u0 {4,D} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -308,7 +308,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_3_5_diene_1_3 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_3_5_diene_1_3 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -317,14 +317,14 @@ entry(
     label = "s1_3_6",
     group = 
 """
-1   R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-2   R!H u0 {1,[S,D,T,B]} {3,[S,D,T,B]}
-3   R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
-4   R!H u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
-5   R!H u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
-6   R!H u0 {4,[S,D,T,B]} {8,[S,D,T,B]}
-7   R!H u0 {5,[S,D,T,B]} {8,[S,D,T,B]}
-8 * R!H u0 {6,[S,D,T,B]} {7,[S,D,T,B]}
+1   C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+2   C u0 {1,[S,D,T,B]} {3,[S,D,T,B]}
+3   C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+4   C u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
+5   C u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
+6   C u0 {4,[S,D,T,B]} {8,[S,D,T,B]}
+7   C u0 {5,[S,D,T,B]} {8,[S,D,T,B]}
+8 * C u0 {6,[S,D,T,B]} {7,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -339,14 +339,14 @@ entry(
     label = "s1_3_6_ane",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {3,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {6,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {4,S} {8,S}
-7   R!H u0 {5,S} {8,S}
-8 * R!H u0 {6,S} {7,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs u0 {1,S} {3,S}
+3   Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {6,S}
+5   Cs u0 {1,S} {7,S}
+6   Cs u0 {4,S} {8,S}
+7   Cs u0 {5,S} {8,S}
+8 * Cs u0 {6,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -357,7 +357,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_3_6_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_3_6_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -378,14 +378,14 @@ entry(
     label = "s1_3_6_ene_1",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {3,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {6,S}
-5   R!H u0 {1,S} {7,D}
-6   R!H u0 {4,S} {8,S}
-7   R!H u0 {5,D} {8,S}
-8 * R!H u0 {6,S} {7,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs u0 {1,S} {3,S}
+3   Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {6,S}
+5   Cd u0 {1,S} {7,D}
+6   Cs u0 {4,S} {8,S}
+7   Cd u0 {5,D} {8,S}
+8 * Cs u0 {6,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -396,7 +396,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_3_6_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_3_6_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -405,14 +405,14 @@ entry(
     label = "s1_3_6_ene_2",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {3,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {6,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {4,S} {8,D}
-7   R!H u0 {5,S} {8,S}
-8 * R!H u0 {6,D} {7,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs u0 {1,S} {3,S}
+3   Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {6,S}
+5   Cs u0 {1,S} {7,S}
+6   Cd u0 {4,S} {8,D}
+7   Cs u0 {5,S} {8,S}
+8 * Cd u0 {6,D} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -423,7 +423,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_3_6_ene_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_3_6_ene_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -444,14 +444,14 @@ entry(
     label = "s1_3_6_diene_1_4",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {3,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {7,D}
-5   R!H u0 {1,S} {6,D}
-6   R!H u0 {5,D} {8,S}
-7   R!H u0 {4,D} {8,S}
-8 * R!H u0 {6,S} {7,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs u0 {1,S} {3,S}
+3   Cs u0 {1,S} {2,S}
+4   Cd u0 {1,S} {7,D}
+5   Cd u0 {1,S} {6,D}
+6   Cd u0 {5,D} {8,S}
+7   Cd u0 {4,D} {8,S}
+8 * Cs u0 {6,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -462,7 +462,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_3_6_diene_1_4 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_3_6_diene_1_4 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -471,14 +471,14 @@ entry(
     label = "s1_3_6_diene_1_3",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {3,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {7,S}
-5   R!H u0 {1,S} {6,D}
-6   R!H u0 {5,D} {8,S}
-7   R!H u0 {4,S} {8,D}
-8 * R!H u0 {6,S} {7,D}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs u0 {1,S} {3,S}
+3   Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {7,S}
+5   Cd u0 {1,S} {6,D}
+6   Cd u0 {5,D} {8,S}
+7   Cd u0 {4,S} {8,D}
+8 * Cd u0 {6,S} {7,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -489,7 +489,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_3_6_diene_1_3 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_3_6_diene_1_3 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -498,13 +498,13 @@ entry(
     label = "s1_4_4",
     group = 
 """
-1   R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-2 * R!H u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
-3   R!H u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
-4   R!H u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
-5   R!H u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
-6   R!H u0 {4,[S,D,T,B]} {5,[S,D,T,B]}
-7   R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]}
+1   C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+2 * C u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
+3   C u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
+4   C u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
+5   C u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
+6   C u0 {4,[S,D,T,B]} {5,[S,D,T,B]}
+7   C u0 {2,[S,D,T,B]} {3,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -519,24 +519,24 @@ entry(
     label = "s1_4_4_ane",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2 * R!H u0 {1,S} {7,S}
-3   R!H u0 {1,S} {7,S}
-4   R!H u0 {1,S} {6,S}
-5   R!H u0 {1,S} {6,S}
-6   R!H u0 {4,S} {5,S}
-7   R!H u0 {2,S} {3,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 * Cs u0 {1,S} {7,S}
+3   Cs u0 {1,S} {7,S}
+4   Cs u0 {1,S} {6,S}
+5   Cs u0 {1,S} {6,S}
+6   Cs u0 {4,S} {5,S}
+7   Cs u0 {2,S} {3,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-34.4141,-34.9857,-33.9212,-31.7785,-25.403,-19.1222,-9.61308],'J/(mol*K)'),
+        Cpdata = ([-34.4131,-34.9857,-33.9212,-31.7785,-25.403,-19.1222,-9.61308],'J/(mol*K)'),
         H298 = (232.497,'kJ/mol'),
         S298 = (237.342,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_4_4_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_4_4_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -557,13 +557,13 @@ entry(
     label = "s1_4_4_ene_1",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2 * R!H u0 {1,S} {7,S}
-3   R!H u0 {1,S} {6,S}
-4   R!H u0 {1,S} {7,D}
-5   R!H u0 {1,S} {6,S}
-6   R!H u0 {3,S} {5,S}
-7   R!H u0 {2,S} {4,D}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 * Cs u0 {1,S} {7,S}
+3   Cs u0 {1,S} {6,S}
+4   Cd u0 {1,S} {7,D}
+5   Cs u0 {1,S} {6,S}
+6   Cs u0 {3,S} {5,S}
+7   Cd u0 {2,S} {4,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -574,7 +574,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_4_4_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_4_4_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -595,13 +595,13 @@ entry(
     label = "s1_4_4_diene_1_5",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2 * R!H u0 {1,S} {7,D}
-3   R!H u0 {1,S} {6,S}
-4   R!H u0 {1,S} {7,S}
-5   R!H u0 {1,S} {6,D}
-6   R!H u0 {3,S} {5,D}
-7   R!H u0 {2,D} {4,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 * Cd u0 {1,S} {7,D}
+3   Cs u0 {1,S} {6,S}
+4   Cs u0 {1,S} {7,S}
+5   Cd u0 {1,S} {6,D}
+6   Cd u0 {3,S} {5,D}
+7   Cd u0 {2,D} {4,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -612,7 +612,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_4_4_diene_1_5 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_4_4_diene_1_5 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -621,14 +621,14 @@ entry(
     label = "s1_4_5",
     group = 
 """
-1   R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-2 * R!H u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
-3   R!H u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
-4   R!H u0 {1,[S,D,T,B]} {8,[S,D,T,B]}
-5   R!H u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
-6   R!H u0 {3,[S,D,T,B]} {5,[S,D,T,B]}
-7   R!H u0 {2,[S,D,T,B]} {8,[S,D,T,B]}
-8   R!H u0 {4,[S,D,T,B]} {7,[S,D,T,B]}
+1   C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+2 * C u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
+3   C u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
+4   C u0 {1,[S,D,T,B]} {8,[S,D,T,B]}
+5   C u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
+6   C u0 {3,[S,D,T,B]} {5,[S,D,T,B]}
+7   C u0 {2,[S,D,T,B]} {8,[S,D,T,B]}
+8   C u0 {4,[S,D,T,B]} {7,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -643,14 +643,14 @@ entry(
     label = "s1_4_5_ane",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2 * R!H u0 {1,S} {7,S}
-3   R!H u0 {1,S} {6,S}
-4   R!H u0 {1,S} {8,S}
-5   R!H u0 {1,S} {6,S}
-6   R!H u0 {3,S} {5,S}
-7   R!H u0 {2,S} {8,S}
-8   R!H u0 {4,S} {7,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 * Cs u0 {1,S} {7,S}
+3   Cs u0 {1,S} {6,S}
+4   Cs u0 {1,S} {8,S}
+5   Cs u0 {1,S} {6,S}
+6   Cs u0 {3,S} {5,S}
+7   Cs u0 {2,S} {8,S}
+8   Cs u0 {4,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -661,7 +661,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_4_5_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_4_5_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -682,14 +682,14 @@ entry(
     label = "s1_4_5_ene_1",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2 * R!H u0 {1,S} {7,S}
-3   R!H u0 {1,S} {6,S}
-4   R!H u0 {1,S} {8,D}
-5   R!H u0 {1,S} {6,S}
-6   R!H u0 {3,S} {5,S}
-7   R!H u0 {2,S} {8,S}
-8   R!H u0 {4,D} {7,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 * Cs u0 {1,S} {7,S}
+3   Cs u0 {1,S} {6,S}
+4   Cd u0 {1,S} {8,D}
+5   Cs u0 {1,S} {6,S}
+6   Cs u0 {3,S} {5,S}
+7   Cs u0 {2,S} {8,S}
+8   Cd u0 {4,D} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -700,7 +700,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_4_5_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_4_5_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -709,14 +709,14 @@ entry(
     label = "s1_4_5_ene_2",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2 * R!H u0 {1,S} {8,S}
-3   R!H u0 {1,S} {7,S}
-4   R!H u0 {1,S} {6,S}
-5   R!H u0 {1,S} {6,S}
-6   R!H u0 {4,S} {5,S}
-7   R!H u0 {3,S} {8,D}
-8   R!H u0 {2,S} {7,D}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 * Cs u0 {1,S} {8,S}
+3   Cs u0 {1,S} {7,S}
+4   Cs u0 {1,S} {6,S}
+5   Cs u0 {1,S} {6,S}
+6   Cs u0 {4,S} {5,S}
+7   Cd u0 {3,S} {8,D}
+8   Cd u0 {2,S} {7,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -727,7 +727,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_4_5_ene_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_4_5_ene_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -736,14 +736,14 @@ entry(
     label = "s1_4_5_ene_6",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2 * R!H u0 {1,S} {8,S}
-3   R!H u0 {1,S} {6,D}
-4   R!H u0 {1,S} {6,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {3,D} {4,S}
-7   R!H u0 {5,S} {8,S}
-8   R!H u0 {2,S} {7,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 * Cs u0 {1,S} {8,S}
+3   Cd u0 {1,S} {6,D}
+4   Cs u0 {1,S} {6,S}
+5   Cs u0 {1,S} {7,S}
+6   Cd u0 {3,D} {4,S}
+7   Cs u0 {5,S} {8,S}
+8   Cs u0 {2,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -754,7 +754,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_4_5_ene_6 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_4_5_ene_6 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -775,25 +775,25 @@ entry(
     label = "s1_4_5_diene_1_3",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {6,S}
-3 * R!H u0 {1,S} {7,D}
-4   R!H u0 {1,S} {8,D}
-5   R!H u0 {1,S} {6,S}
-6   R!H u0 {2,S} {5,S}
-7   R!H u0 {3,D} {8,S}
-8   R!H u0 {4,D} {7,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs u0 {1,S} {6,S}
+3 * Cd u0 {1,S} {7,D}
+4   Cd u0 {1,S} {8,D}
+5   Cs u0 {1,S} {6,S}
+6   Cs u0 {2,S} {5,S}
+7   Cd u0 {3,D} {8,S}
+8   Cd u0 {4,D} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-32.4653,-34.6175,-34.0002,-32.0846,-26.0869,-19.9662,-11.0011],'J/(mol*K)'),
+        Cpdata = ([-32.4653,-34.6175,-34.0012,-32.0846,-26.0869,-19.9662,-11.0011],'J/(mol*K)'),
         H298 = (159.233,'kJ/mol'),
         S298 = (245.609,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_4_5_diene_1_3 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_4_5_diene_1_3 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -802,14 +802,14 @@ entry(
     label = "s1_4_5_diene_1_6",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {6,D}
-3 * R!H u0 {1,S} {7,S}
-4   R!H u0 {1,S} {8,D}
-5   R!H u0 {1,S} {6,S}
-6   R!H u0 {2,D} {5,S}
-7   R!H u0 {3,S} {8,S}
-8   R!H u0 {4,D} {7,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cd u0 {1,S} {6,D}
+3 * Cs u0 {1,S} {7,S}
+4   Cd u0 {1,S} {8,D}
+5   Cs u0 {1,S} {6,S}
+6   Cd u0 {2,D} {5,S}
+7   Cs u0 {3,S} {8,S}
+8   Cd u0 {4,D} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -820,7 +820,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_4_5_diene_1_6 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_4_5_diene_1_6 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -829,14 +829,14 @@ entry(
     label = "s1_4_5_diene_2_6",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2 * R!H u0 {1,S} {8,S}
-3   R!H u0 {1,S} {6,D}
-4   R!H u0 {1,S} {7,S}
-5   R!H u0 {1,S} {6,S}
-6   R!H u0 {3,D} {5,S}
-7   R!H u0 {4,S} {8,D}
-8   R!H u0 {2,S} {7,D}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 * Cs u0 {1,S} {8,S}
+3   Cd u0 {1,S} {6,D}
+4   Cs u0 {1,S} {7,S}
+5   Cs u0 {1,S} {6,S}
+6   Cd u0 {3,D} {5,S}
+7   Cd u0 {4,S} {8,D}
+8   Cd u0 {2,S} {7,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -847,7 +847,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_4_5_diene_2_6 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_4_5_diene_2_6 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -856,15 +856,15 @@ entry(
     label = "s1_4_6",
     group = 
 """
-1   R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-2   R!H u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
-3   R!H u0 {1,[S,D,T,B]} {8,[S,D,T,B]}
-4   R!H u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
-5   R!H u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
-6   R!H u0 {2,[S,D,T,B]} {4,[S,D,T,B]}
-7 * R!H u0 {5,[S,D,T,B]} {9,[S,D,T,B]}
-8   R!H u0 {3,[S,D,T,B]} {9,[S,D,T,B]}
-9   R!H u0 {7,[S,D,T,B]} {8,[S,D,T,B]}
+1   C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+2   C u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
+3   C u0 {1,[S,D,T,B]} {8,[S,D,T,B]}
+4   C u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
+5   C u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
+6   C u0 {2,[S,D,T,B]} {4,[S,D,T,B]}
+7 * C u0 {5,[S,D,T,B]} {9,[S,D,T,B]}
+8   C u0 {3,[S,D,T,B]} {9,[S,D,T,B]}
+9   C u0 {7,[S,D,T,B]} {8,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -879,15 +879,15 @@ entry(
     label = "s1_4_6_ane",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {6,S}
-3   R!H u0 {1,S} {8,S}
-4   R!H u0 {1,S} {6,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {2,S} {4,S}
-7 * R!H u0 {5,S} {9,S}
-8   R!H u0 {3,S} {9,S}
-9   R!H u0 {7,S} {8,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs u0 {1,S} {6,S}
+3   Cs u0 {1,S} {8,S}
+4   Cs u0 {1,S} {6,S}
+5   Cs u0 {1,S} {7,S}
+6   Cs u0 {2,S} {4,S}
+7 * Cs u0 {5,S} {9,S}
+8   Cs u0 {3,S} {9,S}
+9   Cs u0 {7,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -898,7 +898,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_4_6_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_4_6_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -919,15 +919,15 @@ entry(
     label = "s1_4_6_ene_1",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {6,S}
-3   R!H u0 {1,S} {8,D}
-4   R!H u0 {1,S} {6,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {2,S} {4,S}
-7 * R!H u0 {5,S} {9,S}
-8   R!H u0 {3,D} {9,S}
-9   R!H u0 {7,S} {8,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs u0 {1,S} {6,S}
+3   Cd u0 {1,S} {8,D}
+4   Cs u0 {1,S} {6,S}
+5   Cs u0 {1,S} {7,S}
+6   Cs u0 {2,S} {4,S}
+7 * Cs u0 {5,S} {9,S}
+8   Cd u0 {3,D} {9,S}
+9   Cs u0 {7,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -938,7 +938,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_4_6_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_4_6_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -947,15 +947,15 @@ entry(
     label = "s1_4_6_ene_2",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {7,S}
-3   R!H u0 {1,S} {6,S}
-4   R!H u0 {1,S} {6,S}
-5   R!H u0 {1,S} {8,S}
-6   R!H u0 {3,S} {4,S}
-7 * R!H u0 {2,S} {9,S}
-8   R!H u0 {5,S} {9,D}
-9   R!H u0 {7,S} {8,D}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs u0 {1,S} {7,S}
+3   Cs u0 {1,S} {6,S}
+4   Cs u0 {1,S} {6,S}
+5   Cs u0 {1,S} {8,S}
+6   Cs u0 {3,S} {4,S}
+7 * Cs u0 {2,S} {9,S}
+8   Cd u0 {5,S} {9,D}
+9   Cd u0 {7,S} {8,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -966,7 +966,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_4_6_ene_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_4_6_ene_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -975,15 +975,15 @@ entry(
     label = "s1_4_6_ene_7",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {6,D}
-3   R!H u0 {1,S} {8,S}
-4   R!H u0 {1,S} {7,S}
-5   R!H u0 {1,S} {6,S}
-6   R!H u0 {2,D} {5,S}
-7 * R!H u0 {4,S} {9,S}
-8   R!H u0 {3,S} {9,S}
-9   R!H u0 {7,S} {8,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cd u0 {1,S} {6,D}
+3   Cs u0 {1,S} {8,S}
+4   Cs u0 {1,S} {7,S}
+5   Cs u0 {1,S} {6,S}
+6   Cd u0 {2,D} {5,S}
+7 * Cs u0 {4,S} {9,S}
+8   Cs u0 {3,S} {9,S}
+9   Cs u0 {7,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -994,7 +994,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_4_6_ene_7 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_4_6_ene_7 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1015,26 +1015,26 @@ entry(
     label = "s1_4_6_diene_1_3",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {8,S}
-3   R!H u0 {1,S} {6,S}
-4   R!H u0 {1,S} {7,D}
-5   R!H u0 {1,S} {6,S}
-6   R!H u0 {3,S} {5,S}
-7 * R!H u0 {4,D} {9,S}
-8   R!H u0 {2,S} {9,D}
-9   R!H u0 {7,S} {8,D}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs u0 {1,S} {8,S}
+3   Cs u0 {1,S} {6,S}
+4   Cd u0 {1,S} {7,D}
+5   Cs u0 {1,S} {6,S}
+6   Cs u0 {3,S} {5,S}
+7 * Cd u0 {4,D} {9,S}
+8   Cd u0 {2,S} {9,D}
+9   Cd u0 {7,S} {8,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-34.3964,-38.5478,-38.7261,-35.7498,-27.2334,-19.7056,-9.56136],'J/(mol*K)'),
+        Cpdata = ([-34.3954,-38.5478,-38.7261,-35.7498,-27.2334,-19.7066,-9.56136],'J/(mol*K)'),
         H298 = (144.043,'kJ/mol'),
         S298 = (223.141,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_4_6_diene_1_3 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_4_6_diene_1_3 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1043,26 +1043,26 @@ entry(
     label = "s1_4_6_diene_1_4",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {8,D}
-3   R!H u0 {1,S} {6,S}
-4   R!H u0 {1,S} {6,S}
-5   R!H u0 {1,S} {7,D}
-6   R!H u0 {3,S} {4,S}
-7 * R!H u0 {5,D} {9,S}
-8   R!H u0 {2,D} {9,S}
-9   R!H u0 {7,S} {8,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cd u0 {1,S} {8,D}
+3   Cs u0 {1,S} {6,S}
+4   Cs u0 {1,S} {6,S}
+5   Cd u0 {1,S} {7,D}
+6   Cs u0 {3,S} {4,S}
+7 * Cd u0 {5,D} {9,S}
+8   Cd u0 {2,D} {9,S}
+9   Cs u0 {7,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-29.6317,-31.556,-31.0009,-28.4484,-21.7675,-15.7389,-6.57024],'J/(mol*K)'),
+        Cpdata = ([-29.6317,-31.557,-31.0009,-28.4484,-21.7675,-15.7389,-6.57024],'J/(mol*K)'),
         H298 = (125.442,'kJ/mol'),
         S298 = (213.238,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_4_6_diene_1_4 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_4_6_diene_1_4 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1071,26 +1071,26 @@ entry(
     label = "s1_4_6_diene_1_7",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {6,D}
-3   R!H u0 {1,S} {6,S}
-4   R!H u0 {1,S} {8,D}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {2,D} {3,S}
-7 * R!H u0 {5,S} {9,S}
-8   R!H u0 {4,D} {9,S}
-9   R!H u0 {7,S} {8,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cd u0 {1,S} {6,D}
+3   Cs u0 {1,S} {6,S}
+4   Cd u0 {1,S} {8,D}
+5   Cs u0 {1,S} {7,S}
+6   Cd u0 {2,D} {3,S}
+7 * Cs u0 {5,S} {9,S}
+8   Cd u0 {4,D} {9,S}
+9   Cs u0 {7,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-30.0071,-31.6435,-31.139,-28.718,-22.1294,-15.8216,-6.75412],'J/(mol*K)'),
+        Cpdata = ([-30.0071,-31.6425,-31.139,-28.718,-22.1294,-15.8216,-6.75412],'J/(mol*K)'),
         H298 = (152.104,'kJ/mol'),
         S298 = (209.901,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_4_6_diene_1_7 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_4_6_diene_1_7 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1099,26 +1099,26 @@ entry(
     label = "s1_4_6_diene_2_7",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2   R!H u0 {1,S} {6,D}
-3   R!H u0 {1,S} {8,S}
-4   R!H u0 {1,S} {6,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {2,D} {4,S}
-7 * R!H u0 {5,S} {9,D}
-8   R!H u0 {3,S} {9,S}
-9   R!H u0 {7,D} {8,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2   Cd u0 {1,S} {6,D}
+3   Cs u0 {1,S} {8,S}
+4   Cs u0 {1,S} {6,S}
+5   Cs u0 {1,S} {7,S}
+6   Cd u0 {2,D} {4,S}
+7 * Cd u0 {5,S} {9,D}
+8   Cs u0 {3,S} {9,S}
+9   Cd u0 {7,D} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-28.6922,-31.496,-31.5769,-29.3817,-22.756,-16.3784,-7.21036],'J/(mol*K)'),
+        Cpdata = ([-28.6922,-31.497,-31.5769,-29.3817,-22.756,-16.3784,-7.21136],'J/(mol*K)'),
         H298 = (150.509,'kJ/mol'),
         S298 = (206.455,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_4_6_diene_2_7 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_4_6_diene_2_7 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1127,15 +1127,15 @@ entry(
     label = "s1_5_5",
     group = 
 """
-1   R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-2 * R!H u0 {1,[S,D,T,B]} {9,[S,D,T,B]}
-3   R!H u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
-4   R!H u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
-5   R!H u0 {1,[S,D,T,B]} {8,[S,D,T,B]}
-6   R!H u0 {4,[S,D,T,B]} {7,[S,D,T,B]}
-7   R!H u0 {3,[S,D,T,B]} {6,[S,D,T,B]}
-8   R!H u0 {5,[S,D,T,B]} {9,[S,D,T,B]}
-9   R!H u0 {2,[S,D,T,B]} {8,[S,D,T,B]}
+1   C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+2 * C u0 {1,[S,D,T,B]} {9,[S,D,T,B]}
+3   C u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
+4   C u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
+5   C u0 {1,[S,D,T,B]} {8,[S,D,T,B]}
+6   C u0 {4,[S,D,T,B]} {7,[S,D,T,B]}
+7   C u0 {3,[S,D,T,B]} {6,[S,D,T,B]}
+8   C u0 {5,[S,D,T,B]} {9,[S,D,T,B]}
+9   C u0 {2,[S,D,T,B]} {8,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -1150,15 +1150,15 @@ entry(
     label = "s1_5_5_ane",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2 * R!H u0 {1,S} {9,S}
-3   R!H u0 {1,S} {7,S}
-4   R!H u0 {1,S} {6,S}
-5   R!H u0 {1,S} {8,S}
-6   R!H u0 {4,S} {7,S}
-7   R!H u0 {3,S} {6,S}
-8   R!H u0 {5,S} {9,S}
-9   R!H u0 {2,S} {8,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 * Cs u0 {1,S} {9,S}
+3   Cs u0 {1,S} {7,S}
+4   Cs u0 {1,S} {6,S}
+5   Cs u0 {1,S} {8,S}
+6   Cs u0 {4,S} {7,S}
+7   Cs u0 {3,S} {6,S}
+8   Cs u0 {5,S} {9,S}
+9   Cs u0 {2,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -1169,7 +1169,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_5_5_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_5_5_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1190,15 +1190,15 @@ entry(
     label = "s1_5_5_ene_1",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2 * R!H u0 {1,S} {9,S}
-3   R!H u0 {1,S} {6,D}
-4   R!H u0 {1,S} {8,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {3,D} {8,S}
-7   R!H u0 {5,S} {9,S}
-8   R!H u0 {4,S} {6,S}
-9   R!H u0 {2,S} {7,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 * Cs u0 {1,S} {9,S}
+3   Cd u0 {1,S} {6,D}
+4   Cs u0 {1,S} {8,S}
+5   Cs u0 {1,S} {7,S}
+6   Cd u0 {3,D} {8,S}
+7   Cs u0 {5,S} {9,S}
+8   Cs u0 {4,S} {6,S}
+9   Cs u0 {2,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -1209,7 +1209,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_5_5_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_5_5_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1218,15 +1218,15 @@ entry(
     label = "s1_5_5_ene_2",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2 * R!H u0 {1,S} {7,S}
-3   R!H u0 {1,S} {6,S}
-4   R!H u0 {1,S} {9,S}
-5   R!H u0 {1,S} {8,S}
-6   R!H u0 {3,S} {9,D}
-7   R!H u0 {2,S} {8,S}
-8   R!H u0 {5,S} {7,S}
-9   R!H u0 {4,S} {6,D}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 * Cs u0 {1,S} {7,S}
+3   Cs u0 {1,S} {6,S}
+4   Cs u0 {1,S} {9,S}
+5   Cs u0 {1,S} {8,S}
+6   Cd u0 {3,S} {9,D}
+7   Cs u0 {2,S} {8,S}
+8   Cs u0 {5,S} {7,S}
+9   Cd u0 {4,S} {6,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -1237,7 +1237,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_5_5_ene_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_5_5_ene_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1258,15 +1258,15 @@ entry(
     label = "s1_5_5_diene_1_3",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2 * R!H u0 {1,S} {7,D}
-3   R!H u0 {1,S} {8,D}
-4   R!H u0 {1,S} {9,S}
-5   R!H u0 {1,S} {6,S}
-6   R!H u0 {5,S} {9,S}
-7   R!H u0 {2,D} {8,S}
-8   R!H u0 {3,D} {7,S}
-9   R!H u0 {4,S} {6,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 * Cd u0 {1,S} {7,D}
+3   Cd u0 {1,S} {8,D}
+4   Cs u0 {1,S} {9,S}
+5   Cs u0 {1,S} {6,S}
+6   Cs u0 {5,S} {9,S}
+7   Cd u0 {2,D} {8,S}
+8   Cd u0 {3,D} {7,S}
+9   Cs u0 {4,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -1277,7 +1277,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_5_5_diene_1_3 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_5_5_diene_1_3 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1286,15 +1286,15 @@ entry(
     label = "s1_5_5_diene_1_6",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2 * R!H u0 {1,S} {6,S}
-3   R!H u0 {1,S} {8,S}
-4   R!H u0 {1,S} {9,D}
-5   R!H u0 {1,S} {7,D}
-6   R!H u0 {2,S} {7,S}
-7   R!H u0 {5,D} {6,S}
-8   R!H u0 {3,S} {9,S}
-9   R!H u0 {4,D} {8,S}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 * Cs u0 {1,S} {6,S}
+3   Cs u0 {1,S} {8,S}
+4   Cd u0 {1,S} {9,D}
+5   Cd u0 {1,S} {7,D}
+6   Cs u0 {2,S} {7,S}
+7   Cd u0 {5,D} {6,S}
+8   Cs u0 {3,S} {9,S}
+9   Cd u0 {4,D} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -1305,7 +1305,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_5_5_diene_1_6 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_5_5_diene_1_6 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1314,26 +1314,26 @@ entry(
     label = "s1_5_5_diene_1_7",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2 * R!H u0 {1,S} {7,D}
-3   R!H u0 {1,S} {6,S}
-4   R!H u0 {1,S} {9,S}
-5   R!H u0 {1,S} {8,S}
-6   R!H u0 {3,S} {9,D}
-7   R!H u0 {2,D} {8,S}
-8   R!H u0 {5,S} {7,S}
-9   R!H u0 {4,S} {6,D}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 * Cd u0 {1,S} {7,D}
+3   Cs u0 {1,S} {6,S}
+4   Cs u0 {1,S} {9,S}
+5   Cs u0 {1,S} {8,S}
+6   Cd u0 {3,S} {9,D}
+7   Cd u0 {2,D} {8,S}
+8   Cs u0 {5,S} {7,S}
+9   Cd u0 {4,S} {6,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-30.8112,-32.131,-31.3959,-29.4797,-23.177,-16.6584,-6.86736],'J/(mol*K)'),
+        Cpdata = ([-30.8102,-32.131,-31.3959,-29.4797,-23.177,-16.6584,-6.86736],'J/(mol*K)'),
         H298 = (76.7183,'kJ/mol'),
         S298 = (207.406,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_5_5_diene_1_7 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_5_5_diene_1_7 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1342,26 +1342,26 @@ entry(
     label = "s1_5_5_diene_2_7",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S} {5,S}
-2 * R!H u0 {1,S} {9,S}
-3   R!H u0 {1,S} {8,S}
-4   R!H u0 {1,S} {7,S}
-5   R!H u0 {1,S} {6,S}
-6   R!H u0 {5,S} {8,D}
-7   R!H u0 {4,S} {9,D}
-8   R!H u0 {3,S} {6,D}
-9   R!H u0 {2,S} {7,D}
+1   Cs u0 {2,S} {3,S} {4,S} {5,S}
+2 * Cs u0 {1,S} {9,S}
+3   Cs u0 {1,S} {8,S}
+4   Cs u0 {1,S} {7,S}
+5   Cs u0 {1,S} {6,S}
+6   Cd u0 {5,S} {8,D}
+7   Cd u0 {4,S} {9,D}
+8   Cd u0 {3,S} {6,D}
+9   Cd u0 {2,S} {7,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-18.2662,-21.791,-24.7349,-25.4707,-23.14,-19.1903,-12.9414],'J/(mol*K)'),
+        Cpdata = ([-18.2652,-21.792,-24.7369,-25.4717,-23.139,-19.1903,-12.9414],'J/(mol*K)'),
         H298 = (797.365,'kJ/mol'),
         S298 = (219.58,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_5_5_diene_2_7 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_5_5_diene_2_7 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1370,16 +1370,16 @@ entry(
     label = "s1_5_6",
     group = 
 """
-1    R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-2    R!H u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
-3    R!H u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
-4    R!H u0 {1,[S,D,T,B]} {8,[S,D,T,B]}
-5    R!H u0 {1,[S,D,T,B]} {9,[S,D,T,B]}
-6  * R!H u0 {3,[S,D,T,B]} {7,[S,D,T,B]}
-7    R!H u0 {2,[S,D,T,B]} {6,[S,D,T,B]}
-8    R!H u0 {4,[S,D,T,B]} {10,[S,D,T,B]}
-9    R!H u0 {5,[S,D,T,B]} {10,[S,D,T,B]}
-10   R!H u0 {8,[S,D,T,B]} {9,[S,D,T,B]}
+1    C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+2    C u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
+3    C u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
+4    C u0 {1,[S,D,T,B]} {8,[S,D,T,B]}
+5    C u0 {1,[S,D,T,B]} {9,[S,D,T,B]}
+6  * C u0 {3,[S,D,T,B]} {7,[S,D,T,B]}
+7    C u0 {2,[S,D,T,B]} {6,[S,D,T,B]}
+8    C u0 {4,[S,D,T,B]} {10,[S,D,T,B]}
+9    C u0 {5,[S,D,T,B]} {10,[S,D,T,B]}
+10   C u0 {8,[S,D,T,B]} {9,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -1394,16 +1394,16 @@ entry(
     label = "s1_5_6_ane",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {7,S}
-3    R!H u0 {1,S} {6,S}
-4    R!H u0 {1,S} {8,S}
-5    R!H u0 {1,S} {9,S}
-6  * R!H u0 {3,S} {7,S}
-7    R!H u0 {2,S} {6,S}
-8    R!H u0 {4,S} {10,S}
-9    R!H u0 {5,S} {10,S}
-10   R!H u0 {8,S} {9,S}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cs u0 {1,S} {7,S}
+3    Cs u0 {1,S} {6,S}
+4    Cs u0 {1,S} {8,S}
+5    Cs u0 {1,S} {9,S}
+6  * Cs u0 {3,S} {7,S}
+7    Cs u0 {2,S} {6,S}
+8    Cs u0 {4,S} {10,S}
+9    Cs u0 {5,S} {10,S}
+10   Cs u0 {8,S} {9,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -1414,7 +1414,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_5_6_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_5_6_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1435,27 +1435,27 @@ entry(
     label = "s1_5_6_ene_1",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {6,S}
-3    R!H u0 {1,S} {7,D}
-4    R!H u0 {1,S} {8,S}
-5    R!H u0 {1,S} {9,S}
-6  * R!H u0 {2,S} {9,S}
-7    R!H u0 {3,D} {10,S}
-8    R!H u0 {4,S} {10,S}
-9    R!H u0 {5,S} {6,S}
-10   R!H u0 {7,S} {8,S}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cs u0 {1,S} {6,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S} {8,S}
+5    Cs u0 {1,S} {9,S}
+6  * Cs u0 {2,S} {9,S}
+7    Cd u0 {3,D} {10,S}
+8    Cs u0 {4,S} {10,S}
+9    Cs u0 {5,S} {6,S}
+10   Cs u0 {7,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-42.0821,-41.9694,-39.8751,-35.7244,-25.4762,-16.6259,-3.82272],'J/(mol*K)'),
+        Cpdata = ([-42.0821,-41.9684,-39.8751,-35.7244,-25.4772,-16.6259,-3.82272],'J/(mol*K)'),
         H298 = (62.2061,'kJ/mol'),
         S298 = (190.267,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_5_6_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_5_6_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1464,27 +1464,27 @@ entry(
     label = "s1_5_6_ene_2",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {6,S}
-3    R!H u0 {1,S} {8,S}
-4    R!H u0 {1,S} {7,S}
-5    R!H u0 {1,S} {9,S}
-6    R!H u0 {2,S} {10,S}
-7  * R!H u0 {4,S} {9,S}
-8    R!H u0 {3,S} {10,D}
-9    R!H u0 {5,S} {7,S}
-10   R!H u0 {6,S} {8,D}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cs u0 {1,S} {6,S}
+3    Cs u0 {1,S} {8,S}
+4    Cs u0 {1,S} {7,S}
+5    Cs u0 {1,S} {9,S}
+6    Cs u0 {2,S} {10,S}
+7  * Cs u0 {4,S} {9,S}
+8    Cd u0 {3,S} {10,D}
+9    Cs u0 {5,S} {7,S}
+10   Cd u0 {6,S} {8,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-42.4521,-42.3884,-40.2891,-36.1204,-25.8232,-16.6619,-3.97672],'J/(mol*K)'),
+        Cpdata = ([-42.4501,-42.3864,-40.2891,-36.1214,-25.8242,-16.6629,-3.97572],'J/(mol*K)'),
         H298 = (63.2789,'kJ/mol'),
         S298 = (181.962,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_5_6_ene_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_5_6_ene_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1493,16 +1493,16 @@ entry(
     label = "s1_5_6_ene_7",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {7,S}
-3    R!H u0 {1,S} {8,D}
-4    R!H u0 {1,S} {6,S}
-5    R!H u0 {1,S} {9,S}
-6    R!H u0 {4,S} {10,S}
-7    R!H u0 {2,S} {10,S}
-8  * R!H u0 {3,D} {9,S}
-9    R!H u0 {5,S} {8,S}
-10   R!H u0 {6,S} {7,S}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cs u0 {1,S} {7,S}
+3    Cd u0 {1,S} {8,D}
+4    Cs u0 {1,S} {6,S}
+5    Cs u0 {1,S} {9,S}
+6    Cs u0 {4,S} {10,S}
+7    Cs u0 {2,S} {10,S}
+8  * Cd u0 {3,D} {9,S}
+9    Cs u0 {5,S} {8,S}
+10   Cs u0 {6,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -1513,7 +1513,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_5_6_ene_7 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_5_6_ene_7 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1522,16 +1522,16 @@ entry(
     label = "s1_5_6_ene_8",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {7,S}
-3    R!H u0 {1,S} {6,S}
-4    R!H u0 {1,S} {9,S}
-5    R!H u0 {1,S} {8,S}
-6  * R!H u0 {3,S} {8,D}
-7    R!H u0 {2,S} {10,S}
-8    R!H u0 {5,S} {6,D}
-9    R!H u0 {4,S} {10,S}
-10   R!H u0 {7,S} {9,S}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cs u0 {1,S} {7,S}
+3    Cs u0 {1,S} {6,S}
+4    Cs u0 {1,S} {9,S}
+5    Cs u0 {1,S} {8,S}
+6  * Cd u0 {3,S} {8,D}
+7    Cs u0 {2,S} {10,S}
+8    Cd u0 {5,S} {6,D}
+9    Cs u0 {4,S} {10,S}
+10   Cs u0 {7,S} {9,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -1542,7 +1542,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_5_6_ene_8 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_5_6_ene_8 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1563,27 +1563,27 @@ entry(
     label = "s1_5_6_diene_1_3",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {9,S}
-3    R!H u0 {1,S} {8,S}
-4    R!H u0 {1,S} {6,D}
-5    R!H u0 {1,S} {7,S}
-6    R!H u0 {4,D} {10,S}
-7  * R!H u0 {5,S} {9,S}
-8    R!H u0 {3,S} {10,D}
-9    R!H u0 {2,S} {7,S}
-10   R!H u0 {6,S} {8,D}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cs u0 {1,S} {9,S}
+3    Cs u0 {1,S} {8,S}
+4    Cd u0 {1,S} {6,D}
+5    Cs u0 {1,S} {7,S}
+6    Cd u0 {4,D} {10,S}
+7  * Cs u0 {5,S} {9,S}
+8    Cd u0 {3,S} {10,D}
+9    Cs u0 {2,S} {7,S}
+10   Cd u0 {6,S} {8,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-39.7954,-42.8746,-42.2591,-38.4302,-28.2183,-19.3441,-7.24736],'J/(mol*K)'),
+        Cpdata = ([-39.7954,-42.8746,-42.2591,-38.4302,-28.2193,-19.3441,-7.24736],'J/(mol*K)'),
         H298 = (72.801,'kJ/mol'),
         S298 = (204.461,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_5_6_diene_1_3 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_5_6_diene_1_3 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1592,27 +1592,27 @@ entry(
     label = "s1_5_6_diene_1_4",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {6,S}
-3    R!H u0 {1,S} {8,D}
-4    R!H u0 {1,S} {9,D}
-5    R!H u0 {1,S} {7,S}
-6  * R!H u0 {2,S} {7,S}
-7    R!H u0 {5,S} {6,S}
-8    R!H u0 {3,D} {10,S}
-9    R!H u0 {4,D} {10,S}
-10   R!H u0 {8,S} {9,S}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cs u0 {1,S} {6,S}
+3    Cd u0 {1,S} {8,D}
+4    Cd u0 {1,S} {9,D}
+5    Cs u0 {1,S} {7,S}
+6  * Cs u0 {2,S} {7,S}
+7    Cs u0 {5,S} {6,S}
+8    Cd u0 {3,D} {10,S}
+9    Cd u0 {4,D} {10,S}
+10   Cs u0 {8,S} {9,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-35.6667,-36.4898,-35.0189,-31.5118,-22.9934,-15.5375,-4.36224],'J/(mol*K)'),
+        Cpdata = ([-35.6657,-36.4898,-35.0189,-31.5118,-22.9934,-15.5385,-4.36224],'J/(mol*K)'),
         H298 = (59.3275,'kJ/mol'),
         S298 = (200.02,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_5_6_diene_1_4 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_5_6_diene_1_4 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1621,27 +1621,27 @@ entry(
     label = "s1_5_6_diene_1_7",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {7,S}
-3    R!H u0 {1,S} {6,S}
-4    R!H u0 {1,S} {9,D}
-5    R!H u0 {1,S} {8,D}
-6    R!H u0 {3,S} {10,S}
-7  * R!H u0 {2,S} {9,S}
-8    R!H u0 {5,D} {10,S}
-9    R!H u0 {4,D} {7,S}
-10   R!H u0 {6,S} {8,S}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cs u0 {1,S} {7,S}
+3    Cs u0 {1,S} {6,S}
+4    Cd u0 {1,S} {9,D}
+5    Cd u0 {1,S} {8,D}
+6    Cs u0 {3,S} {10,S}
+7  * Cs u0 {2,S} {9,S}
+8    Cd u0 {5,D} {10,S}
+9    Cd u0 {4,D} {7,S}
+10   Cs u0 {6,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-35.9891,-36.4223,-34.915,-31.4934,-23.0673,-15.4092,-4.57912],'J/(mol*K)'),
+        Cpdata = ([-35.9881,-36.4223,-34.915,-31.4934,-23.0673,-15.4092,-4.57912],'J/(mol*K)'),
         H298 = (58.6857,'kJ/mol'),
         S298 = (188.477,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_5_6_diene_1_7 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_5_6_diene_1_7 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1650,27 +1650,27 @@ entry(
     label = "s1_5_6_diene_1_8",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {8,D}
-3    R!H u0 {1,S} {6,S}
-4    R!H u0 {1,S} {9,S}
-5    R!H u0 {1,S} {7,S}
-6  * R!H u0 {3,S} {9,D}
-7    R!H u0 {5,S} {10,S}
-8    R!H u0 {2,D} {10,S}
-9    R!H u0 {4,S} {6,D}
-10   R!H u0 {7,S} {8,S}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cd u0 {1,S} {8,D}
+3    Cs u0 {1,S} {6,S}
+4    Cs u0 {1,S} {9,S}
+5    Cs u0 {1,S} {7,S}
+6  * Cd u0 {3,S} {9,D}
+7    Cs u0 {5,S} {10,S}
+8    Cd u0 {2,D} {10,S}
+9    Cd u0 {4,S} {6,D}
+10   Cs u0 {7,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-34.6352,-36.1588,-35.1599,-31.9161,-23.4179,-15.7099,-4.90436],'J/(mol*K)'),
+        Cpdata = ([-34.6342,-36.1588,-35.1599,-31.9161,-23.4179,-15.7109,-4.90436],'J/(mol*K)'),
         H298 = (57.6654,'kJ/mol'),
         S298 = (185.08,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_5_6_diene_1_8 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_5_6_diene_1_8 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1679,27 +1679,27 @@ entry(
     label = "s1_5_6_diene_2_7",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {7,S}
-3    R!H u0 {1,S} {9,D}
-4    R!H u0 {1,S} {8,S}
-5    R!H u0 {1,S} {6,S}
-6  * R!H u0 {5,S} {9,S}
-7    R!H u0 {2,S} {10,S}
-8    R!H u0 {4,S} {10,D}
-9    R!H u0 {3,D} {6,S}
-10   R!H u0 {7,S} {8,D}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cs u0 {1,S} {7,S}
+3    Cd u0 {1,S} {9,D}
+4    Cs u0 {1,S} {8,S}
+5    Cs u0 {1,S} {6,S}
+6  * Cs u0 {5,S} {9,S}
+7    Cs u0 {2,S} {10,S}
+8    Cd u0 {4,S} {10,D}
+9    Cd u0 {3,D} {6,S}
+10   Cd u0 {7,S} {8,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-34.7112,-36.2688,-35.2949,-32.0641,-23.5669,-15.8379,-4.95936],'J/(mol*K)'),
+        Cpdata = ([-34.7112,-36.2698,-35.2949,-32.0641,-23.5659,-15.8379,-4.96036],'J/(mol*K)'),
         H298 = (53.8784,'kJ/mol'),
         S298 = (184.339,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_5_6_diene_2_7 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_5_6_diene_2_7 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1708,27 +1708,27 @@ entry(
     label = "s1_5_6_diene_2_8",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {6,S}
-3    R!H u0 {1,S} {9,S}
-4    R!H u0 {1,S} {7,S}
-5    R!H u0 {1,S} {8,S}
-6  * R!H u0 {2,S} {7,D}
-7    R!H u0 {4,S} {6,D}
-8    R!H u0 {5,S} {10,D}
-9    R!H u0 {3,S} {10,S}
-10   R!H u0 {8,D} {9,S}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cs u0 {1,S} {6,S}
+3    Cs u0 {1,S} {9,S}
+4    Cs u0 {1,S} {7,S}
+5    Cs u0 {1,S} {8,S}
+6  * Cd u0 {2,S} {7,D}
+7    Cd u0 {4,S} {6,D}
+8    Cd u0 {5,S} {10,D}
+9    Cs u0 {3,S} {10,S}
+10   Cd u0 {8,D} {9,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-35.2712,-36.7788,-35.6669,-32.3201,-23.6669,-15.6059,-4.94136],'J/(mol*K)'),
+        Cpdata = ([-35.2712,-36.7778,-35.6669,-32.3211,-23.6669,-15.6059,-4.94136],'J/(mol*K)'),
         H298 = (60.7522,'kJ/mol'),
         S298 = (183.826,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_5_6_diene_2_8 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_5_6_diene_2_8 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1737,16 +1737,16 @@ entry(
     label = "s1_5_6_diene_7_9",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {6,D}
-3    R!H u0 {1,S} {7,S}
-4    R!H u0 {1,S} {9,S}
-5    R!H u0 {1,S} {8,D}
-6  * R!H u0 {2,D} {8,S}
-7    R!H u0 {3,S} {10,S}
-8    R!H u0 {5,D} {6,S}
-9    R!H u0 {4,S} {10,S}
-10   R!H u0 {7,S} {9,S}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cd u0 {1,S} {6,D}
+3    Cs u0 {1,S} {7,S}
+4    Cs u0 {1,S} {9,S}
+5    Cd u0 {1,S} {8,D}
+6  * Cd u0 {2,D} {8,S}
+7    Cs u0 {3,S} {10,S}
+8    Cd u0 {5,D} {6,S}
+9    Cs u0 {4,S} {10,S}
+10   Cs u0 {7,S} {9,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -1757,7 +1757,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_5_6_diene_7_9 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_5_6_diene_7_9 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1766,17 +1766,17 @@ entry(
     label = "s1_6_6",
     group = 
 """
-1    R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-2    R!H u0 {1,[S,D,T,B]} {8,[S,D,T,B]}
-3    R!H u0 {1,[S,D,T,B]} {9,[S,D,T,B]}
-4    R!H u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
-5    R!H u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
-6    R!H u0 {5,[S,D,T,B]} {11,[S,D,T,B]}
-7    R!H u0 {4,[S,D,T,B]} {10,[S,D,T,B]}
-8    R!H u0 {2,[S,D,T,B]} {11,[S,D,T,B]}
-9    R!H u0 {3,[S,D,T,B]} {10,[S,D,T,B]}
-10 * R!H u0 {7,[S,D,T,B]} {9,[S,D,T,B]}
-11   R!H u0 {6,[S,D,T,B]} {8,[S,D,T,B]}
+1    C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+2    C u0 {1,[S,D,T,B]} {8,[S,D,T,B]}
+3    C u0 {1,[S,D,T,B]} {9,[S,D,T,B]}
+4    C u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
+5    C u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
+6    C u0 {5,[S,D,T,B]} {11,[S,D,T,B]}
+7    C u0 {4,[S,D,T,B]} {10,[S,D,T,B]}
+8    C u0 {2,[S,D,T,B]} {11,[S,D,T,B]}
+9    C u0 {3,[S,D,T,B]} {10,[S,D,T,B]}
+10 * C u0 {7,[S,D,T,B]} {9,[S,D,T,B]}
+11   C u0 {6,[S,D,T,B]} {8,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -1791,28 +1791,28 @@ entry(
     label = "s1_6_6_ane",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {8,S}
-3    R!H u0 {1,S} {9,S}
-4    R!H u0 {1,S} {7,S}
-5    R!H u0 {1,S} {6,S}
-6    R!H u0 {5,S} {11,S}
-7    R!H u0 {4,S} {10,S}
-8    R!H u0 {2,S} {11,S}
-9    R!H u0 {3,S} {10,S}
-10 * R!H u0 {7,S} {9,S}
-11   R!H u0 {6,S} {8,S}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cs u0 {1,S} {8,S}
+3    Cs u0 {1,S} {9,S}
+4    Cs u0 {1,S} {7,S}
+5    Cs u0 {1,S} {6,S}
+6    Cs u0 {5,S} {11,S}
+7    Cs u0 {4,S} {10,S}
+8    Cs u0 {2,S} {11,S}
+9    Cs u0 {3,S} {10,S}
+10 * Cs u0 {7,S} {9,S}
+11   Cs u0 {6,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-55.7171,-52.1049,-47.8292,-41.7251,-27.7865,-16.1164,0.04892],'J/(mol*K)'),
+        Cpdata = ([-55.7171,-52.1059,-47.8292,-41.7251,-27.7865,-16.1164,0.04892],'J/(mol*K)'),
         H298 = (46.8142,'kJ/mol'),
         S298 = (148.984,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_6_6_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_6_6_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1833,28 +1833,28 @@ entry(
     label = "s1_6_6_ene_1",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {9,S}
-3    R!H u0 {1,S} {8,S}
-4    R!H u0 {1,S} {7,S}
-5    R!H u0 {1,S} {6,D}
-6    R!H u0 {5,D} {11,S}
-7    R!H u0 {4,S} {11,S}
-8    R!H u0 {3,S} {10,S}
-9    R!H u0 {2,S} {10,S}
-10 * R!H u0 {8,S} {9,S}
-11   R!H u0 {6,S} {7,S}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cs u0 {1,S} {9,S}
+3    Cs u0 {1,S} {8,S}
+4    Cs u0 {1,S} {7,S}
+5    Cd u0 {1,S} {6,D}
+6    Cd u0 {5,D} {11,S}
+7    Cs u0 {4,S} {11,S}
+8    Cs u0 {3,S} {10,S}
+9    Cs u0 {2,S} {10,S}
+10 * Cs u0 {8,S} {9,S}
+11   Cs u0 {6,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-47.3541,-46.0382,-43.0651,-38.0298,-26.1211,-16.0345,-1.56372],'J/(mol*K)'),
+        Cpdata = ([-47.3531,-46.0382,-43.0651,-38.0298,-26.1211,-16.0345,-1.56372],'J/(mol*K)'),
         H298 = (43.6103,'kJ/mol'),
         S298 = (157.914,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_6_6_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_6_6_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1863,28 +1863,28 @@ entry(
     label = "s1_6_6_ene_2",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {9,S}
-3    R!H u0 {1,S} {8,S}
-4    R!H u0 {1,S} {7,S}
-5    R!H u0 {1,S} {6,S}
-6    R!H u0 {5,S} {10,S}
-7    R!H u0 {4,S} {11,S}
-8    R!H u0 {3,S} {10,D}
-9    R!H u0 {2,S} {11,S}
-10 * R!H u0 {6,S} {8,D}
-11   R!H u0 {7,S} {9,S}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cs u0 {1,S} {9,S}
+3    Cs u0 {1,S} {8,S}
+4    Cs u0 {1,S} {7,S}
+5    Cs u0 {1,S} {6,S}
+6    Cs u0 {5,S} {10,S}
+7    Cs u0 {4,S} {11,S}
+8    Cd u0 {3,S} {10,D}
+9    Cs u0 {2,S} {11,S}
+10 * Cd u0 {6,S} {8,D}
+11   Cs u0 {7,S} {9,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-47.8371,-46.4772,-43.3751,-38.2268,-26.1521,-15.7134,-1.41472],'J/(mol*K)'),
+        Cpdata = ([-47.8381,-46.4782,-43.3751,-38.2268,-26.1521,-15.7124,-1.41572],'J/(mol*K)'),
         H298 = (44.1274,'kJ/mol'),
         S298 = (154.518,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_6_6_ene_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_6_6_ene_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1905,17 +1905,17 @@ entry(
     label = "s1_6_6_diene_1_3",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {6,D}
-3    R!H u0 {1,S} {9,S}
-4    R!H u0 {1,S} {8,S}
-5    R!H u0 {1,S} {7,S}
-6    R!H u0 {2,D} {11,S}
-7    R!H u0 {5,S} {10,S}
-8    R!H u0 {4,S} {10,S}
-9    R!H u0 {3,S} {11,D}
-10 * R!H u0 {7,S} {8,S}
-11   R!H u0 {6,S} {9,D}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cd u0 {1,S} {6,D}
+3    Cs u0 {1,S} {9,S}
+4    Cs u0 {1,S} {8,S}
+5    Cs u0 {1,S} {7,S}
+6    Cd u0 {2,D} {11,S}
+7    Cs u0 {5,S} {10,S}
+8    Cs u0 {4,S} {10,S}
+9    Cd u0 {3,S} {11,D}
+10 * Cs u0 {7,S} {8,S}
+11   Cd u0 {6,S} {9,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -1926,7 +1926,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_6_6_diene_1_3 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_6_6_diene_1_3 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1935,28 +1935,28 @@ entry(
     label = "s1_6_6_diene_1_4",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {9,D}
-3    R!H u0 {1,S} {6,D}
-4    R!H u0 {1,S} {7,S}
-5    R!H u0 {1,S} {8,S}
-6    R!H u0 {3,D} {10,S}
-7    R!H u0 {4,S} {11,S}
-8    R!H u0 {5,S} {11,S}
-9    R!H u0 {2,D} {10,S}
-10 * R!H u0 {6,S} {9,S}
-11   R!H u0 {7,S} {8,S}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cd u0 {1,S} {9,D}
+3    Cd u0 {1,S} {6,D}
+4    Cs u0 {1,S} {7,S}
+5    Cs u0 {1,S} {8,S}
+6    Cd u0 {3,D} {10,S}
+7    Cs u0 {4,S} {11,S}
+8    Cs u0 {5,S} {11,S}
+9    Cd u0 {2,D} {10,S}
+10 * Cs u0 {6,S} {9,S}
+11   Cs u0 {7,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-40.5047,-40.1916,-37.9209,-33.5862,-23.4803,-14.826,-2.00624],'J/(mol*K)'),
+        Cpdata = ([-40.5047,-40.1906,-37.9209,-33.5862,-23.4803,-14.826,-2.00624],'J/(mol*K)'),
         H298 = (39.1356,'kJ/mol'),
         S298 = (169.445,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_6_6_diene_1_4 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_6_6_diene_1_4 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1965,17 +1965,17 @@ entry(
     label = "s1_6_6_diene_1_7",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {9,S}
-3    R!H u0 {1,S} {7,D}
-4    R!H u0 {1,S} {6,S}
-5    R!H u0 {1,S} {8,D}
-6    R!H u0 {4,S} {10,S}
-7    R!H u0 {3,D} {11,S}
-8    R!H u0 {5,D} {10,S}
-9    R!H u0 {2,S} {11,S}
-10 * R!H u0 {6,S} {8,S}
-11   R!H u0 {7,S} {9,S}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cs u0 {1,S} {9,S}
+3    Cd u0 {1,S} {7,D}
+4    Cs u0 {1,S} {6,S}
+5    Cd u0 {1,S} {8,D}
+6    Cs u0 {4,S} {10,S}
+7    Cd u0 {3,D} {11,S}
+8    Cd u0 {5,D} {10,S}
+9    Cs u0 {2,S} {11,S}
+10 * Cs u0 {6,S} {8,S}
+11   Cs u0 {7,S} {9,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -1986,7 +1986,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_6_6_diene_1_7 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_6_6_diene_1_7 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -1995,28 +1995,28 @@ entry(
     label = "s1_6_6_diene_1_8",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {6,S}
-3    R!H u0 {1,S} {9,S}
-4    R!H u0 {1,S} {7,S}
-5    R!H u0 {1,S} {8,D}
-6    R!H u0 {2,S} {10,S}
-7    R!H u0 {4,S} {11,S}
-8    R!H u0 {5,D} {10,S}
-9    R!H u0 {3,S} {11,D}
-10 * R!H u0 {6,S} {8,S}
-11   R!H u0 {7,S} {9,D}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cs u0 {1,S} {6,S}
+3    Cs u0 {1,S} {9,S}
+4    Cs u0 {1,S} {7,S}
+5    Cd u0 {1,S} {8,D}
+6    Cs u0 {2,S} {10,S}
+7    Cs u0 {4,S} {11,S}
+8    Cd u0 {5,D} {10,S}
+9    Cd u0 {3,S} {11,D}
+10 * Cs u0 {6,S} {8,S}
+11   Cd u0 {7,S} {9,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-38.8102,-39.3246,-37.7479,-33.8445,-23.9548,-15.1125,-2.58536],'J/(mol*K)'),
+        Cpdata = ([-38.8102,-39.3236,-37.7479,-33.8445,-23.9558,-15.1125,-2.58536],'J/(mol*K)'),
         H298 = (42.1676,'kJ/mol'),
         S298 = (164.025,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_6_6_diene_1_8 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_6_6_diene_1_8 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2025,17 +2025,17 @@ entry(
     label = "s1_6_6_diene_2_8",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S} {5,S}
-2    R!H u0 {1,S} {6,S}
-3    R!H u0 {1,S} {7,S}
-4    R!H u0 {1,S} {8,S}
-5    R!H u0 {1,S} {9,S}
-6    R!H u0 {2,S} {10,S}
-7    R!H u0 {3,S} {11,D}
-8    R!H u0 {4,S} {11,S}
-9    R!H u0 {5,S} {10,D}
-10 * R!H u0 {6,S} {9,D}
-11   R!H u0 {7,D} {8,S}
+1    Cs u0 {2,S} {3,S} {4,S} {5,S}
+2    Cs u0 {1,S} {6,S}
+3    Cs u0 {1,S} {7,S}
+4    Cs u0 {1,S} {8,S}
+5    Cs u0 {1,S} {9,S}
+6    Cs u0 {2,S} {10,S}
+7    Cd u0 {3,S} {11,D}
+8    Cs u0 {4,S} {11,S}
+9    Cd u0 {5,S} {10,D}
+10 * Cd u0 {6,S} {9,D}
+11   Cd u0 {7,D} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -2046,7 +2046,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s1_6_6_diene_2_8 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s1_6_6_diene_2_8 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2055,10 +2055,10 @@ entry(
     label = "s2_3_3",
     group = 
 """
-1   R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]}
-2   R!H u0 {1,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]}
-3 * R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
-4   R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+1   C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]}
+2   C u0 {1,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]}
+3 * C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+4   C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -2073,10 +2073,10 @@ entry(
     label = "s2_3_3_ane",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S}
-2   R!H u0 {1,S} {3,S} {4,S}
-3 * R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {2,S}
+1   Cs u0 {2,S} {3,S} {4,S}
+2   Cs u0 {1,S} {3,S} {4,S}
+3 * Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {2,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -2087,7 +2087,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_3_3_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_3_3_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2096,10 +2096,10 @@ entry(
     label = "s2_3_3_ene",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S}
-2   R!H u0 {1,S} {3,S} {4,D}
-3 * R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {2,D}
+1   Cs u0 {2,S} {3,S} {4,S}
+2   Cd u0 {1,S} {3,S} {4,D}
+3 * Cs u0 {1,S} {2,S}
+4   Cd u0 {1,S} {2,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -2110,7 +2110,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_3_3_ene from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_3_3_ene from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2119,11 +2119,11 @@ entry(
     label = "s2_3_4",
     group = 
 """
-1 * R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]}
-2   R!H u0 {1,[S,D,T,B]} {3,[S,D,T,B]} {5,[S,D,T,B]}
-3   R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
-4   R!H u0 {1,[S,D,T,B]} {5,[S,D,T,B]}
-5   R!H u0 {2,[S,D,T,B]} {4,[S,D,T,B]}
+1 * C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]}
+2   C u0 {1,[S,D,T,B]} {3,[S,D,T,B]} {5,[S,D,T,B]}
+3   C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+4   C u0 {1,[S,D,T,B]} {5,[S,D,T,B]}
+5   C u0 {2,[S,D,T,B]} {4,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -2138,22 +2138,22 @@ entry(
     label = "s2_3_4_ane",
     group = 
 """
-1 * R!H u0 {2,S} {3,S} {4,S}
-2   R!H u0 {1,S} {3,S} {5,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {5,S}
-5   R!H u0 {2,S} {4,S}
+1 * Cs u0 {2,S} {3,S} {4,S}
+2   Cs u0 {1,S} {3,S} {5,S}
+3   Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {5,S}
+5   Cs u0 {2,S} {4,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-26.6855,-27.0954,-25.6766,-23.9346,-21.4297,-18.3751,-15.4426],'J/(mol*K)'),
-        H298 = (235.153,'kJ/mol'),
-        S298 = (259.976,'J/(mol*K)'),
+        Cpdata = ([-20.9479,-23.2034,-23.5696,-22.9226,-20.8617,-17.9311,-14.9096],'J/(mol*K)'),
+        H298 = (549.123,'kJ/mol'),
+        S298 = (270.464,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_3_4_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_3_4_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2174,11 +2174,11 @@ entry(
     label = "s2_3_4_ene_1",
     group = 
 """
-1 * R!H u0 {2,S} {3,S} {5,S}
-2   R!H u0 {1,S} {3,S} {4,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {2,S} {5,D}
-5   R!H u0 {1,S} {4,D}
+1 * Cs u0 {2,S} {3,S} {5,S}
+2   Cs u0 {1,S} {3,S} {4,S}
+3   Cs u0 {1,S} {2,S}
+4   Cd u0 {2,S} {5,D}
+5   Cd u0 {1,S} {4,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -2189,7 +2189,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_3_4_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_3_4_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2198,11 +2198,11 @@ entry(
     label = "s2_3_4_ene_m",
     group = 
 """
-1 * R!H u0 {2,D} {3,S} {5,S}
-2   R!H u0 {1,D} {3,S} {4,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {2,S} {5,S}
-5   R!H u0 {1,S} {4,S}
+1 * C u0 {2,D} {3,S} {5,S}
+2   C u0 {1,D} {3,S} {4,S}
+3   C u0 {1,S} {2,S}
+4   C u0 {2,S} {5,S}
+5   C u0 {1,S} {4,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -2222,12 +2222,12 @@ entry(
     label = "s2_3_5",
     group = 
 """
-1 * R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {5,[S,D,T,B]}
-2   R!H u0 {1,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]}
-3   R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
-4   R!H u0 {2,[S,D,T,B]} {6,[S,D,T,B]}
-5   R!H u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
-6   R!H u0 {4,[S,D,T,B]} {5,[S,D,T,B]}
+1 * C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {5,[S,D,T,B]}
+2   C u0 {1,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]}
+3   C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+4   C u0 {2,[S,D,T,B]} {6,[S,D,T,B]}
+5   C u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
+6   C u0 {4,[S,D,T,B]} {5,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -2242,23 +2242,23 @@ entry(
     label = "s2_3_5_ane",
     group = 
 """
-1 * R!H u0 {2,S} {3,S} {5,S}
-2   R!H u0 {1,S} {3,S} {4,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {2,S} {6,S}
-5   R!H u0 {1,S} {6,S}
-6   R!H u0 {4,S} {5,S}
+1 * Cs u0 {2,S} {3,S} {5,S}
+2   Cs u0 {1,S} {3,S} {4,S}
+3   Cs u0 {1,S} {2,S}
+4   Cs u0 {2,S} {6,S}
+5   Cs u0 {1,S} {6,S}
+6   Cs u0 {4,S} {5,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-31.3918,-30.9812,-28.7286,-26.071,-21.6806,-17.2716,-12.7686],'J/(mol*K)'),
+        Cpdata = ([-31.3917,-30.9812,-28.7286,-26.071,-21.6806,-17.2716,-12.7686],'J/(mol*K)'),
         H298 = (155.862,'kJ/mol'),
         S298 = (249.315,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_3_5_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_3_5_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2279,12 +2279,12 @@ entry(
     label = "s2_3_5_ene_1",
     group = 
 """
-1 * R!H u0 {2,S} {3,S} {5,S}
-2   R!H u0 {1,S} {3,S} {4,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {2,S} {6,D}
-5   R!H u0 {1,S} {6,S}
-6   R!H u0 {4,D} {5,S}
+1 * Cs u0 {2,S} {3,S} {5,S}
+2   Cs u0 {1,S} {3,S} {4,S}
+3   Cs u0 {1,S} {2,S}
+4   Cd u0 {2,S} {6,D}
+5   Cs u0 {1,S} {6,S}
+6   Cd u0 {4,D} {5,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -2295,7 +2295,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_3_5_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_3_5_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2304,13 +2304,13 @@ entry(
     label = "s2_3_6",
     group = 
 """
-1   R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {5,[S,D,T,B]}
-2   R!H u0 {1,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]}
-3   R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
-4   R!H u0 {2,[S,D,T,B]} {6,[S,D,T,B]}
-5   R!H u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
-6 * R!H u0 {4,[S,D,T,B]} {7,[S,D,T,B]}
-7   R!H u0 {5,[S,D,T,B]} {6,[S,D,T,B]}
+1   C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {5,[S,D,T,B]}
+2   C u0 {1,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]}
+3   C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+4   C u0 {2,[S,D,T,B]} {6,[S,D,T,B]}
+5   C u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
+6 * C u0 {4,[S,D,T,B]} {7,[S,D,T,B]}
+7   C u0 {5,[S,D,T,B]} {6,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -2325,13 +2325,13 @@ entry(
     label = "s2_3_6_ane",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {5,S}
-2   R!H u0 {1,S} {3,S} {4,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {2,S} {6,S}
-5   R!H u0 {1,S} {7,S}
-6 * R!H u0 {4,S} {7,S}
-7   R!H u0 {5,S} {6,S}
+1   Cs u0 {2,S} {3,S} {5,S}
+2   Cs u0 {1,S} {3,S} {4,S}
+3   Cs u0 {1,S} {2,S}
+4   Cs u0 {2,S} {6,S}
+5   Cs u0 {1,S} {7,S}
+6 * Cs u0 {4,S} {7,S}
+7   Cs u0 {5,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -2342,7 +2342,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_3_6_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_3_6_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2363,13 +2363,13 @@ entry(
     label = "s2_3_6_ene_1",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S}
-2   R!H u0 {1,S} {3,S} {5,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {6,D}
-5   R!H u0 {2,S} {7,S}
-6 * R!H u0 {4,D} {7,S}
-7   R!H u0 {5,S} {6,S}
+1   Cs u0 {2,S} {3,S} {4,S}
+2   Cs u0 {1,S} {3,S} {5,S}
+3   Cs u0 {1,S} {2,S}
+4   Cd u0 {1,S} {6,D}
+5   Cs u0 {2,S} {7,S}
+6 * Cd u0 {4,D} {7,S}
+7   Cs u0 {5,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -2380,7 +2380,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_3_6_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_3_6_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2389,24 +2389,24 @@ entry(
     label = "s2_3_6_ene_2",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S}
-2   R!H u0 {1,S} {3,S} {5,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {7,S}
-5   R!H u0 {2,S} {6,S}
-6 * R!H u0 {5,S} {7,D}
-7   R!H u0 {4,S} {6,D}
+1   Cs u0 {2,S} {3,S} {4,S}
+2   Cs u0 {1,S} {3,S} {5,S}
+3   Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {7,S}
+5   Cs u0 {2,S} {6,S}
+6 * Cd u0 {5,S} {7,D}
+7   Cd u0 {4,S} {6,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-27.3578,-27.8213,-26.4574,-24.6241,-20.6081,-16.0552,-11.4352],'J/(mol*K)'),
-        H298 = (129.473,'kJ/mol'),
-        S298 = (228.854,'J/(mol*K)'),
+        Cpdata = ([-28.3318,-27.6573,-25.8654,-24.1171,-20.2121,-15.7602,-11.2882],'J/(mol*K)'),
+        H298 = (246.084,'kJ/mol'),
+        S298 = (222.479,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_3_6_ene_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_3_6_ene_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2427,13 +2427,13 @@ entry(
     label = "s2_3_6_diene_1_3",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {5,S}
-2   R!H u0 {1,S} {3,S} {4,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {2,S} {6,D}
-5   R!H u0 {1,S} {7,D}
-6 * R!H u0 {4,D} {7,S}
-7   R!H u0 {5,D} {6,S}
+1   Cs u0 {2,S} {3,S} {5,S}
+2   Cs u0 {1,S} {3,S} {4,S}
+3   Cs u0 {1,S} {2,S}
+4   Cd u0 {2,S} {6,D}
+5   Cd u0 {1,S} {7,D}
+6 * Cd u0 {4,D} {7,S}
+7   Cd u0 {5,D} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -2444,7 +2444,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_3_6_diene_1_3 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_3_6_diene_1_3 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2453,14 +2453,14 @@ entry(
     label = "s2_3_7",
     group = 
 """
-1 * R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {5,[S,D,T,B]}
-2   R!H u0 {1,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]}
-3   R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
-4   R!H u0 {2,[S,D,T,B]} {6,[S,D,T,B]}
-5   R!H u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
-6   R!H u0 {4,[S,D,T,B]} {8,[S,D,T,B]}
-7   R!H u0 {5,[S,D,T,B]} {8,[S,D,T,B]}
-8   R!H u0 {6,[S,D,T,B]} {7,[S,D,T,B]}
+1 * C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {5,[S,D,T,B]}
+2   C u0 {1,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]}
+3   C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+4   C u0 {2,[S,D,T,B]} {6,[S,D,T,B]}
+5   C u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
+6   C u0 {4,[S,D,T,B]} {8,[S,D,T,B]}
+7   C u0 {5,[S,D,T,B]} {8,[S,D,T,B]}
+8   C u0 {6,[S,D,T,B]} {7,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -2475,14 +2475,14 @@ entry(
     label = "s2_3_7_ane",
     group = 
 """
-1 * R!H u0 {2,S} {3,S} {5,S}
-2   R!H u0 {1,S} {3,S} {4,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {2,S} {6,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {4,S} {8,S}
-7   R!H u0 {5,S} {8,S}
-8   R!H u0 {6,S} {7,S}
+1 * Cs u0 {2,S} {3,S} {5,S}
+2   Cs u0 {1,S} {3,S} {4,S}
+3   Cs u0 {1,S} {2,S}
+4   Cs u0 {2,S} {6,S}
+5   Cs u0 {1,S} {7,S}
+6   Cs u0 {4,S} {8,S}
+7   Cs u0 {5,S} {8,S}
+8   Cs u0 {6,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -2502,15 +2502,15 @@ entry(
     label = "s2_3_8",
     group = 
 """
-1 * R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {5,[S,D,T,B]}
-2   R!H u0 {1,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]}
-3   R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
-4   R!H u0 {2,[S,D,T,B]} {6,[S,D,T,B]}
-5   R!H u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
-6   R!H u0 {4,[S,D,T,B]} {8,[S,D,T,B]}
-7   R!H u0 {5,[S,D,T,B]} {9,[S,D,T,B]}
-8   R!H u0 {6,[S,D,T,B]} {9,[S,D,T,B]}
-9   R!H u0 {7,[S,D,T,B]} {8,[S,D,T,B]}
+1 * C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {5,[S,D,T,B]}
+2   C u0 {1,[S,D,T,B]} {3,[S,D,T,B]} {4,[S,D,T,B]}
+3   C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+4   C u0 {2,[S,D,T,B]} {6,[S,D,T,B]}
+5   C u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
+6   C u0 {4,[S,D,T,B]} {8,[S,D,T,B]}
+7   C u0 {5,[S,D,T,B]} {9,[S,D,T,B]}
+8   C u0 {6,[S,D,T,B]} {9,[S,D,T,B]}
+9   C u0 {7,[S,D,T,B]} {8,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -2525,15 +2525,15 @@ entry(
     label = "s2_3_8_ane",
     group = 
 """
-1 * R!H u0 {2,S} {3,S} {5,S}
-2   R!H u0 {1,S} {3,S} {4,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {2,S} {6,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {4,S} {8,S}
-7   R!H u0 {5,S} {9,S}
-8   R!H u0 {6,S} {9,S}
-9   R!H u0 {7,S} {8,S}
+1 * Cs u0 {2,S} {3,S} {5,S}
+2   Cs u0 {1,S} {3,S} {4,S}
+3   Cs u0 {1,S} {2,S}
+4   Cs u0 {2,S} {6,S}
+5   Cs u0 {1,S} {7,S}
+6   Cs u0 {4,S} {8,S}
+7   Cs u0 {5,S} {9,S}
+8   Cs u0 {6,S} {9,S}
+9   Cs u0 {7,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -2553,12 +2553,12 @@ entry(
     label = "s2_4_4",
     group = 
 """
-1   R!H u0 {2,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-2   R!H u0 {1,[S,D,T,B]} {3,[S,D,T,B]} {6,[S,D,T,B]}
-3 * R!H u0 {2,[S,D,T,B]} {4,[S,D,T,B]}
-4   R!H u0 {1,[S,D,T,B]} {3,[S,D,T,B]}
-5   R!H u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
-6   R!H u0 {2,[S,D,T,B]} {5,[S,D,T,B]}
+1   C u0 {2,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+2   C u0 {1,[S,D,T,B]} {3,[S,D,T,B]} {6,[S,D,T,B]}
+3 * C u0 {2,[S,D,T,B]} {4,[S,D,T,B]}
+4   C u0 {1,[S,D,T,B]} {3,[S,D,T,B]}
+5   C u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
+6   C u0 {2,[S,D,T,B]} {5,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -2573,23 +2573,23 @@ entry(
     label = "s2_4_4_ane",
     group = 
 """
-1   R!H u0 {2,S} {4,S} {5,S}
-2   R!H u0 {1,S} {3,S} {6,S}
-3 * R!H u0 {2,S} {4,S}
-4   R!H u0 {1,S} {3,S}
-5   R!H u0 {1,S} {6,S}
-6   R!H u0 {2,S} {5,S}
+1   Cs u0 {2,S} {4,S} {5,S}
+2   Cs u0 {1,S} {3,S} {6,S}
+3 * Cs u0 {2,S} {4,S}
+4   Cs u0 {1,S} {3,S}
+5   Cs u0 {1,S} {6,S}
+6   Cs u0 {2,S} {5,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-30.7295,-30.4822,-28.2596,-25.503,-20.9696,-16.5226,-12.1466],'J/(mol*K)'),
-        H298 = (242.33,'kJ/mol'),
-        S298 = (246.529,'J/(mol*K)'),
+        Cpdata = ([-32.2953,-30.9632,-28.3586,-25.818,-21.4726,-17.0596,-12.5166],'J/(mol*K)'),
+        H298 = (408.488,'kJ/mol'),
+        S298 = (238.199,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_4_4_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_4_4_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2610,12 +2610,12 @@ entry(
     label = "s2_4_4_ene_1",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {5,S}
-2   R!H u0 {1,S} {4,S} {6,S}
-3 * R!H u0 {1,S} {4,S}
-4   R!H u0 {2,S} {3,S}
-5   R!H u0 {1,S} {6,D}
-6   R!H u0 {2,S} {5,D}
+1   Cs u0 {2,S} {3,S} {5,S}
+2   Cs u0 {1,S} {4,S} {6,S}
+3 * Cs u0 {1,S} {4,S}
+4   Cs u0 {2,S} {3,S}
+5   Cd u0 {1,S} {6,D}
+6   Cd u0 {2,S} {5,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -2626,7 +2626,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_4_4_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_4_4_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2635,12 +2635,12 @@ entry(
     label = "s2_4_4_ene_m",
     group = 
 """
-1   R!H u0 {2,D} {4,S} {6,S}
-2   R!H u0 {1,D} {3,S} {5,S}
-3 * R!H u0 {2,S} {4,S}
-4   R!H u0 {1,S} {3,S}
-5   R!H u0 {2,S} {6,S}
-6   R!H u0 {1,S} {5,S}
+1   C  u0 {2,D} {4,S} {6,S}
+2   C  u0 {1,D} {3,S} {5,S}
+3 * Cs u0 {2,S} {4,S}
+4   Cs u0 {1,S} {3,S}
+5   Cs u0 {2,S} {6,S}
+6   Cs u0 {1,S} {5,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -2660,13 +2660,13 @@ entry(
     label = "s2_4_5",
     group = 
 """
-1 * R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {5,[S,D,T,B]}
-2   R!H u0 {1,[S,D,T,B]} {4,[S,D,T,B]} {6,[S,D,T,B]}
-3   R!H u0 {1,[S,D,T,B]} {4,[S,D,T,B]}
-4   R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]}
-5   R!H u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
-6   R!H u0 {2,[S,D,T,B]} {7,[S,D,T,B]}
-7   R!H u0 {5,[S,D,T,B]} {6,[S,D,T,B]}
+1 * C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {5,[S,D,T,B]}
+2   C u0 {1,[S,D,T,B]} {4,[S,D,T,B]} {6,[S,D,T,B]}
+3   C u0 {1,[S,D,T,B]} {4,[S,D,T,B]}
+4   C u0 {2,[S,D,T,B]} {3,[S,D,T,B]}
+5   C u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
+6   C u0 {2,[S,D,T,B]} {7,[S,D,T,B]}
+7   C u0 {5,[S,D,T,B]} {6,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -2681,13 +2681,13 @@ entry(
     label = "s2_4_5_ane",
     group = 
 """
-1 * R!H u0 {2,S} {3,S} {5,S}
-2   R!H u0 {1,S} {4,S} {6,S}
-3   R!H u0 {1,S} {4,S}
-4   R!H u0 {2,S} {3,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {2,S} {7,S}
-7   R!H u0 {5,S} {6,S}
+1 * Cs u0 {2,S} {3,S} {5,S}
+2   Cs u0 {1,S} {4,S} {6,S}
+3   Cs u0 {1,S} {4,S}
+4   Cs u0 {2,S} {3,S}
+5   Cs u0 {1,S} {7,S}
+6   Cs u0 {2,S} {7,S}
+7   Cs u0 {5,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -2698,7 +2698,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_4_5_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_4_5_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2719,24 +2719,24 @@ entry(
     label = "s2_4_5_ene_1",
     group = 
 """
-1 * R!H u0 {2,S} {3,S} {6,S}
-2   R!H u0 {1,S} {4,S} {5,S}
-3   R!H u0 {1,S} {4,S}
-4   R!H u0 {2,S} {3,S}
-5   R!H u0 {2,S} {7,S}
-6   R!H u0 {1,S} {7,D}
-7   R!H u0 {5,S} {6,D}
+1 * Cs u0 {2,S} {3,S} {6,S}
+2   Cs u0 {1,S} {4,S} {5,S}
+3   Cs u0 {1,S} {4,S}
+4   Cs u0 {2,S} {3,S}
+5   Cs u0 {2,S} {7,S}
+6   Cd u0 {1,S} {7,D}
+7   Cd u0 {5,S} {6,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-30.3838,-30.0633,-28.0708,-25.0151,-20.5371,-15.7662,-11.1222],'J/(mol*K)'),
+        Cpdata = ([-30.3838,-30.0633,-28.0708,-25.0151,-20.5371,-15.7652,-11.1222],'J/(mol*K)'),
         H298 = (145.91,'kJ/mol'),
         S298 = (229.455,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_4_5_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_4_5_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2745,14 +2745,14 @@ entry(
     label = "s2_4_6",
     group = 
 """
-1   R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {6,[S,D,T,B]}
-2   R!H u0 {1,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-3   R!H u0 {1,[S,D,T,B]} {4,[S,D,T,B]}
-4   R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]}
-5   R!H u0 {2,[S,D,T,B]} {8,[S,D,T,B]}
-6   R!H u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
-7 * R!H u0 {6,[S,D,T,B]} {8,[S,D,T,B]}
-8   R!H u0 {5,[S,D,T,B]} {7,[S,D,T,B]}
+1   C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {6,[S,D,T,B]}
+2   C u0 {1,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+3   C u0 {1,[S,D,T,B]} {4,[S,D,T,B]}
+4   C u0 {2,[S,D,T,B]} {3,[S,D,T,B]}
+5   C u0 {2,[S,D,T,B]} {8,[S,D,T,B]}
+6   C u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
+7 * C u0 {6,[S,D,T,B]} {8,[S,D,T,B]}
+8   C u0 {5,[S,D,T,B]} {7,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -2767,14 +2767,14 @@ entry(
     label = "s2_4_6_ane",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {6,S}
-2   R!H u0 {1,S} {4,S} {5,S}
-3   R!H u0 {1,S} {4,S}
-4   R!H u0 {2,S} {3,S}
-5   R!H u0 {2,S} {8,S}
-6   R!H u0 {1,S} {7,S}
-7 * R!H u0 {6,S} {8,S}
-8   R!H u0 {5,S} {7,S}
+1   Cs u0 {2,S} {3,S} {6,S}
+2   Cs u0 {1,S} {4,S} {5,S}
+3   Cs u0 {1,S} {4,S}
+4   Cs u0 {2,S} {3,S}
+5   Cs u0 {2,S} {8,S}
+6   Cs u0 {1,S} {7,S}
+7 * Cs u0 {6,S} {8,S}
+8   Cs u0 {5,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -2785,7 +2785,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_4_6_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_4_6_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2806,14 +2806,14 @@ entry(
     label = "s2_4_6_ene_1",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {5,S}
-2   R!H u0 {1,S} {4,S} {6,S}
-3   R!H u0 {1,S} {4,S}
-4   R!H u0 {2,S} {3,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {2,S} {8,D}
-7 * R!H u0 {5,S} {8,S}
-8   R!H u0 {6,D} {7,S}
+1   Cs u0 {2,S} {3,S} {5,S}
+2   Cs u0 {1,S} {4,S} {6,S}
+3   Cs u0 {1,S} {4,S}
+4   Cs u0 {2,S} {3,S}
+5   Cs u0 {1,S} {7,S}
+6   Cd u0 {2,S} {8,D}
+7 * Cs u0 {5,S} {8,S}
+8   Cd u0 {6,D} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -2824,7 +2824,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_4_6_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_4_6_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2833,14 +2833,14 @@ entry(
     label = "s2_4_6_ene_2",
     group = 
 """
-1   R!H u0 {2,S} {4,S} {6,S}
-2   R!H u0 {1,S} {3,S} {5,S}
-3   R!H u0 {2,S} {4,S}
-4   R!H u0 {1,S} {3,S}
-5   R!H u0 {2,S} {7,S}
-6   R!H u0 {1,S} {8,S}
-7 * R!H u0 {5,S} {8,D}
-8   R!H u0 {6,S} {7,D}
+1   Cs u0 {2,S} {4,S} {6,S}
+2   Cs u0 {1,S} {3,S} {5,S}
+3   Cs u0 {2,S} {4,S}
+4   Cs u0 {1,S} {3,S}
+5   Cs u0 {2,S} {7,S}
+6   Cs u0 {1,S} {8,S}
+7 * Cd u0 {5,S} {8,D}
+8   Cd u0 {6,S} {7,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -2851,7 +2851,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_4_6_ene_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_4_6_ene_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2872,14 +2872,14 @@ entry(
     label = "s2_4_6_diene_1_3",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {6,S}
-2   R!H u0 {1,S} {4,S} {5,S}
-3   R!H u0 {1,S} {4,S}
-4   R!H u0 {2,S} {3,S}
-5   R!H u0 {2,S} {8,D}
-6   R!H u0 {1,S} {7,D}
-7 * R!H u0 {6,D} {8,S}
-8   R!H u0 {5,D} {7,S}
+1   Cs u0 {2,S} {3,S} {6,S}
+2   Cs u0 {1,S} {4,S} {5,S}
+3   Cs u0 {1,S} {4,S}
+4   Cs u0 {2,S} {3,S}
+5   Cd u0 {2,S} {8,D}
+6   Cd u0 {1,S} {7,D}
+7 * Cd u0 {6,D} {8,S}
+8   Cd u0 {5,D} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -2890,7 +2890,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_4_6_diene_1_3 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_4_6_diene_1_3 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2899,14 +2899,14 @@ entry(
     label = "s2_4_6_diene_1_6",
     group = 
 """
-1   R!H u0 {2,S} {4,S} {6,S}
-2   R!H u0 {1,S} {3,S} {5,S}
-3   R!H u0 {2,S} {4,D}
-4   R!H u0 {1,S} {3,D}
-5   R!H u0 {2,S} {8,S}
-6   R!H u0 {1,S} {7,D}
-7 * R!H u0 {6,D} {8,S}
-8   R!H u0 {5,S} {7,S}
+1   Cs u0 {2,S} {4,S} {6,S}
+2   Cs u0 {1,S} {3,S} {5,S}
+3   Cd u0 {2,S} {4,D}
+4   Cd u0 {1,S} {3,D}
+5   Cs u0 {2,S} {8,S}
+6   Cd u0 {1,S} {7,D}
+7 * Cd u0 {6,D} {8,S}
+8   Cs u0 {5,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -2917,7 +2917,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_4_6_diene_1_6 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_4_6_diene_1_6 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2926,25 +2926,25 @@ entry(
     label = "s2_4_6_diene_2_6",
     group = 
 """
-1   R!H u0 {2,S} {4,S} {5,S}
-2   R!H u0 {1,S} {3,S} {6,S}
-3   R!H u0 {2,S} {4,D}
-4   R!H u0 {1,S} {3,D}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {2,S} {8,S}
-7 * R!H u0 {5,S} {8,D}
-8   R!H u0 {6,S} {7,D}
+1   Cs u0 {2,S} {4,S} {5,S}
+2   Cs u0 {1,S} {3,S} {6,S}
+3   Cd u0 {2,S} {4,D}
+4   Cd u0 {1,S} {3,D}
+5   Cs u0 {1,S} {7,S}
+6   Cs u0 {2,S} {8,S}
+7 * Cd u0 {5,S} {8,D}
+8   Cd u0 {6,S} {7,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-24.2298,-25.4244,-25.289,-22.7942,-18.6756,-13.8318,-9.32484],'J/(mol*K)'),
-        H298 = (159.306,'kJ/mol'),
-        S298 = (218.773,'J/(mol*K)'),
+        Cpdata = ([-26.6518,-26.7244,-25.953,-23.3602,-19.2686,-14.3808,-9.61984],'J/(mol*K)'),
+        H298 = (214.322,'kJ/mol'),
+        S298 = (210.792,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_4_6_diene_2_6 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_4_6_diene_2_6 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2953,25 +2953,25 @@ entry(
     label = "s2_4_6_ben",
     group = 
 """
-1   R!H u0 {2,B} {4,S} {5,B}
-2   R!H u0 {1,B} {3,S} {6,B}
-3   R!H u0 {2,S} {4,S}
-4   R!H u0 {1,S} {3,S}
-5   R!H u0 {1,B} {7,B}
-6   R!H u0 {2,B} {8,B}
-7 * R!H u0 {5,B} {8,B}
-8   R!H u0 {6,B} {7,B}
+1   Cb u0 {2,B} {4,S} {5,B}
+2   Cb u0 {1,B} {3,S} {6,B}
+3   C  u0 {2,S} {4,S}
+4   C  u0 {1,S} {3,S}
+5   Cb u0 {1,B} {7,B}
+6   Cb u0 {2,B} {8,B}
+7 * Cb u0 {5,B} {8,B}
+8   Cb u0 {6,B} {7,B}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-13.1633,-12.9828,-12.2894,-11.5987,-9.35604,-6.5714,-1.5946],'J/(mol*K)'),
+        Cpdata = ([-13.1643,-12.9828,-12.2894,-11.5987,-9.35604,-6.5714,-1.5946],'J/(mol*K)'),
         H298 = (148.973,'kJ/mol'),
         S298 = (117.967,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_4_6_ben from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_4_6_ben from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -2980,14 +2980,14 @@ entry(
     label = "s2_5_5",
     group = 
 """
-1   R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {5,[S,D,T,B]}
-2   R!H u0 {1,[S,D,T,B]} {4,[S,D,T,B]} {6,[S,D,T,B]}
-3 * R!H u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
-4   R!H u0 {2,[S,D,T,B]} {7,[S,D,T,B]}
-5   R!H u0 {1,[S,D,T,B]} {8,[S,D,T,B]}
-6   R!H u0 {2,[S,D,T,B]} {8,[S,D,T,B]}
-7   R!H u0 {3,[S,D,T,B]} {4,[S,D,T,B]}
-8   R!H u0 {5,[S,D,T,B]} {6,[S,D,T,B]}
+1   C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {5,[S,D,T,B]}
+2   C u0 {1,[S,D,T,B]} {4,[S,D,T,B]} {6,[S,D,T,B]}
+3 * C u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
+4   C u0 {2,[S,D,T,B]} {7,[S,D,T,B]}
+5   C u0 {1,[S,D,T,B]} {8,[S,D,T,B]}
+6   C u0 {2,[S,D,T,B]} {8,[S,D,T,B]}
+7   C u0 {3,[S,D,T,B]} {4,[S,D,T,B]}
+8   C u0 {5,[S,D,T,B]} {6,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -3002,14 +3002,14 @@ entry(
     label = "s2_5_5_ane",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {5,S}
-2   R!H u0 {1,S} {4,S} {6,S}
-3 * R!H u0 {1,S} {7,S}
-4   R!H u0 {2,S} {7,S}
-5   R!H u0 {1,S} {8,S}
-6   R!H u0 {2,S} {8,S}
-7   R!H u0 {3,S} {4,S}
-8   R!H u0 {5,S} {6,S}
+1   Cs u0 {2,S} {3,S} {5,S}
+2   Cs u0 {1,S} {4,S} {6,S}
+3 * Cs u0 {1,S} {7,S}
+4   Cs u0 {2,S} {7,S}
+5   Cs u0 {1,S} {8,S}
+6   Cs u0 {2,S} {8,S}
+7   Cs u0 {3,S} {4,S}
+8   Cs u0 {5,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3020,7 +3020,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_5_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_5_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3041,14 +3041,14 @@ entry(
     label = "s2_5_5_ene_0",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S}
-2   R!H u0 {1,S} {5,D} {6,S}
-3 * R!H u0 {1,S} {8,S}
-4   R!H u0 {1,S} {7,S}
-5   R!H u0 {2,D} {7,S}
-6   R!H u0 {2,S} {8,S}
-7   R!H u0 {4,S} {5,S}
-8   R!H u0 {3,S} {6,S}
+1   Cs u0 {2,S} {3,S} {4,S}
+2   Cd u0 {1,S} {5,D} {6,S}
+3 * Cs u0 {1,S} {8,S}
+4   Cs u0 {1,S} {7,S}
+5   Cd u0 {2,D} {7,S}
+6   Cs u0 {2,S} {8,S}
+7   Cs u0 {4,S} {5,S}
+8   Cs u0 {3,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3059,7 +3059,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_5_ene_0 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_5_ene_0 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3068,25 +3068,25 @@ entry(
     label = "s2_5_5_ene_1",
     group = 
 """
-1   R!H u0 {2,S} {4,S} {5,S}
-2   R!H u0 {1,S} {3,S} {6,S}
-3 * R!H u0 {2,S} {7,D}
-4   R!H u0 {1,S} {8,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {2,S} {8,S}
-7   R!H u0 {3,D} {5,S}
-8   R!H u0 {4,S} {6,S}
+1   Cs u0 {2,S} {4,S} {5,S}
+2   Cs u0 {1,S} {3,S} {6,S}
+3 * Cd u0 {2,S} {7,D}
+4   Cs u0 {1,S} {8,S}
+5   Cs u0 {1,S} {7,S}
+6   Cs u0 {2,S} {8,S}
+7   Cd u0 {3,D} {5,S}
+8   Cs u0 {4,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-35.5098,-34.6031,-31.9528,-27.9945,-21.362,-15.0548,-8.5992],'J/(mol*K)'),
-        H298 = (71.0703,'kJ/mol'),
-        S298 = (213.583,'J/(mol*K)'),
+        Cpdata = ([-35.2578,-34.3901,-31.8848,-28.0805,-21.537,-15.2468,-8.6872],'J/(mol*K)'),
+        H298 = (121.68,'kJ/mol'),
+        S298 = (210.932,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_5_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_5_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3095,25 +3095,25 @@ entry(
     label = "s2_5_5_ene_m",
     group = 
 """
-1   R!H u0 {2,D} {3,S} {5,S}
-2   R!H u0 {1,D} {4,S} {6,S}
-3 * R!H u0 {1,S} {8,S}
-4   R!H u0 {2,S} {7,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {2,S} {8,S}
-7   R!H u0 {4,S} {5,S}
-8   R!H u0 {3,S} {6,S}
+1   Cd u0 {2,D} {3,S} {5,S}
+2   Cd u0 {1,D} {4,S} {6,S}
+3 * Cs u0 {1,S} {8,S}
+4   Cs u0 {2,S} {7,S}
+5   Cs u0 {1,S} {7,S}
+6   Cs u0 {2,S} {8,S}
+7   Cs u0 {4,S} {5,S}
+8   Cs u0 {3,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-36.0191,-36.797,-35.0088,-31.1401,-23.1831,-16.6038,-8.33044],'J/(mol*K)'),
+        Cpdata = ([-36.0191,-36.796,-35.0088,-31.1401,-23.1831,-16.6038,-8.33044],'J/(mol*K)'),
         H298 = (86.2088,'kJ/mol'),
         S298 = (204.403,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_5_ene_m from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_5_ene_m from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3134,25 +3134,25 @@ entry(
     label = "s2_5_5_diene_0_2",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S}
-2   R!H u0 {1,S} {5,S} {6,D}
-3 * R!H u0 {1,S} {8,S}
-4   R!H u0 {1,S} {7,D}
-5   R!H u0 {2,S} {8,S}
-6   R!H u0 {2,D} {7,S}
-7   R!H u0 {4,D} {6,S}
-8   R!H u0 {3,S} {5,S}
+1   Cs u0 {2,S} {3,S} {4,S}
+2   Cd u0 {1,S} {5,S} {6,D}
+3 * Cs u0 {1,S} {8,S}
+4   Cd u0 {1,S} {7,D}
+5   Cs u0 {2,S} {8,S}
+6   Cd u0 {2,D} {7,S}
+7   Cd u0 {4,D} {6,S}
+8   Cs u0 {3,S} {5,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-40.8587,-39.2967,-35.8144,-31.5587,-23.4596,-17.2834,-10.8314],'J/(mol*K)'),
+        Cpdata = ([-40.8587,-39.2957,-35.8144,-31.5597,-23.4596,-17.2834,-10.8314],'J/(mol*K)'),
         H298 = (98.2803,'kJ/mol'),
         S298 = (234.449,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_5_diene_0_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_5_diene_0_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3161,14 +3161,14 @@ entry(
     label = "s2_5_5_diene_0_3",
     group = 
 """
-1   R!H u0 {2,S} {4,D} {5,S}
-2   R!H u0 {1,S} {3,D} {6,S}
-3 * R!H u0 {2,D} {7,S}
-4   R!H u0 {1,D} {7,S}
-5   R!H u0 {1,S} {8,S}
-6   R!H u0 {2,S} {8,S}
-7   R!H u0 {3,S} {4,S}
-8   R!H u0 {5,S} {6,S}
+1   Cd u0 {2,S} {4,D} {5,S}
+2   Cd u0 {1,S} {3,D} {6,S}
+3 * Cd u0 {2,D} {7,S}
+4   Cd u0 {1,D} {7,S}
+5   Cs u0 {1,S} {8,S}
+6   Cs u0 {2,S} {8,S}
+7   Cs u0 {3,S} {4,S}
+8   Cs u0 {5,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3179,7 +3179,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_5_diene_0_3 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_5_diene_0_3 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3188,14 +3188,14 @@ entry(
     label = "s2_5_5_diene_m_2",
     group = 
 """
-1   R!H u0 {2,D} {3,S} {5,S}
-2   R!H u0 {1,D} {4,S} {6,S}
-3 * R!H u0 {1,S} {7,S}
-4   R!H u0 {2,S} {8,D}
-5   R!H u0 {1,S} {8,S}
-6   R!H u0 {2,S} {7,S}
-7   R!H u0 {3,S} {6,S}
-8   R!H u0 {4,D} {5,S}
+1   Cd u0 {2,D} {3,S} {5,S}
+2   Cd u0 {1,D} {4,S} {6,S}
+3 * Cs u0 {1,S} {7,S}
+4   Cd u0 {2,S} {8,D}
+5   Cs u0 {1,S} {8,S}
+6   Cs u0 {2,S} {7,S}
+7   Cs u0 {3,S} {6,S}
+8   Cd u0 {4,D} {5,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3206,7 +3206,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_5_diene_m_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_5_diene_m_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3215,14 +3215,14 @@ entry(
     label = "s2_5_5_diene_0_4",
     group = 
 """
-1   R!H u0 {2,S} {3,D} {4,S}
-2   R!H u0 {1,S} {5,D} {6,S}
-3 * R!H u0 {1,D} {7,S}
-4   R!H u0 {1,S} {8,S}
-5   R!H u0 {2,D} {8,S}
-6   R!H u0 {2,S} {7,S}
-7   R!H u0 {3,S} {6,S}
-8   R!H u0 {4,S} {5,S}
+1   Cd u0 {2,S} {3,D} {4,S}
+2   Cd u0 {1,S} {5,D} {6,S}
+3 * Cd u0 {1,D} {7,S}
+4   Cs u0 {1,S} {8,S}
+5   Cd u0 {2,D} {8,S}
+6   Cs u0 {2,S} {7,S}
+7   Cs u0 {3,S} {6,S}
+8   Cs u0 {4,S} {5,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3233,7 +3233,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_5_diene_0_4 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_5_diene_0_4 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3242,14 +3242,14 @@ entry(
     label = "s2_5_5_diene_0_5",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {6,S}
-2   R!H u0 {1,S} {4,D} {5,S}
-3 * R!H u0 {1,S} {7,D}
-4   R!H u0 {2,D} {8,S}
-5   R!H u0 {2,S} {7,S}
-6   R!H u0 {1,S} {8,S}
-7   R!H u0 {3,D} {5,S}
-8   R!H u0 {4,S} {6,S}
+1   Cs u0 {2,S} {3,S} {6,S}
+2   Cd u0 {1,S} {4,D} {5,S}
+3 * Cd u0 {1,S} {7,D}
+4   Cd u0 {2,D} {8,S}
+5   Cs u0 {2,S} {7,S}
+6   Cs u0 {1,S} {8,S}
+7   Cd u0 {3,D} {5,S}
+8   Cs u0 {4,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3260,7 +3260,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_5_diene_0_5 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_5_diene_0_5 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3269,14 +3269,14 @@ entry(
     label = "s2_5_5_diene_0_6",
     group = 
 """
-1   R!H u0 {2,S} {4,S} {6,S}
-2   R!H u0 {1,S} {3,S} {5,D}
-3 * R!H u0 {2,S} {7,D}
-4   R!H u0 {1,S} {8,S}
-5   R!H u0 {2,D} {8,S}
-6   R!H u0 {1,S} {7,S}
-7   R!H u0 {3,D} {6,S}
-8   R!H u0 {4,S} {5,S}
+1   Cs u0 {2,S} {4,S} {6,S}
+2   Cd u0 {1,S} {3,S} {5,D}
+3 * Cd u0 {2,S} {7,D}
+4   Cs u0 {1,S} {8,S}
+5   Cd u0 {2,D} {8,S}
+6   Cs u0 {1,S} {7,S}
+7   Cd u0 {3,D} {6,S}
+8   Cs u0 {4,S} {5,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3287,7 +3287,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_5_diene_0_6 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_5_diene_0_6 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3296,25 +3296,25 @@ entry(
     label = "s2_5_5_diene_1_5",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {5,S}
-2   R!H u0 {1,S} {4,S} {6,S}
-3 * R!H u0 {1,S} {7,D}
-4   R!H u0 {2,S} {8,D}
-5   R!H u0 {1,S} {8,S}
-6   R!H u0 {2,S} {7,S}
-7   R!H u0 {3,D} {6,S}
-8   R!H u0 {4,D} {5,S}
+1   Cs u0 {2,S} {3,S} {5,S}
+2   Cs u0 {1,S} {4,S} {6,S}
+3 * Cd u0 {1,S} {7,D}
+4   Cd u0 {2,S} {8,D}
+5   Cs u0 {1,S} {8,S}
+6   Cs u0 {2,S} {7,S}
+7   Cd u0 {3,D} {6,S}
+8   Cd u0 {4,D} {5,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-28.5408,-28.8784,-27.579,-24.3002,-19.7766,-14.6598,-9.82684],'J/(mol*K)'),
-        H298 = (65.5921,'kJ/mol'),
-        S298 = (213.858,'J/(mol*K)'),
+        Cpdata = ([-28.6878,-28.0364,-26.536,-23.5412,-19.2576,-14.2928,-9.58484],'J/(mol*K)'),
+        H298 = (138.631,'kJ/mol'),
+        S298 = (207.589,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_5_diene_1_5 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_5_diene_1_5 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3323,14 +3323,14 @@ entry(
     label = "s2_5_5_diene_1_6",
     group = 
 """
-1   R!H u0 {2,S} {3,S} {4,S}
-2   R!H u0 {1,S} {5,S} {6,S}
-3 * R!H u0 {1,S} {7,D}
-4   R!H u0 {1,S} {8,D}
-5   R!H u0 {2,S} {7,S}
-6   R!H u0 {2,S} {8,S}
-7   R!H u0 {3,D} {5,S}
-8   R!H u0 {4,D} {6,S}
+1   Cs u0 {2,S} {3,S} {4,S}
+2   Cs u0 {1,S} {5,S} {6,S}
+3 * Cd u0 {1,S} {7,D}
+4   Cd u0 {1,S} {8,D}
+5   Cs u0 {2,S} {7,S}
+6   Cs u0 {2,S} {8,S}
+7   Cd u0 {3,D} {5,S}
+8   Cd u0 {4,D} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3341,7 +3341,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_5_diene_1_6 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_5_diene_1_6 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3350,15 +3350,15 @@ entry(
     label = "s2_5_6",
     group = 
 """
-1 * R!H u0 {2,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-2   R!H u0 {1,[S,D,T,B]} {3,[S,D,T,B]} {6,[S,D,T,B]}
-3   R!H u0 {2,[S,D,T,B]} {9,[S,D,T,B]}
-4   R!H u0 {1,[S,D,T,B]} {8,[S,D,T,B]}
-5   R!H u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
-6   R!H u0 {2,[S,D,T,B]} {7,[S,D,T,B]}
-7   R!H u0 {5,[S,D,T,B]} {6,[S,D,T,B]}
-8   R!H u0 {4,[S,D,T,B]} {9,[S,D,T,B]}
-9   R!H u0 {3,[S,D,T,B]} {8,[S,D,T,B]}
+1 * C u0 {2,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+2   C u0 {1,[S,D,T,B]} {3,[S,D,T,B]} {6,[S,D,T,B]}
+3   C u0 {2,[S,D,T,B]} {9,[S,D,T,B]}
+4   C u0 {1,[S,D,T,B]} {8,[S,D,T,B]}
+5   C u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
+6   C u0 {2,[S,D,T,B]} {7,[S,D,T,B]}
+7   C u0 {5,[S,D,T,B]} {6,[S,D,T,B]}
+8   C u0 {4,[S,D,T,B]} {9,[S,D,T,B]}
+9   C u0 {3,[S,D,T,B]} {8,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -3373,15 +3373,15 @@ entry(
     label = "s2_5_6_ane",
     group = 
 """
-1 * R!H u0 {2,S} {4,S} {5,S}
-2   R!H u0 {1,S} {3,S} {6,S}
-3   R!H u0 {2,S} {9,S}
-4   R!H u0 {1,S} {8,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {2,S} {7,S}
-7   R!H u0 {5,S} {6,S}
-8   R!H u0 {4,S} {9,S}
-9   R!H u0 {3,S} {8,S}
+1 * Cs u0 {2,S} {4,S} {5,S}
+2   Cs u0 {1,S} {3,S} {6,S}
+3   Cs u0 {2,S} {9,S}
+4   Cs u0 {1,S} {8,S}
+5   Cs u0 {1,S} {7,S}
+6   Cs u0 {2,S} {7,S}
+7   Cs u0 {5,S} {6,S}
+8   Cs u0 {4,S} {9,S}
+9   Cs u0 {3,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3392,7 +3392,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3413,15 +3413,15 @@ entry(
     label = "s2_5_6_ene_0",
     group = 
 """
-1 * R!H u0 {2,S} {3,S} {5,S}
-2   R!H u0 {1,S} {4,D} {6,S}
-3   R!H u0 {1,S} {7,S}
-4   R!H u0 {2,D} {8,S}
-5   R!H u0 {1,S} {9,S}
-6   R!H u0 {2,S} {7,S}
-7   R!H u0 {3,S} {6,S}
-8   R!H u0 {4,S} {9,S}
-9   R!H u0 {5,S} {8,S}
+1 * Cs u0 {2,S} {3,S} {5,S}
+2   Cd u0 {1,S} {4,D} {6,S}
+3   Cs u0 {1,S} {7,S}
+4   Cd u0 {2,D} {8,S}
+5   Cs u0 {1,S} {9,S}
+6   Cs u0 {2,S} {7,S}
+7   Cs u0 {3,S} {6,S}
+8   Cs u0 {4,S} {9,S}
+9   Cs u0 {5,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3432,7 +3432,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_ene_0 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_ene_0 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3441,26 +3441,26 @@ entry(
     label = "s2_5_6_ene_1",
     group = 
 """
-1 * R!H u0 {2,S} {4,S} {6,S}
-2   R!H u0 {1,S} {3,S} {5,S}
-3   R!H u0 {2,S} {8,D}
-4   R!H u0 {1,S} {7,S}
-5   R!H u0 {2,S} {7,S}
-6   R!H u0 {1,S} {9,S}
-7   R!H u0 {4,S} {5,S}
-8   R!H u0 {3,D} {9,S}
-9   R!H u0 {6,S} {8,S}
+1 * Cs u0 {2,S} {4,S} {6,S}
+2   Cs u0 {1,S} {3,S} {5,S}
+3   Cd u0 {2,S} {8,D}
+4   Cs u0 {1,S} {7,S}
+5   Cs u0 {2,S} {7,S}
+6   Cs u0 {1,S} {9,S}
+7   Cs u0 {4,S} {5,S}
+8   Cd u0 {3,D} {9,S}
+9   Cs u0 {6,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-38.9638,-37.7409,-35.1268,-30.7369,-22.2439,-14.5863,-6.4012],'J/(mol*K)'),
-        H298 = (62.9293,'kJ/mol'),
-        S298 = (193.573,'J/(mol*K)'),
+        Cpdata = ([-37.5018,-36.8389,-34.8198,-30.5359,-21.9949,-14.3303,-6.2002],'J/(mol*K)'),
+        H298 = (71.2912,'kJ/mol'),
+        S298 = (196.469,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3469,15 +3469,15 @@ entry(
     label = "s2_5_6_ene_m",
     group = 
 """
-1 * R!H u0 {2,D} {5,S} {6,S}
-2   R!H u0 {1,D} {3,S} {4,S}
-3   R!H u0 {2,S} {8,S}
-4   R!H u0 {2,S} {7,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {1,S} {9,S}
-7   R!H u0 {4,S} {5,S}
-8   R!H u0 {3,S} {9,S}
-9   R!H u0 {6,S} {8,S}
+1 * Cd u0 {2,D} {5,S} {6,S}
+2   Cd u0 {1,D} {3,S} {4,S}
+3   Cs u0 {2,S} {8,S}
+4   Cs u0 {2,S} {7,S}
+5   Cs u0 {1,S} {7,S}
+6   Cs u0 {1,S} {9,S}
+7   Cs u0 {4,S} {5,S}
+8   Cs u0 {3,S} {9,S}
+9   Cs u0 {6,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3488,7 +3488,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_ene_m from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_ene_m from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3497,15 +3497,15 @@ entry(
     label = "s2_5_6_ene_2",
     group = 
 """
-1 * R!H u0 {2,S} {5,S} {6,S}
-2   R!H u0 {1,S} {3,S} {4,S}
-3   R!H u0 {2,S} {7,S}
-4   R!H u0 {2,S} {8,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {1,S} {9,S}
-7   R!H u0 {3,S} {5,S}
-8   R!H u0 {4,S} {9,D}
-9   R!H u0 {6,S} {8,D}
+1 * Cs u0 {2,S} {5,S} {6,S}
+2   Cs u0 {1,S} {3,S} {4,S}
+3   Cs u0 {2,S} {7,S}
+4   Cs u0 {2,S} {8,S}
+5   Cs u0 {1,S} {7,S}
+6   Cs u0 {1,S} {9,S}
+7   Cs u0 {3,S} {5,S}
+8   Cd u0 {4,S} {9,D}
+9   Cd u0 {6,S} {8,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3516,7 +3516,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_ene_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_ene_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3525,15 +3525,15 @@ entry(
     label = "s2_5_6_ene_5",
     group = 
 """
-1 * R!H u0 {2,S} {3,D} {6,S}
-2   R!H u0 {1,S} {4,S} {5,S}
-3   R!H u0 {1,D} {7,S}
-4   R!H u0 {2,S} {9,S}
-5   R!H u0 {2,S} {7,S}
-6   R!H u0 {1,S} {8,S}
-7   R!H u0 {3,S} {5,S}
-8   R!H u0 {6,S} {9,S}
-9   R!H u0 {4,S} {8,S}
+1 * Cd u0 {2,S} {3,D} {6,S}
+2   Cs u0 {1,S} {4,S} {5,S}
+3   Cd u0 {1,D} {7,S}
+4   Cs u0 {2,S} {9,S}
+5   Cs u0 {2,S} {7,S}
+6   Cs u0 {1,S} {8,S}
+7   Cs u0 {3,S} {5,S}
+8   Cs u0 {6,S} {9,S}
+9   Cs u0 {4,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3544,7 +3544,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_ene_5 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_ene_5 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3553,26 +3553,26 @@ entry(
     label = "s2_5_6_ene_6",
     group = 
 """
-1 * R!H u0 {2,S} {4,S} {6,S}
-2   R!H u0 {1,S} {3,S} {5,S}
-3   R!H u0 {2,S} {8,S}
-4   R!H u0 {1,S} {7,S}
-5   R!H u0 {2,S} {7,D}
-6   R!H u0 {1,S} {9,S}
-7   R!H u0 {4,S} {5,D}
-8   R!H u0 {3,S} {9,S}
-9   R!H u0 {6,S} {8,S}
+1 * Cs u0 {2,S} {4,S} {6,S}
+2   Cs u0 {1,S} {3,S} {5,S}
+3   Cs u0 {2,S} {8,S}
+4   Cs u0 {1,S} {7,S}
+5   Cd u0 {2,S} {7,D}
+6   Cs u0 {1,S} {9,S}
+7   Cd u0 {4,S} {5,D}
+8   Cs u0 {3,S} {9,S}
+9   Cs u0 {6,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-38.4628,-37.1559,-34.5418,-30.1859,-21.7599,-14.1703,-6.1302],'J/(mol*K)'),
-        H298 = (72.3374,'kJ/mol'),
-        S298 = (192.941,'J/(mol*K)'),
+        Cpdata = ([-37.9658,-36.6869,-34.2058,-29.9599,-21.6489,-14.1173,-6.0852],'J/(mol*K)'),
+        H298 = (88.6107,'kJ/mol'),
+        S298 = (191.577,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_ene_6 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_ene_6 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3593,26 +3593,26 @@ entry(
     label = "s2_5_6_diene_m_1",
     group = 
 """
-1 * R!H u0 {2,D} {4,S} {6,S}
-2   R!H u0 {1,D} {3,S} {5,S}
-3   R!H u0 {2,S} {8,D}
-4   R!H u0 {1,S} {7,S}
-5   R!H u0 {2,S} {7,S}
-6   R!H u0 {1,S} {9,S}
-7   R!H u0 {4,S} {5,S}
-8   R!H u0 {3,D} {9,S}
-9   R!H u0 {6,S} {8,S}
+1 * Cd u0 {2,D} {4,S} {6,S}
+2   Cd u0 {1,D} {3,S} {5,S}
+3   Cd u0 {2,S} {8,D}
+4   Cs u0 {1,S} {7,S}
+5   Cs u0 {2,S} {7,S}
+6   Cs u0 {1,S} {9,S}
+7   Cs u0 {4,S} {5,S}
+8   Cd u0 {3,D} {9,S}
+9   Cs u0 {6,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-37.8264,-40.67,-39.3488,-34.8713,-25.392,-17.7936,-9.05308],'J/(mol*K)'),
+        Cpdata = ([-37.8274,-40.67,-39.3488,-34.8703,-25.392,-17.7936,-9.05308],'J/(mol*K)'),
         H298 = (64.8989,'kJ/mol'),
         S298 = (210.302,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_diene_m_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_diene_m_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3621,26 +3621,26 @@ entry(
     label = "s2_5_6_diene_m_2",
     group = 
 """
-1 * R!H u0 {2,D} {3,S} {6,S}
-2   R!H u0 {1,D} {4,S} {5,S}
-3   R!H u0 {1,S} {9,S}
-4   R!H u0 {2,S} {8,S}
-5   R!H u0 {2,S} {7,S}
-6   R!H u0 {1,S} {7,S}
-7   R!H u0 {5,S} {6,S}
-8   R!H u0 {4,S} {9,D}
-9   R!H u0 {3,S} {8,D}
+1 * Cd u0 {2,D} {3,S} {6,S}
+2   Cd u0 {1,D} {4,S} {5,S}
+3   Cs u0 {1,S} {9,S}
+4   Cs u0 {2,S} {8,S}
+5   Cs u0 {2,S} {7,S}
+6   Cs u0 {1,S} {7,S}
+7   Cs u0 {5,S} {6,S}
+8   Cd u0 {4,S} {9,D}
+9   Cd u0 {3,S} {8,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-32.3004,-34.4352,-32.8344,-28.7852,-20.8258,-14.759,-6.48532],'J/(mol*K)'),
+        Cpdata = ([-32.3014,-34.4352,-32.8344,-28.7852,-20.8258,-14.759,-6.48632],'J/(mol*K)'),
         H298 = (42.7943,'kJ/mol'),
         S298 = (193.491,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_diene_m_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_diene_m_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3649,26 +3649,26 @@ entry(
     label = "s2_5_6_diene_m_7",
     group = 
 """
-1 * R!H u0 {2,D} {3,S} {5,S}
-2   R!H u0 {1,D} {4,S} {6,S}
-3   R!H u0 {1,S} {8,S}
-4   R!H u0 {2,S} {7,S}
-5   R!H u0 {1,S} {7,D}
-6   R!H u0 {2,S} {9,S}
-7   R!H u0 {4,S} {5,D}
-8   R!H u0 {3,S} {9,S}
-9   R!H u0 {6,S} {8,S}
+1 * Cd u0 {2,D} {3,S} {5,S}
+2   Cd u0 {1,D} {4,S} {6,S}
+3   Cs u0 {1,S} {8,S}
+4   Cs u0 {2,S} {7,S}
+5   Cd u0 {1,S} {7,D}
+6   Cs u0 {2,S} {9,S}
+7   Cd u0 {4,S} {5,D}
+8   Cs u0 {3,S} {9,S}
+9   Cs u0 {6,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-38.629,-40.3085,-38.2637,-33.8928,-24.6281,-17.3259,-8.3302],'J/(mol*K)'),
+        Cpdata = ([-38.63,-40.3085,-38.2637,-33.8928,-24.6281,-17.3259,-8.3302],'J/(mol*K)'),
         H298 = (51.5473,'kJ/mol'),
         S298 = (204.962,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_diene_m_7 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_diene_m_7 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3677,26 +3677,26 @@ entry(
     label = "s2_5_6_diene_0_2",
     group = 
 """
-1 * R!H u0 {2,S} {4,S} {6,D}
-2   R!H u0 {1,S} {3,S} {5,S}
-3   R!H u0 {2,S} {7,S}
-4   R!H u0 {1,S} {7,S}
-5   R!H u0 {2,S} {9,S}
-6   R!H u0 {1,D} {8,S}
-7   R!H u0 {3,S} {4,S}
-8   R!H u0 {6,S} {9,D}
-9   R!H u0 {5,S} {8,D}
+1 * Cd u0 {2,S} {4,S} {6,D}
+2   Cs u0 {1,S} {3,S} {5,S}
+3   Cs u0 {2,S} {7,S}
+4   Cs u0 {1,S} {7,S}
+5   Cs u0 {2,S} {9,S}
+6   Cd u0 {1,D} {8,S}
+7   Cs u0 {3,S} {4,S}
+8   Cd u0 {6,S} {9,D}
+9   Cd u0 {5,S} {8,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-38.1067,-39.288,-37.6375,-33.3805,-24.832,-17.3106,-9.09196],'J/(mol*K)'),
+        Cpdata = ([-38.1067,-39.288,-37.6375,-33.3805,-24.832,-17.3096,-9.09196],'J/(mol*K)'),
         H298 = (65.0161,'kJ/mol'),
         S298 = (206.507,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_diene_0_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_diene_0_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3705,15 +3705,15 @@ entry(
     label = "s2_5_6_diene_0_3",
     group = 
 """
-1 * R!H u0 {2,S} {3,S} {6,S}
-2   R!H u0 {1,S} {4,D} {5,S}
-3   R!H u0 {1,S} {8,D}
-4   R!H u0 {2,D} {9,S}
-5   R!H u0 {2,S} {7,S}
-6   R!H u0 {1,S} {7,S}
-7   R!H u0 {5,S} {6,S}
-8   R!H u0 {3,D} {9,S}
-9   R!H u0 {4,S} {8,S}
+1 * Cs u0 {2,S} {3,S} {6,S}
+2   Cd u0 {1,S} {4,D} {5,S}
+3   Cd u0 {1,S} {8,D}
+4   Cd u0 {2,D} {9,S}
+5   Cs u0 {2,S} {7,S}
+6   Cs u0 {1,S} {7,S}
+7   Cs u0 {5,S} {6,S}
+8   Cd u0 {3,D} {9,S}
+9   Cs u0 {4,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3724,7 +3724,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_diene_0_3 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_diene_0_3 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3733,15 +3733,15 @@ entry(
     label = "s2_5_6_diene_0_4",
     group = 
 """
-1 * R!H u0 {2,S} {4,D} {5,S}
-2   R!H u0 {1,S} {3,D} {6,S}
-3   R!H u0 {2,D} {9,S}
-4   R!H u0 {1,D} {8,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {2,S} {7,S}
-7   R!H u0 {5,S} {6,S}
-8   R!H u0 {4,S} {9,S}
-9   R!H u0 {3,S} {8,S}
+1 * Cd u0 {2,S} {4,D} {5,S}
+2   Cd u0 {1,S} {3,D} {6,S}
+3   Cd u0 {2,D} {9,S}
+4   Cd u0 {1,D} {8,S}
+5   Cs u0 {1,S} {7,S}
+6   Cs u0 {2,S} {7,S}
+7   Cs u0 {5,S} {6,S}
+8   Cs u0 {4,S} {9,S}
+9   Cs u0 {3,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3752,7 +3752,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_diene_0_4 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_diene_0_4 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3761,26 +3761,26 @@ entry(
     label = "s2_5_6_diene_0_5",
     group = 
 """
-1 * R!H u0 {2,S} {4,S} {5,D}
-2   R!H u0 {1,S} {3,D} {6,S}
-3   R!H u0 {2,D} {8,S}
-4   R!H u0 {1,S} {9,S}
-5   R!H u0 {1,D} {7,S}
-6   R!H u0 {2,S} {7,S}
-7   R!H u0 {5,S} {6,S}
-8   R!H u0 {3,S} {9,S}
-9   R!H u0 {4,S} {8,S}
+1 * Cd u0 {2,S} {4,S} {5,D}
+2   Cd u0 {1,S} {3,D} {6,S}
+3   Cd u0 {2,D} {8,S}
+4   Cs u0 {1,S} {9,S}
+5   Cd u0 {1,D} {7,S}
+6   Cs u0 {2,S} {7,S}
+7   Cs u0 {5,S} {6,S}
+8   Cs u0 {3,S} {9,S}
+9   Cs u0 {4,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-38.7904,-40.956,-39.4838,-35.1923,-25.819,-18.1126,-9.06408],'J/(mol*K)'),
+        Cpdata = ([-38.7904,-40.955,-39.4838,-35.1913,-25.819,-18.1126,-9.06408],'J/(mol*K)'),
         H298 = (53.2024,'kJ/mol'),
         S298 = (211.109,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_diene_0_5 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_diene_0_5 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3789,15 +3789,15 @@ entry(
     label = "s2_5_6_diene_0_6",
     group = 
 """
-1 * R!H u0 {2,S} {4,S} {6,S}
-2   R!H u0 {1,S} {3,D} {5,S}
-3   R!H u0 {2,D} {9,S}
-4   R!H u0 {1,S} {8,S}
-5   R!H u0 {2,S} {7,S}
-6   R!H u0 {1,S} {7,D}
-7   R!H u0 {5,S} {6,D}
-8   R!H u0 {4,S} {9,S}
-9   R!H u0 {3,S} {8,S}
+1 * Cs u0 {2,S} {4,S} {6,S}
+2   Cd u0 {1,S} {3,D} {5,S}
+3   Cd u0 {2,D} {9,S}
+4   Cs u0 {1,S} {8,S}
+5   Cs u0 {2,S} {7,S}
+6   Cd u0 {1,S} {7,D}
+7   Cd u0 {5,S} {6,D}
+8   Cs u0 {4,S} {9,S}
+9   Cs u0 {3,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3808,7 +3808,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_diene_0_6 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_diene_0_6 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3817,15 +3817,15 @@ entry(
     label = "s2_5_6_diene_0_7",
     group = 
 """
-1 * R!H u0 {2,S} {3,S} {6,S}
-2   R!H u0 {1,S} {4,S} {5,D}
-3   R!H u0 {1,S} {7,S}
-4   R!H u0 {2,S} {7,D}
-5   R!H u0 {2,D} {8,S}
-6   R!H u0 {1,S} {9,S}
-7   R!H u0 {3,S} {4,D}
-8   R!H u0 {5,S} {9,S}
-9   R!H u0 {6,S} {8,S}
+1 * Cs u0 {2,S} {3,S} {6,S}
+2   Cd u0 {1,S} {4,S} {5,D}
+3   Cs u0 {1,S} {7,S}
+4   Cd u0 {2,S} {7,D}
+5   Cd u0 {2,D} {8,S}
+6   Cs u0 {1,S} {9,S}
+7   Cd u0 {3,S} {4,D}
+8   Cs u0 {5,S} {9,S}
+9   Cs u0 {6,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3836,7 +3836,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_diene_0_7 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_diene_0_7 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3845,26 +3845,26 @@ entry(
     label = "s2_5_6_diene_1_3",
     group = 
 """
-1 * R!H u0 {2,S} {5,S} {6,S}
-2   R!H u0 {1,S} {3,S} {4,S}
-3   R!H u0 {2,S} {9,D}
-4   R!H u0 {2,S} {7,S}
-5   R!H u0 {1,S} {8,D}
-6   R!H u0 {1,S} {7,S}
-7   R!H u0 {4,S} {6,S}
-8   R!H u0 {5,D} {9,S}
-9   R!H u0 {3,D} {8,S}
+1 * Cs u0 {2,S} {5,S} {6,S}
+2   Cs u0 {1,S} {3,S} {4,S}
+3   Cd u0 {2,S} {9,D}
+4   Cs u0 {2,S} {7,S}
+5   Cd u0 {1,S} {8,D}
+6   Cs u0 {1,S} {7,S}
+7   Cs u0 {4,S} {6,S}
+8   Cd u0 {5,D} {9,S}
+9   Cd u0 {3,D} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-37.026,-38.605,-37.5762,-33.1727,-24.9369,-17.2835,-9.61384],'J/(mol*K)'),
-        H298 = (70.9548,'kJ/mol'),
-        S298 = (222.284,'J/(mol*K)'),
+        Cpdata = ([-36.769,-38.408,-37.4832,-33.1327,-24.8959,-17.2205,-9.47184],'J/(mol*K)'),
+        H298 = (85.0458,'kJ/mol'),
+        S298 = (207.938,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_diene_1_3 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_diene_1_3 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3873,15 +3873,15 @@ entry(
     label = "s2_5_6_diene_1_5",
     group = 
 """
-1 * R!H u0 {2,S} {4,S} {5,S}
-2   R!H u0 {1,S} {3,D} {6,S}
-3   R!H u0 {2,D} {7,S}
-4   R!H u0 {1,S} {9,D}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {2,S} {8,S}
-7   R!H u0 {3,S} {5,S}
-8   R!H u0 {6,S} {9,S}
-9   R!H u0 {4,D} {8,S}
+1 * Cs u0 {2,S} {4,S} {5,S}
+2   Cd u0 {1,S} {3,D} {6,S}
+3   Cd u0 {2,D} {7,S}
+4   Cd u0 {1,S} {9,D}
+5   Cs u0 {1,S} {7,S}
+6   Cs u0 {2,S} {8,S}
+7   Cs u0 {3,S} {5,S}
+8   Cs u0 {6,S} {9,S}
+9   Cd u0 {4,D} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3892,7 +3892,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_diene_1_5 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_diene_1_5 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3901,15 +3901,15 @@ entry(
     label = "s2_5_6_diene_1_6",
     group = 
 """
-1 * R!H u0 {2,S} {4,S} {6,S}
-2   R!H u0 {1,S} {3,S} {5,S}
-3   R!H u0 {2,S} {7,S}
-4   R!H u0 {1,S} {7,D}
-5   R!H u0 {2,S} {8,D}
-6   R!H u0 {1,S} {9,S}
-7   R!H u0 {3,S} {4,D}
-8   R!H u0 {5,D} {9,S}
-9   R!H u0 {6,S} {8,S}
+1 * Cs u0 {2,S} {4,S} {6,S}
+2   Cs u0 {1,S} {3,S} {5,S}
+3   Cs u0 {2,S} {7,S}
+4   Cd u0 {1,S} {7,D}
+5   Cd u0 {2,S} {8,D}
+6   Cs u0 {1,S} {9,S}
+7   Cd u0 {3,S} {4,D}
+8   Cd u0 {5,D} {9,S}
+9   Cs u0 {6,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3920,7 +3920,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_diene_1_6 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_diene_1_6 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3929,15 +3929,15 @@ entry(
     label = "s2_5_6_diene_1_7",
     group = 
 """
-1 * R!H u0 {2,S} {4,S} {5,S}
-2   R!H u0 {1,S} {3,S} {6,S}
-3   R!H u0 {2,S} {8,S}
-4   R!H u0 {1,S} {9,D}
-5   R!H u0 {1,S} {7,D}
-6   R!H u0 {2,S} {7,S}
-7   R!H u0 {5,D} {6,S}
-8   R!H u0 {3,S} {9,S}
-9   R!H u0 {4,D} {8,S}
+1 * Cs u0 {2,S} {4,S} {5,S}
+2   Cs u0 {1,S} {3,S} {6,S}
+3   Cs u0 {2,S} {8,S}
+4   Cd u0 {1,S} {9,D}
+5   Cd u0 {1,S} {7,D}
+6   Cs u0 {2,S} {7,S}
+7   Cd u0 {5,D} {6,S}
+8   Cs u0 {3,S} {9,S}
+9   Cd u0 {4,D} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3948,7 +3948,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_diene_1_7 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_diene_1_7 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -3957,15 +3957,15 @@ entry(
     label = "s2_5_6_diene_1_8",
     group = 
 """
-1 * R!H u0 {2,S} {3,S} {6,S}
-2   R!H u0 {1,S} {4,D} {5,S}
-3   R!H u0 {1,S} {7,S}
-4   R!H u0 {2,D} {7,S}
-5   R!H u0 {2,S} {8,D}
-6   R!H u0 {1,S} {9,S}
-7   R!H u0 {3,S} {4,S}
-8   R!H u0 {5,D} {9,S}
-9   R!H u0 {6,S} {8,S}
+1 * Cs u0 {2,S} {3,S} {6,S}
+2   Cd u0 {1,S} {4,D} {5,S}
+3   Cs u0 {1,S} {7,S}
+4   Cd u0 {2,D} {7,S}
+5   Cd u0 {2,S} {8,D}
+6   Cs u0 {1,S} {9,S}
+7   Cs u0 {3,S} {4,S}
+8   Cd u0 {5,D} {9,S}
+9   Cs u0 {6,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -3985,15 +3985,15 @@ entry(
     label = "s2_5_6_diene_2_5",
     group = 
 """
-1 * R!H u0 {2,S} {5,S} {6,S}
-2   R!H u0 {1,S} {3,S} {4,D}
-3   R!H u0 {2,S} {9,S}
-4   R!H u0 {2,D} {7,S}
-5   R!H u0 {1,S} {8,S}
-6   R!H u0 {1,S} {7,S}
-7   R!H u0 {4,S} {6,S}
-8   R!H u0 {5,S} {9,D}
-9   R!H u0 {3,S} {8,D}
+1 * Cs u0 {2,S} {5,S} {6,S}
+2   Cd u0 {1,S} {3,S} {4,D}
+3   Cs u0 {2,S} {9,S}
+4   Cd u0 {2,D} {7,S}
+5   Cs u0 {1,S} {8,S}
+6   Cs u0 {1,S} {7,S}
+7   Cs u0 {4,S} {6,S}
+8   Cd u0 {5,S} {9,D}
+9   Cd u0 {3,S} {8,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4004,7 +4004,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_diene_2_5 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_diene_2_5 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4013,26 +4013,26 @@ entry(
     label = "s2_5_6_diene_2_6",
     group = 
 """
-1 * R!H u0 {2,S} {4,S} {5,S}
-2   R!H u0 {1,S} {3,S} {6,S}
-3   R!H u0 {2,S} {8,S}
-4   R!H u0 {1,S} {7,S}
-5   R!H u0 {1,S} {9,S}
-6   R!H u0 {2,S} {7,D}
-7   R!H u0 {4,S} {6,D}
-8   R!H u0 {3,S} {9,D}
-9   R!H u0 {5,S} {8,D}
+1 * Cs u0 {2,S} {4,S} {5,S}
+2   Cs u0 {1,S} {3,S} {6,S}
+3   Cs u0 {2,S} {8,S}
+4   Cs u0 {1,S} {7,S}
+5   Cs u0 {1,S} {9,S}
+6   Cd u0 {2,S} {7,D}
+7   Cd u0 {4,S} {6,D}
+8   Cd u0 {3,S} {9,D}
+9   Cd u0 {5,S} {8,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-31.8178,-31.2752,-29.2986,-26.0706,-19.9045,-13.5623,-7.10184],'J/(mol*K)'),
+        Cpdata = ([-31.8178,-31.2752,-29.2986,-26.0706,-19.9045,-13.5633,-7.10184],'J/(mol*K)'),
         H298 = (65.0092,'kJ/mol'),
         S298 = (191.089,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_diene_2_6 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_diene_2_6 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4041,15 +4041,15 @@ entry(
     label = "s2_5_6_diene_5_7",
     group = 
 """
-1 * R!H u0 {2,S} {3,S} {4,S}
-2   R!H u0 {1,S} {5,S} {6,D}
-3   R!H u0 {1,S} {7,D}
-4   R!H u0 {1,S} {9,S}
-5   R!H u0 {2,S} {8,S}
-6   R!H u0 {2,D} {7,S}
-7   R!H u0 {3,D} {6,S}
-8   R!H u0 {5,S} {9,S}
-9   R!H u0 {4,S} {8,S}
+1 * Cs u0 {2,S} {3,S} {4,S}
+2   Cd u0 {1,S} {5,S} {6,D}
+3   Cd u0 {1,S} {7,D}
+4   Cs u0 {1,S} {9,S}
+5   Cs u0 {2,S} {8,S}
+6   Cd u0 {2,D} {7,S}
+7   Cd u0 {3,D} {6,S}
+8   Cs u0 {5,S} {9,S}
+9   Cs u0 {4,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4060,7 +4060,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_diene_5_7 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_diene_5_7 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4069,26 +4069,26 @@ entry(
     label = "s2_5_6_diene_5_8",
     group = 
 """
-1 * R!H u0 {2,S} {3,D} {5,S}
-2   R!H u0 {1,S} {4,D} {6,S}
-3   R!H u0 {1,D} {7,S}
-4   R!H u0 {2,D} {7,S}
-5   R!H u0 {1,S} {9,S}
-6   R!H u0 {2,S} {8,S}
-7   R!H u0 {3,S} {4,S}
-8   R!H u0 {6,S} {9,S}
-9   R!H u0 {5,S} {8,S}
+1 * Cd u0 {2,S} {3,D} {5,S}
+2   Cd u0 {1,S} {4,D} {6,S}
+3   Cd u0 {1,D} {7,S}
+4   Cd u0 {2,D} {7,S}
+5   Cs u0 {1,S} {9,S}
+6   Cs u0 {2,S} {8,S}
+7   Cs u0 {3,S} {4,S}
+8   Cs u0 {6,S} {9,S}
+9   Cs u0 {5,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-38.594,-40.0215,-37.8257,-33.4848,-24.3491,-17.1569,-8.3362],'J/(mol*K)'),
+        Cpdata = ([-38.594,-40.0215,-37.8257,-33.4848,-24.3501,-17.1569,-8.3362],'J/(mol*K)'),
         H298 = (56.0623,'kJ/mol'),
         S298 = (201.108,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_diene_5_8 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_diene_5_8 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4097,15 +4097,15 @@ entry(
     label = "s2_5_6_ben",
     group = 
 """
-1 * R!H u0 {2,B} {3,S} {5,B}
-2   R!H u0 {1,B} {4,S} {6,B}
-3   R!H u0 {1,S} {7,S}
-4   R!H u0 {2,S} {7,S}
-5   R!H u0 {1,B} {9,B}
-6   R!H u0 {2,B} {8,B}
-7   R!H u0 {3,S} {4,S}
-8   R!H u0 {6,B} {9,B}
-9   R!H u0 {5,B} {8,B}
+1 * Cb u0 {2,B} {3,S} {5,B}
+2   Cb u0 {1,B} {4,S} {6,B}
+3   C  u0 {1,S} {7,S}
+4   C  u0 {2,S} {7,S}
+5   Cb u0 {1,B} {9,B}
+6   Cb u0 {2,B} {8,B}
+7   C u0 {3,S} {4,S}
+8   Cb u0 {6,B} {9,B}
+9   Cb u0 {5,B} {8,B}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4116,7 +4116,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_5_6_ben from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_5_6_ben from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4125,15 +4125,15 @@ entry(
     label = "s2_5_6_indene",
     group = 
 """
-1 * R!H u0 {2,B} {3,S} {4,B}
-2   R!H u0 {1,B} {5,S} {6,B}
-3   R!H u0 {1,S} {7,S}
-4   R!H u0 {1,B} {8,B}
-5   R!H u0 {2,S} {7,D}
-6   R!H u0 {2,B} {9,B}
-7   R!H u0 {3,S} {5,D}
-8   R!H u0 {4,B} {9,B}
-9   R!H u0 {6,B} {8,B}
+1 * C  u0 {2,B} {3,S} {4,B}
+2   C  u0 {1,B} {5,S} {6,B}
+3   Cs u0 {1,S} {7,S}
+4   C  u0 {1,B} {8,B}
+5   C  u0 {2,S} {7,D}
+6   C  u0 {2,B} {9,B}
+7   C  u0 {3,S} {5,D}
+8   C  u0 {4,B} {9,B}
+9   C  u0 {6,B} {8,B}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4153,16 +4153,16 @@ entry(
     label = "s2_6_6",
     group = 
 """
-1    R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {6,[S,D,T,B]}
-2    R!H u0 {1,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-3    R!H u0 {1,[S,D,T,B]} {9,[S,D,T,B]}
-4    R!H u0 {2,[S,D,T,B]} {7,[S,D,T,B]}
-5    R!H u0 {2,[S,D,T,B]} {8,[S,D,T,B]}
-6    R!H u0 {1,[S,D,T,B]} {10,[S,D,T,B]}
-7  * R!H u0 {4,[S,D,T,B]} {9,[S,D,T,B]}
-8    R!H u0 {5,[S,D,T,B]} {10,[S,D,T,B]}
-9    R!H u0 {3,[S,D,T,B]} {7,[S,D,T,B]}
-10   R!H u0 {6,[S,D,T,B]} {8,[S,D,T,B]}
+1    C u0 {2,[S,D,T,B]} {3,[S,D,T,B]} {6,[S,D,T,B]}
+2    C u0 {1,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+3    C u0 {1,[S,D,T,B]} {9,[S,D,T,B]}
+4    C u0 {2,[S,D,T,B]} {7,[S,D,T,B]}
+5    C u0 {2,[S,D,T,B]} {8,[S,D,T,B]}
+6    C u0 {1,[S,D,T,B]} {10,[S,D,T,B]}
+7  * C u0 {4,[S,D,T,B]} {9,[S,D,T,B]}
+8    C u0 {5,[S,D,T,B]} {10,[S,D,T,B]}
+9    C u0 {3,[S,D,T,B]} {7,[S,D,T,B]}
+10   C u0 {6,[S,D,T,B]} {8,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -4177,16 +4177,16 @@ entry(
     label = "s2_6_6_ane",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {6,S}
-2    R!H u0 {1,S} {4,S} {5,S}
-3    R!H u0 {1,S} {9,S}
-4    R!H u0 {2,S} {7,S}
-5    R!H u0 {2,S} {8,S}
-6    R!H u0 {1,S} {10,S}
-7  * R!H u0 {4,S} {9,S}
-8    R!H u0 {5,S} {10,S}
-9    R!H u0 {3,S} {7,S}
-10   R!H u0 {6,S} {8,S}
+1    Cs u0 {2,S} {3,S} {6,S}
+2    Cs u0 {1,S} {4,S} {5,S}
+3    Cs u0 {1,S} {9,S}
+4    Cs u0 {2,S} {7,S}
+5    Cs u0 {2,S} {8,S}
+6    Cs u0 {1,S} {10,S}
+7  * Cs u0 {4,S} {9,S}
+8    Cs u0 {5,S} {10,S}
+9    Cs u0 {3,S} {7,S}
+10   Cs u0 {6,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4197,7 +4197,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4218,16 +4218,16 @@ entry(
     label = "s2_6_6_ene_0",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {5,S}
-2    R!H u0 {1,S} {4,D} {6,S}
-3    R!H u0 {1,S} {7,S}
-4    R!H u0 {2,D} {8,S}
-5    R!H u0 {1,S} {10,S}
-6    R!H u0 {2,S} {9,S}
-7  * R!H u0 {3,S} {8,S}
-8    R!H u0 {4,S} {7,S}
-9    R!H u0 {6,S} {10,S}
-10   R!H u0 {5,S} {9,S}
+1    Cs u0 {2,S} {3,S} {5,S}
+2    Cd u0 {1,S} {4,D} {6,S}
+3    Cs u0 {1,S} {7,S}
+4    Cd u0 {2,D} {8,S}
+5    Cs u0 {1,S} {10,S}
+6    Cs u0 {2,S} {9,S}
+7  * Cs u0 {3,S} {8,S}
+8    Cs u0 {4,S} {7,S}
+9    Cs u0 {6,S} {10,S}
+10   Cs u0 {5,S} {9,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4238,7 +4238,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_ene_0 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_ene_0 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4247,27 +4247,27 @@ entry(
     label = "s2_6_6_ene_1",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {5,S}
-2    R!H u0 {1,S} {4,S} {6,S}
-3    R!H u0 {1,S} {9,D}
-4    R!H u0 {2,S} {7,S}
-5    R!H u0 {1,S} {10,S}
-6    R!H u0 {2,S} {8,S}
-7  * R!H u0 {4,S} {10,S}
-8    R!H u0 {6,S} {9,S}
-9    R!H u0 {3,D} {8,S}
-10   R!H u0 {5,S} {7,S}
+1    Cs u0 {2,S} {3,S} {5,S}
+2    Cs u0 {1,S} {4,S} {6,S}
+3    Cd u0 {1,S} {9,D}
+4    Cs u0 {2,S} {7,S}
+5    Cs u0 {1,S} {10,S}
+6    Cs u0 {2,S} {8,S}
+7  * Cs u0 {4,S} {10,S}
+8    Cs u0 {6,S} {9,S}
+9    Cd u0 {3,D} {8,S}
+10   Cs u0 {5,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-42.9588,-40.6357,-37.4708,-32.3113,-22.1888,-13.3879,-3.8232],'J/(mol*K)'),
-        H298 = (62.7273,'kJ/mol'),
-        S298 = (169.342,'J/(mol*K)'),
+        Cpdata = ([-41.3108,-37.9067,-34.3308,-29.4523,-19.9858,-11.6909,-2.8732],'J/(mol*K)'),
+        H298 = (260.592,'kJ/mol'),
+        S298 = (166.041,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4276,16 +4276,16 @@ entry(
     label = "s2_6_6_ene_2",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {4,S}
-2    R!H u0 {1,S} {5,S} {6,S}
-3    R!H u0 {1,S} {10,S}
-4    R!H u0 {1,S} {7,S}
-5    R!H u0 {2,S} {8,S}
-6    R!H u0 {2,S} {9,S}
-7  * R!H u0 {4,S} {8,S}
-8    R!H u0 {5,S} {7,S}
-9    R!H u0 {6,S} {10,D}
-10   R!H u0 {3,S} {9,D}
+1    Cs u0 {2,S} {3,S} {4,S}
+2    Cs u0 {1,S} {5,S} {6,S}
+3    Cs u0 {1,S} {10,S}
+4    Cs u0 {1,S} {7,S}
+5    Cs u0 {2,S} {8,S}
+6    Cs u0 {2,S} {9,S}
+7  * Cs u0 {4,S} {8,S}
+8    Cs u0 {5,S} {7,S}
+9    Cd u0 {6,S} {10,D}
+10   Cd u0 {3,S} {9,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4296,7 +4296,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_ene_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_ene_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4305,27 +4305,27 @@ entry(
     label = "s2_6_6_ene_m",
     group = 
 """
-1    R!H u0 {2,D} {5,S} {6,S}
-2    R!H u0 {1,D} {3,S} {4,S}
-3    R!H u0 {2,S} {7,S}
-4    R!H u0 {2,S} {8,S}
-5    R!H u0 {1,S} {10,S}
-6    R!H u0 {1,S} {9,S}
-7  * R!H u0 {3,S} {9,S}
-8    R!H u0 {4,S} {10,S}
-9    R!H u0 {6,S} {7,S}
-10   R!H u0 {5,S} {8,S}
+1    Cd u0 {2,D} {5,S} {6,S}
+2    Cd u0 {1,D} {3,S} {4,S}
+3    Cs u0 {2,S} {7,S}
+4    Cs u0 {2,S} {8,S}
+5    Cs u0 {1,S} {10,S}
+6    Cs u0 {1,S} {9,S}
+7  * Cs u0 {3,S} {9,S}
+8    Cs u0 {4,S} {10,S}
+9    Cs u0 {6,S} {7,S}
+10   Cs u0 {5,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-45.2251,-43.8136,-40.2788,-34.6869,-23.5968,-14.78,-3.51744],'J/(mol*K)'),
+        Cpdata = ([-45.2261,-43.8146,-40.2788,-34.6869,-23.5958,-14.779,-3.51844],'J/(mol*K)'),
         H298 = (34.5594,'kJ/mol'),
         S298 = (154.144,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_ene_m from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_ene_m from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4346,27 +4346,27 @@ entry(
     label = "s2_6_6_diene_m_1",
     group = 
 """
-1    R!H u0 {2,D} {4,S} {6,S}
-2    R!H u0 {1,D} {3,S} {5,S}
-3    R!H u0 {2,S} {9,S}
-4    R!H u0 {1,S} {8,S}
-5    R!H u0 {2,S} {7,D}
-6    R!H u0 {1,S} {10,S}
-7  * R!H u0 {5,D} {8,S}
-8    R!H u0 {4,S} {7,S}
-9    R!H u0 {3,S} {10,S}
-10   R!H u0 {6,S} {9,S}
+1    Cd u0 {2,D} {4,S} {6,S}
+2    Cd u0 {1,D} {3,S} {5,S}
+3    Cs u0 {2,S} {9,S}
+4    Cs u0 {1,S} {8,S}
+5    Cd u0 {2,S} {7,D}
+6    Cs u0 {1,S} {10,S}
+7  * Cd u0 {5,D} {8,S}
+8    Cs u0 {4,S} {7,S}
+9    Cs u0 {3,S} {10,S}
+10   Cs u0 {6,S} {9,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-42.4834,-44.2058,-42.1578,-36.9087,-25.8969,-17.1002,-6.65608],'J/(mol*K)'),
+        Cpdata = ([-42.4824,-44.2048,-42.1578,-36.9087,-25.8979,-17.1012,-6.65508],'J/(mol*K)'),
         H298 = (47.0401,'kJ/mol'),
         S298 = (188.632,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_diene_m_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_diene_m_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4375,27 +4375,27 @@ entry(
     label = "s2_6_6_diene_m_2",
     group = 
 """
-1    R!H u0 {2,D} {5,S} {6,S}
-2    R!H u0 {1,D} {3,S} {4,S}
-3    R!H u0 {2,S} {8,S}
-4    R!H u0 {2,S} {10,S}
-5    R!H u0 {1,S} {9,S}
-6    R!H u0 {1,S} {7,S}
-7  * R!H u0 {6,S} {10,S}
-8    R!H u0 {3,S} {9,D}
-9    R!H u0 {5,S} {8,D}
-10   R!H u0 {4,S} {7,S}
+1    Cd u0 {2,D} {5,S} {6,S}
+2    Cd u0 {1,D} {3,S} {4,S}
+3    Cs u0 {2,S} {8,S}
+4    Cs u0 {2,S} {10,S}
+5    Cs u0 {1,S} {9,S}
+6    Cs u0 {1,S} {7,S}
+7  * Cs u0 {6,S} {10,S}
+8    Cd u0 {3,S} {9,D}
+9    Cd u0 {5,S} {8,D}
+10   Cs u0 {4,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-36.4704,-37.506,-35.2594,-30.5046,-21.0927,-13.8636,-3.90332],'J/(mol*K)'),
+        Cpdata = ([-36.4704,-37.505,-35.2594,-30.5046,-21.0927,-13.8636,-3.90332],'J/(mol*K)'),
         H298 = (27.5712,'kJ/mol'),
         S298 = (167.901,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_diene_m_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_diene_m_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4404,27 +4404,27 @@ entry(
     label = "s2_6_6_diene_0_2",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {5,S}
-2    R!H u0 {1,S} {4,S} {6,D}
-3    R!H u0 {1,S} {8,S}
-4    R!H u0 {2,S} {10,S}
-5    R!H u0 {1,S} {9,S}
-6    R!H u0 {2,D} {7,S}
-7  * R!H u0 {6,S} {8,D}
-8    R!H u0 {3,S} {7,D}
-9    R!H u0 {5,S} {10,S}
-10   R!H u0 {4,S} {9,S}
+1    Cs u0 {2,S} {3,S} {5,S}
+2    Cd u0 {1,S} {4,S} {6,D}
+3    Cs u0 {1,S} {8,S}
+4    Cs u0 {2,S} {10,S}
+5    Cs u0 {1,S} {9,S}
+6    Cd u0 {2,D} {7,S}
+7  * Cd u0 {6,S} {8,D}
+8    Cd u0 {3,S} {7,D}
+9    Cs u0 {5,S} {10,S}
+10   Cs u0 {4,S} {9,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-41.1697,-42.9508,-41.3835,-35.9799,-25.3008,-16.5271,-7.06396],'J/(mol*K)'),
+        Cpdata = ([-41.1707,-42.9518,-41.3835,-35.9789,-25.3008,-16.5271,-7.06396],'J/(mol*K)'),
         H298 = (63.4493,'kJ/mol'),
         S298 = (189.537,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_diene_0_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_diene_0_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4433,16 +4433,16 @@ entry(
     label = "s2_6_6_diene_0_3",
     group = 
 """
-1    R!H u0 {2,S} {4,S} {6,D}
-2    R!H u0 {1,S} {3,S} {5,S}
-3    R!H u0 {2,S} {10,S}
-4    R!H u0 {1,S} {9,S}
-5    R!H u0 {2,S} {7,D}
-6    R!H u0 {1,D} {8,S}
-7  * R!H u0 {5,D} {8,S}
-8    R!H u0 {6,S} {7,S}
-9    R!H u0 {4,S} {10,S}
-10   R!H u0 {3,S} {9,S}
+1    Cd u0 {2,S} {4,S} {6,D}
+2    Cs u0 {1,S} {3,S} {5,S}
+3    Cs u0 {2,S} {10,S}
+4    Cs u0 {1,S} {9,S}
+5    Cd u0 {2,S} {7,D}
+6    Cd u0 {1,D} {8,S}
+7  * Cd u0 {5,D} {8,S}
+8    Cs u0 {6,S} {7,S}
+9    Cs u0 {4,S} {10,S}
+10   Cs u0 {3,S} {9,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4453,7 +4453,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_diene_0_3 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_diene_0_3 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4462,27 +4462,27 @@ entry(
     label = "s2_6_6_diene_0_4",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {5,D}
-2    R!H u0 {1,S} {4,D} {6,S}
-3    R!H u0 {1,S} {10,S}
-4    R!H u0 {2,D} {8,S}
-5    R!H u0 {1,D} {7,S}
-6    R!H u0 {2,S} {9,S}
-7  * R!H u0 {5,S} {8,S}
-8    R!H u0 {4,S} {7,S}
-9    R!H u0 {6,S} {10,S}
-10   R!H u0 {3,S} {9,S}
+1    Cd u0 {2,S} {3,S} {5,D}
+2    Cd u0 {1,S} {4,D} {6,S}
+3    Cs u0 {1,S} {10,S}
+4    Cd u0 {2,D} {8,S}
+5    Cd u0 {1,D} {7,S}
+6    Cs u0 {2,S} {9,S}
+7  * Cs u0 {5,S} {8,S}
+8    Cs u0 {4,S} {7,S}
+9    Cs u0 {6,S} {10,S}
+10   Cs u0 {3,S} {9,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-42.7644,-44.3168,-42.0638,-36.6797,-25.5709,-16.8262,-6.67908],'J/(mol*K)'),
+        Cpdata = ([-42.7634,-44.3158,-42.0638,-36.6807,-25.5709,-16.8262,-6.67908],'J/(mol*K)'),
         H298 = (53.8256,'kJ/mol'),
         S298 = (181.405,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_diene_0_4 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_diene_0_4 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4491,27 +4491,27 @@ entry(
     label = "s2_6_6_diene_0_5",
     group = 
 """
-1    R!H u0 {2,S} {3,S} {5,D}
-2    R!H u0 {1,S} {4,D} {6,S}
-3    R!H u0 {1,S} {9,S}
-4    R!H u0 {2,D} {7,S}
-5    R!H u0 {1,D} {10,S}
-6    R!H u0 {2,S} {8,S}
-7  * R!H u0 {4,S} {9,S}
-8    R!H u0 {6,S} {10,S}
-9    R!H u0 {3,S} {7,S}
-10   R!H u0 {5,S} {8,S}
+1    Cd u0 {2,S} {3,S} {5,D}
+2    Cd u0 {1,S} {4,D} {6,S}
+3    Cs u0 {1,S} {9,S}
+4    Cd u0 {2,D} {7,S}
+5    Cd u0 {1,D} {10,S}
+6    Cs u0 {2,S} {8,S}
+7  * Cs u0 {4,S} {9,S}
+8    Cs u0 {6,S} {10,S}
+9    Cs u0 {3,S} {7,S}
+10   Cs u0 {5,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-43.7554,-45.3278,-42.9508,-37.4467,-26.1409,-17.2492,-6.89208],'J/(mol*K)'),
+        Cpdata = ([-43.7554,-45.3278,-42.9508,-37.4467,-26.1409,-17.2482,-6.89208],'J/(mol*K)'),
         H298 = (34.4058,'kJ/mol'),
         S298 = (180.245,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_diene_0_5 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_diene_0_5 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4520,27 +4520,27 @@ entry(
     label = "s2_6_6_diene_0_6",
     group = 
 """
-1    R!H u0 {2,S} {5,S} {6,D}
-2    R!H u0 {1,S} {3,S} {4,S}
-3    R!H u0 {2,S} {10,S}
-4    R!H u0 {2,S} {9,D}
-5    R!H u0 {1,S} {8,S}
-6    R!H u0 {1,D} {7,S}
-7  * R!H u0 {6,S} {10,S}
-8    R!H u0 {5,S} {9,S}
-9    R!H u0 {4,D} {8,S}
-10   R!H u0 {3,S} {7,S}
+1    Cd u0 {2,S} {5,S} {6,D}
+2    Cs u0 {1,S} {3,S} {4,S}
+3    Cs u0 {2,S} {10,S}
+4    Cd u0 {2,S} {9,D}
+5    Cs u0 {1,S} {8,S}
+6    Cd u0 {1,D} {7,S}
+7  * Cs u0 {6,S} {10,S}
+8    Cs u0 {5,S} {9,S}
+9    Cd u0 {4,D} {8,S}
+10   Cs u0 {3,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-40.4485,-37.0315,-33.0252,-27.7344,-17.702,-10.5593,-3.47236],'J/(mol*K)'),
+        Cpdata = ([-40.4475,-37.0305,-33.0252,-27.7354,-17.703,-10.5603,-3.47136],'J/(mol*K)'),
         H298 = (259.528,'kJ/mol'),
         S298 = (176.442,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_diene_0_6 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_diene_0_6 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4549,27 +4549,27 @@ entry(
     label = "s2_6_6_diene_0_7",
     group = 
 """
-1    R!H u0 {2,S} {4,S} {6,D}
-2    R!H u0 {1,S} {3,S} {5,S}
-3    R!H u0 {2,S} {8,S}
-4    R!H u0 {1,S} {9,S}
-5    R!H u0 {2,S} {10,S}
-6    R!H u0 {1,D} {7,S}
-7  * R!H u0 {6,S} {10,S}
-8    R!H u0 {3,S} {9,D}
-9    R!H u0 {4,S} {8,D}
-10   R!H u0 {5,S} {7,S}
+1    Cd u0 {2,S} {4,S} {6,D}
+2    Cs u0 {1,S} {3,S} {5,S}
+3    Cs u0 {2,S} {8,S}
+4    Cs u0 {1,S} {9,S}
+5    Cs u0 {2,S} {10,S}
+6    Cd u0 {1,D} {7,S}
+7  * Cs u0 {6,S} {10,S}
+8    Cd u0 {3,S} {9,D}
+9    Cd u0 {4,S} {8,D}
+10   Cs u0 {5,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-35.6501,-36.3445,-34.5142,-29.6673,-20.6586,-13.2452,-4.61508],'J/(mol*K)'),
+        Cpdata = ([-35.6501,-36.3455,-34.5142,-29.6663,-20.6586,-13.2452,-4.61608],'J/(mol*K)'),
         H298 = (40.2236,'kJ/mol'),
         S298 = (173.573,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_diene_0_7 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_diene_0_7 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4578,16 +4578,16 @@ entry(
     label = "s2_6_6_diene_0_8",
     group = 
 """
-1    R!H u0 {2,S} {4,S} {6,D}
-2    R!H u0 {1,S} {3,S} {5,S}
-3    R!H u0 {2,S} {9,S}
-4    R!H u0 {1,S} {10,D}
-5    R!H u0 {2,S} {8,S}
-6    R!H u0 {1,D} {7,S}
-7  * R!H u0 {6,S} {8,S}
-8    R!H u0 {5,S} {7,S}
-9    R!H u0 {3,S} {10,S}
-10   R!H u0 {4,D} {9,S}
+1    Cd u0 {2,S} {4,S} {6,D}
+2    Cs u0 {1,S} {3,S} {5,S}
+3    Cs u0 {2,S} {9,S}
+4    Cd u0 {1,S} {10,D}
+5    Cs u0 {2,S} {8,S}
+6    Cd u0 {1,D} {7,S}
+7  * Cs u0 {6,S} {8,S}
+8    Cs u0 {5,S} {7,S}
+9    Cs u0 {3,S} {10,S}
+10   Cd u0 {4,D} {9,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4598,7 +4598,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_diene_0_8 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_diene_0_8 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4607,16 +4607,16 @@ entry(
     label = "s2_6_6_diene_1_3",
     group = 
 """
-1    R!H u0 {2,S} {5,S} {6,S}
-2    R!H u0 {1,S} {3,S} {4,S}
-3    R!H u0 {2,S} {7,D}
-4    R!H u0 {2,S} {8,S}
-5    R!H u0 {1,S} {10,S}
-6    R!H u0 {1,S} {9,D}
-7  * R!H u0 {3,D} {9,S}
-8    R!H u0 {4,S} {10,S}
-9    R!H u0 {6,D} {7,S}
-10   R!H u0 {5,S} {8,S}
+1    Cs u0 {2,S} {5,S} {6,S}
+2    Cs u0 {1,S} {3,S} {4,S}
+3    Cd u0 {2,S} {7,D}
+4    Cs u0 {2,S} {8,S}
+5    Cs u0 {1,S} {10,S}
+6    Cd u0 {1,S} {9,D}
+7  * Cd u0 {3,D} {9,S}
+8    Cs u0 {4,S} {10,S}
+9    Cd u0 {6,D} {7,S}
+10   Cs u0 {5,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4627,7 +4627,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_diene_1_3 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_diene_1_3 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4636,16 +4636,16 @@ entry(
     label = "s2_6_6_diene_1_6",
     group = 
 """
-1    R!H u0 {2,S} {5,S} {6,S}
-2    R!H u0 {1,S} {3,S} {4,S}
-3    R!H u0 {2,S} {10,S}
-4    R!H u0 {2,S} {8,D}
-5    R!H u0 {1,S} {9,S}
-6    R!H u0 {1,S} {7,D}
-7  * R!H u0 {6,D} {10,S}
-8    R!H u0 {4,D} {9,S}
-9    R!H u0 {5,S} {8,S}
-10   R!H u0 {3,S} {7,S}
+1    Cs u0 {2,S} {5,S} {6,S}
+2    Cs u0 {1,S} {3,S} {4,S}
+3    Cs u0 {2,S} {10,S}
+4    Cd u0 {2,S} {8,D}
+5    Cs u0 {1,S} {9,S}
+6    Cd u0 {1,S} {7,D}
+7  * Cd u0 {6,D} {10,S}
+8    Cd u0 {4,D} {9,S}
+9    Cs u0 {5,S} {8,S}
+10   Cs u0 {3,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4656,7 +4656,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_diene_1_6 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_diene_1_6 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4665,16 +4665,16 @@ entry(
     label = "s2_6_6_diene_1_7",
     group = 
 """
-1    R!H u0 {2,S} {4,S} {6,S}
-2    R!H u0 {1,S} {3,S} {5,S}
-3    R!H u0 {2,S} {10,S}
-4    R!H u0 {1,S} {7,S}
-5    R!H u0 {2,S} {8,D}
-6    R!H u0 {1,S} {9,S}
-7  * R!H u0 {4,S} {10,D}
-8    R!H u0 {5,D} {9,S}
-9    R!H u0 {6,S} {8,S}
-10   R!H u0 {3,S} {7,D}
+1    Cs u0 {2,S} {4,S} {6,S}
+2    Cs u0 {1,S} {3,S} {5,S}
+3    Cs u0 {2,S} {10,S}
+4    Cs u0 {1,S} {7,S}
+5    Cd u0 {2,S} {8,D}
+6    Cs u0 {1,S} {9,S}
+7  * Cd u0 {4,S} {10,D}
+8    Cd u0 {5,D} {9,S}
+9    Cs u0 {6,S} {8,S}
+10   Cd u0 {3,S} {7,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4685,7 +4685,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_diene_1_7 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_diene_1_7 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4694,16 +4694,16 @@ entry(
     label = "s2_6_6_diene_1_8",
     group = 
 """
-1    R!H u0 {2,S} {4,S} {5,S}
-2    R!H u0 {1,S} {3,S} {6,S}
-3    R!H u0 {2,S} {7,S}
-4    R!H u0 {1,S} {10,D}
-5    R!H u0 {1,S} {8,D}
-6    R!H u0 {2,S} {9,S}
-7  * R!H u0 {3,S} {8,S}
-8    R!H u0 {5,D} {7,S}
-9    R!H u0 {6,S} {10,S}
-10   R!H u0 {4,D} {9,S}
+1    Cs u0 {2,S} {4,S} {5,S}
+2    Cs u0 {1,S} {3,S} {6,S}
+3    Cs u0 {2,S} {7,S}
+4    Cd u0 {1,S} {10,D}
+5    Cd u0 {1,S} {8,D}
+6    Cs u0 {2,S} {9,S}
+7  * Cs u0 {3,S} {8,S}
+8    Cd u0 {5,D} {7,S}
+9    Cs u0 {6,S} {10,S}
+10   Cd u0 {4,D} {9,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4714,7 +4714,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_diene_1_8 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_diene_1_8 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4723,16 +4723,16 @@ entry(
     label = "s2_6_6_diene_2_7",
     group = 
 """
-1    R!H u0 {2,S} {4,S} {6,S}
-2    R!H u0 {1,S} {3,S} {5,S}
-3    R!H u0 {2,S} {8,S}
-4    R!H u0 {1,S} {9,S}
-5    R!H u0 {2,S} {7,S}
-6    R!H u0 {1,S} {10,S}
-7  * R!H u0 {5,S} {9,D}
-8    R!H u0 {3,S} {10,D}
-9    R!H u0 {4,S} {7,D}
-10   R!H u0 {6,S} {8,D}
+1    Cs u0 {2,S} {4,S} {6,S}
+2    Cs u0 {1,S} {3,S} {5,S}
+3    Cs u0 {2,S} {8,S}
+4    Cs u0 {1,S} {9,S}
+5    Cs u0 {2,S} {7,S}
+6    Cs u0 {1,S} {10,S}
+7  * Cd u0 {5,S} {9,D}
+8    Cd u0 {3,S} {10,D}
+9    Cd u0 {4,S} {7,D}
+10   Cd u0 {6,S} {8,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4743,7 +4743,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_diene_2_7 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_diene_2_7 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4752,16 +4752,16 @@ entry(
     label = "s2_6_6_ben",
     group = 
 """
-1    R!H u0 {2,B} {3,B} {5,S}
-2    R!H u0 {1,B} {4,B} {6,S}
-3    R!H u0 {1,B} {7,B}
-4    R!H u0 {2,B} {9,B}
-5    R!H u0 {1,S} {10,S}
-6    R!H u0 {2,S} {8,S}
-7  * R!H u0 {3,B} {9,B}
-8    R!H u0 {6,S} {10,S}
-9    R!H u0 {4,B} {7,B}
-10   R!H u0 {5,S} {8,S}
+1    Cb u0 {2,B} {3,B} {5,S}
+2    Cb u0 {1,B} {4,B} {6,S}
+3    Cb u0 {1,B} {7,B}
+4    Cb u0 {2,B} {9,B}
+5    C  u0 {1,S} {10,S}
+6    C  u0 {2,S} {8,S}
+7  * Cb u0 {3,B} {9,B}
+8    C u0 {6,S} {10,S}
+9    Cb u0 {4,B} {7,B}
+10   C u0 {5,S} {8,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4772,7 +4772,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s2_6_6_ben from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s2_6_6_ben from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4781,11 +4781,11 @@ entry(
     label = "s3_4_4",
     group = 
 """
-1   R!H u0 {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-2   R!H u0 {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-3 * R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
-4   R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
-5   R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+1   C u0 {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+2   C u0 {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+3 * C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+4   C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+5   C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -4800,11 +4800,11 @@ entry(
     label = "s3_4_4_ane",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {5,S}
-2   R!H u0 {3,S} {4,S} {5,S}
-3 * R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {2,S}
-5   R!H u0 {1,S} {2,S}
+1   Cs u0 {3,S} {4,S} {5,S}
+2   Cs u0 {3,S} {4,S} {5,S}
+3 * Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {2,S}
+5   Cs u0 {1,S} {2,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4815,7 +4815,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_4_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_4_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4836,11 +4836,11 @@ entry(
     label = "s3_4_4_ene_0",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {5,D}
-2   R!H u0 {3,S} {4,S} {5,S}
-3 * R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {2,S}
-5   R!H u0 {1,D} {2,S}
+1   Cd u0 {3,S} {4,S} {5,D}
+2   Cs u0 {3,S} {4,S} {5,S}
+3 * Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {2,S}
+5   Cd u0 {1,D} {2,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4851,7 +4851,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_4_ene_0 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_4_ene_0 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4872,11 +4872,11 @@ entry(
     label = "s3_4_4_diene_0_2",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {5,D}
-2   R!H u0 {3,D} {4,S} {5,S}
-3 * R!H u0 {1,S} {2,D}
-4   R!H u0 {1,S} {2,S}
-5   R!H u0 {1,D} {2,S}
+1   Cd u0 {3,S} {4,S} {5,D}
+2   Cd u0 {3,D} {4,S} {5,S}
+3 * Cd u0 {1,S} {2,D}
+4   Cs u0 {1,S} {2,S}
+5   Cd u0 {1,D} {2,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4887,7 +4887,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_4_diene_0_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_4_diene_0_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4896,12 +4896,12 @@ entry(
     label = "s3_4_5",
     group = 
 """
-1   R!H u0 {3,[S,D,T,B]} {4,[S,D,T,B]} {6,[S,D,T,B]}
-2   R!H u0 {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-3 * R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
-4   R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
-5   R!H u0 {2,[S,D,T,B]} {6,[S,D,T,B]}
-6   R!H u0 {1,[S,D,T,B]} {5,[S,D,T,B]}
+1   C u0 {3,[S,D,T,B]} {4,[S,D,T,B]} {6,[S,D,T,B]}
+2   C u0 {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+3 * C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+4   C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+5   C u0 {2,[S,D,T,B]} {6,[S,D,T,B]}
+6   C u0 {1,[S,D,T,B]} {5,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -4916,12 +4916,12 @@ entry(
     label = "s3_4_5_ane",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {6,S}
-2   R!H u0 {3,S} {4,S} {5,S}
-3 * R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {2,S}
-5   R!H u0 {2,S} {6,S}
-6   R!H u0 {1,S} {5,S}
+1   Cs u0 {3,S} {4,S} {6,S}
+2   Cs u0 {3,S} {4,S} {5,S}
+3 * Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {2,S}
+5   Cs u0 {2,S} {6,S}
+6   Cs u0 {1,S} {5,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4932,7 +4932,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_5_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_5_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4953,12 +4953,12 @@ entry(
     label = "s3_4_5_ene_0",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {6,D}
-2   R!H u0 {3,S} {4,S} {5,S}
-3 * R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {2,S}
-5   R!H u0 {2,S} {6,S}
-6   R!H u0 {1,D} {5,S}
+1   Cd u0 {3,S} {4,S} {6,D}
+2   Cs u0 {3,S} {4,S} {5,S}
+3 * Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {2,S}
+5   Cs u0 {2,S} {6,S}
+6   Cd u0 {1,D} {5,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4969,7 +4969,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_5_ene_0 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_5_ene_0 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -4978,12 +4978,12 @@ entry(
     label = "s3_4_5_ene_1",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {5,S}
-2   R!H u0 {3,S} {4,S} {6,S}
-3 * R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {2,S}
-5   R!H u0 {1,S} {6,D}
-6   R!H u0 {2,S} {5,D}
+1   Cs u0 {3,S} {4,S} {5,S}
+2   Cs u0 {3,S} {4,S} {6,S}
+3 * Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {2,S}
+5   Cd u0 {1,S} {6,D}
+6   Cd u0 {2,S} {5,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -4994,7 +4994,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_5_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_5_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5003,23 +5003,23 @@ entry(
     label = "s3_4_5_ene_3",
     group = 
 """
-1   R!H u0 {3,D} {4,S} {6,S}
-2   R!H u0 {3,S} {4,S} {5,S}
-3 * R!H u0 {1,D} {2,S}
-4   R!H u0 {1,S} {2,S}
-5   R!H u0 {2,S} {6,S}
-6   R!H u0 {1,S} {5,S}
+1   Cd u0 {3,D} {4,S} {6,S}
+2   Cs u0 {3,S} {4,S} {5,S}
+3 * Cd u0 {1,D} {2,S}
+4   Cs u0 {1,S} {2,S}
+5   Cs u0 {2,S} {6,S}
+6   Cs u0 {1,S} {5,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-21.1077,-22.3405,-21.9755,-20.2055,-17.8073,-14.9817,-12.3823],'J/(mol*K)'),
+        Cpdata = ([-21.1076,-22.3405,-21.9755,-20.2055,-17.8073,-14.9817,-12.3823],'J/(mol*K)'),
         H298 = (402.876,'kJ/mol'),
         S298 = (254.658,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_5_ene_3 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_5_ene_3 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5040,12 +5040,12 @@ entry(
     label = "s3_4_5_diene_0_2",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {6,D}
-2   R!H u0 {3,S} {4,S} {5,D}
-3 * R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {2,S}
-5   R!H u0 {2,D} {6,S}
-6   R!H u0 {1,D} {5,S}
+1   Cd u0 {3,S} {4,S} {6,D}
+2   Cd u0 {3,S} {4,S} {5,D}
+3 * Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {2,S}
+5   Cd u0 {2,D} {6,S}
+6   Cd u0 {1,D} {5,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5056,7 +5056,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_5_diene_0_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_5_diene_0_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5065,23 +5065,23 @@ entry(
     label = "s3_4_5_diene_0_3",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {6,D}
-2   R!H u0 {3,S} {4,D} {5,S}
-3 * R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {2,D}
-5   R!H u0 {2,S} {6,S}
-6   R!H u0 {1,D} {5,S}
+1   Cd u0 {3,S} {4,S} {6,D}
+2   Cd u0 {3,S} {4,D} {5,S}
+3 * Cs u0 {1,S} {2,S}
+4   Cd u0 {1,S} {2,D}
+5   Cs u0 {2,S} {6,S}
+6   Cd u0 {1,D} {5,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-16.0956,-23.1066,-25.1175,-23.8,-20.3886,-17.9916,-15.1753],'J/(mol*K)'),
+        Cpdata = ([-16.0961,-23.1066,-25.1175,-23.8,-20.3886,-17.9916,-15.1753],'J/(mol*K)'),
         H298 = (425.803,'kJ/mol'),
         S298 = (275.729,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_5_diene_0_3 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_5_diene_0_3 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5090,23 +5090,23 @@ entry(
     label = "s3_4_5_diene_1_3",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {5,S}
-2   R!H u0 {3,D} {4,S} {6,S}
-3 * R!H u0 {1,S} {2,D}
-4   R!H u0 {1,S} {2,S}
-5   R!H u0 {1,S} {6,D}
-6   R!H u0 {2,S} {5,D}
+1   Cs u0 {3,S} {4,S} {5,S}
+2   Cd u0 {3,D} {4,S} {6,S}
+3 * Cd u0 {1,S} {2,D}
+4   Cs u0 {1,S} {2,S}
+5   Cd u0 {1,S} {6,D}
+6   Cd u0 {2,S} {5,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-29.1089,-28.7021,-26.8164,-24.6529,-20.7769,-17.6863,-15.1744],'J/(mol*K)'),
+        Cpdata = ([-29.109,-28.7021,-26.8164,-24.6529,-20.7769,-17.6863,-15.1744],'J/(mol*K)'),
         H298 = (412.175,'kJ/mol'),
         S298 = (273.542,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_5_diene_1_3 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_5_diene_1_3 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5115,12 +5115,12 @@ entry(
     label = "s3_4_5_diene_3_4",
     group = 
 """
-1   R!H u0 {3,D} {4,S} {5,S}
-2   R!H u0 {3,S} {4,D} {6,S}
-3 * R!H u0 {1,D} {2,S}
-4   R!H u0 {1,S} {2,D}
-5   R!H u0 {1,S} {6,S}
-6   R!H u0 {2,S} {5,S}
+1   Cd u0 {3,D} {4,S} {5,S}
+2   Cd u0 {3,S} {4,D} {6,S}
+3 * Cd u0 {1,D} {2,S}
+4   Cd u0 {1,S} {2,D}
+5   Cs u0 {1,S} {6,S}
+6   Cs u0 {2,S} {5,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5131,7 +5131,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_5_diene_3_4 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_5_diene_3_4 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5140,13 +5140,13 @@ entry(
     label = "s3_4_6",
     group = 
 """
-1   R!H u0 {3,[S,D,T,B]} {4,[S,D,T,B]} {6,[S,D,T,B]}
-2   R!H u0 {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-3 * R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
-4   R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
-5   R!H u0 {2,[S,D,T,B]} {7,[S,D,T,B]}
-6   R!H u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
-7   R!H u0 {5,[S,D,T,B]} {6,[S,D,T,B]}
+1   C u0 {3,[S,D,T,B]} {4,[S,D,T,B]} {6,[S,D,T,B]}
+2   C u0 {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+3 * C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+4   C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+5   C u0 {2,[S,D,T,B]} {7,[S,D,T,B]}
+6   C u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
+7   C u0 {5,[S,D,T,B]} {6,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -5161,13 +5161,13 @@ entry(
     label = "s3_4_6_ane",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {6,S}
-2   R!H u0 {3,S} {4,S} {5,S}
-3 * R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {2,S}
-5   R!H u0 {2,S} {7,S}
-6   R!H u0 {1,S} {7,S}
-7   R!H u0 {5,S} {6,S}
+1   Cs u0 {3,S} {4,S} {6,S}
+2   Cs u0 {3,S} {4,S} {5,S}
+3 * Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {2,S}
+5   Cs u0 {2,S} {7,S}
+6   Cs u0 {1,S} {7,S}
+7   Cs u0 {5,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5178,7 +5178,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_6_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_6_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5199,13 +5199,13 @@ entry(
     label = "s3_4_6_ene_0",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {6,D}
-2   R!H u0 {3,S} {4,S} {5,S}
-3 * R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {2,S}
-5   R!H u0 {2,S} {7,S}
-6   R!H u0 {1,D} {7,S}
-7   R!H u0 {5,S} {6,S}
+1   Cd u0 {3,S} {4,S} {6,D}
+2   Cs u0 {3,S} {4,S} {5,S}
+3 * Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {2,S}
+5   Cs u0 {2,S} {7,S}
+6   Cd u0 {1,D} {7,S}
+7   Cs u0 {5,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5216,7 +5216,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_6_ene_0 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_6_ene_0 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5225,13 +5225,13 @@ entry(
     label = "s3_4_6_ene_1",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {6,S}
-2   R!H u0 {3,S} {4,S} {5,S}
-3 * R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {2,S}
-5   R!H u0 {2,S} {7,S}
-6   R!H u0 {1,S} {7,D}
-7   R!H u0 {5,S} {6,D}
+1   Cs u0 {3,S} {4,S} {6,S}
+2   Cs u0 {3,S} {4,S} {5,S}
+3 * Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {2,S}
+5   Cs u0 {2,S} {7,S}
+6   Cd u0 {1,S} {7,D}
+7   Cd u0 {5,S} {6,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5242,7 +5242,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_6_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_6_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5251,13 +5251,13 @@ entry(
     label = "s3_4_6_ene_4",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {5,S}
-2   R!H u0 {3,D} {4,S} {6,S}
-3 * R!H u0 {1,S} {2,D}
-4   R!H u0 {1,S} {2,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {2,S} {7,S}
-7   R!H u0 {5,S} {6,S}
+1   Cs u0 {3,S} {4,S} {5,S}
+2   Cd u0 {3,D} {4,S} {6,S}
+3 * Cd u0 {1,S} {2,D}
+4   Cs u0 {1,S} {2,S}
+5   Cs u0 {1,S} {7,S}
+6   Cs u0 {2,S} {7,S}
+7   Cs u0 {5,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5268,7 +5268,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_6_ene_4 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_6_ene_4 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5289,13 +5289,13 @@ entry(
     label = "s3_4_6_diene_0_2",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {6,S}
-2   R!H u0 {3,S} {4,S} {5,D}
-3 * R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {2,S}
-5   R!H u0 {2,D} {7,S}
-6   R!H u0 {1,S} {7,D}
-7   R!H u0 {5,S} {6,D}
+1   Cs u0 {3,S} {4,S} {6,S}
+2   Cd u0 {3,S} {4,S} {5,D}
+3 * Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {2,S}
+5   Cd u0 {2,D} {7,S}
+6   Cd u0 {1,S} {7,D}
+7   Cd u0 {5,S} {6,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5306,7 +5306,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_6_diene_0_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_6_diene_0_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5315,13 +5315,13 @@ entry(
     label = "s3_4_6_diene_0_3",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {5,D}
-2   R!H u0 {3,S} {4,S} {6,D}
-3 * R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {2,S}
-5   R!H u0 {1,D} {7,S}
-6   R!H u0 {2,D} {7,S}
-7   R!H u0 {5,S} {6,S}
+1   Cd u0 {3,S} {4,S} {5,D}
+2   Cd u0 {3,S} {4,S} {6,D}
+3 * Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {2,S}
+5   Cd u0 {1,D} {7,S}
+6   Cd u0 {2,D} {7,S}
+7   Cs u0 {5,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5332,7 +5332,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_6_diene_0_3 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_6_diene_0_3 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5341,13 +5341,13 @@ entry(
     label = "s3_4_6_diene_0_4",
     group = 
 """
-1   R!H u0 {3,S} {4,D} {5,S}
-2   R!H u0 {3,S} {4,S} {6,D}
-3 * R!H u0 {1,S} {2,S}
-4   R!H u0 {1,D} {2,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {2,D} {7,S}
-7   R!H u0 {5,S} {6,S}
+1   Cd u0 {3,S} {4,D} {5,S}
+2   Cd u0 {3,S} {4,S} {6,D}
+3 * Cs u0 {1,S} {2,S}
+4   Cd u0 {1,D} {2,S}
+5   Cs u0 {1,S} {7,S}
+6   Cd u0 {2,D} {7,S}
+7   Cs u0 {5,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5358,7 +5358,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_6_diene_0_4 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_6_diene_0_4 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5367,13 +5367,13 @@ entry(
     label = "s3_4_6_diene_1_4",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {5,S}
-2   R!H u0 {3,D} {4,S} {6,S}
-3 * R!H u0 {1,S} {2,D}
-4   R!H u0 {1,S} {2,S}
-5   R!H u0 {1,S} {7,D}
-6   R!H u0 {2,S} {7,S}
-7   R!H u0 {5,D} {6,S}
+1   Cs u0 {3,S} {4,S} {5,S}
+2   Cd u0 {3,D} {4,S} {6,S}
+3 * Cd u0 {1,S} {2,D}
+4   Cs u0 {1,S} {2,S}
+5   Cd u0 {1,S} {7,D}
+6   Cs u0 {2,S} {7,S}
+7   Cd u0 {5,D} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5384,7 +5384,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_6_diene_1_4 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_6_diene_1_4 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5393,13 +5393,13 @@ entry(
     label = "s3_4_6_diene_1_5",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {5,S}
-2   R!H u0 {3,D} {4,S} {6,S}
-3 * R!H u0 {1,S} {2,D}
-4   R!H u0 {1,S} {2,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {2,S} {7,D}
-7   R!H u0 {5,S} {6,D}
+1   Cs u0 {3,S} {4,S} {5,S}
+2   Cd u0 {3,D} {4,S} {6,S}
+3 * Cd u0 {1,S} {2,D}
+4   Cs u0 {1,S} {2,S}
+5   Cs u0 {1,S} {7,S}
+6   Cd u0 {2,S} {7,D}
+7   Cd u0 {5,S} {6,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5410,7 +5410,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_4_6_diene_1_5 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_4_6_diene_1_5 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5419,13 +5419,13 @@ entry(
     label = "s3_5_5",
     group = 
 """
-1   R!H u0 {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-2   R!H u0 {3,[S,D,T,B]} {6,[S,D,T,B]} {7,[S,D,T,B]}
-3   R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
-4 * R!H u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
-5   R!H u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
-6   R!H u0 {2,[S,D,T,B]} {4,[S,D,T,B]}
-7   R!H u0 {2,[S,D,T,B]} {5,[S,D,T,B]}
+1   C u0 {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+2   C u0 {3,[S,D,T,B]} {6,[S,D,T,B]} {7,[S,D,T,B]}
+3   C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+4 * C u0 {1,[S,D,T,B]} {6,[S,D,T,B]}
+5   C u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
+6   C u0 {2,[S,D,T,B]} {4,[S,D,T,B]}
+7   C u0 {2,[S,D,T,B]} {5,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -5440,13 +5440,13 @@ entry(
     label = "s3_5_5_ane",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {5,S}
-2   R!H u0 {3,S} {6,S} {7,S}
-3   R!H u0 {1,S} {2,S}
-4 * R!H u0 {1,S} {6,S}
-5   R!H u0 {1,S} {7,S}
-6   R!H u0 {2,S} {4,S}
-7   R!H u0 {2,S} {5,S}
+1   Cs u0 {3,S} {4,S} {5,S}
+2   Cs u0 {3,S} {6,S} {7,S}
+3   Cs u0 {1,S} {2,S}
+4 * Cs u0 {1,S} {6,S}
+5   Cs u0 {1,S} {7,S}
+6   Cs u0 {2,S} {4,S}
+7   Cs u0 {2,S} {5,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5457,7 +5457,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_5_5_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_5_5_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5478,13 +5478,13 @@ entry(
     label = "s3_5_5_ene_1",
     group = 
 """
-1   R!H u0 {3,S} {5,S} {6,S}
-2   R!H u0 {3,S} {4,S} {7,S}
-3   R!H u0 {1,S} {2,S}
-4 * R!H u0 {2,S} {5,S}
-5   R!H u0 {1,S} {4,S}
-6   R!H u0 {1,S} {7,D}
-7   R!H u0 {2,S} {6,D}
+1   Cs u0 {3,S} {5,S} {6,S}
+2   Cs u0 {3,S} {4,S} {7,S}
+3   Cs u0 {1,S} {2,S}
+4 * Cs u0 {2,S} {5,S}
+5   Cs u0 {1,S} {4,S}
+6   Cd u0 {1,S} {7,D}
+7   Cd u0 {2,S} {6,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5495,7 +5495,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_5_5_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_5_5_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5504,24 +5504,24 @@ entry(
     label = "s3_5_5_ene_side",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {7,S}
-2   R!H u0 {3,S} {5,S} {6,S}
-3   R!H u0 {1,S} {2,S}
-4 * R!H u0 {1,S} {5,S}
-5   R!H u0 {2,S} {4,S}
-6   R!H u0 {2,S} {7,S}
-7   R!H u0 {1,S} {6,S}
+1   Cs u0 {3,S} {4,S} {7,S}
+2   Cs u0 {3,S} {5,S} {6,S}
+3   Cs u0 {1,S} {2,S}
+4 * Cs u0 {1,S} {5,S}
+5   Cs u0 {2,S} {4,S}
+6   Cs u0 {2,S} {7,S}
+7   Cd u0 {1,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([0,0,0,0,0,0,0],'cal/(mol*K)'),
-        H298 = (0,'kcal/mol'),
-        S298 = (0,'cal/(mol*K)'),
+        Cpdata = ([-9.27,-8.28,-7.29,-6.18,-4.88,-3.81,-2.22],'cal/(mol*K)'),
+        H298 = (14.6,'kcal/mol'),
+        S298 = (50.85,'cal/(mol*K)'),
     ),
     shortDesc = u"""""",
     longDesc = 
 u"""
-
+A.G. Vandeputte isodesmic reactions + B3LYP/cbsb7 S and cp, CHECK!
 """,
 )
 
@@ -5542,13 +5542,13 @@ entry(
     label = "s3_5_5_diene_1_4",
     group = 
 """
-1   R!H u0 {3,S} {6,S} {7,S}
-2   R!H u0 {3,S} {4,S} {5,S}
-3   R!H u0 {1,S} {2,S}
-4 * R!H u0 {2,S} {6,D}
-5   R!H u0 {2,S} {7,D}
-6   R!H u0 {1,S} {4,D}
-7   R!H u0 {1,S} {5,D}
+1   Cs u0 {3,S} {6,S} {7,S}
+2   Cs u0 {3,S} {4,S} {5,S}
+3   Cs u0 {1,S} {2,S}
+4 * Cd u0 {2,S} {6,D}
+5   Cd u0 {2,S} {7,D}
+6   Cd u0 {1,S} {4,D}
+7   Cd u0 {1,S} {5,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5559,7 +5559,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_5_5_diene_1_4 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_5_5_diene_1_4 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5568,14 +5568,14 @@ entry(
     label = "s3_5_6",
     group = 
 """
-1   R!H u0 {3,[S,D,T,B]} {5,[S,D,T,B]} {6,[S,D,T,B]}
-2   R!H u0 {3,[S,D,T,B]} {4,[S,D,T,B]} {7,[S,D,T,B]}
-3   R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
-4   R!H u0 {2,[S,D,T,B]} {5,[S,D,T,B]}
-5   R!H u0 {1,[S,D,T,B]} {4,[S,D,T,B]}
-6   R!H u0 {1,[S,D,T,B]} {8,[S,D,T,B]}
-7   R!H u0 {2,[S,D,T,B]} {8,[S,D,T,B]}
-8 * R!H u0 {6,[S,D,T,B]} {7,[S,D,T,B]}
+1   C u0 {3,[S,D,T,B]} {5,[S,D,T,B]} {6,[S,D,T,B]}
+2   C u0 {3,[S,D,T,B]} {4,[S,D,T,B]} {7,[S,D,T,B]}
+3   C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+4   C u0 {2,[S,D,T,B]} {5,[S,D,T,B]}
+5   C u0 {1,[S,D,T,B]} {4,[S,D,T,B]}
+6   C u0 {1,[S,D,T,B]} {8,[S,D,T,B]}
+7   C u0 {2,[S,D,T,B]} {8,[S,D,T,B]}
+8 * C u0 {6,[S,D,T,B]} {7,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -5590,25 +5590,25 @@ entry(
     label = "s3_5_6_ane",
     group = 
 """
-1   R!H u0 {3,S} {5,S} {6,S}
-2   R!H u0 {3,S} {4,S} {7,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {2,S} {5,S}
-5   R!H u0 {1,S} {4,S}
-6   R!H u0 {1,S} {8,S}
-7   R!H u0 {2,S} {8,S}
-8 * R!H u0 {6,S} {7,S}
+1   Cs u0 {3,S} {5,S} {6,S}
+2   Cs u0 {3,S} {4,S} {7,S}
+3   Cs u0 {1,S} {2,S}
+4   Cs u0 {2,S} {5,S}
+5   Cs u0 {1,S} {4,S}
+6   Cs u0 {1,S} {8,S}
+7   Cs u0 {2,S} {8,S}
+8 * Cs u0 {6,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-46.2517,-42.6158,-37.5346,-32.5278,-23.8414,-16.3148,-7.93156],'J/(mol*K)'),
-        H298 = (67.4227,'kJ/mol'),
-        S298 = (196.089,'J/(mol*K)'),
+        Cpdata = ([-45.1747,-42.5118,-37.9276,-32.9248,-24.0434,-16.4148,-8.02356],'J/(mol*K)'),
+        H298 = (94.5493,'kJ/mol'),
+        S298 = (209.474,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_5_6_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_5_6_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5629,14 +5629,14 @@ entry(
     label = "s3_5_6_ene_1",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {7,S}
-2   R!H u0 {3,S} {5,S} {6,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {5,S}
-5   R!H u0 {2,S} {4,S}
-6   R!H u0 {2,S} {8,S}
-7   R!H u0 {1,S} {8,D}
-8 * R!H u0 {6,S} {7,D}
+1   Cs u0 {3,S} {4,S} {7,S}
+2   Cs u0 {3,S} {5,S} {6,S}
+3   Cs u0 {1,S} {2,S}
+4   Cs u0 {1,S} {5,S}
+5   Cs u0 {2,S} {4,S}
+6   Cs u0 {2,S} {8,S}
+7   Cd u0 {1,S} {8,D}
+8 * Cd u0 {6,S} {7,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5647,7 +5647,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_5_6_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_5_6_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5656,14 +5656,14 @@ entry(
     label = "s3_5_6_ene_5",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {7,S}
-2   R!H u0 {3,S} {5,S} {6,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {5,D}
-5   R!H u0 {2,S} {4,D}
-6   R!H u0 {2,S} {8,S}
-7   R!H u0 {1,S} {8,S}
-8 * R!H u0 {6,S} {7,S}
+1   Cs u0 {3,S} {4,S} {7,S}
+2   Cs u0 {3,S} {5,S} {6,S}
+3   Cs u0 {1,S} {2,S}
+4   Cd u0 {1,S} {5,D}
+5   Cd u0 {2,S} {4,D}
+6   Cs u0 {2,S} {8,S}
+7   Cs u0 {1,S} {8,S}
+8 * Cs u0 {6,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5674,7 +5674,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_5_6_ene_5 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_5_6_ene_5 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5695,14 +5695,14 @@ entry(
     label = "s3_5_6_diene_1_5",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {6,S}
-2   R!H u0 {3,S} {5,S} {7,S}
-3   R!H u0 {1,S} {2,S}
-4   R!H u0 {1,S} {5,D}
-5   R!H u0 {2,S} {4,D}
-6   R!H u0 {1,S} {8,D}
-7   R!H u0 {2,S} {8,S}
-8 * R!H u0 {6,D} {7,S}
+1   Cs u0 {3,S} {4,S} {6,S}
+2   Cs u0 {3,S} {5,S} {7,S}
+3   Cs u0 {1,S} {2,S}
+4   Cd u0 {1,S} {5,D}
+5   Cd u0 {2,S} {4,D}
+6   Cd u0 {1,S} {8,D}
+7   Cs u0 {2,S} {8,S}
+8 * Cd u0 {6,D} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5713,7 +5713,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_5_6_diene_1_5 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_5_6_diene_1_5 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5722,15 +5722,15 @@ entry(
     label = "s3_6_6",
     group = 
 """
-1   R!H u0 {3,[S,D,T,B]} {6,[S,D,T,B]} {7,[S,D,T,B]}
-2   R!H u0 {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
-3   R!H u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
-4 * R!H u0 {2,[S,D,T,B]} {9,[S,D,T,B]}
-5   R!H u0 {2,[S,D,T,B]} {8,[S,D,T,B]}
-6   R!H u0 {1,[S,D,T,B]} {8,[S,D,T,B]}
-7   R!H u0 {1,[S,D,T,B]} {9,[S,D,T,B]}
-8   R!H u0 {5,[S,D,T,B]} {6,[S,D,T,B]}
-9   R!H u0 {4,[S,D,T,B]} {7,[S,D,T,B]}
+1   C u0 {3,[S,D,T,B]} {6,[S,D,T,B]} {7,[S,D,T,B]}
+2   C u0 {3,[S,D,T,B]} {4,[S,D,T,B]} {5,[S,D,T,B]}
+3   C u0 {1,[S,D,T,B]} {2,[S,D,T,B]}
+4 * C u0 {2,[S,D,T,B]} {9,[S,D,T,B]}
+5   C u0 {2,[S,D,T,B]} {8,[S,D,T,B]}
+6   C u0 {1,[S,D,T,B]} {8,[S,D,T,B]}
+7   C u0 {1,[S,D,T,B]} {9,[S,D,T,B]}
+8   C u0 {5,[S,D,T,B]} {6,[S,D,T,B]}
+9   C u0 {4,[S,D,T,B]} {7,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -5745,26 +5745,26 @@ entry(
     label = "s3_6_6_ane",
     group = 
 """
-1   R!H u0 {3,S} {6,S} {7,S}
-2   R!H u0 {3,S} {4,S} {5,S}
-3   R!H u0 {1,S} {2,S}
-4 * R!H u0 {2,S} {9,S}
-5   R!H u0 {2,S} {8,S}
-6   R!H u0 {1,S} {8,S}
-7   R!H u0 {1,S} {9,S}
-8   R!H u0 {5,S} {6,S}
-9   R!H u0 {4,S} {7,S}
+1   Cs u0 {3,S} {6,S} {7,S}
+2   Cs u0 {3,S} {4,S} {5,S}
+3   Cs u0 {1,S} {2,S}
+4 * Cs u0 {2,S} {9,S}
+5   Cs u0 {2,S} {8,S}
+6   Cs u0 {1,S} {8,S}
+7   Cs u0 {1,S} {9,S}
+8   Cs u0 {5,S} {6,S}
+9   Cs u0 {4,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-51.2247,-47.4056,-42.0986,-36.4622,-25.7252,-16.6263,-6.05456],'J/(mol*K)'),
+        Cpdata = ([-51.2247,-47.4056,-42.0976,-36.4612,-25.7252,-16.6263,-6.05456],'J/(mol*K)'),
         H298 = (65.8567,'kJ/mol'),
         S298 = (170.519,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_6_6_ane from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_6_6_ane from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5785,15 +5785,15 @@ entry(
     label = "s3_6_6_ene_0",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {7,S}
-2   R!H u0 {3,S} {5,S} {6,D}
-3   R!H u0 {1,S} {2,S}
-4 * R!H u0 {1,S} {8,S}
-5   R!H u0 {2,S} {8,S}
-6   R!H u0 {2,D} {9,S}
-7   R!H u0 {1,S} {9,S}
-8   R!H u0 {4,S} {5,S}
-9   R!H u0 {6,S} {7,S}
+1   Cs u0 {3,S} {4,S} {7,S}
+2   Cd u0 {3,S} {5,S} {6,D}
+3   Cs u0 {1,S} {2,S}
+4 * Cs u0 {1,S} {8,S}
+5   Cs u0 {2,S} {8,S}
+6   Cd u0 {2,D} {9,S}
+7   Cs u0 {1,S} {9,S}
+8   Cs u0 {4,S} {5,S}
+9   Cs u0 {6,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5804,7 +5804,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_6_6_ene_0 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_6_6_ene_0 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5813,26 +5813,26 @@ entry(
     label = "s3_6_6_ene_1",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {6,S}
-2   R!H u0 {3,S} {5,S} {7,S}
-3   R!H u0 {1,S} {2,S}
-4 * R!H u0 {1,S} {9,S}
-5   R!H u0 {2,S} {8,S}
-6   R!H u0 {1,S} {8,D}
-7   R!H u0 {2,S} {9,S}
-8   R!H u0 {5,S} {6,D}
-9   R!H u0 {4,S} {7,S}
+1   Cs u0 {3,S} {4,S} {6,S}
+2   Cs u0 {3,S} {5,S} {7,S}
+3   Cs u0 {1,S} {2,S}
+4 * Cs u0 {1,S} {9,S}
+5   Cs u0 {2,S} {8,S}
+6   Cd u0 {1,S} {8,D}
+7   Cs u0 {2,S} {9,S}
+8   Cd u0 {5,S} {6,D}
+9   Cs u0 {4,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-42.2638,-39.4379,-35.5818,-30.8459,-22.4699,-14.8223,-6.4372],'J/(mol*K)'),
-        H298 = (45.0863,'kJ/mol'),
-        S298 = (180.213,'J/(mol*K)'),
+        Cpdata = ([-42.2258,-39.5459,-35.7798,-31.0779,-22.7329,-15.0973,-6.6942],'J/(mol*K)'),
+        H298 = (67.0007,'kJ/mol'),
+        S298 = (180.872,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_6_6_ene_1 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_6_6_ene_1 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5841,26 +5841,26 @@ entry(
     label = "s3_6_6_ene_4",
     group = 
 """
-1   R!H u0 {3,D} {4,S} {6,S}
-2   R!H u0 {3,S} {5,S} {7,S}
-3   R!H u0 {1,D} {2,S}
-4 * R!H u0 {1,S} {8,S}
-5   R!H u0 {2,S} {9,S}
-6   R!H u0 {1,S} {9,S}
-7   R!H u0 {2,S} {8,S}
-8   R!H u0 {4,S} {7,S}
-9   R!H u0 {5,S} {6,S}
+1   Cd u0 {3,D} {4,S} {6,S}
+2   Cs u0 {3,S} {5,S} {7,S}
+3   Cd u0 {1,D} {2,S}
+4 * Cs u0 {1,S} {8,S}
+5   Cs u0 {2,S} {9,S}
+6   Cs u0 {1,S} {9,S}
+7   Cs u0 {2,S} {8,S}
+8   Cs u0 {4,S} {7,S}
+9   Cs u0 {5,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-31.5534,-30.7939,-29.0665,-24.8047,-17.0319,-10.8034,-4.68532],'J/(mol*K)'),
+        Cpdata = ([-31.5534,-30.7949,-29.0665,-24.8037,-17.0309,-10.8024,-4.68532],'J/(mol*K)'),
         H298 = (449.093,'kJ/mol'),
         S298 = (191.929,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_6_6_ene_4 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_6_6_ene_4 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5881,15 +5881,15 @@ entry(
     label = "s3_6_6_diene_0_m",
     group = 
 """
-1   R!H u0 {3,S} {4,D} {5,S}
-2   R!H u0 {3,D} {6,S} {7,S}
-3   R!H u0 {1,S} {2,D}
-4 * R!H u0 {1,D} {9,S}
-5   R!H u0 {1,S} {8,S}
-6   R!H u0 {2,S} {9,S}
-7   R!H u0 {2,S} {8,S}
-8   R!H u0 {5,S} {7,S}
-9   R!H u0 {4,S} {6,S}
+1   Cd u0 {3,S} {4,D} {5,S}
+2   Cd u0 {3,D} {6,S} {7,S}
+3   Cd u0 {1,S} {2,D}
+4 * Cd u0 {1,D} {9,S}
+5   Cs u0 {1,S} {8,S}
+6   Cs u0 {2,S} {9,S}
+7   Cs u0 {2,S} {8,S}
+8   Cs u0 {5,S} {7,S}
+9   Cs u0 {4,S} {6,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5900,7 +5900,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_6_6_diene_0_m from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_6_6_diene_0_m from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5909,15 +5909,15 @@ entry(
     label = "s3_6_6_diene_0_2",
     group = 
 """
-1   R!H u0 {3,S} {6,S} {7,S}
-2   R!H u0 {3,S} {4,S} {5,D}
-3   R!H u0 {1,S} {2,S}
-4 * R!H u0 {2,S} {9,S}
-5   R!H u0 {2,D} {8,S}
-6   R!H u0 {1,S} {8,D}
-7   R!H u0 {1,S} {9,S}
-8   R!H u0 {5,S} {6,D}
-9   R!H u0 {4,S} {7,S}
+1   Cs u0 {3,S} {6,S} {7,S}
+2   Cd u0 {3,S} {4,S} {5,D}
+3   Cs u0 {1,S} {2,S}
+4 * Cs u0 {2,S} {9,S}
+5   Cd u0 {2,D} {8,S}
+6   Cd u0 {1,S} {8,D}
+7   Cs u0 {1,S} {9,S}
+8   Cd u0 {5,S} {6,D}
+9   Cs u0 {4,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5928,7 +5928,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_6_6_diene_0_2 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_6_6_diene_0_2 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5937,15 +5937,15 @@ entry(
     label = "s3_6_6_diene_0_3",
     group = 
 """
-1   R!H u0 {3,S} {6,S} {7,D}
-2   R!H u0 {3,S} {4,D} {5,S}
-3   R!H u0 {1,S} {2,S}
-4 * R!H u0 {2,D} {9,S}
-5   R!H u0 {2,S} {8,S}
-6   R!H u0 {1,S} {8,S}
-7   R!H u0 {1,D} {9,S}
-8   R!H u0 {5,S} {6,S}
-9   R!H u0 {4,S} {7,S}
+1   Cd u0 {3,S} {6,S} {7,D}
+2   Cd u0 {3,S} {4,D} {5,S}
+3   Cs u0 {1,S} {2,S}
+4 * Cd u0 {2,D} {9,S}
+5   Cs u0 {2,S} {8,S}
+6   Cs u0 {1,S} {8,S}
+7   Cd u0 {1,D} {9,S}
+8   Cs u0 {5,S} {6,S}
+9   Cs u0 {4,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5956,7 +5956,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_6_6_diene_0_3 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_6_6_diene_0_3 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5965,15 +5965,15 @@ entry(
     label = "s3_6_6_diene_0_4",
     group = 
 """
-1   R!H u0 {3,S} {5,S} {7,D}
-2   R!H u0 {3,S} {4,S} {6,D}
-3   R!H u0 {1,S} {2,S}
-4 * R!H u0 {2,S} {9,S}
-5   R!H u0 {1,S} {8,S}
-6   R!H u0 {2,D} {8,S}
-7   R!H u0 {1,D} {9,S}
-8   R!H u0 {5,S} {6,S}
-9   R!H u0 {4,S} {7,S}
+1   Cd u0 {3,S} {5,S} {7,D}
+2   Cd u0 {3,S} {4,S} {6,D}
+3   Cs u0 {1,S} {2,S}
+4 * Cs u0 {2,S} {9,S}
+5   Cs u0 {1,S} {8,S}
+6   Cd u0 {2,D} {8,S}
+7   Cd u0 {1,D} {9,S}
+8   Cs u0 {5,S} {6,S}
+9   Cs u0 {4,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -5984,7 +5984,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_6_6_diene_0_4 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_6_6_diene_0_4 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -5993,15 +5993,15 @@ entry(
     label = "s3_6_6_diene_0_5",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {7,S}
-2   R!H u0 {3,S} {5,D} {6,S}
-3   R!H u0 {1,S} {2,S}
-4 * R!H u0 {1,S} {9,S}
-5   R!H u0 {2,D} {9,S}
-6   R!H u0 {2,S} {8,S}
-7   R!H u0 {1,S} {8,D}
-8   R!H u0 {6,S} {7,D}
-9   R!H u0 {4,S} {5,S}
+1   Cs u0 {3,S} {4,S} {7,S}
+2   Cd u0 {3,S} {5,D} {6,S}
+3   Cs u0 {1,S} {2,S}
+4 * Cs u0 {1,S} {9,S}
+5   Cd u0 {2,D} {9,S}
+6   Cs u0 {2,S} {8,S}
+7   Cd u0 {1,S} {8,D}
+8   Cd u0 {6,S} {7,D}
+9   Cs u0 {4,S} {5,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -6012,7 +6012,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_6_6_diene_0_5 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_6_6_diene_0_5 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -6021,15 +6021,15 @@ entry(
     label = "s3_6_6_diene_0_6",
     group = 
 """
-1   R!H u0 {3,S} {6,S} {7,S}
-2   R!H u0 {3,S} {4,D} {5,S}
-3   R!H u0 {1,S} {2,S}
-4 * R!H u0 {2,D} {8,S}
-5   R!H u0 {2,S} {9,D}
-6   R!H u0 {1,S} {8,S}
-7   R!H u0 {1,S} {9,S}
-8   R!H u0 {4,S} {6,S}
-9   R!H u0 {5,D} {7,S}
+1   Cs u0 {3,S} {6,S} {7,S}
+2   Cd u0 {3,S} {4,D} {5,S}
+3   Cs u0 {1,S} {2,S}
+4 * Cd u0 {2,D} {8,S}
+5   Cd u0 {2,S} {9,D}
+6   Cs u0 {1,S} {8,S}
+7   Cs u0 {1,S} {9,S}
+8   Cs u0 {4,S} {6,S}
+9   Cd u0 {5,D} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -6040,7 +6040,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_6_6_diene_0_6 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_6_6_diene_0_6 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -6049,26 +6049,26 @@ entry(
     label = "s3_6_6_diene_1_m",
     group = 
 """
-1   R!H u0 {3,D} {6,S} {7,S}
-2   R!H u0 {3,S} {4,S} {5,S}
-3   R!H u0 {1,D} {2,S}
-4 * R!H u0 {2,S} {9,D}
-5   R!H u0 {2,S} {8,S}
-6   R!H u0 {1,S} {8,S}
-7   R!H u0 {1,S} {9,S}
-8   R!H u0 {5,S} {6,S}
-9   R!H u0 {4,D} {7,S}
+1   Cd u0 {3,D} {6,S} {7,S}
+2   Cs u0 {3,S} {4,S} {5,S}
+3   Cd u0 {1,D} {2,S}
+4 * Cd u0 {2,S} {9,D}
+5   Cs u0 {2,S} {8,S}
+6   Cs u0 {1,S} {8,S}
+7   Cs u0 {1,S} {9,S}
+8   Cs u0 {5,S} {6,S}
+9   Cd u0 {4,D} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-40.4851,-35.1412,-30.136,-25.8755,-18.0682,-12.3311,-5.67248],'J/(mol*K)'),
-        H298 = (261.359,'kJ/mol'),
-        S298 = (186.547,'J/(mol*K)'),
+        Cpdata = ([-37.3301,-33.3122,-29.196,-25.2285,-17.6312,-12.0471,-5.61348],'J/(mol*K)'),
+        H298 = (292.685,'kJ/mol'),
+        S298 = (195.572,'J/(mol*K)'),
     ),
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_6_6_diene_1_m from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_6_6_diene_1_m from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -6077,15 +6077,15 @@ entry(
     label = "s3_6_6_diene_1_5",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {6,S}
-2   R!H u0 {3,S} {5,S} {7,S}
-3   R!H u0 {1,S} {2,S}
-4 * R!H u0 {1,S} {9,S}
-5   R!H u0 {2,S} {9,D}
-6   R!H u0 {1,S} {8,D}
-7   R!H u0 {2,S} {8,S}
-8   R!H u0 {6,D} {7,S}
-9   R!H u0 {4,S} {5,D}
+1   Cs u0 {3,S} {4,S} {6,S}
+2   Cs u0 {3,S} {5,S} {7,S}
+3   Cs u0 {1,S} {2,S}
+4 * Cs u0 {1,S} {9,S}
+5   Cd u0 {2,S} {9,D}
+6   Cd u0 {1,S} {8,D}
+7   Cs u0 {2,S} {8,S}
+8   Cd u0 {6,D} {7,S}
+9   Cd u0 {4,S} {5,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -6096,7 +6096,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_6_6_diene_1_5 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_6_6_diene_1_5 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -6105,15 +6105,15 @@ entry(
     label = "s3_6_6_diene_1_6",
     group = 
 """
-1   R!H u0 {3,S} {5,S} {6,S}
-2   R!H u0 {3,S} {4,S} {7,S}
-3   R!H u0 {1,S} {2,S}
-4 * R!H u0 {2,S} {9,S}
-5   R!H u0 {1,S} {9,D}
-6   R!H u0 {1,S} {8,D}
-7   R!H u0 {2,S} {8,S}
-8   R!H u0 {6,D} {7,S}
-9   R!H u0 {4,S} {5,D}
+1   Cs u0 {3,S} {5,S} {6,S}
+2   Cs u0 {3,S} {4,S} {7,S}
+3   Cs u0 {1,S} {2,S}
+4 * Cs u0 {2,S} {9,S}
+5   Cd u0 {1,S} {9,D}
+6   Cd u0 {1,S} {8,D}
+7   Cs u0 {2,S} {8,S}
+8   Cd u0 {6,D} {7,S}
+9   Cd u0 {4,S} {5,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -6124,7 +6124,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_6_6_diene_1_6 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_6_6_diene_1_6 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -6133,15 +6133,15 @@ entry(
     label = "s3_6_6_diene_1_8",
     group = 
 """
-1   R!H u0 {3,S} {4,S} {6,S}
-2   R!H u0 {3,D} {5,S} {7,S}
-3   R!H u0 {1,S} {2,D}
-4 * R!H u0 {1,S} {8,S}
-5   R!H u0 {2,S} {8,D}
-6   R!H u0 {1,S} {9,S}
-7   R!H u0 {2,S} {9,S}
-8   R!H u0 {4,S} {5,D}
-9   R!H u0 {6,S} {7,S}
+1   Cs u0 {3,S} {4,S} {6,S}
+2   Cd u0 {3,D} {5,S} {7,S}
+3   Cd u0 {1,S} {2,D}
+4 * Cs u0 {1,S} {8,S}
+5   Cd u0 {2,S} {8,D}
+6   Cs u0 {1,S} {9,S}
+7   Cs u0 {2,S} {9,S}
+8   Cd u0 {4,S} {5,D}
+9   Cs u0 {6,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -6152,7 +6152,7 @@ entry(
     shortDesc = u"""Fitted from thermo library values""",
     longDesc = 
 u"""
-Fitted from molecule s3_6_6_diene_1_8 from polycyclic_177_thermoLiabrary library.
+Fitted from molecule s3_6_6_diene_1_8 from polycyclic_all_thermoLiabrary library.
 """,
 )
 
@@ -6161,14 +6161,14 @@ entry(
     label = "s4_6_6",
     group = 
 """
-1 * R!H u0 {3,[S,D,T,B]} {6,[S,D,T,B]} {8,[S,D,T,B]}
-2   R!H u0 {4,[S,D,T,B]} {5,[S,D,T,B]} {7,[S,D,T,B]}
-3   R!H u0 {1,[S,D,T,B]} {4,[S,D,T,B]}
-4   R!H u0 {2,[S,D,T,B]} {3,[S,D,T,B]}
-5   R!H u0 {2,[S,D,T,B]} {6,[S,D,T,B]}
-6   R!H u0 {1,[S,D,T,B]} {5,[S,D,T,B]}
-7   R!H u0 {2,[S,D,T,B]} {8,[S,D,T,B]}
-8   R!H u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
+1 * C u0 {3,[S,D,T,B]} {6,[S,D,T,B]} {8,[S,D,T,B]}
+2   C u0 {4,[S,D,T,B]} {5,[S,D,T,B]} {7,[S,D,T,B]}
+3   C u0 {1,[S,D,T,B]} {4,[S,D,T,B]}
+4   C u0 {2,[S,D,T,B]} {3,[S,D,T,B]}
+5   C u0 {2,[S,D,T,B]} {6,[S,D,T,B]}
+6   C u0 {1,[S,D,T,B]} {5,[S,D,T,B]}
+7   C u0 {2,[S,D,T,B]} {8,[S,D,T,B]}
+8   C u0 {1,[S,D,T,B]} {7,[S,D,T,B]}
 """,
     thermo = None,
     shortDesc = u"""""",
@@ -6183,14 +6183,14 @@ entry(
     label = "s4_6_6_ane",
     group = 
 """
-1 * R!H u0 {3,S} {6,S} {8,S}
-2   R!H u0 {4,S} {5,S} {7,S}
-3   R!H u0 {1,S} {4,S}
-4   R!H u0 {2,S} {3,S}
-5   R!H u0 {2,S} {6,S}
-6   R!H u0 {1,S} {5,S}
-7   R!H u0 {2,S} {8,S}
-8   R!H u0 {1,S} {7,S}
+1 * Cs u0 {3,S} {6,S} {8,S}
+2   Cs u0 {4,S} {5,S} {7,S}
+3   Cs u0 {1,S} {4,S}
+4   Cs u0 {2,S} {3,S}
+5   Cs u0 {2,S} {6,S}
+6   Cs u0 {1,S} {5,S}
+7   Cs u0 {2,S} {8,S}
+8   Cs u0 {1,S} {7,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
