@@ -4777,6 +4777,35 @@ Fitted from molecule s2_6_6_ben from polycyclic_177_thermoLiabrary library.
 )
 
 entry(
+    index = 122,
+    label = "naphthalene",
+    group = 
+"""
+1    Cd u0 {2,S} {4,D} {6,S}
+2    Cd u0 {1,S} {3,S} {5,D}
+3    Cd u0 {2,S} {7,D}
+4    Cd u0 {1,D} {9,S}
+5    Cd u0 {2,D} {8,S}
+6    Cd u0 {1,S} {10,D}
+7  * Cd u0 {3,D} {10,S}
+8    Cd u0 {5,S} {9,D}
+9    Cd u0 {4,S} {8,D}
+10   Cd u0 {6,D} {7,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([-7.54,-8.82,-8.92,-8.3,-7.22,-5.66,-4.34],'cal/(mol*K)'),
+        H298 = (-41.44,'kcal/mol'),
+        S298 = (59.79,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""Fitted from thermo library values""",
+    longDesc = 
+u"""
+Fitted from species naphthalene from naphthalene_H library.
+""",
+)
+
+entry(
     index = 0,
     label = "s3_4_4",
     group = 
@@ -6205,6 +6234,35 @@ Wiberg, K. Angew. Chem., Int. Ed. Engl. 1986, 25, 312 1986 experimental S, Cp fr
 """,
 )
 
+entry(
+    index = 123,
+    label = "naphthalene-1",
+    group = 
+"""
+1    Cbf u0 {2,B} {3,B} {4,B}
+2    Cbf u0 {1,B} {5,B} {6,B}
+3    Cb  u0 {1,B} {9,B}
+4    Cb  u0 {1,B} {8,B}
+5    Cb  u0 {2,B} {10,B}
+6  * Cb  u0 {2,B} {7,B}
+7    Cb  u0 {6,B} {8,B}
+8    Cb  u0 {4,B} {7,B}
+9    Cb  u0 {3,B} {10,B}
+10   Cb  u0 {5,B} {9,B}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([-6.79295e-15,0,-1.35859e-14,-6.79295e-15,0,1.35859e-14,-1.35859e-14],'cal/(mol*K)'),
+        H298 = (0,'kcal/mol'),
+        S298 = (-2.75,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""Fitted from thermo library values""",
+    longDesc = 
+u"""
+Fitted from species naphthalene from naphthalene_H library.
+""",
+)
+
 tree(
 """
 L1: PolycyclicRing
@@ -6402,6 +6460,7 @@ L1: PolycyclicRing
             L4: s2_6_6_diene_1_8
             L4: s2_6_6_diene_2_7
         L3: s2_6_6_ben
+        L3: naphthalene
     L2: s3_4_4
         L3: s3_4_4_ane
         L3: s3_4_4_ene
@@ -6464,6 +6523,7 @@ L1: PolycyclicRing
             L4: s3_6_6_diene_1_8
     L2: s4_6_6
         L3: s4_6_6_ane
+    L2: naphthalene-1
 """
 )
 
