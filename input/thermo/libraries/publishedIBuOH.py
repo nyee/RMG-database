@@ -16,10 +16,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.29812,0.000824944,-8.14302e-07,-9.47543e-11,4.13487e-13,-1012.52,-3.29409], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[3.29812,0.000824944,-8.14302e-07,-9.47543e-11,4.13487e-13,-1012.52,-3.29409], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[2.99142,0.000700064,-5.63383e-08,-9.23158e-12,1.58275e-15,-835.034,-1.35511], Tmin=(1000,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""121286
@@ -41,10 +41,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.27572,0.00992207,-1.04091e-05,6.86669e-09,-2.11728e-12,-48373.1,10.1885], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[2.27572,0.00992207,-1.04091e-05,6.86669e-09,-2.11728e-12,-48373.1,10.1885], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[4.45362,0.00314017,-1.27841e-06,2.394e-10,-1.66903e-14,-48967,-0.955396], Tmin=(1000,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""121286
@@ -66,10 +66,10 @@ multiplicity 3
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.26245,0.00151194,-3.88176e-06,5.58194e-09,-2.47495e-12,-14310.5,4.8489], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[3.26245,0.00151194,-3.88176e-06,5.58194e-09,-2.47495e-12,-14310.5,4.8489], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[3.02508,0.00144269,-5.63083e-07,1.01858e-10,-6.91095e-15,-14268.4,6.10822], Tmin=(1000,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""121286
@@ -212,10 +212,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.64256,0.00389758,4.5491e-05,-5.49011e-08,1.92836e-11,778.192,8.61458], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.64256,0.00389758,4.5491e-05,-5.49011e-08,1.92836e-11,778.192,8.61458], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[5.4256,0.0175791,-6.56312e-06,1.032e-09,-5.99721e-14,-608.799,-5.16515], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG
@@ -248,10 +248,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[0.933554,0.0264246,6.10597e-06,-2.19775e-08,9.51493e-12,-13958.5,19.2017], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[0.933554,0.0264246,6.10597e-06,-2.19775e-08,9.51493e-12,-13958.5,19.2017], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[7.53414,0.0188722,-6.27185e-06,9.14756e-10,-4.78381e-14,-16467.5,-17.8923], Tmin=(1000,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""L 4/85""",
@@ -276,10 +276,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.56619,0.00429173,3.37755e-05,-4.29088e-08,1.54512e-11,22025.5,7.34163], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.56619,0.00429173,3.37755e-05,-4.29088e-08,1.54512e-11,22025.5,7.34163], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[6.2021,0.0116035,-4.24253e-06,6.49614e-10,-3.68734e-14,20614.4,-9.81678], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG""",
@@ -372,10 +372,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.38887,0.0116753,5.39188e-05,-7.10068e-08,2.57553e-11,-1932.89,12.4275], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.38887,0.0116753,5.39188e-05,-7.10068e-08,2.57553e-11,-1932.89,12.4275], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.06996,0.0230144,-8.63502e-06,1.36144e-09,-7.92543e-14,-4357.38,-17.6346], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG
@@ -428,10 +428,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.73145,0.0139064,4.30538e-05,-6.34108e-08,2.42036e-11,11425,12.4058], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[2.73145,0.0139064,4.30538e-05,-6.34108e-08,2.42036e-11,11425,12.4058], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[10.9678,0.0129511,-3.97761e-06,5.74948e-10,-3.17795e-14,8194.12,-35.2875], Tmin=(1000,'K'), Tmax=(4000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (4000,'K'),
     ),
     shortDesc = u"""RMG       120189
@@ -467,10 +467,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.30539,0.0169397,5.26457e-05,-7.16205e-08,2.60936e-11,-17321.9,12.2504], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.30539,0.0169397,5.26457e-05,-7.16205e-08,2.60936e-11,-17321.9,12.2504], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.14176,0.0281602,-1.04914e-05,1.64919e-09,-9.58549e-14,-19802.3,-18.6858], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG
@@ -494,10 +494,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.29868,0.00140824,-3.96322e-06,5.64152e-09,-2.44486e-12,-1020.9,3.95037], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[3.29868,0.00140824,-3.96322e-06,5.64152e-09,-2.44486e-12,-1020.9,3.95037], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[2.92664,0.00148798,-5.68476e-07,1.0097e-10,-6.75335e-15,-922.798,5.98053], Tmin=(1000,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""121286
@@ -525,10 +525,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[4.8587,-0.00374017,6.95554e-05,-8.86548e-08,3.51688e-11,-29996.1,4.80185], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[4.8587,-0.00374017,6.95554e-05,-8.86548e-08,3.51688e-11,-29996.1,4.80185], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[6.56244,0.0152042,-5.38968e-06,8.6225e-10,-5.12898e-14,-31525.6,-9.47302], Tmin=(1000,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -558,10 +558,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.68313,0.00229289,0.000101785,-1.27824e-07,4.65089e-11,8443.58,13.6039], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.68313,0.00229289,0.000101785,-1.27824e-07,4.65089e-11,8443.58,13.6039], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.799,0.0176656,-5.86431e-06,8.97295e-10,-5.17334e-14,3656.25,-49.0892], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""FULVENE    98 MARINOVC&FC   6H   6    0    0G   300.000  3000.000 1000.00      1
@@ -597,10 +597,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.70583,0.0235896,4.52853e-05,-6.96971e-08,2.63176e-11,-35691,13.63], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.70583,0.0235896,4.52853e-05,-6.96971e-08,2.63176e-11,-35691,13.63], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.8813,0.0280003,-1.14955e-05,1.93299e-09,-1.17933e-13,-38765.3,-29.2243], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG
@@ -682,10 +682,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.35283,0.00395169,3.77359e-05,-4.90583e-08,1.79706e-11,-16315.5,10.092], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.35283,0.00395169,3.77359e-05,-4.90583e-08,1.79706e-11,-16315.5,10.092], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[7.49771,0.0091834,-3.15511e-06,4.50623e-10,-2.39651e-14,-18224.3,-15.3304], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG
@@ -743,10 +743,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.38684,0.00347498,-6.3547e-06,6.96858e-09,-2.50659e-12,-30208.1,2.59023], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[3.38684,0.00347498,-6.3547e-06,6.96858e-09,-2.50659e-12,-30208.1,2.59023], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[2.67215,0.00305629,-8.73026e-07,1.201e-10,-6.39162e-15,-29899.2,6.86282], Tmin=(1000,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""20387
@@ -778,10 +778,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.76176,0.0257748,2.18481e-05,-4.22257e-08,1.6587e-11,-27243.7,11.5658], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.76176,0.0257748,2.18481e-05,-4.22257e-08,1.6587e-11,-27243.7,11.5658], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[9.57363,0.0246958,-1.01185e-05,1.69849e-09,-1.03515e-13,-29503.5,-21.9876], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""nC4H10O ATcT            C   4H  10O   1    0G   200.000  6000.000 1000.        1
@@ -815,10 +815,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.05234,0.0347294,-1.5277e-05,7.61892e-10,7.02869e-13,-8611.42,14.7975], Tmin=(300,'K'), Tmax=(1364,'K')),
+            NASAPolynomial(coeffs=[3.05234,0.0347294,-1.5277e-05,7.61892e-10,7.02869e-13,-8611.42,14.7975], Tmin=(250,'K'), Tmax=(1364,'K')),
             NASAPolynomial(coeffs=[15.2901,0.0133897,-4.84843e-06,7.86687e-10,-4.7023e-14,-13587.4,-53.5024], Tmin=(1364,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -849,10 +849,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.11301,0.0323671,-1.20232e-05,-6.30292e-10,8.23641e-13,-3769.49,16.6844], Tmin=(300,'K'), Tmax=(1681,'K')),
+            NASAPolynomial(coeffs=[3.11301,0.0323671,-1.20232e-05,-6.30292e-10,8.23641e-13,-3769.49,16.6844], Tmin=(250,'K'), Tmax=(1681,'K')),
             NASAPolynomial(coeffs=[12.6854,0.0166345,-6.42017e-06,1.08565e-09,-6.67287e-14,-7539.3,-36.8209], Tmin=(1681,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -883,10 +883,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.96746,0.0279614,-6.47489e-06,-3.14935e-09,1.22946e-12,-3872.66,13.2567], Tmin=(300,'K'), Tmax=(1682,'K')),
+            NASAPolynomial(coeffs=[3.96746,0.0279614,-6.47489e-06,-3.14935e-09,1.22946e-12,-3872.66,13.2567], Tmin=(250,'K'), Tmax=(1682,'K')),
             NASAPolynomial(coeffs=[11.209,0.0184045,-6.89653e-06,1.14207e-09,-6.9254e-14,-6955.6,-28.0688], Tmin=(1682,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -917,10 +917,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.05986,0.0349346,-1.57986e-05,1.15659e-09,6.0868e-13,-2529.33,15.8709], Tmin=(300,'K'), Tmax=(1365,'K')),
+            NASAPolynomial(coeffs=[3.05986,0.0349346,-1.57986e-05,1.15659e-09,6.0868e-13,-2529.33,15.8709], Tmin=(250,'K'), Tmax=(1365,'K')),
             NASAPolynomial(coeffs=[15.2575,0.0133941,-4.83289e-06,7.82499e-10,-4.67126e-14,-7462.29,-52.1097], Tmin=(1365,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -976,10 +976,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.60783,0.0130136,3.0533e-05,-4.37468e-08,1.61506e-11,-16841,12.0012], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.60783,0.0130136,3.0533e-05,-4.37468e-08,1.61506e-11,-16841,12.0012], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[7.08051,0.0185215,-7.11737e-06,1.14076e-09,-6.72318e-14,-18495.9,-9.57809], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG
@@ -1011,10 +1011,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.13007,0.0134496,3.49205e-05,-5.31008e-08,2.03491e-11,-2438.66,12.1074], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.13007,0.0134496,3.49205e-05,-5.31008e-08,2.03491e-11,-2438.66,12.1074], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.1157,0.012472,-4.46478e-06,6.61849e-10,-3.64167e-14,-5170.68,-28.3022], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG""",
@@ -1070,10 +1070,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.02259,0.0225385,3.99445e-05,-6.3769e-08,2.45176e-11,-23377.3,15.71], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.02259,0.0225385,3.99445e-05,-6.3769e-08,2.45176e-11,-23377.3,15.71], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.2861,0.0218492,-8.05366e-06,1.24364e-09,-7.11119e-14,-26632.2,-32.2078], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -1104,10 +1104,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.53995,0.023068,2.70715e-05,-4.54541e-08,1.73263e-11,-21209.7,13.8844], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.53995,0.023068,2.70715e-05,-4.54541e-08,1.73263e-11,-21209.7,13.8844], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.41562,0.0255319,-9.90297e-06,1.60238e-09,-9.51731e-14,-23272.3,-15.1022], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -1138,10 +1138,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.717,0.0183395,4.70727e-05,-6.98841e-08,2.63134e-11,-20279.2,14.2488], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.717,0.0183395,4.70727e-05,-6.98841e-08,2.63134e-11,-20279.2,14.2488], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.9703,0.0224915,-9.39987e-06,1.59436e-09,-9.7772e-14,-23371.7,-28.9944], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -1174,10 +1174,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.77054,0.0242311,3.54432e-05,-5.86575e-08,2.25158e-11,-11014.1,15.1788], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.77054,0.0242311,3.54432e-05,-5.86575e-08,2.25158e-11,-11014.1,15.1788], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.7502,0.0254791,-1.06158e-05,1.80002e-09,-1.10422e-13,-13853.9,-25.7497], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG""",
@@ -1210,10 +1210,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[4.00332,0.0234903,2.90104e-05,-4.7613e-08,1.79376e-11,-12321.8,15.1263], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[4.00332,0.0234903,2.90104e-05,-4.7613e-08,1.79376e-11,-12321.8,15.1263], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.23856,0.0285144,-1.18024e-05,2.00079e-09,-1.22853e-13,-14256.2,-10.7703], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG""",
@@ -1246,10 +1246,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[4.01144,0.0222255,3.64658e-05,-5.74781e-08,2.16898e-11,-12316.1,14.8532], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[4.01144,0.0222255,3.64658e-05,-5.74781e-08,2.16898e-11,-12316.1,14.8532], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[9.60366,0.0268533,-1.1375e-05,1.95358e-09,-1.20939e-13,-14771,-18.8417], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG""",
@@ -1282,10 +1282,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.65743,0.0303469,2.02315e-05,-4.49332e-08,1.82206e-11,-14011.3,13.3051], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.65743,0.0303469,2.02315e-05,-4.49332e-08,1.82206e-11,-14011.3,13.3051], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.5948,0.0244705,-1.01513e-05,1.71398e-09,-1.04819e-13,-16879.5,-31.4239], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG""",
@@ -1318,10 +1318,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.75053,0.0218565,4.49757e-05,-6.87947e-08,2.59903e-11,-9458.76,13.194], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.75053,0.0218565,4.49757e-05,-6.87947e-08,2.59903e-11,-9458.76,13.194], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.9425,0.025889,-1.07648e-05,1.8234e-09,-1.11774e-13,-12520.9,-29.6622], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG""",
@@ -1351,10 +1351,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.85194,0.0123322,3.73777e-05,-5.16977e-08,1.90454e-11,-9371.24,13.8699], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.85194,0.0123322,3.73777e-05,-5.16977e-08,1.90454e-11,-9371.24,13.8699], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.05957,0.018474,-6.63766e-06,1.07862e-09,-6.50761e-14,-11350,-12.1441], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""C3H6O-enol2 ATcT        C  3.H  6.O  1.   0.G   200.000  6000.000 1000.        1
@@ -1392,10 +1392,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.86275,0.0248427,-1.13352e-05,1.07716e-09,2.97933e-13,-5684.69,13.9175], Tmin=(300,'K'), Tmax=(1685,'K')),
+            NASAPolynomial(coeffs=[2.86275,0.0248427,-1.13352e-05,1.07716e-09,2.97933e-13,-5684.69,13.9175], Tmin=(250,'K'), Tmax=(1685,'K')),
             NASAPolynomial(coeffs=[10.3845,0.011178,-4.32037e-06,7.32674e-10,-4.51362e-14,-8520.75,-27.6583], Tmin=(1685,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -1423,10 +1423,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.97527,0.0166991,2.57202e-06,-8.2559e-09,2.46621e-12,-1029.13,11.1276], Tmin=(300,'K'), Tmax=(1572,'K')),
+            NASAPolynomial(coeffs=[3.97527,0.0166991,2.57202e-06,-8.2559e-09,2.46621e-12,-1029.13,11.1276], Tmin=(250,'K'), Tmax=(1572,'K')),
             NASAPolynomial(coeffs=[11.7474,0.0092615,-3.5884e-06,6.07198e-10,-3.72177e-14,-4804.72,-34.4275], Tmin=(1572,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -1454,10 +1454,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.88398,0.0249687,-1.16951e-05,1.34153e-09,2.3905e-13,345.317,14.9303], Tmin=(300,'K'), Tmax=(2012,'K')),
+            NASAPolynomial(coeffs=[2.88398,0.0249687,-1.16951e-05,1.34153e-09,2.3905e-13,345.317,14.9303], Tmin=(250,'K'), Tmax=(2012,'K')),
             NASAPolynomial(coeffs=[10.3854,0.0111389,-4.28565e-06,7.24994e-10,-4.46002e-14,-2474.81,-26.4676], Tmin=(2012,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -1485,10 +1485,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.07996,0.0296842,-1.44301e-05,2.13726e-09,1.48023e-13,-24211.9,16.5089], Tmin=(300,'K'), Tmax=(2018,'K')),
+            NASAPolynomial(coeffs=[2.07996,0.0296842,-1.44301e-05,2.13726e-09,1.48023e-13,-24211.9,16.5089], Tmin=(250,'K'), Tmax=(2018,'K')),
             NASAPolynomial(coeffs=[10.6712,0.013404,-5.04778e-06,8.42755e-10,-5.14369e-14,-27399,-30.7467], Tmin=(2018,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -1538,10 +1538,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.5,0,0,0,0,25471.6,-0.460118], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[2.5,0,0,0,0,25471.6,-0.460118], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[2.5,0,0,0,0,25471.6,-0.460118], Tmin=(1000,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""120186
@@ -1562,10 +1562,10 @@ multiplicity 3
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.94643,-0.00163817,2.42103e-06,-1.60284e-09,3.8907e-13,29147.6,2.964], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[2.94643,-0.00163817,2.42103e-06,-1.60284e-09,3.8907e-13,29147.6,2.964], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[2.54206,-2.75506e-05,-3.1028e-09,4.55107e-12,-4.36805e-16,29230.8,4.92031], Tmin=(1000,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""120186
@@ -1601,10 +1601,10 @@ multiplicity 3
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.21294,0.00112749,-5.75615e-07,1.31388e-09,-8.76855e-13,-1005.25,6.03474], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[3.21294,0.00112749,-5.75615e-07,1.31388e-09,-8.76855e-13,-1005.25,6.03474], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[3.69758,0.00061352,-1.25884e-07,1.77528e-11,-1.13644e-15,-1233.93,3.18917], Tmin=(1000,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""121386
@@ -1683,10 +1683,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.38875,0.00656923,-1.48501e-07,-4.62581e-09,2.47151e-12,-17663.2,6.78536], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[3.38875,0.00656923,-1.48501e-07,-4.62581e-09,2.47151e-12,-17663.2,6.78536], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[4.57317,0.00433614,-1.47469e-06,2.3489e-10,-1.43165e-14,-18007,0.501137], Tmin=(1000,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""120186
@@ -1805,10 +1805,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.96854,-8.71549e-05,1.02169e-05,-1.03048e-08,3.29151e-12,16392.1,0.374585], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.96854,-8.71549e-05,1.02169e-05,-1.03048e-08,3.29151e-12,16392.1,0.374585], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[3.30136,0.0051803,-1.62114e-06,2.37832e-10,-1.33299e-14,16396.9,2.94688], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: Burcat (Species ID: CH3)""",
@@ -1941,10 +1941,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.25172,0.017655,-2.37291e-05,1.72758e-08,-5.06648e-12,20059.4,12.4904], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[2.25172,0.017655,-2.37291e-05,1.72758e-08,-5.06648e-12,20059.4,12.4904], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[5.62821,0.00408534,-1.59345e-06,2.86261e-10,-1.94078e-14,19327.2,-3.93026], Tmin=(1000,'K'), Tmax=(4000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (4000,'K'),
     ),
     shortDesc = u"""SRIC91""",
@@ -1967,10 +1967,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[1.24237,0.0310722,-5.08669e-05,4.31371e-08,-1.40146e-11,8031.61,13.8743], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[1.24237,0.0310722,-5.08669e-05,4.31371e-08,-1.40146e-11,8031.61,13.8743], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[5.92383,0.00679236,-2.56586e-06,4.49878e-10,-2.99401e-14,7264.63,-7.60177], Tmin=(1000,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""SRI91""",
@@ -1989,10 +1989,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.5,0,0,0,0,-745.375,4.366], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[2.5,0,0,0,0,-745.375,4.366], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[2.5,0,0,0,0,-745.375,4.366], Tmin=(1000,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""120186
@@ -2014,10 +2014,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.36885,0.0082418,-8.76514e-06,5.56926e-09,-1.54001e-12,33170.8,6.71331], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[3.36885,0.0082418,-8.76514e-06,5.56926e-09,-1.54001e-12,33170.8,6.71331], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[4.84981,0.00294758,-1.09073e-06,1.79256e-10,-1.11576e-14,32820.6,-0.645323], Tmin=(1000,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""121286
@@ -2047,10 +2047,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.58812,0.0299414,-2.35157e-05,1.12636e-08,-2.28664e-12,-21740.9,14.2167], Tmin=(300,'K'), Tmax=(1395,'K')),
+            NASAPolynomial(coeffs=[3.58812,0.0299414,-2.35157e-05,1.12636e-08,-2.28664e-12,-21740.9,14.2167], Tmin=(250,'K'), Tmax=(1395,'K')),
             NASAPolynomial(coeffs=[9.2234,0.0141346,-4.75283e-06,7.28796e-10,-4.1897e-14,-23598.4,-15.3847], Tmin=(1395,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -2074,10 +2074,10 @@ multiplicity 3
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.1992,0.0106185,1.72193e-07,-5.94901e-09,2.73624e-12,59472.8,10.7513], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.1992,0.0106185,1.72193e-07,-5.94901e-09,2.73624e-12,59472.8,10.7513], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[5.23659,0.00717558,-1.79403e-06,1.6298e-10,-4.00857e-15,58832.4,-0.248722], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG
@@ -2152,10 +2152,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.41168,0.00234105,5.00533e-05,-6.16298e-08,2.20556e-11,19079.3,9.38985], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.41168,0.00234105,5.00533e-05,-6.16298e-08,2.20556e-11,19079.3,9.38985], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[6.9611,0.0134091,-4.82565e-06,7.27992e-10,-4.07881e-14,17118.7,-14.0191], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG
@@ -2186,10 +2186,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.16186,0.015181,2.72266e-06,-5.17711e-09,5.43529e-14,30955.5,11.9797], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[3.16186,0.015181,2.72266e-06,-5.17711e-09,5.43529e-14,30955.5,11.9797], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[9.20976,0.00787141,-7.72452e-07,-4.49736e-10,8.37727e-14,28539.7,-22.3237], Tmin=(1000,'K'), Tmax=(4000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (4000,'K'),
     ),
     shortDesc = u"""""",
@@ -2216,10 +2216,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.85096,0.00632881,3.01801e-05,-3.89089e-08,1.40203e-11,29553.7,8.06213], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.85096,0.00632881,3.01801e-05,-3.89089e-08,1.40203e-11,29553.7,8.06213], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[6.16015,0.013222,-4.59617e-06,7.28286e-10,-4.31606e-14,28293.4,-7.09085], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""sC3H5              82489C   3H   5          g  0300.00   4000.00  1000.00      1
@@ -2296,10 +2296,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[0.586358,0.0321021,-1.69517e-05,3.98986e-09,-2.8751e-13,9260.04,22.6633], Tmin=(300,'K'), Tmax=(1373,'K')),
+            NASAPolynomial(coeffs=[0.586358,0.0321021,-1.69517e-05,3.98986e-09,-2.8751e-13,9260.04,22.6633], Tmin=(250,'K'), Tmax=(1373,'K')),
             NASAPolynomial(coeffs=[9.73564,0.0143304,-4.88106e-06,7.56305e-10,-4.3838e-14,5670.01,-27.8415], Tmin=(1373,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -2364,10 +2364,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.76834,0.00800814,2.66645e-05,-3.6694e-08,1.3552e-11,-8341.76,9.49833], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.76834,0.00800814,2.66645e-05,-3.6694e-08,1.3552e-11,-8341.76,9.49833], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[6.95952,0.011775,-4.03081e-06,6.32486e-10,-3.72304e-14,-9798.39,-10.0097], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: MRH (Species ID: HOCHCH3)""",
@@ -2394,10 +2394,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[-0.271296,0.029884,-1.97091e-05,6.3734e-09,-7.77965e-13,-3163.97,24.7706], Tmin=(300,'K'), Tmax=(1405,'K')),
+            NASAPolynomial(coeffs=[-0.271296,0.029884,-1.97091e-05,6.3734e-09,-7.77965e-13,-3163.97,24.7706], Tmin=(250,'K'), Tmax=(1405,'K')),
             NASAPolynomial(coeffs=[8.31182,0.0103426,-3.39186e-06,5.12213e-10,-2.91602e-14,-6130.98,-21.3986], Tmin=(1405,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -2423,10 +2423,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.69187,0.0249761,-1.61712e-05,5.46391e-09,-7.62497e-13,-11875.9,11.9898], Tmin=(300,'K'), Tmax=(1392,'K')),
+            NASAPolynomial(coeffs=[2.69187,0.0249761,-1.61712e-05,5.46391e-09,-7.62497e-13,-11875.9,11.9898], Tmin=(250,'K'), Tmax=(1392,'K')),
             NASAPolynomial(coeffs=[9.40387,0.00990995,-3.34131e-06,5.13787e-10,-2.96102e-14,-14277.1,-24.2902], Tmin=(1392,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -2452,10 +2452,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.73321,0.00988832,2.98807e-05,-4.3124e-08,1.62334e-11,-8884.73,7.68774], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.73321,0.00988832,2.98807e-05,-4.3124e-08,1.62334e-11,-8884.73,7.68774], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.44341,0.0117203,-4.18611e-06,6.74425e-10,-4.03915e-14,-10850.2,-20.1788], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""C2H5O-2 RMG             C   2H   5O   1     G   300.000  5000.000   995.043    1
@@ -2502,10 +2502,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.75031,0.0144303,5.20292e-05,-7.368e-08,2.74536e-11,-3299.33,13.073], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.75031,0.0144303,5.20292e-05,-7.368e-08,2.74536e-11,-3299.33,13.073], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.7043,0.0206018,-8.71847e-06,1.48716e-09,-9.14924e-14,-6372.66,-28.9307], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -2562,10 +2562,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.26869,0.0185572,-3.90966e-07,-1.18419e-08,5.64169e-12,57604.9,10.425], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.26869,0.0185572,-3.90966e-07,-1.18419e-08,5.64169e-12,57604.9,10.425], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[7.7744,0.0105572,-3.5758e-06,5.05609e-10,-2.67046e-14,56207.5,-13.8057], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG""",
@@ -2591,10 +2591,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.28145,0.0137795,1.95751e-05,-3.54858e-08,1.42304e-11,62208.7,10.0748], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.28145,0.0137795,1.95751e-05,-3.54858e-08,1.42304e-11,62208.7,10.0748], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[9.80208,0.00816428,-3.0099e-06,4.48882e-10,-2.47165e-14,59891.3,-26.4749], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""rmg
@@ -2799,10 +2799,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.13591,0.0124386,3.75792e-05,-5.30731e-08,1.97975e-11,18102.6,13.1137], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.13591,0.0124386,3.75792e-05,-5.30731e-08,1.97975e-11,18102.6,13.1137], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.36767,0.0162199,-5.52548e-06,8.66951e-10,-5.10674e-14,15833.1,-18.2729], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG
@@ -2836,10 +2836,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.62922,0.0163308,3.09993e-05,-4.72284e-08,1.79056e-11,23440.9,11.7925], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.62922,0.0163308,3.09993e-05,-4.72284e-08,1.79056e-11,23440.9,11.7925], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.97,0.0179258,-6.17425e-06,9.72337e-10,-5.73788e-14,21236.2,-19.6847], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: MRH (Species ID: C4H5-113)
@@ -2911,10 +2911,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.45288,0.0152014,3.3924e-05,-4.89797e-08,1.8131e-11,26666.3,12.6265], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.45288,0.0152014,3.3924e-05,-4.89797e-08,1.8131e-11,26666.3,12.6265], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[7.5159,0.0208851,-7.83357e-06,1.23396e-09,-7.179e-14,24767.8,-12.4319], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -2944,10 +2944,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.3818,0.0128955,4.46338e-05,-6.11404e-08,2.24467e-11,14690.4,10.9264], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.3818,0.0128955,4.46338e-05,-6.11404e-08,2.24467e-11,14690.4,10.9264], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.16993,0.0206436,-7.74201e-06,1.21642e-09,-7.05766e-14,12401.1,-18.8653], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""rmg
@@ -2983,10 +2983,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.3701,0.0175812,4.28037e-05,-6.0581e-08,2.22918e-11,7355.03,13.7489], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.3701,0.0175812,4.28037e-05,-6.0581e-08,2.22918e-11,7355.03,13.7489], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.01072,0.0256389,-9.61172e-06,1.51622e-09,-8.83435e-14,5109.08,-15.2615], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG
@@ -3022,10 +3022,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.60287,0.0168404,3.63709e-05,-4.95365e-08,1.77136e-11,6047.35,13.6963], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.60287,0.0168404,3.63709e-05,-4.95365e-08,1.77136e-11,6047.35,13.6963], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[5.49904,0.0286743,-1.07983e-05,1.71699e-09,-1.00774e-13,4706.8,-0.282131], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -3050,10 +3050,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.37355,0.00766274,2.00424e-05,-3.07407e-08,1.18462e-11,13376.7,10.2086], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.37355,0.00766274,2.00424e-05,-3.07407e-08,1.18462e-11,13376.7,10.2086], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[7.68501,0.00634914,-2.12423e-06,2.88819e-10,-1.4546e-14,11725.7,-14.5549], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""rmg""",
@@ -3078,10 +3078,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.37355,0.00766274,2.00424e-05,-3.07407e-08,1.18462e-11,13376.7,10.2086], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.37355,0.00766274,2.00424e-05,-3.07407e-08,1.18462e-11,13376.7,10.2086], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[7.68501,0.00634914,-2.12423e-06,2.88819e-10,-1.4546e-14,11725.7,-14.5549], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""rmg""",
@@ -3109,10 +3109,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.81396,0.00927143,6.46142e-05,-8.77361e-08,3.27578e-11,53690.3,13.1094], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.81396,0.00927143,6.46142e-05,-8.77361e-08,3.27578e-11,53690.3,13.1094], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.1408,0.013465,-4.54926e-06,7.05803e-10,-4.11247e-14,49770.4,-42.211], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""CBSQB3""",
@@ -3174,10 +3174,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.87966,0.0178422,1.70203e-05,-2.86863e-08,1.09431e-11,15711.3,11.8552], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.87966,0.0178422,1.70203e-05,-2.86863e-08,1.09431e-11,15711.3,11.8552], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[6.11834,0.0189034,-5.8054e-06,8.2772e-10,-4.51608e-14,14369.7,-7.25608], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -3207,10 +3207,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.41175,0.0204835,1.50376e-05,-2.89761e-08,1.1334e-11,25004.3,11.3603], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.41175,0.0204835,1.50376e-05,-2.89761e-08,1.1334e-11,25004.3,11.3603], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[7.25107,0.0201442,-7.20543e-06,1.17172e-09,-7.08224e-14,23493,-10.898], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -3235,10 +3235,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.12528,0.00977822,4.52145e-06,-9.00946e-09,3.19372e-12,-4108.51,11.2288], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[3.12528,0.00977822,4.52145e-06,-9.00946e-09,3.19372e-12,-4108.51,11.2288], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[5.61228,0.00844989,-2.85415e-06,4.23838e-10,-2.2684e-14,-5187.86,-3.27495], Tmin=(1000,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -3272,10 +3272,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.82778,0.00658222,0.000118283,-1.47954e-07,5.34532e-11,-2431.86,15.9093], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.82778,0.00658222,0.000118283,-1.47954e-07,5.34532e-11,-2431.86,15.9093], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.9788,0.0287324,-1.00126e-05,1.58808e-09,-9.40765e-14,-7568.69,-48.6741], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""KVG, UGhent""",
@@ -3309,10 +3309,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[-2.18695,0.0681745,-5.32243e-05,2.18127e-08,-3.63902e-12,25026.1,38.6524], Tmin=(300,'K'), Tmax=(1394,'K')),
+            NASAPolynomial(coeffs=[-2.18695,0.0681745,-5.32243e-05,2.18127e-08,-3.63902e-12,25026.1,38.6524], Tmin=(250,'K'), Tmax=(1394,'K')),
             NASAPolynomial(coeffs=[16.9217,0.0202745,-6.64939e-06,1.00413e-09,-5.72454e-14,18747.2,-62.7656], Tmin=(1394,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -3346,10 +3346,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[-3.55973,0.0583176,-2.95503e-05,5.47122e-09,5.32998e-14,21527.8,44.6225], Tmin=(300,'K'), Tmax=(1375,'K')),
+            NASAPolynomial(coeffs=[-3.55973,0.0583176,-2.95503e-05,5.47122e-09,5.32998e-14,21527.8,44.6225], Tmin=(250,'K'), Tmax=(1375,'K')),
             NASAPolynomial(coeffs=[13.9824,0.0247191,-8.41817e-06,1.30256e-09,-7.54309e-14,14708.4,-52.192], Tmin=(1375,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -3381,10 +3381,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[-5.3458,0.0695507,-5.12381e-05,1.92721e-08,-2.92116e-12,12154.6,50.8884], Tmin=(300,'K'), Tmax=(1391,'K')),
+            NASAPolynomial(coeffs=[-5.3458,0.0695507,-5.12381e-05,1.92721e-08,-2.92116e-12,12154.6,50.8884], Tmin=(250,'K'), Tmax=(1391,'K')),
             NASAPolynomial(coeffs=[15.2457,0.0205599,-6.84211e-06,1.04457e-09,-6.00125e-14,5157.99,-59.2777], Tmin=(1391,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -3454,10 +3454,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[-0.481125,0.05987,-3.59e-05,8.942e-09,-2.851e-13,8173,32.22], Tmin=(300,'K'), Tmax=(1500,'K')),
+            NASAPolynomial(coeffs=[-0.481125,0.05987,-3.59e-05,8.942e-09,-2.851e-13,8173,32.22], Tmin=(250,'K'), Tmax=(1500,'K')),
             NASAPolynomial(coeffs=[-0.481125,0.05987,-3.59e-05,8.942e-09,-2.851e-13,8173,32.22], Tmin=(1500,'K'), Tmax=(6000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (6000,'K'),
     ),
     shortDesc = u"""""",
@@ -3492,10 +3492,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[-5.49639,0.0799172,-5.94936e-05,2.30449e-08,-3.63905e-12,20304.8,50.5508], Tmin=(300,'K'), Tmax=(1392,'K')),
+            NASAPolynomial(coeffs=[-5.49639,0.0799172,-5.94936e-05,2.30449e-08,-3.63905e-12,20304.8,50.5508], Tmin=(250,'K'), Tmax=(1392,'K')),
             NASAPolynomial(coeffs=[17.2345,0.0248844,-8.27016e-06,1.25495e-09,-7.17094e-14,12651.1,-70.7658], Tmin=(1392,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -3638,10 +3638,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.5146,0.0272103,1.27748e-05,-3.40401e-08,1.42738e-11,-6753.06,13.8564], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.5146,0.0272103,1.27748e-05,-3.40401e-08,1.42738e-11,-6753.06,13.8564], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.9424,0.0189567,-7.35344e-06,1.26726e-09,-7.95918e-14,-9300.88,-27.3164], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -3672,10 +3672,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.50572,0.0298664,1.16655e-05,-3.63547e-08,1.56644e-11,-363.207,14.7902], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.50572,0.0298664,1.16655e-05,-3.63547e-08,1.56644e-11,-363.207,14.7902], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.7661,0.0174577,-7.03982e-06,1.24261e-09,-7.91833e-14,-3434.68,-36.0131], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -3704,10 +3704,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.21714,0.0271581,-4.01795e-06,-1.23874e-08,6.34366e-12,9208.13,15.0973], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.21714,0.0271581,-4.01795e-06,-1.23874e-08,6.34366e-12,9208.13,15.0973], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.92185,0.0162632,-5.74054e-06,9.24532e-10,-5.55133e-14,7476.91,-15.3908], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -3742,10 +3742,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.13616,0.0474715,-1.89969e-06,-3.19493e-08,1.55437e-11,-30111.1,19.6962], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.13616,0.0474715,-1.89969e-06,-3.19493e-08,1.55437e-11,-30111.1,19.6962], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[16.1719,0.0235747,-8.848e-06,1.49674e-09,-9.29611e-14,-34116.5,-50.2202], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -3780,10 +3780,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.03484,0.0562438,-1.83942e-05,-2.0286e-08,1.25361e-11,-26728.5,18.6463], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.03484,0.0562438,-1.83942e-05,-2.0286e-08,1.25361e-11,-26728.5,18.6463], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[18.7966,0.0211602,-8.13426e-06,1.39997e-09,-8.79317e-14,-31265.2,-64.351], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -3816,10 +3816,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.12526,0.0516363,-1.66625e-05,-1.75883e-08,1.08676e-11,-39986.4,17.0371], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.12526,0.0516363,-1.66625e-05,-1.75883e-08,1.08676e-11,-39986.4,17.0371], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[16.6196,0.0217458,-8.31898e-06,1.42065e-09,-8.87178e-14,-43877.7,-54.057], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -3851,10 +3851,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.32349,0.0367974,1.87333e-06,-2.89026e-08,1.35164e-11,-21533.5,15.1946], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.32349,0.0367974,1.87333e-06,-2.89026e-08,1.35164e-11,-21533.5,15.1946], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.5728,0.019292,-7.45895e-06,1.28258e-09,-8.04358e-14,-24746.2,-40.0959], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -3911,10 +3911,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.08442,0.0249456,-8.13898e-07,-1.96058e-08,9.71313e-12,-19952,14.7435], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.08442,0.0249456,-8.13898e-07,-1.96058e-08,9.71313e-12,-19952,14.7435], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.9359,0.0078587,-2.93713e-06,4.96883e-10,-3.08572e-14,-22629.1,-32.5166], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -3943,10 +3943,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.19206,0.0323705,1.37067e-05,-4.68626e-08,2.10821e-11,-35091.7,24.7943], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.19206,0.0323705,1.37067e-05,-4.68626e-08,2.10821e-11,-35091.7,24.7943], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[17.9003,0.00578664,-1.3354e-06,1.4282e-10,-5.62969e-15,-40027.8,-60.0061], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -3973,10 +3973,10 @@ multiplicity 3
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.81907,0.0162404,3.07373e-05,-5.47253e-08,2.21743e-11,-17929.9,19.4789], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.81907,0.0162404,3.07373e-05,-5.47253e-08,2.21743e-11,-17929.9,19.4789], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.9157,0.0046455,-1.54987e-06,2.49509e-10,-1.50364e-14,-21772.5,-42.2134], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -4000,10 +4000,10 @@ multiplicity 3
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.37295,0.0137364,-1.11404e-05,5.33432e-09,-1.04487e-12,24191.8,9.39468], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.37295,0.0137364,-1.11404e-05,5.33432e-09,-1.04487e-12,24191.8,9.39468], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[5.24522,0.00708443,-2.43091e-06,3.82229e-10,-2.25634e-14,23775.9,0.153855], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -4033,10 +4033,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.53637,0.014019,4.20055e-05,-5.66753e-08,2.05059e-11,-3566.63,10.6978], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.53637,0.014019,4.20055e-05,-5.66753e-08,2.05059e-11,-3566.63,10.6978], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[6.81445,0.0244229,-9.22688e-06,1.46696e-09,-8.60241e-14,-5386.42,-10.9669], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -4062,10 +4062,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.71355,0.00915555,2.31136e-05,-3.4439e-08,1.30836e-11,10682.5,9.53677], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.71355,0.00915555,2.31136e-05,-3.4439e-08,1.30836e-11,10682.5,9.53677], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[7.83073,0.00966335,-3.3673e-06,5.31896e-10,-3.14004e-14,9018.66,-14.5493], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: Franklin (Species ID: CH2CHCO)""",
@@ -4133,10 +4133,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.24732,0.0199044,5.75006e-05,-8.73852e-08,3.3564e-11,3029.45,11.4048], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.24732,0.0199044,5.75006e-05,-8.73852e-08,3.3564e-11,3029.45,11.4048], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[14.8502,0.0180685,-7.27702e-06,1.26941e-09,-8.00651e-14,-1497.81,-55.6609], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -4203,10 +4203,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[1.39146,0.0393196,1.7771e-06,-2.27767e-08,8.30966e-12,-14721.8,19.1781], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[1.39146,0.0393196,1.7771e-06,-2.27767e-08,8.30966e-12,-14721.8,19.1781], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[18.2163,0.0114243,-1.09668e-06,-6.42744e-10,1.19889e-13,-20536.6,-73.0423], Tmin=(1000,'K'), Tmax=(4000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (4000,'K'),
     ),
     shortDesc = u"""82489""",
@@ -4274,10 +4274,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.52789,0.0137352,8.64248e-05,-1.1686e-07,4.34908e-11,11719.9,15.8958], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.52789,0.0137352,8.64248e-05,-1.1686e-07,4.34908e-11,11719.9,15.8958], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[14.4605,0.0206645,-6.77766e-06,1.03031e-09,-5.9187e-14,6627.52,-55.2693], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""From Burcat
@@ -4313,10 +4313,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.79945,0.011541,8.68321e-05,-1.14217e-07,4.20056e-11,10269.1,15.8701], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.79945,0.011541,8.68321e-05,-1.14217e-07,4.20056e-11,10269.1,15.8701], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.8115,0.0228104,-7.81704e-06,1.22818e-09,-7.23125e-14,5726.19,-45.1979], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -4348,10 +4348,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.76131,0.0114295,8.78824e-05,-1.15636e-07,4.2554e-11,10127.7,16.035], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.76131,0.0114295,8.78824e-05,-1.15636e-07,4.2554e-11,10127.7,16.035], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.0105,0.0225225,-7.67174e-06,1.20005e-09,-7.04289e-14,5499.16,-46.3691], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -4534,10 +4534,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[-3.42356,0.0705976,-6.11471e-05,2.68157e-08,-4.69274e-12,37506.7,42.9354], Tmin=(300,'K'), Tmax=(1398,'K')),
+            NASAPolynomial(coeffs=[-3.42356,0.0705976,-6.11471e-05,2.68157e-08,-4.69274e-12,37506.7,42.9354], Tmin=(250,'K'), Tmax=(1398,'K')),
             NASAPolynomial(coeffs=[17.5855,0.0158083,-5.49672e-06,8.63067e-10,-5.04754e-14,30817.5,-67.8115], Tmin=(1398,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""C5H4CH3                 C   6H   7O   0     G   300.000  5000.000   995.043    1
@@ -4572,10 +4572,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[-5.39417,0.0751044,-6.7769e-05,3.16887e-08,-5.9196e-12,25613.3,48.5136], Tmin=(300,'K'), Tmax=(1396,'K')),
+            NASAPolynomial(coeffs=[-5.39417,0.0751044,-6.7769e-05,3.16887e-08,-5.9196e-12,25613.3,48.5136], Tmin=(250,'K'), Tmax=(1396,'K')),
             NASAPolynomial(coeffs=[15.2938,0.0184305,-6.35987e-06,9.93249e-10,-5.78638e-14,19196.3,-59.7459], Tmin=(1396,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -4607,10 +4607,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[-5.34258,0.0755933,-6.88889e-05,3.24826e-08,-6.10433e-12,28558.9,48.117], Tmin=(300,'K'), Tmax=(1397,'K')),
+            NASAPolynomial(coeffs=[-5.34258,0.0755933,-6.88889e-05,3.24826e-08,-6.10433e-12,28558.9,48.117], Tmin=(250,'K'), Tmax=(1397,'K')),
             NASAPolynomial(coeffs=[15.3787,0.0183356,-6.32189e-06,9.86758e-10,-5.74627e-14,22177.9,-60.147], Tmin=(1397,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -4640,10 +4640,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.75611,-0.00508654,0.000122516,-1.46071e-07,5.20578e-11,29534.1,14.9694], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.75611,-0.00508654,0.000122516,-1.46071e-07,5.20578e-11,29534.1,14.9694], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.047,0.0212672,-7.18107e-06,1.10332e-09,-6.36893e-14,24929.5,-39.8346], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -4677,10 +4677,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[-7.1156,0.0938484,-8.53807e-05,4.02613e-08,-7.59499e-12,31703.6,59.3518], Tmin=(300,'K'), Tmax=(1392,'K')),
+            NASAPolynomial(coeffs=[-7.1156,0.0938484,-8.53807e-05,4.02613e-08,-7.59499e-12,31703.6,59.3518], Tmin=(250,'K'), Tmax=(1392,'K')),
             NASAPolynomial(coeffs=[19.1124,0.0223573,-7.79982e-06,1.2271e-09,-7.18532e-14,23481.1,-78.1136], Tmin=(1392,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -4710,10 +4710,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.36805,0.0407008,-1.59371e-05,-7.65989e-09,5.95826e-12,47708.5,16.7535], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.36805,0.0407008,-1.59371e-05,-7.65989e-09,5.95826e-12,47708.5,16.7535], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.7384,0.0183573,-5.35667e-06,7.29192e-10,-3.82059e-14,45085.1,-32.2188], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -4743,10 +4743,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.5575,0.035692,8.95669e-06,-3.87075e-08,1.74491e-11,45194.6,14.9539], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.5575,0.035692,8.95669e-06,-3.87075e-08,1.74491e-11,45194.6,14.9539], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[15.1317,0.0150145,-4.90068e-06,7.45117e-10,-4.28887e-14,41213.4,-53.0775], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -4774,10 +4774,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.54856,0.012842,2.4325e-05,-3.58909e-08,1.34239e-11,34452.8,10.1108], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.54856,0.012842,2.4325e-05,-3.58909e-08,1.34239e-11,34452.8,10.1108], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[7.04689,0.0155623,-5.07616e-06,7.58447e-10,-4.29252e-14,32925.7,-10.9242], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""CH3CCCH2                C   4H   50   00   0G   300.000  5000.000 1678.000     1
@@ -4807,10 +4807,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.05797,0.0172821,1.16475e-05,-2.61981e-08,1.08357e-11,37615.7,9.32272], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[3.05797,0.0172821,1.16475e-05,-2.61981e-08,1.08357e-11,37615.7,9.32272], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[8.65692,0.011109,-3.67008e-06,5.61934e-10,-3.25097e-14,35692.9,-21.7245], Tmin=(1000,'K'), Tmax=(4000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (4000,'K'),
     ),
     shortDesc = u"""82489""",
@@ -4843,10 +4843,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[-1.03155,0.0571908,-3.69342e-05,1.2298e-08,-1.667e-12,-4447.96,32.1337], Tmin=(300,'K'), Tmax=(1386,'K')),
+            NASAPolynomial(coeffs=[-1.03155,0.0571908,-3.69342e-05,1.2298e-08,-1.667e-12,-4447.96,32.1337], Tmin=(250,'K'), Tmax=(1386,'K')),
             NASAPolynomial(coeffs=[14.8559,0.0217591,-7.19194e-06,1.09245e-09,-6.25176e-14,-10135.7,-53.7935], Tmin=(1386,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -4879,10 +4879,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[-0.258381,0.0526374,-3.44776e-05,1.1693e-08,-1.62205e-12,20143.5,30.6933], Tmin=(300,'K'), Tmax=(1386,'K')),
+            NASAPolynomial(coeffs=[-0.258381,0.0526374,-3.44776e-05,1.1693e-08,-1.62205e-12,20143.5,30.6933], Tmin=(250,'K'), Tmax=(1386,'K')),
             NASAPolynomial(coeffs=[14.4005,0.0197093,-6.52672e-06,9.92647e-10,-5.68527e-14,14917.9,-48.5076], Tmin=(1386,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -4913,10 +4913,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[-5.40494,0.0630369,-4.53166e-05,1.65992e-08,-2.44212e-12,3556.87,49.4543], Tmin=(300,'K'), Tmax=(1390,'K')),
+            NASAPolynomial(coeffs=[-5.40494,0.0630369,-4.53166e-05,1.65992e-08,-2.44212e-12,3556.87,49.4543], Tmin=(250,'K'), Tmax=(1390,'K')),
             NASAPolynomial(coeffs=[13.1886,0.0193242,-6.37806e-06,9.6972e-10,-5.55803e-14,-2807.96,-50.1996], Tmin=(1390,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -4949,10 +4949,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[-3.77657,0.0520634,-2.53274e-05,4.68184e-09,6.16802e-15,13118,46.9884], Tmin=(300,'K'), Tmax=(1379,'K')),
+            NASAPolynomial(coeffs=[-3.77657,0.0520634,-2.53274e-05,4.68184e-09,6.16802e-15,13118,46.9884], Tmin=(250,'K'), Tmax=(1379,'K')),
             NASAPolynomial(coeffs=[10.4169,0.0249465,-8.24607e-06,1.24922e-09,-7.1312e-14,7577.97,-31.3942], Tmin=(1379,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -4983,10 +4983,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[-5.04929,0.0637056,-5.15076e-05,2.14163e-08,-3.57197e-12,19450.7,46.9702], Tmin=(300,'K'), Tmax=(1397,'K')),
+            NASAPolynomial(coeffs=[-5.04929,0.0637056,-5.15076e-05,2.14163e-08,-3.57197e-12,19450.7,46.9702], Tmin=(250,'K'), Tmax=(1397,'K')),
             NASAPolynomial(coeffs=[13.4371,0.0166929,-5.43077e-06,8.17275e-10,-4.65279e-14,13488.5,-50.8315], Tmin=(1397,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -5017,10 +5017,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.85054,0.0214634,3.85378e-05,-6.27824e-08,2.44841e-11,-6429.99,15.1459], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.85054,0.0214634,3.85378e-05,-6.27824e-08,2.44841e-11,-6429.99,15.1459], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.2648,0.0172544,-5.82185e-06,9.09556e-10,-5.3431e-14,-9968.65,-38.5927], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -5053,10 +5053,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.44609,0.0333125,1.77706e-05,-4.26431e-08,1.75966e-11,-38071.2,11.773], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.44609,0.0333125,1.77706e-05,-4.26431e-08,1.75966e-11,-38071.2,11.773], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.0856,0.0246802,-8.55828e-06,1.35548e-09,-8.03463e-14,-41082.5,-36.3568], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG computed NASA-7 polynomials, for s-butanol chemistry
@@ -5090,10 +5090,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.54088,0.0243263,3.97619e-05,-6.29219e-08,2.40491e-11,-16757.3,12.2457], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.54088,0.0243263,3.97619e-05,-6.29219e-08,2.40491e-11,-16757.3,12.2457], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.1132,0.0252738,-8.98252e-06,1.43738e-09,-8.56525e-14,-19818.1,-32.0566], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: sBuOH-radicals (Species ID: CH3C(OH)C2H5)""",
@@ -5126,10 +5126,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.47588,0.0280589,3.08366e-05,-5.50825e-08,2.1638e-11,-13875.3,12.9525], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.47588,0.0280589,3.08366e-05,-5.50825e-08,2.1638e-11,-13875.3,12.9525], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.7211,0.0245992,-8.69775e-06,1.38693e-09,-8.24492e-14,-16985.8,-34.1693], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: sBuOH-radicals (Species ID: CH3CH(OH)CHCH3)""",
@@ -5162,10 +5162,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.50034,0.0187537,5.72892e-05,-8.07773e-08,3.00789e-11,-10822.8,12.4934], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.50034,0.0187537,5.72892e-05,-8.07773e-08,3.00789e-11,-10822.8,12.4934], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.2336,0.0251548,-8.87272e-06,1.41314e-09,-8.39235e-14,-14217.7,-34.1024], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: sBuOH-radicals (Species ID: CH3CH(O)C2H5)""",
@@ -5198,10 +5198,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.35702,0.0274981,3.44131e-05,-5.96954e-08,2.33932e-11,-12857,12.2209], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.35702,0.0274981,3.44131e-05,-5.96954e-08,2.33932e-11,-12857,12.2209], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.2911,0.0236846,-8.22922e-06,1.29585e-09,-7.63418e-14,-16224.1,-38.8217], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: sBuOH-radicals (Species ID: CH2CH(OH)C2H5)""",
@@ -5234,10 +5234,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.4421,0.0297544,2.76239e-05,-5.26874e-08,2.0987e-11,-13182,11.8867], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.4421,0.0297544,2.76239e-05,-5.26874e-08,2.0987e-11,-13182,11.8867], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.1483,0.0242621,-8.5762e-06,1.36699e-09,-8.12358e-14,-16375.3,-37.4123], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: sBuOH-radicals (Species ID: CH3CH(OH)CH2CH2)""",
@@ -5267,10 +5267,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.45944,0.0267858,3.07852e-06,-2.15094e-08,9.76694e-12,-9653.91,10.8085], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.45944,0.0267858,3.07852e-06,-2.15094e-08,9.76694e-12,-9653.91,10.8085], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.3367,0.0157197,-5.2336e-06,8.05258e-10,-4.67635e-14,-11843.3,-26.4606], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: MRH (Species ID: HOCH(CH3)CH2)""",
@@ -5300,10 +5300,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.54748,0.0162026,3.24288e-05,-4.96766e-08,1.89414e-11,-11063.3,12.9218], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.54748,0.0162026,3.24288e-05,-4.96766e-08,1.89414e-11,-11063.3,12.9218], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[9.59295,0.016688,-5.6697e-06,8.84285e-10,-5.18176e-14,-13493.5,-22.3803], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -5338,10 +5338,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.31481,0.0183931,1.69403e-05,-3.1888e-08,1.26275e-11,-21428.4,11.6759], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.31481,0.0183931,1.69403e-05,-3.1888e-08,1.26275e-11,-21428.4,11.6759], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.29438,0.0158754,-5.64468e-06,9.18221e-10,-5.55546e-14,-23285.7,-16.6762], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""CH3CH(OH)CH2            C   3H   7O   1     G   300.000  5000.000   995.043    1
@@ -5378,10 +5378,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.3354,0.0214318,2.44649e-05,-4.63715e-08,1.86753e-11,-6252.05,11.7662], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.3354,0.0214318,2.44649e-05,-4.63715e-08,1.86753e-11,-6252.05,11.7662], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.8175,0.0143161,-5.48285e-06,9.44521e-10,-5.93744e-14,-9275.81,-35.825], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -5411,10 +5411,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.05849,0.0259725,5.40167e-06,-2.30702e-08,1.01201e-11,-13697.6,12.675], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.05849,0.0259725,5.40167e-06,-2.30702e-08,1.01201e-11,-13697.6,12.675], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[9.37394,0.0169532,-5.67678e-06,8.84041e-10,-5.18942e-14,-15764.7,-21.8339], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -5442,10 +5442,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.61211,0.0117333,3.44375e-05,-4.79046e-08,1.7637e-11,-27762.4,10.0482], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.61211,0.0117333,3.44375e-05,-4.79046e-08,1.7637e-11,-27762.4,10.0482], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[7.35983,0.0178808,-6.80771e-06,1.15403e-09,-7.16532e-14,-29558.4,-13.2907], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -5478,10 +5478,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.8798,0.023413,4.70088e-05,-7.27965e-08,2.78949e-11,11966.7,15.5891], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.8798,0.023413,4.70088e-05,-7.27965e-08,2.78949e-11,11966.7,15.5891], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.1966,0.0228773,-7.83515e-06,1.23415e-09,-7.28951e-14,8284.97,-38.4962], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -5509,10 +5509,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.10982,0.0172615,1.97166e-05,-3.64805e-08,1.46008e-11,-3167.13,12.2117], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.10982,0.0172615,1.97166e-05,-3.64805e-08,1.46008e-11,-3167.13,12.2117], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[9.56878,0.0122119,-4.2002e-06,6.67392e-10,-3.97143e-14,-5487.93,-24.1198], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -5576,10 +5576,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.13909,0.0363541,-1.77814e-06,-1.96846e-08,9.3601e-12,-11056.3,14.1299], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.13909,0.0363541,-1.77814e-06,-1.96846e-08,9.3601e-12,-11056.3,14.1299], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.1721,0.0244515,-8.51236e-06,1.36048e-09,-8.13061e-14,-13266.3,-23.8377], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -5607,10 +5607,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.32296,0.0145061,3.23163e-05,-4.85689e-08,1.83617e-11,-20704.5,11.6789], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.32296,0.0145061,3.23163e-05,-4.85689e-08,1.83617e-11,-20704.5,11.6789], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.70653,0.0164178,-6.07148e-06,9.39049e-10,-5.37536e-14,-22941.9,-20.1262], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""rmg
@@ -5646,10 +5646,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.40613,0.0261008,2.14086e-05,-4.19808e-08,1.66958e-11,-30912.9,12.9908], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.40613,0.0261008,2.14086e-05,-4.19808e-08,1.66958e-11,-30912.9,12.9908], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.0247,0.0226795,-8.3843e-06,1.39638e-09,-8.57606e-14,-33377.8,-24.6743], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -5680,10 +5680,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.92775,0.0231555,4.0634e-05,-6.67231e-08,2.60624e-11,-21893,16.2989], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.92775,0.0231555,4.0634e-05,-6.67231e-08,2.60624e-11,-21893,16.2989], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.0087,0.0184994,-6.41762e-06,1.02768e-09,-6.14948e-14,-25674.8,-41.2083], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -5712,10 +5712,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.28295,0.0183744,3.43525e-05,-5.46291e-08,2.10591e-11,-17298.9,13.3868], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.28295,0.0183744,3.43525e-05,-5.46291e-08,2.10591e-11,-17298.9,13.3868], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.5344,0.017324,-6.42391e-06,1.07118e-09,-6.57979e-14,-20133.1,-28.5513], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -5746,10 +5746,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.91742,0.023678,1.80897e-05,-3.64814e-08,1.45595e-11,-6280.37,12.622], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.91742,0.023678,1.80897e-05,-3.64814e-08,1.45595e-11,-6280.37,12.622], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[9.76241,0.0204773,-7.68087e-06,1.28311e-09,-7.88458e-14,-8448.33,-20.5965], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -5780,10 +5780,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.9855,0.0237989,1.37642e-05,-2.97788e-08,1.18661e-11,-7739.14,10.1295], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.9855,0.0237989,1.37642e-05,-2.97788e-08,1.18661e-11,-7739.14,10.1295], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.44948,0.0221127,-8.20349e-06,1.36034e-09,-8.32012e-14,-9432.4,-15.429], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -5814,10 +5814,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.91742,0.023678,1.80897e-05,-3.64814e-08,1.45595e-11,-6280.37,12.622], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.91742,0.023678,1.80897e-05,-3.64814e-08,1.45595e-11,-6280.37,12.622], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[9.76241,0.0204773,-7.68087e-06,1.28311e-09,-7.88458e-14,-8448.33,-20.5965], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -5848,10 +5848,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.57566,0.022878,3.23299e-05,-5.41428e-08,2.10539e-11,-24196.8,13.28], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.57566,0.022878,3.23299e-05,-5.41428e-08,2.10539e-11,-24196.8,13.28], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.2047,0.0206883,-7.29961e-06,1.17135e-09,-7.00593e-14,-27124.9,-30.572], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -5882,10 +5882,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.58128,0.0241088,2.29162e-05,-4.40571e-08,1.76383e-11,-7587.12,11.7239], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.58128,0.0241088,2.29162e-05,-4.40571e-08,1.76383e-11,-7587.12,11.7239], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.1873,0.0186173,-6.61927e-06,1.06604e-09,-6.38976e-14,-10342.6,-31.173], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -5916,10 +5916,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.61013,0.0238016,2.16536e-05,-4.21728e-08,1.69128e-11,482.269,14.904], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.61013,0.0238016,2.16536e-05,-4.21728e-08,1.69128e-11,482.269,14.904], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.9496,0.0183984,-6.53257e-06,1.05318e-09,-6.32036e-14,-2171.47,-26.4634], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -5950,10 +5950,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.55104,0.0261168,1.6477e-05,-3.7833e-08,1.56244e-11,5517.28,13.7253], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.55104,0.0261168,1.6477e-05,-3.7833e-08,1.56244e-11,5517.28,13.7253], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.4113,0.0178712,-6.29561e-06,1.00968e-09,-6.03802e-14,2796.97,-29.9658], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -5984,10 +5984,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.78628,0.0252404,2.014e-05,-3.94647e-08,1.56651e-11,-25848.4,11.188], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.78628,0.0252404,2.014e-05,-3.94647e-08,1.56651e-11,-25848.4,11.188], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[9.91291,0.0222807,-8.06375e-06,1.31687e-09,-7.97378e-14,-28140.4,-23.7294], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6015,10 +6015,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.49744,0.0173182,1.72338e-05,-3.35069e-08,1.35558e-11,8974.68,11.0911], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.49744,0.0173182,1.72338e-05,-3.35069e-08,1.35558e-11,8974.68,11.0911], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[9.88045,0.0114619,-3.79051e-06,5.79916e-10,-3.35082e-14,6724.05,-24.5977], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6046,10 +6046,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.77363,0.0182668,8.48832e-06,-2.2111e-08,9.23095e-12,8237.68,10.0948], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.77363,0.0182668,8.48832e-06,-2.2111e-08,9.23095e-12,8237.68,10.0948], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.52773,0.0130726,-4.66091e-06,7.54755e-10,-4.54574e-14,6602.61,-16.2793], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6080,10 +6080,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.89725,0.0290106,-1.02286e-06,-1.60209e-08,7.49908e-12,2728.68,11.0921], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.89725,0.0290106,-1.02286e-06,-1.60209e-08,7.49908e-12,2728.68,11.0921], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[9.15924,0.0206094,-7.58087e-06,1.25184e-09,-7.63887e-14,1050.22,-17.4399], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6114,10 +6114,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.58128,0.0241088,2.29162e-05,-4.40571e-08,1.76383e-11,-7587.12,11.7239], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.58128,0.0241088,2.29162e-05,-4.40571e-08,1.76383e-11,-7587.12,11.7239], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.1873,0.0186173,-6.61927e-06,1.06604e-09,-6.38976e-14,-10342.6,-31.173], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6148,10 +6148,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.43904,0.0207327,3.73152e-05,-6.12237e-08,2.39261e-11,2739.56,15.9301], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.43904,0.0207327,3.73152e-05,-6.12237e-08,2.39261e-11,2739.56,15.9301], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.7464,0.0162972,-5.71419e-06,9.1442e-10,-5.458e-14,-745.358,-37.1305], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6182,10 +6182,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.51555,0.0235793,2.68286e-05,-4.97499e-08,1.99012e-11,6637.55,14.2101], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.51555,0.0235793,2.68286e-05,-4.97499e-08,1.99012e-11,6637.55,14.2101], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.2479,0.0169158,-5.99836e-06,9.6755e-10,-5.80866e-14,3491.82,-34.9495], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6216,10 +6216,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.37996,0.0230479,3.21386e-05,-5.68839e-08,2.26376e-11,7774.57,14.7514], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.37996,0.0230479,3.21386e-05,-5.68839e-08,2.26376e-11,7774.57,14.7514], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.2081,0.01577,-5.47723e-06,8.70919e-10,-5.17566e-14,4223.08,-40.6328], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6250,10 +6250,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.44098,0.018203,4.72454e-05,-7.17474e-08,2.75242e-11,4272.32,13.8643], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.44098,0.018203,4.72454e-05,-7.17474e-08,2.75242e-11,4272.32,13.8643], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.9329,0.0167584,-5.91937e-06,9.51232e-10,-5.69196e-14,565.895,-41.0141], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6282,10 +6282,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.8099,0.0185437,3.4384e-05,-5.58308e-08,2.16893e-11,-16349.6,9.9193], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.8099,0.0185437,3.4384e-05,-5.58308e-08,2.16893e-11,-16349.6,9.9193], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.7479,0.0160438,-6.18294e-06,1.05277e-09,-6.54739e-14,-19385.3,-35.6539], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""8APR2010""",
@@ -6311,10 +6311,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.79724,0.0115702,2.27323e-05,-3.84771e-08,1.52552e-11,17736.5,8.82614], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.79724,0.0115702,2.27323e-05,-3.84771e-08,1.52552e-11,17736.5,8.82614], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.3627,0.00683571,-2.7801e-06,4.90649e-10,-3.11935e-14,15357.7,-28.2038], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6343,10 +6343,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.92087,0.0223139,1.32211e-05,-3.2387e-08,1.35233e-11,12227.5,9.82341], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.92087,0.0223139,1.32211e-05,-3.2387e-08,1.35233e-11,12227.5,9.82341], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.9943,0.0143725,-5.70007e-06,9.87732e-10,-6.21247e-14,9805.3,-29.3643], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6375,10 +6375,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.48793,0.0245706,7.94827e-06,-2.71908e-08,1.18601e-11,4921.18,10.4669], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.48793,0.0245706,7.94827e-06,-2.71908e-08,1.18601e-11,4921.18,10.4669], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.9774,0.0137179,-4.71706e-06,7.41678e-10,-4.3712e-14,2477.5,-30.4182], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: MRH (Species ID: CH3CHCHCO)""",
@@ -6409,10 +6409,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.92516,0.0246634,2.24211e-05,-4.58989e-08,1.86835e-11,1331.07,12.514], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.92516,0.0246634,2.24211e-05,-4.58989e-08,1.86835e-11,1331.07,12.514], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.7295,0.0165976,-6.6151e-06,1.15513e-09,-7.30598e-14,-1773.93,-36.7162], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6445,10 +6445,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.20127,0.031949,2.61305e-05,-5.32325e-08,2.15879e-11,-40694.7,10.1937], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.20127,0.031949,2.61305e-05,-5.32325e-08,2.15879e-11,-40694.7,10.1937], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.2889,0.022871,-7.63004e-06,1.17452e-09,-6.81884e-14,-44260.4,-46.2525], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: tBuOH_species_MRH (Species ID: tBuOH)""",
@@ -6478,10 +6478,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.68976,0.0167587,3.61833e-05,-5.27991e-08,1.97188e-11,-3981.86,8.01871], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.68976,0.0167587,3.61833e-05,-5.27991e-08,1.97188e-11,-3981.86,8.01871], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.71464,0.0211045,-7.36932e-06,1.17118e-09,-6.95539e-14,-6196.99,-22.3044], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6514,10 +6514,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.31715,0.0273287,3.1594e-05,-5.68883e-08,2.25427e-11,-15515.1,14.0786], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.31715,0.0273287,3.1594e-05,-5.68883e-08,2.25427e-11,-15515.1,14.0786], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.6393,0.021498,-7.31827e-06,1.14214e-09,-6.69477e-14,-18936.8,-38.7206], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6550,10 +6550,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.26391,0.0312339,2.07769e-05,-4.61869e-08,1.89904e-11,-13090.7,10.1956], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.26391,0.0312339,2.07769e-05,-4.61869e-08,1.89904e-11,-13090.7,10.1956], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.7021,0.0215518,-7.2266e-06,1.1159e-09,-6.49266e-14,-16367.9,-42.3207], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: tBuOH_species_MRH (Species ID: OC(CH3)3)""",
@@ -6583,10 +6583,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.3874,0.0206785,2.893e-05,-5.37553e-08,2.3567e-11,14758.4,15.5529], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.3874,0.0206785,2.893e-05,-5.37553e-08,2.3567e-11,14758.4,15.5529], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.3497,0.0192508,-6.8136e-06,1.08485e-09,-6.42422e-14,12440.7,-18.7061], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6616,10 +6616,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.66514,0.0199975,2.03304e-05,-3.64893e-08,1.42892e-11,25732.3,9.15713], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.66514,0.0199975,2.03304e-05,-3.64893e-08,1.42892e-11,25732.3,9.15713], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.92125,0.0182874,-6.36531e-06,1.00951e-09,-5.98748e-14,23724.9,-21.0051], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6651,10 +6651,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.9921,0.0192506,2.67723e-05,-3.99728e-08,1.46696e-11,3777.99,8.03403], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.9921,0.0192506,2.67723e-05,-3.99728e-08,1.46696e-11,3777.99,8.03403], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[6.51964,0.0261732,-9.41586e-06,1.52671e-09,-9.19529e-14,2429.27,-8.39699], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6686,10 +6686,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.34837,0.0176634,4.26157e-05,-6.06193e-08,2.25257e-11,6252.39,12.6622], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.34837,0.0176634,4.26157e-05,-6.06193e-08,2.25257e-11,6252.39,12.6622], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.95093,0.0230275,-7.50786e-06,1.12743e-09,-6.4137e-14,3756.93,-21.276], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6721,10 +6721,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.49481,0.0142425,6.18152e-05,-8.22823e-08,3.01064e-11,-18427.4,9.20248], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.49481,0.0142425,6.18152e-05,-8.22823e-08,3.01064e-11,-18427.4,9.20248], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[9.90139,0.0246641,-8.42861e-06,1.31706e-09,-7.72354e-14,-21493.3,-30.6728], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6759,10 +6759,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.91112,0.0474937,-5.4377e-07,-3.27136e-08,1.57512e-11,-32254.6,19.9149], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.91112,0.0474937,-5.4377e-07,-3.27136e-08,1.57512e-11,-32254.6,19.9149], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[16.0488,0.0234687,-7.72308e-06,1.17145e-09,-6.72081e-14,-36294.3,-50.5626], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6794,10 +6794,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.27948,0.031328,1.90991e-05,-4.60863e-08,1.93154e-11,4110.03,16.4306], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.27948,0.031328,1.90991e-05,-4.60863e-08,1.93154e-11,4110.03,16.4306], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.8672,0.0184946,-6.36935e-06,1.00249e-09,-5.91133e-14,531.285,-41.9914], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6829,10 +6829,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.68861,0.0340055,-8.18299e-07,-1.99641e-08,9.38119e-12,4788.14,14.6094], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.68861,0.0340055,-8.18299e-07,-1.99641e-08,9.38119e-12,4788.14,14.6094], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.5404,0.0226686,-8.15961e-06,1.32318e-09,-7.96966e-14,2622.26,-22.444], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6865,10 +6865,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.57886,0.0365605,1.31349e-05,-4.26149e-08,1.8457e-11,-24512,17.2541], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.57886,0.0365605,1.31349e-05,-4.26149e-08,1.8457e-11,-24512,17.2541], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[14.814,0.0209509,-7.88758e-06,1.32021e-09,-8.11962e-14,-28211,-44.2454], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6903,10 +6903,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.59977,0.0441622,5.37078e-06,-3.82956e-08,1.74921e-11,-30154.9,17.7704], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.59977,0.0441622,5.37078e-06,-3.82956e-08,1.74921e-11,-30154.9,17.7704], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[16.097,0.0238092,-8.99835e-06,1.51505e-09,-9.36198e-14,-34121.4,-49.8936], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6941,10 +6941,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.65727,0.052863,-1.54566e-05,-2.00228e-08,1.1831e-11,-27237.9,16.6054], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.65727,0.052863,-1.54566e-05,-2.00228e-08,1.1831e-11,-27237.9,16.6054], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[17.4872,0.0229178,-8.98184e-06,1.54555e-09,-9.68176e-14,-31260,-56.428], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -6977,10 +6977,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[4.11746,0.0426621,2.08846e-06,-3.37826e-08,1.57534e-11,-41569.3,13.8176], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[4.11746,0.0426621,2.08846e-06,-3.37826e-08,1.57534e-11,-41569.3,13.8176], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[15.7883,0.0231044,-9.67066e-06,1.72739e-09,-1.10647e-13,-45246.2,-49.2352], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7012,10 +7012,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[4.3289,0.027786,2.07112e-05,-4.52212e-08,1.84586e-11,-23119.1,11.908], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[4.3289,0.027786,2.07112e-05,-4.52212e-08,1.84586e-11,-23119.1,11.908], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.8092,0.0205039,-8.72389e-06,1.57591e-09,-1.01647e-13,-26133.9,-35.6313], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7045,10 +7045,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.23105,0.0167354,4.56392e-05,-6.96621e-08,2.68697e-11,-18269.6,20.4233], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.23105,0.0167354,4.56392e-05,-6.96621e-08,2.68697e-11,-18269.6,20.4233], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.062,0.0136066,-4.50254e-06,6.86701e-10,-3.95108e-14,-22027.6,-36.0092], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7073,10 +7073,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.9583,0.00812809,5.6411e-06,-9.7528e-09,3.60672e-12,590.147,7.46942], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.9583,0.00812809,5.6411e-06,-9.7528e-09,3.60672e-12,590.147,7.46942], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[4.5071,0.0100592,-3.5067e-06,5.54663e-10,-3.28241e-14,276.115,3.79532], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7101,10 +7101,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.90835,0.00987919,1.51646e-05,-2.39753e-08,9.11022e-12,-17697.7,6.8127], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.90835,0.00987919,1.51646e-05,-2.39753e-08,9.11022e-12,-17697.7,6.8127], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[6.55193,0.0109234,-4.00349e-06,6.54883e-10,-3.96302e-14,-18801.6,-8.83125], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7129,10 +7129,10 @@ multiplicity 3
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[4.20145,0.0054319,2.36611e-05,-3.40634e-08,1.28665e-11,-2839.56,7.36822], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[4.20145,0.0054319,2.36611e-05,-3.40634e-08,1.28665e-11,-2839.56,7.36822], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.01193,0.00665857,-3.12848e-06,5.9507e-10,-3.94869e-14,-4416.92,-15.1118], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7156,10 +7156,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.94137,0.00840453,1.03906e-05,-2.05331e-08,8.41698e-12,-14380.6,11.0029], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.94137,0.00840453,1.03906e-05,-2.05331e-08,8.41698e-12,-14380.6,11.0029], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.20785,0.00385484,-1.74687e-06,3.26012e-10,-2.13957e-14,-15853.5,-12.6939], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7183,10 +7183,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.89142,0.0101556,1.99141e-05,-3.47556e-08,1.39205e-11,-37766.1,10.3461], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.89142,0.0101556,1.99141e-05,-3.47556e-08,1.39205e-11,-37766.1,10.3461], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.2527,0.00471906,-2.24366e-06,4.26231e-10,-2.82018e-14,-40028.9,-25.3205], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7209,10 +7209,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.88443,-0.00282937,2.92849e-05,-3.40948e-08,1.20699e-11,-16079.5,7.85043], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.88443,-0.00282937,2.92849e-05,-3.40948e-08,1.20699e-11,-16079.5,7.85043], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[5.61541,0.0038558,-1.36009e-06,2.16778e-10,-1.28581e-14,-17099.4,-3.8859], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""sSPC(2810)              C   1H   1O   2     G   300.000  5000.000   995.043    1
@@ -7246,10 +7246,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.18111,0.0184865,5.51627e-05,-8.38846e-08,3.23732e-11,-36557.5,19.7666], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.18111,0.0184865,5.51627e-05,-8.38846e-08,3.23732e-11,-36557.5,19.7666], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[15.1069,0.0144708,-4.99933e-06,7.8692e-10,-4.6317e-14,-41105.3,-48.6358], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7278,10 +7278,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.39255,0.00361039,7.37855e-05,-9.53232e-08,3.50785e-11,-18107.3,17.857], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.39255,0.00361039,7.37855e-05,-9.53232e-08,3.50785e-11,-18107.3,17.857], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.1278,0.0118703,-4.05256e-06,6.35443e-10,-3.73172e-14,-21993,-35.0319], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7313,10 +7313,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.59416,0.037416,-8.23637e-06,-1.38105e-08,7.56701e-12,4427.08,13.8913], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.59416,0.037416,-8.23637e-06,-1.38105e-08,7.56701e-12,4427.08,13.8913], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.2235,0.0219432,-7.82038e-06,1.2594e-09,-7.54969e-14,2156.45,-26.6585], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7348,10 +7348,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.33922,0.0380354,4.06336e-06,-3.26254e-08,1.50438e-11,4400.55,13.7705], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.33922,0.0380354,4.06336e-06,-3.26254e-08,1.50438e-11,4400.55,13.7705], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[14.5428,0.019144,-6.87269e-06,1.10879e-09,-6.64628e-14,876.569,-46.7287], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7385,10 +7385,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.44862,0.0598243,-4.31325e-05,1.09556e-08,9.18772e-13,-5451.81,18.4142], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.44862,0.0598243,-4.31325e-05,1.09556e-08,9.18772e-13,-5451.81,18.4142], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[15.7773,0.0236461,-8.76824e-06,1.44784e-09,-8.82461e-14,-8567.81,-44.3322], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7422,10 +7422,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.92383,0.0614395,-2.97848e-05,-1.1335e-08,1.00669e-11,-5762.36,18.8087], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.92383,0.0614395,-2.97848e-05,-1.1335e-08,1.00669e-11,-5762.36,18.8087], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[20.4965,0.0184402,-6.63312e-06,1.07113e-09,-6.4239e-14,-10627.9,-72.7578], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7456,10 +7456,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.55006,0.0443261,-7.59946e-06,-2.5437e-08,1.34455e-11,-25864.4,13.6814], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.55006,0.0443261,-7.59946e-06,-2.5437e-08,1.34455e-11,-25864.4,13.6814], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[17.1062,0.0167732,-6.67824e-06,1.15678e-09,-7.26917e-14,-29896,-58.3539], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7494,10 +7494,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.56714,0.0445617,6.06932e-06,-3.99671e-08,1.82331e-11,-32516.1,15.9309], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.56714,0.0445617,6.06932e-06,-3.99671e-08,1.82331e-11,-32516.1,15.9309], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[16.6203,0.0232609,-8.81127e-06,1.48619e-09,-9.19423e-14,-36657,-54.7328], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7532,10 +7532,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.55166,0.0472364,4.91654e-06,-4.22195e-08,1.95955e-11,-26124.9,16.8982], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.55166,0.0472364,4.91654e-06,-4.22195e-08,1.95955e-11,-26124.9,16.8982], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[18.4101,0.0218352,-8.54102e-06,1.46825e-09,-9.18928e-14,-30781.3,-63.2508], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7565,10 +7565,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.39014,0.0283395,2.09474e-05,-4.84021e-08,2.02864e-11,-5605.08,12.4221], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.39014,0.0283395,2.09474e-05,-4.84021e-08,2.02864e-11,-5605.08,12.4221], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[14.6588,0.0144039,-5.32453e-06,8.76473e-10,-5.32276e-14,-9400.29,-49.6885], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: MRH (Species ID: tSPC(343))""",
@@ -7594,10 +7594,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.7848,0.0121631,1.42825e-05,-2.5523e-08,1.00686e-11,21625,9.73634], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.7848,0.0121631,1.42825e-05,-2.5523e-08,1.00686e-11,21625,9.73634], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[7.77377,0.0100911,-3.64332e-06,5.89867e-10,-3.5438e-14,20139.9,-12.9618], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: Franklin (Species ID: CH2CCHO)""",
@@ -7625,10 +7625,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.86586,0.0338732,-2.47443e-05,4.65884e-09,1.42211e-12,-1478.21,11.4928], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.86586,0.0338732,-2.47443e-05,4.65884e-09,1.42211e-12,-1478.21,11.4928], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.0076,0.0107772,-4.44943e-06,7.90917e-10,-5.05605e-14,-3575.39,-30.1423], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7652,10 +7652,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.80672,0.0121373,4.31444e-06,-1.338e-08,5.72662e-12,14927.5,7.84494], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.80672,0.0121373,4.31444e-06,-1.338e-08,5.72662e-12,14927.5,7.84494], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[7.10621,0.00785761,-2.77708e-06,4.44957e-10,-2.65746e-14,13826.1,-10.2917], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: Franklin (Species ID: CH2CCO)""",
@@ -7683,10 +7683,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.56609,0.0260115,5.78317e-06,-2.79816e-08,1.27e-11,-7756.58,12.0738], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.56609,0.0260115,5.78317e-06,-2.79816e-08,1.27e-11,-7756.58,12.0738], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.7918,0.0107508,-4.1134e-06,6.92705e-10,-4.27126e-14,-10673.1,-37.8183], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: MRH (Species ID: tSPC(1286))""",
@@ -7714,10 +7714,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.1982,0.0276343,1.5748e-05,-4.32536e-08,1.87548e-11,-32960.9,16.3149], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.1982,0.0276343,1.5748e-05,-4.32536e-08,1.87548e-11,-32960.9,16.3149], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[15.3109,0.0096233,-3.35217e-06,5.31083e-10,-3.14074e-14,-36890.3,-49.6942], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7744,10 +7744,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.51999,0.0129819,2.9844e-05,-4.75741e-08,1.85642e-11,-11502,11.9065], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.51999,0.0129819,2.9844e-05,-4.75741e-08,1.85642e-11,-11502,11.9065], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.8282,0.00926776,-3.24512e-06,5.15798e-10,-3.05787e-14,-14226.9,-29.6992], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: MRH (Species ID: tSPC(1553))""",
@@ -7787,10 +7787,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.11484,0.0538392,3.04725e-05,-7.27909e-08,3.01484e-11,-1810.72,18.0148], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.11484,0.0538392,3.04725e-05,-7.27909e-08,3.01484e-11,-1810.72,18.0148], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[18.3366,0.0377743,-1.33356e-05,2.13642e-09,-1.27597e-13,-7073.95,-66.5714], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7820,10 +7820,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.85191,0.0359949,-1.69307e-05,-3.96886e-09,4.2133e-12,-13246.1,13.1138], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.85191,0.0359949,-1.69307e-05,-3.96886e-09,4.2133e-12,-13246.1,13.1138], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.4114,0.0174246,-6.75251e-06,1.14833e-09,-7.13491e-14,-15335.5,-26.2588], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7855,10 +7855,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.54421,0.0391671,1.28715e-06,-2.8033e-08,1.30705e-11,-13860.8,13.2346], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.54421,0.0391671,1.28715e-06,-2.8033e-08,1.30705e-11,-13860.8,13.2346], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.2684,0.0228074,-8.31717e-06,1.35962e-09,-8.23031e-14,-16921.2,-39.285], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7889,10 +7889,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.49728,0.0199059,3.65224e-05,-5.77103e-08,2.22063e-11,5135.02,12.4492], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.49728,0.0199059,3.65224e-05,-5.77103e-08,2.22063e-11,5135.02,12.4492], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.1051,0.0189071,-6.56905e-06,1.04001e-09,-6.15731e-14,2156.43,-31.5756], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: MRH (Species ID: C4H7OJ(79))""",
@@ -7922,10 +7922,10 @@ multiplicity 3
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.40987,0.0251291,1.78678e-05,-3.96136e-08,1.635e-11,10898.1,10.9435], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.40987,0.0251291,1.78678e-05,-3.96136e-08,1.635e-11,10898.1,10.9435], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.7598,0.0161131,-5.54938e-06,8.70883e-10,-5.1212e-14,8021.04,-35.4055], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7954,10 +7954,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.15235,0.00207768,9.3085e-05,-1.17019e-07,4.26071e-11,-2710.31,13.9743], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.15235,0.00207768,9.3085e-05,-1.17019e-07,4.26071e-11,-2710.31,13.9743], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.5359,0.0158065,-5.17047e-06,7.74774e-10,-4.3851e-14,-7124.79,-44.0482], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -7990,10 +7990,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[1.53433,0.0405357,2.68412e-06,-2.77844e-08,1.29415e-11,-6601.98,20.1089], Tmin=(298.15,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[1.53433,0.0405357,2.68412e-06,-2.77844e-08,1.29415e-11,-6601.98,20.1089], Tmin=(250.15,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[10.1696,0.0291427,-1.1304e-05,2.04262e-09,-1.39646e-13,-9718.58,-27.8265], Tmin=(1000,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (298.15,'K'),
+        Tmin = (250.15,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""T11/95
@@ -8027,10 +8027,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.44256,0.0278474,2.8319e-05,-5.22112e-08,2.06826e-11,23011.9,12.7876], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.44256,0.0278474,2.8319e-05,-5.22112e-08,2.06826e-11,23011.9,12.7876], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.8048,0.023086,-8.00001e-06,1.26443e-09,-7.47975e-14,19919.3,-34.6916], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8063,10 +8063,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.26218,0.023477,4.69482e-05,-7.31135e-08,2.80854e-11,11559,12.8781], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.26218,0.023477,4.69482e-05,-7.31135e-08,2.80854e-11,11559,12.8781], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.8726,0.0222396,-7.55954e-06,1.17527e-09,-6.86364e-14,7795.19,-42.7414], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8099,10 +8099,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.4728,0.0258394,3.47583e-05,-5.84354e-08,2.26966e-11,9907.46,10.7861], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.4728,0.0258394,3.47583e-05,-5.84354e-08,2.26966e-11,9907.46,10.7861], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.5808,0.023832,-8.32367e-06,1.3208e-09,-7.83149e-14,6779.7,-35.8988], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8135,10 +8135,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.50164,0.0255323,3.34956e-05,-5.6551e-08,2.19711e-11,17976.8,13.9663], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.50164,0.0255323,3.34956e-05,-5.6551e-08,2.19711e-11,17976.8,13.9663], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.3431,0.0236132,-8.23697e-06,1.30793e-09,-7.7621e-14,14950.8,-31.1892], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8173,10 +8173,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.87955,0.0295797,2.52342e-05,-4.51235e-08,1.73229e-11,1296.66,11.5431], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.87955,0.0295797,2.52342e-05,-4.51235e-08,1.73229e-11,1296.66,11.5431], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.86924,0.031713,-1.14346e-05,1.85721e-09,-1.1199e-13,-794.928,-18.0248], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8211,10 +8211,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.23582,0.0279925,4.10776e-05,-6.577e-08,2.5179e-11,3771.07,15.0727], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.23582,0.0279925,4.10776e-05,-6.577e-08,2.5179e-11,3771.07,15.0727], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.3005,0.0285672,-9.52656e-06,1.45793e-09,-8.41744e-14,532.727,-32.0024], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8245,10 +8245,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.11507,0.0241456,3.88788e-05,-6.48961e-08,2.54552e-11,6818.69,11.7034], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.11507,0.0241456,3.88788e-05,-6.48961e-08,2.54552e-11,6818.69,11.7034], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.3033,0.0185577,-6.01409e-06,9.03112e-10,-5.14042e-14,3040.21,-46.1968], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""New thermo from C5H10_iso RMG run""",
@@ -8288,10 +8288,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.0215,0.052555,3.50135e-05,-8.03201e-08,3.3314e-11,29306.2,18.9389], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.0215,0.052555,3.50135e-05,-8.03201e-08,3.3314e-11,29306.2,18.9389], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[20.3145,0.0333518,-1.18844e-05,1.91698e-09,-1.15011e-13,23374,-76.9201], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8331,10 +8331,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.54707,0.0560807,6.14857e-06,-4.22066e-08,1.88115e-11,27800.6,18.6999], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.54707,0.0560807,6.14857e-06,-4.22066e-08,1.88115e-11,27800.6,18.6999], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[15.419,0.0389588,-1.41731e-05,2.31692e-09,-1.40329e-13,23922.9,-46.1292], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8365,10 +8365,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.5215,0.0228027,2.81094e-05,-4.93643e-08,1.94235e-11,39589.2,14.0644], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.5215,0.0228027,2.81094e-05,-4.93643e-08,1.94235e-11,39589.2,14.0644], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.1544,0.0189877,-6.64388e-06,1.05733e-09,-6.28392e-14,36740,-29.4061], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8406,10 +8406,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.1107,0.0499837,2.64828e-05,-6.8827e-08,2.91131e-11,44132.5,18.443], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.1107,0.0499837,2.64828e-05,-6.8827e-08,2.91131e-11,44132.5,18.443], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[19.5449,0.0292191,-1.0503e-05,1.70521e-09,-1.0277e-13,38619.4,-72.0294], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8447,10 +8447,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.07595,0.0611153,-1.56911e-05,-2.1292e-08,1.22398e-11,43416.4,17.2629], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.07595,0.0611153,-1.56911e-05,-2.1292e-08,1.22398e-11,43416.4,17.2629], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[16.6651,0.0323061,-1.11819e-05,1.76286e-09,-1.041e-13,39434,-54.6517], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8488,10 +8488,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.00282,0.0497889,2.56157e-05,-6.66467e-08,2.81441e-11,36734.5,18.6439], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.00282,0.0497889,2.56157e-05,-6.66467e-08,2.81441e-11,36734.5,18.6439], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[18.7492,0.0301404,-1.05675e-05,1.68271e-09,-1.00026e-13,31439.9,-68.1039], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8529,10 +8529,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.05655,0.0427203,4.18814e-05,-8.00349e-08,3.20668e-11,36596.6,18.8551], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.05655,0.0427203,4.18814e-05,-8.00349e-08,3.20668e-11,36596.6,18.8551], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[17.0746,0.0321521,-1.12048e-05,1.773e-09,-1.04877e-13,31540.3,-60.0935], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8569,10 +8569,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.65961,0.0457515,7.68673e-06,-3.70559e-08,1.61582e-11,30281.9,15.5962], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.65961,0.0457515,7.68673e-06,-3.70559e-08,1.61582e-11,30281.9,15.5962], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.0694,0.033419,-1.21544e-05,1.98642e-09,-1.20291e-13,27147.1,-36.096], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8609,10 +8609,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.13404,0.0422259,3.65516e-05,-7.51694e-08,3.06607e-11,31787.6,16.5283], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.13404,0.0422259,3.65516e-05,-7.51694e-08,3.06607e-11,31787.6,16.5283], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[17.9649,0.0278121,-9.86569e-06,1.58648e-09,-9.49739e-14,26598.2,-66.1937], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8644,10 +8644,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.82351,0.0339072,2.46495e-05,-5.71921e-08,2.40713e-11,41959.3,13.1578], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.82351,0.0339072,2.46495e-05,-5.71921e-08,2.40713e-11,41959.3,13.1578], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[16.6641,0.0159344,-5.03612e-06,7.38346e-10,-4.11838e-14,37340.3,-62.9157], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8679,10 +8679,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.43716,0.0308556,1.74972e-05,-4.26763e-08,1.78099e-11,56155.4,15.6532], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.43716,0.0308556,1.74972e-05,-4.26763e-08,1.78099e-11,56155.4,15.6532], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.8544,0.0200759,-7.07067e-06,1.13138e-09,-6.75139e-14,52940.8,-36.4685], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8714,10 +8714,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.00389,0.0382776,6.02042e-06,-3.62898e-08,1.66685e-11,53412.1,13.0673], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.00389,0.0382776,6.02042e-06,-3.62898e-08,1.66685e-11,53412.1,13.0673], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[15.5963,0.0167807,-5.47659e-06,8.27508e-10,-4.7345e-14,49464.4,-54.8659], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8749,10 +8749,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.23393,0.0353985,8.12855e-06,-3.53094e-08,1.57462e-11,52460,13.4001], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.23393,0.0353985,8.12855e-06,-3.53094e-08,1.57462e-11,52460,13.4001], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.9528,0.0186519,-6.33695e-06,9.87925e-10,-5.78746e-14,49022.8,-44.812], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8794,10 +8794,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.52722,0.0588103,1.15348e-05,-4.93933e-08,2.13591e-11,6188.2,17.9087], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.52722,0.0588103,1.15348e-05,-4.93933e-08,2.13591e-11,6188.2,17.9087], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[15.6077,0.0435842,-1.57662e-05,2.56753e-09,-1.55111e-13,2133.74,-48.6054], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""New species from C8H14 RMG run""",
@@ -8844,10 +8844,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.66916,0.0817856,2.1314e-05,-8.45899e-08,3.73502e-11,34197.8,25.3045], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.66916,0.0817856,2.1314e-05,-8.45899e-08,3.73502e-11,34197.8,25.3045], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[27.053,0.045223,-1.6216e-05,2.6273e-09,-1.58132e-13,26302.6,-107.501], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8894,10 +8894,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.19473,0.0853112,-7.55084e-06,-4.64764e-08,2.28478e-11,32692.1,25.0655], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.19473,0.0853112,-7.55084e-06,-4.64764e-08,2.28478e-11,32692.1,25.0655], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[22.1575,0.05083,-1.85047e-05,3.02724e-09,-1.83449e-13,26851.6,-76.7098], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -8932,10 +8932,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.00021,0.0456574,1.05324e-05,-4.2925e-08,1.88505e-11,22919.5,16.6143], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.00021,0.0456574,1.05324e-05,-4.2925e-08,1.88505e-11,22919.5,16.6143], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[14.9671,0.028232,-9.44959e-06,1.44993e-09,-8.38814e-14,19019.2,-48.6918], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -9017,10 +9017,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.46682,0.0498067,5.879e-05,-1.11659e-07,4.52341e-11,29606.1,-2.84787], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.46682,0.0498067,5.879e-05,-1.11659e-07,4.52341e-11,29606.1,-2.84787], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[24.2358,0.0288286,-9.88028e-06,1.54551e-09,-9.06125e-14,21980.2,-124.313], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""10Jul2010
@@ -9226,10 +9226,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.43413,0.0242081,4.71925e-05,-7.409e-08,2.84309e-11,-36753.8,13.6121], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.43413,0.0242081,4.71925e-05,-7.409e-08,2.84309e-11,-36753.8,13.6121], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.8027,0.0240684,-9.15947e-06,1.56144e-09,-9.7397e-14,-40475.7,-40.8734], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -9259,10 +9259,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[4.20675,0.0116221,3.8595e-05,-5.29952e-08,1.93037e-11,-9463.85,12.042], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[4.20675,0.0116221,3.8595e-05,-5.29952e-08,1.93037e-11,-9463.85,12.042], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[7.4995,0.0208102,-9.06039e-06,1.582e-09,-9.89891e-14,-11229.3,-9.40563], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""RMG""",
@@ -9295,10 +9295,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.28769,0.0276289,2.79931e-05,-5.2427e-08,2.08502e-11,-12074,15.9732], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.28769,0.0276289,2.79931e-05,-5.2427e-08,2.08502e-11,-12074,15.9732], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.8523,0.0224318,-8.23872e-06,1.3718e-09,-8.42986e-14,-15225.5,-32.5752], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -9331,10 +9331,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.93142,0.0292161,1.21497e-05,-3.17805e-08,1.29941e-11,-14548.4,12.4436], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.93142,0.0292161,1.21497e-05,-3.17805e-08,1.29941e-11,-14548.4,12.4436], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[9.42101,0.0255776,-1.01467e-05,1.77108e-09,-1.12114e-13,-16553.2,-18.5976], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -9367,10 +9367,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.37616,0.0312479,2.11311e-05,-4.8142e-08,1.98916e-11,-15082,13.2524], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.37616,0.0312479,2.11311e-05,-4.8142e-08,1.98916e-11,-15082,13.2524], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.3487,0.0208631,-7.99231e-06,1.37115e-09,-8.59205e-14,-18537.1,-42.199], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -9403,10 +9403,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.46393,0.0226206,4.6403e-05,-7.25815e-08,2.78598e-11,-10540.5,13.2038], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.46393,0.0226206,4.6403e-05,-7.25815e-08,2.78598e-11,-10540.5,13.2038], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.7002,0.022313,-8.64097e-06,1.48678e-09,-9.32398e-14,-14201.5,-40.4698], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -9437,10 +9437,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.24243,0.0292435,1.32986e-05,-3.44473e-08,1.4314e-11,-21575.9,13.7596], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.24243,0.0292435,1.32986e-05,-3.44473e-08,1.4314e-11,-21575.9,13.7596], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.3651,0.021948,-7.86866e-06,1.28459e-09,-7.78785e-14,-24049.7,-25.8754], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -9471,10 +9471,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.93882,0.0310487,1.411e-05,-3.82364e-08,1.61709e-11,-25425.9,13.459], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.93882,0.0310487,1.411e-05,-3.82364e-08,1.61709e-11,-25425.9,13.459], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.9559,0.0198569,-6.7905e-06,1.07334e-09,-6.3648e-14,-28460.8,-36.2316], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -9505,10 +9505,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.68165,0.0188948,4.80268e-05,-7.23023e-08,2.74848e-11,-27996.8,11.9234], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.68165,0.0188948,4.80268e-05,-7.23023e-08,2.74848e-11,-27996.8,11.9234], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.0954,0.0206992,-8.40016e-06,1.48597e-09,-9.47605e-14,-31434.9,-37.4889], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -9539,10 +9539,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.21065,0.0265706,2.42436e-05,-4.92994e-08,2.0149e-11,-7211.17,12.002], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.21065,0.0265706,2.42436e-05,-4.92994e-08,2.0149e-11,-7211.17,12.002], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.2232,0.0162812,-5.40964e-06,8.27419e-10,-4.77486e-14,-10687,-43.7059], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""21Jul2010 : Iso-butanol chemistry
@@ -9574,10 +9574,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.51426,0.0247654,2.34322e-05,-4.55104e-08,1.8292e-11,-3361.2,12.3026], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.51426,0.0247654,2.34322e-05,-4.55104e-08,1.8292e-11,-3361.2,12.3026], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.6323,0.0183723,-6.48779e-06,1.03867e-09,-6.19791e-14,-6275.83,-33.3497], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -9644,10 +9644,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[4.01204,0.0189692,3.61847e-05,-5.71099e-08,2.19087e-11,-3363.57,12.2917], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[4.01204,0.0189692,3.61847e-05,-5.71099e-08,2.19087e-11,-3363.57,12.2917], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.1378,0.0191504,-7.54302e-06,1.30123e-09,-8.16029e-14,-6208.72,-29.2214], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -9678,10 +9678,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[4.20683,0.0161343,4.55929e-05,-6.76128e-08,2.5602e-11,-9448.72,10.3883], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[4.20683,0.0161343,4.55929e-05,-6.76128e-08,2.5602e-11,-9448.72,10.3883], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.7861,0.0185935,-7.75165e-06,1.38377e-09,-8.85986e-14,-12587.2,-34.331], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -9707,10 +9707,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.44746,0.0147603,2.02824e-05,-3.64764e-08,1.46236e-11,511.857,10.0258], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.44746,0.0147603,2.02824e-05,-3.64764e-08,1.46236e-11,511.857,10.0258], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[10.1684,0.00892821,-2.8622e-06,4.27195e-10,-2.42059e-14,-1874.45,-27.6353], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -9739,10 +9739,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.63921,0.0220906,1.66654e-05,-3.40358e-08,1.3689e-11,-13125.5,10.0021], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.63921,0.0220906,1.66654e-05,-3.40358e-08,1.3689e-11,-13125.5,10.0021], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[9.56306,0.017775,-6.2215e-06,9.90763e-10,-5.8933e-14,-15269.7,-23.3979], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -9805,10 +9805,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.35333,0.0267344,1.16533e-06,-2.04143e-08,9.6332e-12,4922.79,11.6297], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.35333,0.0267344,1.16533e-06,-2.04143e-08,9.6332e-12,4922.79,11.6297], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.0522,0.0130492,-4.22893e-06,6.35787e-10,-3.62567e-14,2536.01,-29.7689], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: MRH (Species ID: iC4H5OJ(14))""",
@@ -9837,10 +9837,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.49061,0.0207862,3.00729e-05,-5.47955e-08,2.2067e-11,2275.78,9.69446], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.49061,0.0207862,3.00729e-05,-5.47955e-08,2.2067e-11,2275.78,9.69446], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.8269,0.0114068,-4.2859e-06,7.17511e-10,-4.41022e-14,-1373.9,-48.1238], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -9866,10 +9866,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.23401,0.0180184,3.2633e-06,-1.77345e-08,8.16029e-12,19115.9,11.5233], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.23401,0.0180184,3.2633e-06,-1.77345e-08,8.16029e-12,19115.9,11.5233], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[9.59143,0.0068989,-1.73753e-06,1.97078e-10,-8.35409e-15,17136,-22.7073], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -9893,10 +9893,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.79681,0.0138712,3.30065e-06,-1.45007e-08,6.48454e-12,10113.8,6.63276], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.79681,0.0138712,3.30065e-06,-1.45007e-08,6.48454e-12,10113.8,6.63276], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.23329,0.00691012,-2.59687e-06,4.32414e-10,-2.64777e-14,8692.64,-17.4535], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -9922,10 +9922,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.93747,0.0150248,-1.96539e-06,-6.07241e-09,2.99531e-12,19257.5,8.48558], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.93747,0.0150248,-1.96539e-06,-6.07241e-09,2.99531e-12,19257.5,8.48558], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[6.23462,0.011089,-4.02e-06,6.55742e-10,-3.96704e-14,18538.1,-3.90353], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -9953,10 +9953,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.93664,0.0160444,1.11124e-05,-2.25839e-08,8.96239e-12,11687.6,10.8505], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.93664,0.0160444,1.11124e-05,-2.25839e-08,8.96239e-12,11687.6,10.8505], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[7.3293,0.0146988,-5.3898e-06,8.87793e-10,-5.40686e-14,10403.9,-8.55819], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -9984,10 +9984,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.63303,0.0178496,1.19238e-05,-2.63729e-08,1.08193e-11,7837.66,10.5499], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.63303,0.0178496,1.19238e-05,-2.63729e-08,1.08193e-11,7837.66,10.5499], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.92017,0.0126077,-4.31164e-06,6.76547e-10,-3.98381e-14,5992.79,-18.9144], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10052,10 +10052,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.33394,0.022853,3.03991e-05,-5.35687e-08,2.12376e-11,1219.27,15.9003], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.33394,0.022853,3.03991e-05,-5.35687e-08,2.12376e-11,1219.27,15.9003], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.3023,0.0167877,-5.66217e-06,8.7834e-10,-5.12543e-14,-2050.02,-34.7818], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10089,10 +10089,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[4.71174,0.0279408,3.13106e-05,-5.85449e-08,2.32342e-11,-30752.4,14.7389], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[4.71174,0.0279408,3.13106e-05,-5.85449e-08,2.32342e-11,-30752.4,14.7389], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.824,0.0234837,-1.04711e-05,1.94319e-09,-1.2732e-13,-34158.5,-37.1807], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10126,10 +10126,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.75933,0.0335669,2.35868e-05,-5.3433e-08,2.21027e-11,-31525.3,17.2699], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.75933,0.0335669,2.35868e-05,-5.3433e-08,2.21027e-11,-31525.3,17.2699], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[14.9763,0.0216118,-8.34319e-06,1.42698e-09,-8.90866e-14,-35398,-45.0327], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10163,10 +10163,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[4.02309,0.0312723,2.5396e-05,-5.29629e-08,2.14934e-11,-32852.1,16.8833], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[4.02309,0.0312723,2.5396e-05,-5.29629e-08,2.14934e-11,-32852.1,16.8833], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.7758,0.0231432,-9.19586e-06,1.59959e-09,-1.00908e-13,-36331.4,-37.8496], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -10200,10 +10200,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[4.02309,0.0312723,2.5396e-05,-5.29629e-08,2.14934e-11,-32852.1,16.8833], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[4.02309,0.0312723,2.5396e-05,-5.29629e-08,2.14934e-11,-32852.1,16.8833], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.7758,0.0231432,-9.19586e-06,1.59959e-09,-1.00908e-13,-36331.4,-37.8496], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
@@ -10232,10 +10232,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.94737,0.0214663,3.57823e-05,-6.19137e-08,2.47218e-11,-10115,13.7933], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.94737,0.0214663,3.57823e-05,-6.19137e-08,2.47218e-11,-10115,13.7933], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[14.2626,0.0117322,-3.43928e-06,4.73519e-10,-2.50376e-14,-14136.8,-49.6334], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10264,10 +10264,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.92275,0.0247051,1.99293e-05,-4.56039e-08,1.92922e-11,19599.1,14.2387], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.92275,0.0247051,1.99293e-05,-4.56039e-08,1.92922e-11,19599.1,14.2387], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[14.4692,0.00891511,-2.43528e-06,3.11851e-10,-1.53585e-14,15785.1,-49.0272], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10296,10 +10296,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.96387,0.0278509,7.21479e-06,-3.02e-08,1.36087e-11,13794.9,13.1646], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.96387,0.0278509,7.21479e-06,-3.02e-08,1.36087e-11,13794.9,13.1646], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.8766,0.0113932,-3.23659e-06,4.26643e-10,-2.16067e-14,10664.2,-40.428], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10328,10 +10328,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[2.92275,0.0247051,1.99293e-05,-4.56039e-08,1.92922e-11,19599.1,14.2387], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[2.92275,0.0247051,1.99293e-05,-4.56039e-08,1.92922e-11,19599.1,14.2387], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[14.4692,0.00891511,-2.43528e-06,3.11851e-10,-1.53585e-14,15785.1,-49.0272], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10358,10 +10358,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.19145,0.021217,2.11002e-05,-4.44058e-08,1.84889e-11,11101.9,11.548], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.19145,0.021217,2.11002e-05,-4.44058e-08,1.84889e-11,11101.9,11.548], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.4958,0.00838682,-2.66138e-06,3.92428e-10,-2.19786e-14,7635.76,-45.2261], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10388,10 +10388,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.14745,0.0289116,-1.37422e-05,-5.43802e-09,4.8031e-12,35995.2,12.4419], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.14745,0.0289116,-1.37422e-05,-5.43802e-09,4.8031e-12,35995.2,12.4419], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.6777,0.00793905,-2.20404e-06,2.83141e-10,-1.3974e-14,33638.3,-31.9826], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10422,10 +10422,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.23619,0.0360955,2.02321e-06,-3.00749e-08,1.42559e-11,-13947.4,18.5102], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.23619,0.0360955,2.02321e-06,-3.00749e-08,1.42559e-11,-13947.4,18.5102], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[14.8579,0.0151501,-5.25421e-06,8.31316e-10,-4.92025e-14,-17536.1,-43.9115], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10456,10 +10456,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.29721,0.0416168,-9.61612e-06,-2.08536e-08,1.15934e-11,-8755.79,17.7576], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.29721,0.0416168,-9.61612e-06,-2.08536e-08,1.15934e-11,-8755.79,17.7576], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[16.1491,0.0143429,-5.26813e-06,8.66498e-10,-5.26595e-14,-12520.8,-50.2485], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10483,10 +10483,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.62512,0.0181644,-1.02432e-05,-4.89599e-09,4.18644e-12,-14234.6,10.9338], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.62512,0.0181644,-1.02432e-05,-4.89599e-09,4.18644e-12,-14234.6,10.9338], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[11.0894,-0.000212501,-7.07381e-08,3.35962e-11,-2.98066e-15,-16295.8,-27.9326], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10517,10 +10517,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.18624,0.0378466,1.15467e-05,-4.42974e-08,1.97594e-11,-37332.9,17.8534], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.18624,0.0378466,1.15467e-05,-4.42974e-08,1.97594e-11,-37332.9,17.8534], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[16.9027,0.0160143,-5.751e-06,9.31535e-10,-5.60087e-14,-41711.5,-56.538], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10550,10 +10550,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.82645,0.0216794,2.86643e-05,-5.22844e-08,2.0908e-11,-20173.9,12.471], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.82645,0.0216794,2.86643e-05,-5.22844e-08,2.0908e-11,-20173.9,12.471], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[12.9859,0.0147264,-5.87873e-06,1.02482e-09,-6.46975e-14,-23475.3,-39.1025], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10582,10 +10582,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.6049,0.0174121,3.71602e-05,-6.04232e-08,2.36626e-11,1911.69,10.4551], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.6049,0.0174121,3.71602e-05,-6.04232e-08,2.36626e-11,1911.69,10.4551], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.0223,0.0123804,-4.73846e-06,8.01939e-10,-4.96336e-14,-1587.51,-43.0975], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10616,10 +10616,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.77818,0.0380737,8.56188e-06,-4.10782e-08,1.85631e-11,-23932.1,15.2508], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.77818,0.0380737,8.56188e-06,-4.10782e-08,1.85631e-11,-23932.1,15.2508], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[16.8938,0.0168988,-7.07692e-06,1.26382e-09,-8.09025e-14,-28104,-55.8076], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10649,10 +10649,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.98962,0.0231976,2.71846e-05,-5.25168e-08,2.12683e-11,-5481.94,13.3412], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.98962,0.0231976,2.71846e-05,-5.25168e-08,2.12683e-11,-5481.94,13.3412], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.9147,0.0142983,-6.13015e-06,1.11235e-09,-7.19027e-14,-8991.74,-42.2038], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10685,10 +10685,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.25159,0.0436396,-6.91427e-06,-2.29885e-08,1.20393e-11,-27325.2,16.4769], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.25159,0.0436396,-6.91427e-06,-2.29885e-08,1.20393e-11,-27325.2,16.4769], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[15.1196,0.0197839,-6.90967e-06,1.09929e-09,-6.53514e-14,-30867.8,-46.6537], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10721,10 +10721,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.47344,0.0457039,-1.49698e-05,-1.36727e-08,8.63734e-12,-27368.3,17.3507], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.47344,0.0457039,-1.49698e-05,-1.36727e-08,8.63734e-12,-27368.3,17.3507], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[14.3672,0.0214462,-7.84945e-06,1.28636e-09,-7.80069e-14,-30503.3,-40.0107], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10757,10 +10757,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.00537,0.0422716,4.38323e-06,-3.79941e-08,1.77723e-11,-17380.6,19.1849], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.00537,0.0422716,4.38323e-06,-3.79941e-08,1.77723e-11,-17380.6,19.1849], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[17.1013,0.0173348,-5.85414e-06,9.09562e-10,-5.31483e-14,-21756.5,-56.6424], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10793,10 +10793,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.15464,0.0425811,7.53093e-06,-4.25308e-08,1.94769e-11,-17559.1,17.4697], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.15464,0.0425811,7.53093e-06,-4.25308e-08,1.94769e-11,-17559.1,17.4697], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[17.6827,0.0180309,-6.49068e-06,1.05324e-09,-6.34178e-14,-22126.2,-60.9686], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10829,10 +10829,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.68903,0.0379658,1.17904e-05,-4.43024e-08,1.96165e-11,-14261.5,17.7823], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.68903,0.0379658,1.17904e-05,-4.43024e-08,1.96165e-11,-14261.5,17.7823], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[16.7275,0.0180601,-7.20719e-06,1.25847e-09,-7.95747e-14,-18465.6,-53.1426], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10865,10 +10865,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.67548,0.0381108,2.05679e-05,-5.70786e-08,2.4577e-11,-6337.46,16.6839], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.67548,0.0381108,2.05679e-05,-5.70786e-08,2.4577e-11,-6337.46,16.6839], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[18.7037,0.0170955,-7.14211e-06,1.27734e-09,-8.18647e-14,-11278.6,-65.5443], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10897,10 +10897,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.17578,0.0254084,1.67306e-05,-4.12108e-08,1.75247e-11,8849.57,13.4655], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.17578,0.0254084,1.67306e-05,-4.12108e-08,1.75247e-11,8849.57,13.4655], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[13.6678,0.0110717,-3.62567e-06,5.46026e-10,-3.10882e-14,5383.33,-44.0257], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10931,10 +10931,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.82813,0.0363226,-9.61645e-07,-2.68557e-08,1.30596e-11,-5644.22,15.9076], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.82813,0.0363226,-9.61645e-07,-2.68557e-08,1.30596e-11,-5644.22,15.9076], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[14.849,0.0160346,-6.58013e-06,1.16361e-09,-7.40964e-14,-9026.35,-43.1811], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10962,10 +10962,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.86206,0.0106681,3.15292e-05,-4.45813e-08,1.65854e-11,9322.41,10.5046], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.86206,0.0106681,3.15292e-05,-4.45813e-08,1.65854e-11,9322.41,10.5046], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.01433,0.0145413,-5.3108e-06,8.71475e-10,-5.29016e-14,7477.99,-14.6228], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -10995,10 +10995,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.69109,0.0187569,2.4159e-05,-4.03898e-08,1.56e-11,-5723.52,26.0262], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.69109,0.0187569,2.4159e-05,-4.03898e-08,1.56e-11,-5723.52,26.0262], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.94585,0.0183435,-6.43818e-06,1.02717e-09,-6.1173e-14,-7794.54,-4.45075], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Primary Thermo Library: Franklin (Species ID: npropoxy)""",
@@ -11021,10 +11021,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[0.932603,0.01891,-1.55496e-05,7.29003e-09,-1.48369e-12,-47600.7,19.5065], Tmin=(300,'K'), Tmax=(1500,'K')),
+            NASAPolynomial(coeffs=[0.932603,0.01891,-1.55496e-05,7.29003e-09,-1.48369e-12,-47600.7,19.5065], Tmin=(250,'K'), Tmax=(1500,'K')),
             NASAPolynomial(coeffs=[7.9597,0.00302453,-3.43424e-07,-1.32677e-10,2.52024e-14,-50274.4,-18.7221], Tmin=(1500,'K'), Tmax=(4000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (4000,'K'),
     ),
     shortDesc = u"""103190
@@ -11053,10 +11053,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.81303,0.0121039,5.82748e-06,-1.54831e-08,6.51982e-12,5854.54,6.67809], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.81303,0.0121039,5.82748e-06,-1.54831e-08,6.51982e-12,5854.54,6.67809], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[7.35066,0.00788965,-2.90458e-06,4.73946e-10,-2.85925e-14,4655.13,-12.8606], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -11082,10 +11082,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[4.54351,0.0203655,-1.42363e-05,2.59684e-09,6.95111e-13,-15137.7,7.63388], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[4.54351,0.0203655,-1.42363e-05,2.59684e-09,6.95111e-13,-15137.7,7.63388], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.41378,0.00944341,-4.76024e-06,9.30384e-10,-6.26299e-14,-16137.4,-12.172], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -11113,10 +11113,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.38701,0.0173505,1.35555e-05,-2.66852e-08,1.06732e-11,42707.1,11.8727], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.38701,0.0173505,1.35555e-05,-2.66852e-08,1.06732e-11,42707.1,11.8727], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[7.97357,0.0140709,-4.35092e-06,6.21445e-10,-3.39054e-14,41043.9,-14.0027], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -11149,10 +11149,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.73285,0.0216282,3.66741e-05,-5.52431e-08,2.06696e-11,18489.2,15.4629], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.73285,0.0216282,3.66741e-05,-5.52431e-08,2.06696e-11,18489.2,15.4629], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.87567,0.0265753,-9.4061e-06,1.50679e-09,-8.99618e-14,16197.4,-15.6961], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -11180,10 +11180,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.80105,0.015513,1.64224e-05,-2.97179e-08,1.16988e-11,12824.7,11.3917], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.80105,0.015513,1.64224e-05,-2.97179e-08,1.16988e-11,12824.7,11.3917], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[8.28958,0.013553,-4.86867e-06,7.91162e-10,-4.77387e-14,11135.2,-14.2415], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -11218,10 +11218,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.48091,0.0488223,-8.20243e-06,-2.39092e-08,1.25203e-11,-33065.8,16.8146], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.48091,0.0488223,-8.20243e-06,-2.39092e-08,1.25203e-11,-33065.8,16.8146], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[15.5312,0.0249167,-9.1526e-06,1.50834e-09,-9.1872e-14,-36678.6,-47.3649], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -11256,10 +11256,10 @@ multiplicity 2
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[3.70276,0.0508866,-1.62579e-05,-1.45933e-08,9.11827e-12,-28011.4,17.6884], Tmin=(300,'K'), Tmax=(995,'K')),
+            NASAPolynomial(coeffs=[3.70276,0.0508866,-1.62579e-05,-1.45933e-08,9.11827e-12,-28011.4,17.6884], Tmin=(250,'K'), Tmax=(995,'K')),
             NASAPolynomial(coeffs=[14.7789,0.026579,-1.00924e-05,1.69542e-09,-1.04527e-13,-31216.5,-40.7219], Tmin=(995,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""Estimated by RMG using Group Additivity""",
@@ -12703,10 +12703,10 @@ entry(
 """,
     thermo = NASA(
         polynomials = [
-            NASAPolynomial(coeffs=[-5.65651,0.0835993,-5.41866e-05,1.31713e-08,0,18073.9,50.1176], Tmin=(300,'K'), Tmax=(1000,'K')),
+            NASAPolynomial(coeffs=[-5.65651,0.0835993,-5.41866e-05,1.31713e-08,0,18073.9,50.1176], Tmin=(250,'K'), Tmax=(1000,'K')),
             NASAPolynomial(coeffs=[12.9942,0.0345036,-1.19473e-05,1.37705e-09,0,12839.8,-46.8096], Tmin=(1000,'K'), Tmax=(5000,'K')),
         ],
-        Tmin = (300,'K'),
+        Tmin = (250,'K'),
         Tmax = (5000,'K'),
     ),
     shortDesc = u"""""",
