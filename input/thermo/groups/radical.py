@@ -6218,13 +6218,16 @@ L1: Radical
                     L6: C2JC=O
                 L5: Cs_S
                     L6: (Cs)2CsJ
+                        L7: cyclopentene-4
+                            L8: bicyclo[2.1.1]hex-2-ene-C5
+                                L9: tricyclo[2.1.1.0(1,4)]hex-2-ene-C5
+                            L8: bicyclo[2.1.0]pent-2-ene-C5
+                        L7: bicyclo[1.1.1]pentane-C2
                         L7: cyclopropane
-                            L8: bicyclo[1.1.0]butane-secondary
                             L8: spiro[2.2]pentane-secondary
                             L8: bicyclo[2.1.0]pentane-secondary-C3
-                            L8: bicyclo[2.1.0]pent-2-ene-C5
-                                L9: tricyclo[2.1.1.0(1,4)]hex-2-ene-C5
                             L8: tricyclo[1.1.1.0(1,3)]pentane-C2
+                            L8: bicyclo[1.1.0]butane-secondary
                             L8: bicyclo[3.1.0]hexane-C3
                             L8: tricyclo[2.1.1.0(1,4)]hexane-C5
                             L8: bicyclo[4.1.0]heptane-C3-7
@@ -6236,9 +6239,6 @@ L1: Radical
                             L8: bicyclo[2.2.0]hexane-secondary
                             L8: bicyclo[3.2.0]heptane-C5-6
                         L7: CCJCOOH
-                        L7: cyclopentene-4
-                            L8: bicyclo[2.1.1]hex-2-ene-C5
-                        L7: bicyclo[1.1.1]pentane-C2
                         L7: bicyclo[3.1.0]hexane-C5-2
                         L7: bicyclo[3.1.0]hexane-C5-3
                         L7: bicyclo[2.1.1]hexane-C2
