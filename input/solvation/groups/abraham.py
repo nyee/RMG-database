@@ -338,39 +338,40 @@ u"""
 """,
 )
 
-entry(
-    index = 37,
-    label = "Cb-noH",
-    group = 
-"""
-1 * Cb  u0 {2,B} {3,B} {4,B}
-2   R!H u0 {1,B}
-3   R!H u0 {1,B}
-4   R!H u0 {1,B}
-""",
-    solute = SoluteData(
-        S = 0.101,
-        B = 0,
-        E = 0.18,
-        L = 0.624,
-        A = 0,
-    ),
-    shortDesc = u"""same as Platts group 7""",
-    longDesc = 
-u"""
+#temporarily removed until Cbfs are fixed
+# entry(
+#     index = 37,
+#     label = "Cb-noH",
+#     group = 
+# """
+# 1 * Cb  u0 {2,B} {3,B} {4,B}
+# 2   R!H u0 {1,B}
+# 3   R!H u0 {1,B}
+# 4   R!H u0 {1,B}
+# """,
+#     solute = SoluteData(
+#         S = 0.101,
+#         B = 0,
+#         E = 0.18,
+#         L = 0.624,
+#         A = 0,
+#     ),
+#     shortDesc = u"""same as Platts group 7""",
+#     longDesc = 
+# u"""
 
-""",
-)
+# """,
+# )
 
 entry(
     index = 38,
     label = "Cb-H",
     group = 
 """
-1 * Cb  u0 {2,B} {3,B} {4,S}
-2   R!H u0 {1,B}
-3   R!H u0 {1,B}
-4   H   u0 {1,S}
+1 * Cb u0 {2,B} {3,B} {4,S}
+2   Cb u0 {1,B}
+3   Cb u0 {1,B}
+4   H  u0 {1,S}
 """,
     solute = SoluteData(
         S = 0.05,
@@ -391,9 +392,9 @@ entry(
     label = "Cb-noHnoRing",
     group = 
 """
-1 * Cb  u0 {2,B} {3,B} {4,S}
-2   R!H u0 {1,B}
-3   R!H u0 {1,B}
+1 * Cb u0 {2,B} {3,B} {4,S}
+2   Cb u0 {1,B}
+3   Cb u0 {1,B}
 4   R!H u0 {1,S}
 """,
     solute = SoluteData(
@@ -963,52 +964,53 @@ u"""
 """,
 )
 
-entry(
-    index = 19,
-    label = "N3b",
-    group = 
-"""
-1 * N3b u0
-""",
-    solute = SoluteData(
-        S = 0.254,
-        B = 0.596,
-        E = 0.121,
-        L = -0.24,
-        A = 0,
-    ),
-    shortDesc = u"""Platts group 19 =N sp2 cyclic""",
-    longDesc = 
-u"""
+#removed until we implement aromatic nitrogens
+# entry(
+#     index = 19,
+#     label = "N3b",
+#     group = 
+# """
+# 1 * N3b u0
+# """,
+#     solute = SoluteData(
+#         S = 0.254,
+#         B = 0.596,
+#         E = 0.121,
+#         L = -0.24,
+#         A = 0,
+#     ),
+#     shortDesc = u"""Platts group 19 =N sp2 cyclic""",
+#     longDesc = 
+# u"""
 
-""",
-)
+# """,
+# )
+#removed until we implement aromatic nitrogens
+# entry(
+#     index = 20,
+#     label = "N3bpyr",
+#     group = 
+# """
+# 1 * N3b u0 {2,B} {6,B}
+# 2   Cb  u0 {1,B} {3,B}
+# 3   Cb  u0 {2,B} {4,B}
+# 4   Cb  u0 {3,B} {5,B}
+# 5   Cb  u0 {4,B} {6,B}
+# 6   Cb  u0 {1,B} {5,B}
+# """,
+#     solute = SoluteData(
+#         S = 0.223,
+#         B = 0.321,
+#         E = 0.046,
+#         L = 0.574,
+#         A = 0,
+#     ),
+#     shortDesc = u"""Platts group 20 pyridine""",
+#     longDesc = 
+# u"""
 
-entry(
-    index = 20,
-    label = "N3bpyr",
-    group = 
-"""
-1 * N3b u0 {2,B} {6,B}
-2   Cb  u0 {1,B} {3,B}
-3   Cb  u0 {2,B} {4,B}
-4   Cb  u0 {3,B} {5,B}
-5   Cb  u0 {4,B} {6,B}
-6   Cb  u0 {1,B} {5,B}
-""",
-    solute = SoluteData(
-        S = 0.223,
-        B = 0.321,
-        E = 0.046,
-        L = 0.574,
-        A = 0,
-    ),
-    shortDesc = u"""Platts group 20 pyridine""",
-    longDesc = 
-u"""
-
-""",
-)
+# """,
+# )
 
 entry(
     index = 36,
@@ -1120,31 +1122,31 @@ u"""
 
 """,
 )
+#removed until we have aromatic sulfurs
+# entry(
+#     index = 35,
+#     label = "SdsOsOdOd",
+#     group = 
+# """
+# 1 * Sd u0 {2,D} {3,D} {4,S} {5,S}
+# 2   Od u0 {1,D}
+# 3   Od u0 {1,D}
+# 4   Os u0 {1,S}
+# 5   R  u0 {1,S}
+# """,
+#     solute = SoluteData(
+#         S = -0.505,
+#         B = -0.188,
+#         E = 0.0,
+#         L = 0.0,
+#         A = 0.0,
+#     ),
+#     shortDesc = u"""Platts fragment 35 sulfonate""",
+#     longDesc = 
+# u"""
 
-entry(
-    index = 35,
-    label = "SdsOsOdOd",
-    group = 
-"""
-1 * Sd u0 {2,D} {3,D} {4,S} {5,S}
-2   Od u0 {1,D}
-3   Od u0 {1,D}
-4   Os u0 {1,S}
-5   R  u0 {1,S}
-""",
-    solute = SoluteData(
-        S = -0.505,
-        B = -0.188,
-        E = 0.0,
-        L = 0.0,
-        A = 0.0,
-    ),
-    shortDesc = u"""Platts fragment 35 sulfonate""",
-    longDesc = 
-u"""
-
-""",
-)
+# """,
+# )
 
 tree(
 """
@@ -1164,7 +1166,6 @@ L1: R
             L4: CtOt
         L3: Cdd
         L3: Cb
-            L4: Cb-noH
             L4: Cb-H
             L4: Cb-noHnoRing
     L2: O
@@ -1193,14 +1194,11 @@ L1: R
             L4: N3t-aromatic
                 L5: N3t-Cb
                 L5: N3t-N5ring
-        L3: N3b
-            L4: N3bpyr
     L2: S
         L3: Ss
             L4: Ss-aromatic
         L3: Sd
             L4: Sds
-                L5: SdsOsOdOd
 """
 )
 
