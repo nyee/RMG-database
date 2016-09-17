@@ -43,7 +43,10 @@ entry(
 entry(
     index = 3,
     label = "X-Ss",
-    group = "OR{C-Ss}",
+    group = 
+"""
+1 *3 R!H u1
+""",
     kinetics = None,
 )
 
@@ -1678,3 +1681,16 @@ L1: X-Ss
 """
 )
 
+forbidden(
+    label = "XnotC-Ss",
+    group = 
+"""
+1 *1 [N,O,Si] u0
+""",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+Previously X-Ss was a logicOr with only {C-Ss} in it. This forbidden groups makes it functionally
+the same as the previous case. These atoms could be removed if we have data for them.
+""",
+)
