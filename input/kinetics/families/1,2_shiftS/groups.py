@@ -196,8 +196,8 @@ entry(
     label = "CsJ-SsOneDeCs",
     group = 
 """
-1 *3 Cs            u1 {2,S} {3,S}
-2    Cs            u0 {1,S}
+1 *3 Cs               u1 {2,S} {3,S}
+2    Cs               u0 {1,S}
 3    [Cd,Ct,Cb,CO,CS] u0 {1,S}
 """,
     kinetics = None,
@@ -1694,3 +1694,4 @@ Previously X-Ss was a logicOr with only {C-Ss} in it. This forbidden groups make
 the same as the previous case. These atoms could be removed if we have data for them.
 """,
 )
+

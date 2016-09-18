@@ -46,49 +46,6 @@ entry(
 )
 
 entry(
-    index = 2,
-    label = "Cs",
-    group = 
-"""
-1 *1 Cs u0
-""",
-    kinetics = None,
-)
-
-entry(
-    index = 2,
-    label = "Cds",
-    group = 
-"""
-1 *1 Cd u0
-""",
-    kinetics = None,
-)
-
-entry(
-    index = 2,
-    label = "Ct",
-    group = 
-"""
-1 *1 Ct u0
-""",
-    kinetics = None,
-)
-
-entry(
-    index = 3,
-    label = "C-RRR",
-    group = 
-"""
-1 *1 Cs u0 {2,S} {3,S} {4,S}
-2 *4 R  u0 {1,S}
-3    R  u0 {1,S}
-4    R  u0 {1,S}
-""",
-    kinetics = None,
-)
-
-entry(
     index = 4,
     label = "S",
     group = 
@@ -1962,6 +1919,29 @@ entry(
 )
 
 entry(
+    index = 2,
+    label = "Cs",
+    group = 
+"""
+1 *1 Cs u0
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 3,
+    label = "C-RRR",
+    group = 
+"""
+1 *1 Cs u0 {2,S} {3,S} {4,S}
+2 *4 R  u0 {1,S}
+3    R  u0 {1,S}
+4    R  u0 {1,S}
+""",
+    kinetics = None,
+)
+
+entry(
     index = 150,
     label = "C-RRC",
     group = 
@@ -2144,6 +2124,26 @@ entry(
 )
 
 entry(
+    index = 2,
+    label = "Cds",
+    group = 
+"""
+1 *1 Cd u0
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 2,
+    label = "Ct",
+    group = 
+"""
+1 *1 Ct u0
+""",
+    kinetics = None,
+)
+
+entry(
     index = 164,
     label = "S-H",
     group = 
@@ -2181,8 +2181,8 @@ entry(
     label = "S-SJ",
     group = 
 """
-1 *2 S  u0 {2,S}
-2    S  u1 {1,S}
+1 *2 S u0 {2,S}
+2    S u1 {1,S}
 """,
     kinetics = None,
 )
@@ -2354,8 +2354,7 @@ L1: C
                 L5: C-(OneDe)S
                 L5: C-(TwoDe)S
     L2: Cds
-    L2: Ct 
-   
+    L2: Ct
 L1: S
     L2: S-H
     L2: S-Cs
@@ -2377,8 +2376,6 @@ u"""
 
 """,
 )
-
-
 
 forbidden(
     label = "RR_birad",
