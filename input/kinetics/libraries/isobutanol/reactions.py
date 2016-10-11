@@ -7,12 +7,12 @@ longDesc = ''
 
 entry(
     index = 1,
-    label = 'Ap01 + OH <=> Ap10',
+    label = 'Ap10 <=> Ap01 + OH ',
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (1.807e+02, 'cm^3/(mol*s)'),
-        n = 3.053,
-        Ea = (22.492, 'kcal/mol'),
+        A = (1.154e+09, 's^-1'),
+        n = 0.956,
+        Ea = (7.795, 'kcal/mol'),
         T0 = (1, 'K'),
     ),
 )
@@ -31,12 +31,12 @@ entry(
 
 entry(
     index = 3,
-    label = 'Ap03 + OH <=> Ap12',
+    label = 'Ap12 <=> Ap03 + OH',
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (4.039e+01, 'cm^3/(mol*s)'),
-        n = 3.233,
-        Ea = (33.314, 'kcal/mol'),
+        A = (1.899e+14, 's^-1'),
+        n = -0.530,
+        Ea = (17.172, 'kcal/mol'),
         T0 = (1, 'K'),
     ),
 )
@@ -179,12 +179,12 @@ entry(
 
 entry(
     index = 15,
-    label = 'Ap01 + OH <=> Bp6',
+    label = 'Bp6 <=> Ap01 + OH',
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (2.699e+03, 'cm^3/(mol*s)'),
-        n = 2.618,
-        Ea = (25.635, 'kcal/mol'),
+        A = (1.417e+12, 's^-1'),
+        n = 0.367,
+        Ea = (9.231, 'kcal/mol'),
         T0 = (1, 'K'),
     ),
 )
@@ -215,12 +215,12 @@ entry(
 
 entry(
     index = 18,
-    label = 'Bp2 + OH <=> Bp9',
+    label = 'Bp9 <=> Bp2 + OH',
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (1.117e+03, 'cm^3/(mol*s)'),
-        n = 2.738,
-        Ea = (26.445, 'kcal/mol'),
+        A = (2.298e+11, 's^-1'),
+        n = 0.128,
+        Ea = (9.855, 'kcal/mol'),
         T0 = (1, 'K'),
     ),
 )
@@ -323,36 +323,36 @@ entry(
 
 entry(
     index = 27,
-    label = 'Ap03 + OH <=> Gp08',
+    label = 'Gp08 <=> Ap03 + OH',
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (4.055e+04, 'cm^3/(mol*s)'),
-        n = 2.443,
-        Ea = (38.116, 'kcal/mol'),
+        A = (2.141e+16, 's^-1'),
+        n = -1.155,
+        Ea = (19.59, 'kcal/mol'),
         T0 = (1, 'K'),
     ),
 )
 
 entry(
     index = 28,
-    label = 'Gp03 + OH <=> Gp10',
+    label = 'Gp10 <=> Gp03 + OH',
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (4.587e-02, 'cm^3/(mol*s)'),
-        n = 4.118,
-        Ea = (33.183, 'kcal/mol'),
+        A = (1.799e+10, 's^-1'),
+        n = 0.419386,
+        Ea = (20.280, 'kcal/mol'),
         T0 = (1, 'K'),
     ),
 )
 
 entry(
     index = 29,
-    label = 'Bp2 + OH <=> Gp11',
+    label = 'Gp11 <=>Bp2 + OH',
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (9.475e+04, 'cm^3/(mol*s)'),
-        n = 2.330,
-        Ea = (28.047, 'kcal/mol'),
+        A = (1.014e+15, 's^-1'),
+        n = -0.515,
+        Ea = (12.143, 'kcal/mol'),
         T0 = (1, 'K'),
     ),
 )
