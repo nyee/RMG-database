@@ -1511,3 +1511,22 @@ Rate comes from quantum calculation by J. Zador at CCSD(T) level
 """,
 )
 
+entry(
+    index = 1011,
+    label = "Toluene + OH <=> H2O + Benzyl",
+    kinetics = Arrhenius(
+        A = (1.26e+13, 'cm^3/(mol*s)'),
+        n = 0,
+        Ea = (2.59, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (500, 'K'),
+        Tmax = (1000, 'K'),
+    ),
+    rank = 3,
+    shortDesc = u"""Tully et al. experimental data """,
+    longDesc = """
+    Flash photolysis experiment from Tully FP et al, "Kinetics of the reactions of hydroxyl radical 
+    with benzene and toluene", J. Phys. Chem. 85 1981.
+"""
+)
+
