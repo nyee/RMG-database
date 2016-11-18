@@ -3695,9 +3695,8 @@ multiplicity 2
 2 H u0 p0 c0 {1,S}
 
 CO
-multiplicity 3
-1 C u2 p0 c0 {2,D}
-2 O u0 p2 c0 {1,D}
+1 C u0 p1 c-1 {2,T}
+2 O u0 p1 c+1 {1,T}
 
 C6H10(1)
 1  C u0 p0 c0 {3,S} {4,S} {7,S} {8,S}
