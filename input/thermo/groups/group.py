@@ -44403,15 +44403,15 @@ L1: R
                     L6: Cdd-(Cdd-Cd)Cds
                 L5: Cdd-CdsCds
         L3: Cds
-            L4: Cds-OdN3sH
-            L4: Cds-OdN3sCs
             L4: Cd-N3dCsCs
             L4: Cd-N3dCsH
             L4: Cd-N3dHH
+            L4: Cds-OdN3sH
+            L4: Cds-OdN3sCs
             L4: Cds-OdHH
             L4: Cds-OdOsH
-            L4: CO-SsH
             L4: Cds-OdOsOs
+            L4: CO-SsH
             L4: CO-CsSs
             L4: CO-OsSs
             L4: Cds-OdCH
