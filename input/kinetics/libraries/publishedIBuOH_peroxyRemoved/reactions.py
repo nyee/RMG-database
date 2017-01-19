@@ -18652,17 +18652,17 @@ entry(
     ),
 )
 
-entry(
-    index = 2002,
-    label = "O2 + C4H9Oi3 <=> HO2 + C4H8O-i2",
-    degeneracy = 1,
-    kinetics = Arrhenius(
-        A = (7.23e+12, 'cm^3/(mol*s)'),
-        n = 0,
-        Ea = (15998.4, 'cal/mol'),
-        T0 = (1, 'K'),
-    ),
-)
+#entry(
+#    index = 2002,
+#    label = "O2 + C4H9Oi3 <=> HO2 + C4H8O-i2",
+#    degeneracy = 1,
+#    kinetics = Arrhenius(
+#        A = (7.23e+12, 'cm^3/(mol*s)'),
+#        n = 0,
+#        Ea = (15998.4, 'cal/mol'),
+#        T0 = (1, 'K'),
+#    ),
+#)
 
 entry(
     index = 2003,
