@@ -3922,43 +3922,12 @@ entry(
 
 entry(
     index = 266,
-    label = "Cs_H_out_AromDe",
+    label = "C_rad_out_Cd/Cd",
     group =
 """
-1 *2 Cs  u0 {2,S} {3,S} {4,S}
-2 *3 H   u0 {1,S}
-3    R!H u0 {1,S}
-4    Cb  u0 {1,S}
-""",
-    kinetics = None,
-)
-
-entry(
-    index = 267,
-    label = "Cs_H_out_H/AromDe",
-    group =
-"""
-1 *2 Cs  u0 {2,S} {3,S} {4,S}
-2 *3 H   u0 {1,S}
-3    Cb  u0 {1,S}
-4    H   u0 {1,S}
-""",
-    kinetics = None,
-)
-
-entry(
-    index = 268,
-    label = "Cs_H_out_(CdCdCd)",
-    group = 
-"""
-1 *2 Cs     u0 {2,S} {3,S} {4,S}
-2 *3 H      u0 {1,S}
-3    Cd     u0 {1,S} {5,D} {6,S}
-4    [Cs,O] u0 {1,S}
-5    Cd      u0 {3,D} {7,S} {8,S}
-6    R      u0 {3,S}
-7    Cd      u0 {5,S}
-8    R      u0 {5,S}
+1 *1 C  u1 {2,S} {3,S}
+2    Cd u0 {1,S}
+3    Cd u0 {1,S}
 """,
     kinetics = None,
 )
@@ -4183,12 +4152,7 @@ L1: Y_rad_out
                 L5: C_rad_out_OneDe/O
                 L5: C_rad_out_OneDe/S
             L4: C_rad_out_TwoDe
-        L3: C_rad_out_1H
-            L4: C_rad_out_H/NonDeC
-            L4: C_rad_out_H/NonDeO
-            L4: C_rad_out_H/NonDeS
-            L4: C_rad_out_H/OneDe
-        L3: C_rad_out_2H
+                L5: C_rad_out_Cd/Cd
 L1: XH_out
     L2: CO_H_out
     L2: O_H_out
