@@ -16288,7 +16288,10 @@ entry(
 entry(
     index = 395,
     label = "NJ",
-    group = "OR{N3J}",
+    group =
+"""
+1 *3 N u1
+""",
     kinetics = None,
 )
 
