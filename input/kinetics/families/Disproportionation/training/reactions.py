@@ -36,27 +36,43 @@ MRH 30-Aug-2009
 """,
 )
 
+
+
 entry(
     index = 2,
-    label = "C2H3 + O2 = C2H2_1 + HO2",
+    label = "H + C10H9 <=> H2 + C10H8",
+    degeneracy = 1,
     kinetics = Arrhenius(
-        A = (1.04E+16, 'cm^3/(mol*s)','*|/',5),
-        n = -1.26,
-        Ea = (3.31, 'kcal/mol'),
+        A = (2.11e+09, 'cm^3/(mol*s)'),
+        n = 1.081,
+        Ea = (2011, 'cal/mol'),
         T0 = (1, 'K'),
-        Tmin = (300, 'K'),
-        Tmax = (2000, 'K'),
     ),
-    rank = 5,
-    shortDesc = u"""S.S. Merchant estimate""",
+    rank = 3,
+    shortDesc = u"""Training reaction from kinetics library: C10H8_HACA""",
     longDesc = 
 u"""
-This rate rule is a estimate taken from NIST, ref: Aromatic and Polycyclic Aromatic
-Hydrocarbon Formation in a Laminar Premixed n-butane Flame
-Derived from fitting to a complex mechanism for C2H3 + O2 = C2H2 + HO2  
+Taken from entry: A5 + H <=> N1 + H2
 """,
 )
 
 
 
+entry(
+    index = 3,
+    label = "H + C10H9-2 <=> H2 + C10H8-2",
+    degeneracy = 1,
+    kinetics = Arrhenius(
+        A = (2.05e+08, 'cm^3/(mol*s)'),
+        n = 1.245,
+        Ea = (3405, 'cal/mol'),
+        T0 = (1, 'K'),
+    ),
+    rank = 3,
+    shortDesc = u"""Training reaction from kinetics library: C10H8_HACA""",
+    longDesc = 
+u"""
+Taken from entry: A9 + H <=> N1 + H2
+""",
+)
 
