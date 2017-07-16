@@ -22,16 +22,3 @@ Taken from entry: W8 <=> W10
 """,
 )
 
-entry(
-    index = 2,
-    label = "C10H10-3 <=> C10H10-4",
-    degeneracy = 1,
-    kinetics = Arrhenius(A=(7.437e+08, 's^-1'), n=1.045, Ea=(15.153, 'kcal/mol'), T0=(1, 'K')),
-    rank = 3,
-    shortDesc = u"""Training reaction from kinetics library: C3H3_C7H7_Matsugi""",
-    longDesc = 
-u"""
-Taken from entry: W14 <=> W17
-""",
-)
-

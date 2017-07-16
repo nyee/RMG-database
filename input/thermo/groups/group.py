@@ -46899,8 +46899,6 @@ L1: R
                 L5: N3d-CdCs
                 L5: N3d-N3dCs
             L4: N3d-CbR
-        L3: N3t
-            L4: N3t-CtH
         L3: N5d
             L4: N5d-OdOsCs
             L4: N5d-OdOsCd

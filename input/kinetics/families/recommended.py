@@ -59,4 +59,5 @@ recommendedFamilies = {
 'Cyclopentadiene_scission':True,
 '6_membered_central_C-C_shift':True,
 '1,2_shiftC':True,
+'Intra_R_Add_Exo_scission':True,
 }

@@ -177,23 +177,6 @@ u"""
 )
 
 entry(
-    index = 4,
-    label = "Cyclopropadiene2",
-    group = 
-"""
-1   [Cd,N3d] u0 {2,S} {3,D}
-2   [Cd,N3d] u0 {1,S} {3,D}
-3 * Cdd      u0 {1,D} {2,D}
-""",
-    thermo = u'Cyclopropadiene',
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
     index = 126,
     label = "Cyclopropatriene",
     group = 
@@ -642,10 +625,10 @@ entry(
     label = "Cyclobutene",
     group = 
 """
-1 * Cs  u0 {2,S} {4,S}
-2   Cd u0 {1,S} {3,D}
-3   Cd u0 {2,D} {4,S}
-4   Cs  u0 {1,S} {3,S}
+1 * Cd u0 {2,D} {4,S}
+2   Cd u0 {1,D} {3,S}
+3   Cs u0 {2,S} {4,S}
+4   Cs u0 {1,S} {3,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -654,60 +637,6 @@ entry(
         S298 = (29.8677,'cal/(mol*K)'),
     ),
     shortDesc = u"""Cyclobutene ring BENSON""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 14,
-    label = "Cyclobutene2",
-    group = 
-"""
-1   [Cs,N3s] u0 {2,S} {4,S}
-2 * [Cd,N3d] u0 {1,S} {3,D}
-3   [Cd,N3d] u0 {2,D} {4,S}
-4   [Cs,N3s] u0 {1,S} {3,S}
-""",
-    thermo = u'Cyclobutene',
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 14,
-    label = "Cyclobutadiene2",
-    group = 
-"""
-1   [Cs,N3s] u0 {2,S} {4,S}
-2 * [Cd,N3d] u0 {1,S} {3,D}
-3   Cdd      u0 {2,D} {4,D}
-4   [Cd,N3d] u0 {1,S} {3,D}
-""",
-    thermo = u'Cyclobutene',
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 14,
-    label = "Cyclobutadiene3",
-    group = 
-"""
-1 * [Cs,N3s] u0 {2,S} {4,S}
-2   [Cd,N3d] u0 {1,S} {3,D}
-3   Cdd      u0 {2,D} {4,D}
-4   [Cd,N3d] u0 {1,S} {3,D}
-""",
-    thermo = u'Cyclobutene',
-    shortDesc = u"""""",
     longDesc = 
 u"""
 
@@ -3874,10 +3803,10 @@ entry(
 """
 1 * Ct u0 {2,T} {6,S}
 2   Ct u0 {1,T} {3,S}
-3   R!H u0 {2,S} {4,[S,D]}
-4   R!H u0 {3,[S,D]} {5,[S,D]}
-5   R!H u0 {4,[S,D]} {6,[S,D]}
-6   R!H u0 {1,S} {5,[S,D]}
+3   R!H u0 {2,S} {4,[D,S]}
+4   R!H u0 {3,[D,S]} {5,[D,S]}
+5   R!H u0 {4,[D,S]} {6,[D,S]}
+6   R!H u0 {1,S} {5,[D,S]}
 """,
     thermo = u'cyclohex_1_yne_3_ene',
     shortDesc = u"""""",

@@ -25,6 +25,8 @@ entry(
     kinetics = None,
 )
 
+boundaryAtoms = ["*2", "*3"]
+
 entry(
     index = 2,
     label = "singletcarbene",
