@@ -144,7 +144,7 @@ entry(
     label = "CdJ2",
     group =
 """
-1 *1 Cd u0 p1
+1 *1 C2d u0 p1
 """,
     kinetics = None,
     shortDesc = "",
@@ -159,8 +159,8 @@ entry(
     label = "CsJ2H",
     group =
 """
-1 *1 Cs u0 p1 {2,S}
-2 H u0 {1,S}
+1 *1 C2s u0 p1 {2,S}
+2    H   u0 {1,S}
 """,
     kinetics = None,
     shortDesc = "",
@@ -175,8 +175,8 @@ entry(
     label = "CsJ2C",
     group =
 """
-1 *1 Cs u0 p1 {2,S}
-2 C u0 {1,S}
+1 *1 C2s u0 p1 {2,S}
+2    C   u0 {1,S}
 """,
     kinetics = None,
     shortDesc = "",
@@ -191,9 +191,9 @@ entry(
     label = "CsJ2(CsC)",
     group =
 """
-1 *1 Cs u0 p1 {2,S}
-2 Cs u0 {1,S} {3,S}
-3 C u0 {2,S}
+1 *1 C2s u0 p1 {2,S}
+2    Cs  u0 {1,S} {3,S}
+3    C  u0 {2,S}
 """,
     kinetics = None,
     shortDesc = "",
@@ -208,9 +208,9 @@ entry(
     label = "CsJ2(C=C)",
     group =
 """
-1 *1 Cs u0 p1 {2,S}
-2 Cd u0 {1,S} {3,D}
-3 C u0 {2,D}
+1 *1 C2s u0 p1 {2,S}
+2    Cd u0 {1,S} {3,D}
+3    C u0 {2,D}
 """,
     kinetics = None,
     shortDesc = "",
@@ -226,8 +226,8 @@ entry(
     group =
 """
 1 *2 Cd u0 {2,S} {3,S}
-2 *3 H u0 {1,S}
-3 H u0 {1,S}
+2 *3 H  u0 {1,S}
+3    H  u0 {1,S}
 """,
     kinetics = None,
     shortDesc = "",
