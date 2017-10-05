@@ -25,7 +25,7 @@ from rmgpy.molecule import Molecule
 from rmgpy.species import Species
 from rmgpy.reaction import Reaction
 from rmgpy.data.rmg import RMGDatabase
-from rmgpy.data.kinetics.common import UndeterminableKineticsError
+from rmgpy.exceptions import UndeterminableKineticsError
 
 def getKineticsDepository(FullDatabase, family, depositoryLabel):
     """
@@ -41,9 +41,7 @@ def getKineticsDepository(FullDatabase, family, depositoryLabel):
             depository=tempDepository
             break
     else:
-        print 'Depository {} not found in {} family.'.format(depositoryLabel, family.label)
-        return
-            
+        raise KeyError('Depository {} not found in {} family.'.format(depositoryLabel, family.label))
     
     exactKinetics={}
     approxKinetics={}
@@ -54,23 +52,28 @@ def getKineticsDepository(FullDatabase, family, depositoryLabel):
             template=family.getReactionTemplate(reaction)
             exactKinetics[key]=entry.data
             approxKinetics[key]=family.rules.estimateKinetics(template)[0]
-        except UndeterminableKineticsError:
+        except UndeterminableKineticsError, e:
             # See if the reaction was written in the reverse direction
             reaction = Reaction(reactants = copy.deepcopy(entry.item.products),
                                 products = copy.deepcopy(entry.item.reactants),
                                 kinetics = copy.deepcopy(entry.data)
                                 )
-            
+            # use reverse reaction to find template
             template=family.getReactionTemplate(reaction)
 
             # Getting thermo data erases the atomLabels, so do this after finding the template
             # But we need it for setting the reverse kinetics
-            for spec in reaction.reactants + reaction.products:
+            # We make a new deep copy because using reaction gives the wrong units when using generateReverseRateCoefficient
+            reaction1 = entry.item.copy()
+            reaction1.kinetics = copy.deepcopy(entry.data)
+            for spec in reaction1.reactants + reaction1.products:
                 spec.getThermoData()
 
-            reverseKinetics = reaction.generateReverseRateCoefficient()
+            reverseKinetics = reaction1.generateReverseRateCoefficient()
+            del reaction1
+
             reaction.kinetics = reverseKinetics
-            
+
             exactKinetics[key]=reaction.kinetics
             approxKinetics[key]=family.rules.estimateKinetics(template)[0]
 
@@ -301,40 +304,44 @@ def compareNIST(FullDatabase, trialDir, pruneForExact=False):
             if len(family.rules.entries) < 2:
                 print '    Skipping', familyName, ': only has one rate rule...'
             else:
-                exactKinetics, approxKinetics = getKineticsDepository(FullDatabase, family, 'NIST')
-                
-                
-                if pruneForExact:
-                    # prune for exact matches only
-                    keysToRemove=[]
-                    for key, kinetics in approxKinetics.iteritems():
-                        if not re.search('Exact', kinetics.comment):
-                            keysToRemove.append(key)
-                    
-                    for key in keysToRemove:
-                        del approxKinetics[key]
-                
-                parityData=analyzeForParity(exactKinetics, approxKinetics)
+                try:
+                    exactKinetics, approxKinetics = getKineticsDepository(FullDatabase, family, 'NIST')
 
-                if len(parityData)<2:
-                    print '    Skipping', familyName, ': {} reactions were compared...'.format(len(parityData))
-                    continue
-                QDict[familyName]=calculateQ(parityData)
-                createParityPlot(parityData)
-                plt.title(familyName)
-                plt.savefig(os.path.join(trialDir, familyName +'.png'))
-                plt.clf()
-                   
-                if not os.path.exists(os.path.join(os.path.join(trialDir, 'ParityData'))):
-                    os.makedirs(os.path.join(trialDir, 'ParityData'))
-                   
-                with open(os.path.join(trialDir, 'ParityData', familyName + '.csv'), 'wb') as paritycsvfile:
-                    paritycsvwriter=csv.writer(paritycsvfile)
-                    for key, value in parityData.iteritems():
-                        paritycsvwriter.writerow([key, value[0]/value[1], approxKinetics[key].comment]) 
-            
-                # Save data to csv file
-                csvwriter.writerow([familyName, QDict[familyName]])
+
+                    if pruneForExact:
+                        # prune for exact matches only
+                        keysToRemove=[]
+                        for key, kinetics in approxKinetics.iteritems():
+                            if not re.search('Exact', kinetics.comment):
+                                keysToRemove.append(key)
+
+                        for key in keysToRemove:
+                            del approxKinetics[key]
+
+                    parityData=analyzeForParity(exactKinetics, approxKinetics)
+
+                    if len(parityData)<2:
+                        print '    Skipping', familyName, ': {} reactions were compared...'.format(len(parityData))
+                        continue
+                    QDict[familyName]=calculateQ(parityData)
+                    createParityPlot(parityData)
+                    plt.title(familyName)
+                    plt.savefig(os.path.join(trialDir, familyName +'.png'))
+                    plt.clf()
+
+                    if not os.path.exists(os.path.join(os.path.join(trialDir, 'ParityData'))):
+                        os.makedirs(os.path.join(trialDir, 'ParityData'))
+
+                    with open(os.path.join(trialDir, 'ParityData', familyName + '.csv'), 'wb') as paritycsvfile:
+                        paritycsvwriter=csv.writer(paritycsvfile)
+                        for key, value in parityData.iteritems():
+                            paritycsvwriter.writerow([key, value[0]/value[1], approxKinetics[key].comment])
+
+                    # Save data to csv file
+                    csvwriter.writerow([familyName, QDict[familyName]])
+
+                except KeyError:
+                    print '    Depository NIST not found in {0} family.'.format(familyName)
               
       
 
@@ -412,7 +419,7 @@ if __name__ == '__main__':
     FullDatabase.load(settings['database.directory'], 
                       kineticsFamilies='all', 
                       kineticsDepositories='all',
-                      thermoLibraries=['primaryThermoLibrary'],   # Use just the primary thermo library, which contains necessary small molecular thermo
+                      thermoLibraries=['primaryThermoLibrary', "DFT_QCI_thermo"],   # Use just the primary thermo library, which contains necessary small molecular thermo
                       reactionLibraries=[],
                       )
 
@@ -420,14 +427,14 @@ if __name__ == '__main__':
     for family in FullDatabase.kinetics.families.values():
         family.addKineticsRulesFromTrainingSet(thermoDatabase=FullDatabase.thermo)
     
-    print '--------------------------------------------'
-    print 'Obtaining statistics for the families...'
-    obtainKineticsFamilyStatistics(FullDatabase, trialDir)
-    
-    print '--------------------------------------------'
-    print 'Performing the leave on out test on the kinetics families...'
-    leaveOneOut(FullDatabase, trialDir, averaging=False)
-    
+    # print '--------------------------------------------'
+    # print 'Obtaining statistics for the families...'
+    # obtainKineticsFamilyStatistics(FullDatabase, trialDir)
+    #
+    # print '--------------------------------------------'
+    # print 'Performing the leave on out test on the kinetics families...'
+    # leaveOneOut(FullDatabase, trialDir, averaging=False)
+    #
     print '--------------------------------------------'
     print 'Filling up the family rate rules by averaging... Expect larger number of rate rules in subsequent tests'
     # Fill in the rate rules by averaging when we are ready to compare real kinetics
